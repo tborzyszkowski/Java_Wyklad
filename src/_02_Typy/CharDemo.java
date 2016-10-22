@@ -7,6 +7,7 @@ class CharDemo {
 		char ch2 = 'Y';
 		System.out.print("ch1   i ch2  : ");
 		System.out.println(ch1 + "  " + ch2);
+		System.out.println("ch1 + ch2 = "+ (ch1 + ch2) + " " + (char)(ch1 + ch2));
 		// teraz cos egzotycznego
 		ch1 = 261;
 		ch2 = 'z';

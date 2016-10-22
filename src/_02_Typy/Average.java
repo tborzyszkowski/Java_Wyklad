@@ -9,7 +9,7 @@ class Average{
 	for(int i=0; i<nums.length; i++)
 	    result = result + nums[i];
 
-	//nums = new double[3];
+	nums = new double[3];
 	System.out.println("Wartosc srednia = " + result / nums.length);
     }
 }

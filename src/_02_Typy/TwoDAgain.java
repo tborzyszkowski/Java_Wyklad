@@ -9,6 +9,7 @@ class TwoDAgain{
 
 	for(int i=0;i<twoD.length; i++){
 		twoD[i] = new int[i+1];
+		//twoD[i] = new double[i+1];
 	}
 /*	twoD[0] = new int[1];
 	twoD[1] = new int[2];

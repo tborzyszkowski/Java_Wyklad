@@ -5,7 +5,7 @@ package _02_Typy;
 class LightTravel{
     public static void main(String args[]){
 	int lightSpeed = 299792; // km/s
-	long days = 1000000000;        // badana liczba dni
+	long days = 100000000;        // badana liczba dni
 	long seconds = days * 24 * 60 * 60;   // tyle to sekund
 	long distance = lightSpeed * seconds; // tyle przebedzie swiatlo
 
@@ -14,7 +14,8 @@ class LightTravel{
 	System.out.print(" dni swiatlo przebedzie okolo ");
 	System.out.println("\n" + distance + " kilometrow");
 	System.out.println(Long.MAX_VALUE);
-	//byte a = 1;
-	//byte b = 1*a;
+//	double a = 1;
+//	byte b = (byte)(a*a);
+//	float c = a * a;
     }
 }

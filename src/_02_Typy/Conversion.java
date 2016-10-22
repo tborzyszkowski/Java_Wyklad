@@ -9,11 +9,11 @@ class Conversion {
 
 		System.out.println("\nKonwersja int do byte:");
 		b = (byte) i;
-		System.out.println("i = " + i + " b = " + b);
+		System.out.println("i = " + i + " b = " + b + " " + Byte.MAX_VALUE);
 
 		System.out.println("\nKonwersja double do int:");
 		i = (int) d;
-		System.out.println("d = " + d + " i = " + i);
+		System.out.println("d = " + d + " i = " + i+ " " + Integer.MAX_VALUE);
 
 		System.out.println("\nKonwersja double do byte:");
 		b = (byte) d;
