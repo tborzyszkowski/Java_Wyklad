@@ -41,9 +41,9 @@ class OverloadDemo {
 	public static void main(String args[]) {
 		Overload ob = new Overload();
 		// wywolania wszystkich wersji metody test
-//		ob.test();
-//		ob.test(10L);
-//		ob.test(10, 20);
+		ob.test();
+		ob.test(10L);
+		ob.test(10, 20);
 		System.out.println("test = " + ob.test(123.0f));
 	}
 }
