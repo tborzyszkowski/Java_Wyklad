@@ -25,15 +25,15 @@ public class CRUDRowSet {
 		ResultSet res = st.executeQuery(sql);
 		showResultSet(res);
 
-		System.out.println("--UPDATE--");
-		// res.moveToInsertRow();
-		// res.updateString("publisher_id", "007");
-		// res.updateString("name", "WP");
-		// res.updateString("url", "www.wp.pl");
-		// res.insertRow();
-		// res.beforeFirst();
-
-		// showResultSet(res);
+//		System.out.println("--UPDATE--");
+//		res.moveToInsertRow();
+//		res.updateString("publisher_id", "007");
+//		res.updateString("name", "WP");
+//		res.updateString("url", "www.wp.pl");
+//		res.insertRow();
+//		res.beforeFirst();
+//
+//		showResultSet(res);
 
 		if (res.getConcurrency() == ResultSet.CONCUR_READ_ONLY) {
 			System.out.println("ResultSet non-updatable.");
@@ -41,19 +41,20 @@ public class CRUDRowSet {
 			System.out.println("ResultSet updatable.");
 		}
 
-		System.out.println("--DELETE--");
-		res.absolute(8);
-		showResultSet(res);
-		res.last();
-		System.out.println("Wiersz: " + res.getString("publisher_id") + res.getString("name") + res.getString("url"));
-		//res.deleteRow();
-		System.out.println("delete row ....");
-		res.absolute(7);
-		showResultSet(res);
-
+//		System.out.println("--DELETE--");
+//		res.absolute(8);
+//		showResultSet(res);
+//		res.last();
+//		System.out.println("Wiersz: " + res.getString("publisher_id") + res.getString("name") + res.getString("url"));
+//		res.deleteRow();
+//		System.out.println("delete row ....");
+//		res.absolute(7);
+//		showResultSet(res);
+//
 		System.out.println("--BATCH Insert--");
 		sql = "INSERT INTO publishers(publisher_id, name, url) VALUES (?, ?, ?);";
 		PreparedStatement ps = conn.prepareStatement(sql);
+		int[] affectedRecords;
 		int i = 1;
 //		ps.setString(1, "xyz"+i);
 //		ps.setString(2, "Nazwa_"+i);
@@ -64,21 +65,24 @@ public class CRUDRowSet {
 //		ps.setString(2, "Nazwa_"+i);
 //		ps.setString(3, "www.internet.pl");
 //		ps.addBatch();
-		int[] affectedRecords = ps.executeBatch();
-		System.out.println("Batch Insert result array:" + Arrays.toString(affectedRecords));
-		
-		System.out.println("--BATCH Delete--");
-		sql = "DELETE FROM publishers WHERE publisher_id = ?;";
-		ps = conn.prepareStatement(sql);
-		i = 1;
-		ps.setString(1, "xyz"+i);
-		ps.addBatch();
-		i++;
-		ps.setString(1, "xyz"+i);
-		ps.addBatch();
-		affectedRecords = ps.executeBatch();
-		System.out.println("Batch Delete result array:" + Arrays.toString(affectedRecords));
-		
+//				
+//		affectedRecords = ps.executeBatch();
+//		System.out.println("Batch Insert result array:" + Arrays.toString(affectedRecords));
+//		
+//		showResultSet(res);
+//		
+//		System.out.println("--BATCH Delete--");
+//		sql = "DELETE FROM publishers WHERE publisher_id = ?;";
+//		ps = conn.prepareStatement(sql);
+//		i = 1;
+//		ps.setString(1, "xyz"+i);
+//		ps.addBatch();
+//		i++;
+//		ps.setString(1, "xyz"+i);
+//		ps.addBatch();
+//		affectedRecords = ps.executeBatch();
+//		System.out.println("Batch Delete result array:" + Arrays.toString(affectedRecords));
+//		
 		System.out.println("--Transakcje--");
 		String trace = "-start- ";
 		conn.setAutoCommit(false);
