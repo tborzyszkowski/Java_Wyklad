@@ -52,7 +52,7 @@ class StackTest {
 		for (int i = 0; i < myStack1.size(); i++)
 			System.out.println(myStack1.pop());
 		System.out.println("Stos myStack2:");
-		for (int i = 0; i < myStack2.size(); i++)
+		for (int i = 0; i < myStack2.size()+1; i++)
 			System.out.println(myStack2.pop());
 	}
 }
