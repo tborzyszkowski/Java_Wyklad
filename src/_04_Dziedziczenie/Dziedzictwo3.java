@@ -54,10 +54,11 @@ class Dziedzictwo3 {
     	System.out.println(" i = " + obA.i + " j = " + obA.j);
     	//System.out.println(" k = " + obA.k );
         // czy dostepne bedzie k
-    	//System.out.println(" k = " + ((B3)obA).k);
+    	System.out.println(" k = " + ((B3)obA).k);
+    	//System.out.println(" k = " + ((obA.getClass())obA).k);
     	System.out.println(obA.getClass());
     	if(obA instanceof B3)
-    		System.out.println(" k = " + ((B33)obA).k);
+    		System.out.println(" k = " + ((B3)obA).k);
     	else
     		System.out.println("Zly typ");
    }

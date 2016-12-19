@@ -15,8 +15,7 @@ class Client implements Callback {
 
 	// metoda dodatkowa, nie z interfejsu
 	void nonIfaceMeth() {
-		System.out.println("Klasa implementujaca interfejs moze takze "
-				+ "implementowac metody spoza interfejsu");
+		System.out.println("Klasa implementujaca interfejs moze takze " + "implementowac metody spoza interfejsu");
 	}
 }
 

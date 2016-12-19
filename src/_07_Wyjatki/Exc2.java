@@ -22,6 +22,9 @@ class Exc2 {
 		catch (Exception e) {
 			System.out.println("Wyjatek: " + e);
 		}
+		finally{
+			System.out.println("FINALLY");
+		}
 		System.out.println("Poza try/catch");
 	}
 }

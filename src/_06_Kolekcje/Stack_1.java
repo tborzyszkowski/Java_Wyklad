@@ -47,7 +47,7 @@ class Stack_1 {
 		for (int i = 0; i < 16; i++) {
 			Object o = myStack.pop();
 			if (o instanceof Integer) {
-				System.out.println((Integer) o + 1);
+				System.out.println(((Integer) o).intValue() + 1);
 				//System.out.println(""+o+1);
 			} else
 				System.out.println("String: " + o);

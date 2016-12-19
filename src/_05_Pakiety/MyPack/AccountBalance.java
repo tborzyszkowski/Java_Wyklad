@@ -23,7 +23,7 @@ class AccountBalance {
 		Balance current[] = new Balance[3];
 
 		current[0] = new Balance("J.F.K", 123.123);
-		current[1] = new Balance("W. Tell", 150.150);
+		current[1] = new Balance("W. Tell", -150.150);
 		current[2] = new Balance("T.B.", 111.222);
 
 		for (int i = 0; i < 3; i++)

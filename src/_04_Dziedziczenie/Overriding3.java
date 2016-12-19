@@ -39,6 +39,7 @@ class Overriding3 {
 		obB.show(); // wywolanie show() z A
 		obB.show("To jest k: "); // wywolanie show() z B
 		obA.show();
-//		obA.show("aaa");
+//		obA.show("aaa")
+		((BO3)obA).show("aaa");
 	}
 }

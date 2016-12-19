@@ -1,5 +1,4 @@
 package _04_Dziedziczenie;
-
 // Przyklad dynamicznego wiazania metod
 
 class A_3 {

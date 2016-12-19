@@ -15,6 +15,7 @@ class LinkedListDemo{
 	ll.addFirst("A");
 	ll.add(1,"A2");
 	ll.add("F");
+	ll.add(13);
 
 	System.out.println("Zawartosc(1) ll: " + ll);
 

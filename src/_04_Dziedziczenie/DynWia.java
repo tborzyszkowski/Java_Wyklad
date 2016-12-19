@@ -9,10 +9,10 @@ class AA {
 }
 class BB extends AA { 
     int m(){ return 2;}
-    int testSuper() { return super.test(); }
-//    int testSuper() { return this.test(); }
-//    int test() { return super.m();}
-    int test() { return m();}
+//    int testSuper() { return super.test(); }
+    int testSuper() { return this.test(); }
+    int test() { return super.m();}
+//    int test() { return m();}
 }
 class CC extends BB { 
     int m() { return 3; }

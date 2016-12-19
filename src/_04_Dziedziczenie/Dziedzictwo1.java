@@ -3,7 +3,7 @@ package _04_Dziedziczenie;
 // Prosty przyklad dziedziczenia
 // Klasa nadrzedna
 class A1 {
-    int i, j;
+    private int i, j;
     // ustawianie wartosci
     void setA(int a, int b) {
     	i = a;

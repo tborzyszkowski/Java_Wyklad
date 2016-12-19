@@ -14,7 +14,6 @@ class IteratorDemo_2 {
 		al.add("D");
 		al.add("F");
 		al.add(1, "A2");
-
 		System.out.println("Zawartosc a1: " + al);
 
 		// iterowanie po elementach

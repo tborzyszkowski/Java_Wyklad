@@ -9,6 +9,7 @@ class HashSetDemo{
 	hs.add("AA"); hs.add("HH"); hs.add("O");
 	hs.add("B"); hs.add("I"); hs.add("P");
 	hs.add("C"); hs.add("J"); hs.add("Q");
+	System.out.println(hs);
 	hs.add("D"); hs.add("K"); hs.add("R");
 	hs.add("E"); hs.add("L"); hs.add("S");
 	hs.add("F"); hs.add("M"); hs.add("T");
