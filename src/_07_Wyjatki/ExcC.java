@@ -1,4 +1,5 @@
 package _07_Wyjatki;
+
 class MyException11 extends Exception {
 	
 	private static final long serialVersionUID = 231231L;

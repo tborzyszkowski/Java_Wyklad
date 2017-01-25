@@ -30,9 +30,9 @@ class NewThread3 implements Runnable {
 class JoinThreadDemo {
 	public static void main(String args[]) {
 		NewThread3 ob1 = new NewThread3("Pierwszy", 4);
-		NewThread3 ob2 = new NewThread3("Drugi   ", 5);
+		NewThread3 ob2 = new NewThread3("Drugi   ", 2);
 		NewThread3 ob3 = new NewThread3("Trzeci  ", 3);
-		NewThread3 ob4 = new NewThread3("Czwarty ", 5);
+		NewThread3 ob4 = new NewThread3("Czwarty ", 1);
 
 		System.out
 				.println("Watek " + ob1.name + " dziala : " + ob1.t.isAlive());
@@ -51,7 +51,7 @@ class JoinThreadDemo {
 			System.out.println("Drugi   : koniec");
 			ob3.t.join();
 			System.out.println("Trzeci  : koniec");
-			//b4.t.join();
+			//ob4.t.join();
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}

@@ -56,7 +56,7 @@ class  ExcA {
 //		catch (Exception e) {
 //			System.out.println("Main: wyjatek z procA obsłużony"+e);
 //		}
-//		System.out.println("B: " + procB());
-		procC();
+		System.out.println("B: " + procB());
+//		procC();
 	}
 }
