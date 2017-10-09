@@ -29,7 +29,7 @@ class TestDB {
 			ResultSet result = stat.executeQuery("SELECT * FROM Greetings");
 			result.next();
 			System.out.println(result.getString(1));
-			//stat.execute("DROP TABLE Greetings");
+			stat.execute("DROP TABLE Greetings");
 		} finally {
 			conn.close();
 		}
