@@ -8,7 +8,7 @@ class BoolDemo {
 		b = false;
 		System.out.println("b = " + b);
 		b = true;
-		// b = 1;
+//		b = 1;
 		System.out.println("b = " + b);
 
 		// wyrazenia typu boolean kontroluja wykonanie komendy if

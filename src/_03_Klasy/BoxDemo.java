@@ -17,6 +17,10 @@ class BoxDemo {
 		Box myBox = new Box();
 		double vol;
 
+		// obliczamy objetosc myBox'a
+		vol = myBox.width * myBox.height * myBox.depth;
+
+		System.out.println("Objetosc = " + vol);
 		// wpisujemy dane do myBox
 		myBox.width = 10;
 		myBox.height = 20;
@@ -25,6 +29,6 @@ class BoxDemo {
 		// obliczamy objetosc myBox'a
 		vol = myBox.width * myBox.height * myBox.depth;
 
-		System.out.println("\nObjetosc = " + vol + "\n");
+		System.out.println("Objetosc = " + vol);
 	}
 }

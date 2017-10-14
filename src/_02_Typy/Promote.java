@@ -12,7 +12,8 @@ class Promote {
 		double result = (f * b) + (i / c) - (d * s);
 		System.out.println((f * b) + " + " + (i / c) + " - " + (d * s));
 		System.out.println((f * b) +  (i / c) + " - " + (d * s));
-		System.out.println( (f * b) -  (d * s) );
+		System.out.println((double)((f * b) +  (i / c)) + " - " + (d * s));
+		System.out.println( (f * b) +  (i / c) -  (d * s) );
 		System.out.println("result = " + result);
 		// (f * b): b jest promowane do float i wynik wyrazenia jest float
 		// (i / c): c jest promowane do int i wynik jest int

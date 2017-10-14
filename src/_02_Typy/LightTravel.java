@@ -13,8 +13,8 @@ class LightTravel{
 	System.out.print(" dni swiatlo przebedzie okolo ");
 	System.out.println("\n" + distance + " kilometrow");
 
-//	long distance2 = Math.multiplyExact(lightSpeed, seconds);
-//	System.out.println("\n" + distance2 + " kilometrow");	
+	long distance2 = Math.multiplyExact(lightSpeed, seconds);
+	System.out.println("\n" + distance2 + " kilometrow");	
 
 	System.out.println(Long.MAX_VALUE);
 //	double a = 1;

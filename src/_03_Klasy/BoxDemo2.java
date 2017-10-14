@@ -50,6 +50,7 @@ class BoxDemo2 {
 		myBox1.width = 2;
 		myBox1.height = 3;
 		myBox1.depth = 4;
+		System.out.println("myBox1 == myBox2: " + (myBox1 == myBox2) + "\n");
 		System.out.println("myBox1 -eq myBox2: " + (myBox1.equals(myBox2)) + "\n");
 
 	}

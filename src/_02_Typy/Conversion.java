@@ -18,5 +18,7 @@ class Conversion {
 		System.out.println("\nKonwersja double do byte:");
 		b = (byte) d;
 		System.out.println("d = " + d + " b = " + b);
+		
+		System.out.println((Integer.MAX_VALUE + 1) + " " + Integer.MIN_VALUE);
 	}
 }
