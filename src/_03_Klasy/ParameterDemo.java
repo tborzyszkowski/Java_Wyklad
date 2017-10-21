@@ -31,9 +31,12 @@ class PassObTest {
 		PassOb ob2 = new PassOb(ob1);
 		PassOb ob3 = new PassOb(-1, -1);
 		// czy ob1 jest taki jak ob2
-		System.out.println("ob1  == ob2  " + ob1.equals(ob2));
+		System.out.println("ob1.equals(ob2)  " + ob1.equals(ob2));
+		System.out.println("ob1 == ob2  " + (ob1 == ob2));
+		ob2 = ob1;
+		System.out.println("ob1 == ob2  " + (ob1 == ob2));
 		// czy ob1 jest taki jak ob3
-		System.out.println("ob1  == ob3  " + ob1.equals(ob3));
+		System.out.println("ob1.equals(ob3)  " + ob1.equals(ob3));
 		// test wyrazen, ktorych wynikiem jest obiekt
 		System.out.println("wyr1 == wyr2 "
 				+ (new PassOb(ob2)).equals(new PassOb(ob1)));
@@ -41,7 +44,7 @@ class PassObTest {
 		System.out.print("wyr3 == wyr4 ");
 		System.out.println(
 				(
-						( new PassOb(ob2) ).add(1, 1)
+						( new PassOb(ob2) ).add(1, 1).add(-1, -1)
 				).equals( new PassOb(ob1) )
 		);
 	}

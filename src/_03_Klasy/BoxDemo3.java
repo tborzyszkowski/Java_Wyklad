@@ -3,9 +3,9 @@ package _03_Klasy;
 // Definicja prostej klasy z metodami i konstruktorami
 
 class Box3{
-    double width;
-    double height;
-    double depth;
+    private double width;
+    private double height;
+    private double depth;
 
     // konstruktor bez parametrow
     Box3() {
@@ -20,10 +20,10 @@ class Box3{
     	depth  = n;
     }
     // konstruktor z parametrami
-    Box3(int w, int h, int d) {
-    	width  = 2*w; 
-    	height = 3*h; 
-    	depth  = 4*d;
+    Box3(int width, int height, int depth) {
+    	this.width  = 2*width; 
+    	this.height = 3*height; 
+    	this.depth  = 4*depth;
     }
     // konstruktor z parametrami
     Box3(double w, double h, double d) {
@@ -63,5 +63,7 @@ class BoxDemo3{
 	myBox1.setDim(2, 3, 2);
 	// raz jeszcze jego objetosc
 	System.out.println("\nObjetosc myBox1 = " + myBox1.volume() + "\n");
+//	myBox1.width = 10;
+//	myBox1.szerokosc = 10;
     }
 }

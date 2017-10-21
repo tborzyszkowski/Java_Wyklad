@@ -25,8 +25,8 @@ class AccessDemo {
 		ob.b = 20;
 
 		// Natomiast tu bedzie blad
-		// ob.c = 100;
-		// ob.d = 11;
+		 ob.c = 100;
+//		 ob.d = 11;
 		// Do c mamy dostep tylko za pomoca metod
 		ob.setC(100);
 		System.out

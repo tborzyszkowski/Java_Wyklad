@@ -27,7 +27,7 @@ package lab.pliki;
        
        try
        {  
-          // zapisz wszystkie dane pracownik�w do pliku pracownik.dat
+          // zapisz wszystkie dane pracowników do pliku pracownik.dat
           ObjectOutputStream wy = new ObjectOutputStream(new 
              FileOutputStream("pracownik.dat"));
           wy.writeObject(obsluga);

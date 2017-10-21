@@ -25,7 +25,10 @@ class Overload {
 		System.out.println("int a = " + a + " int b = " + b);
 		return 0;
 	}
-
+	int test(double a, double b) {
+		System.out.println("double a = " + a + " double b = " + b);
+		return 1;
+	}
 	// metoda z parametrem rzeczywistym
 	double test(double a) {
 		System.out.println("double a = " + a);
@@ -43,7 +46,7 @@ class OverloadDemo {
 		// wywolania wszystkich wersji metody test
 		ob.test();
 		ob.test(10L);
-		ob.test(10, 20);
+		ob.test(10, 20.0);
 		System.out.println("test = " + ob.test(123.0f));
 	}
 }

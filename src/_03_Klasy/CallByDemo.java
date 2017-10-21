@@ -13,13 +13,13 @@ class CallBy {
 	void ByValue(int i, int j) {
 		i *= 2; // i = 2 * i
 		j /= 2;
-		System.out.println("Wewn: i = " + i + " j = " + j + "\n");
+		System.out.println("Wewn: i = " + i + " j = " + j);
 	}
 	// metoda wywolujaca przez zmienna
 	void ByRef(CallBy o) {
 		o.a *= 2;
 		o.b /= 2;
-		System.out.println("Wewn: a = " + o.a + " b = " + o.b + "\n");
+		System.out.println("Wewn: a = " + o.a + " b = " + o.b);
 	}
 }
 // Klasa testujaca
@@ -39,7 +39,7 @@ public class CallByDemo {
 		System.out.println(" a = " + ob.a + " b = " + ob.b);
 		ob.ByRef(ob);
 		System.out.println("Po wywolaniu przez zmienna: ");
-		System.out.println(" a = " + ob.a + " b = " + ob.b + "\n");
+		System.out.println(" a = " + ob.a + " b = " + ob.b);
 	}
 }
 
