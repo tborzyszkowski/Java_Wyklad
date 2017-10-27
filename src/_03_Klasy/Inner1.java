@@ -13,6 +13,7 @@ class Outer1 {
     	this.inner.x = 3;
     	System.out.println("this.inner.x = "+this.inner.x+" inner.x = "+inner.x);
 //    	Inner1.x = 11;
+//    	x = 12;
     }
     void printInner(){
     	System.out.println("x = "+inner.x);

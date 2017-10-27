@@ -36,7 +36,7 @@ class Stack {
 }
 
 // Klasa testujaca stos
-class StackTest {
+class Stack3 {
 	public static void main(String args[]) {
 		Stack myStack1 = new Stack(5); // TU: mozemy inicjalizowac wielkosc
 		Stack myStack2 = new Stack(8); // TU: tez

@@ -13,7 +13,7 @@ class Outer {
     	inner.display();
     	System.out.println(inner.y);
     	Inner2.z++;
-    	//Inner2.y++;
+//    	Inner2.y++;
     }
 
     // definicja klasy wewnetrznej
@@ -21,13 +21,14 @@ class Outer {
     	static int z = 20;
     	int y = 10;  // dodajemy lokalny y w klasie wewnetrznej
                      // nie jest on widoczny na zewnatrz 
-    	int outer_x = 200;
+    	//int outer_x = 200;
     	Outer oo = new Outer();
     	static{
     		z = z + 1;
     	}
     	void display() {
     		System.out.println(" display: outer_y = " + out_y + "\n");
+//    		System.out.println(" display: outer_y = " + outer_x + "\n");
     		System.out.println(" display: outer_x = " + oo.outer_x + "\n");
     	}
     }
