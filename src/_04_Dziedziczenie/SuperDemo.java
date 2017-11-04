@@ -9,7 +9,8 @@ class A {
 		i = 5;
 	}
 
-	A(int i) {super();
+	A(int i) {
+		super();
 		this.i = i;
 	}
 }
@@ -19,9 +20,9 @@ class B extends A {
 
 	// konstruktor
 	B(int a, int b) {
-		//i = 1;
-		//super(a);
-		super.i = a+1; // odwolania do i w A
+		// i = 1;
+		// super(a);
+		super.i = a; // odwolania do i w A
 		i = b;
 	}
 

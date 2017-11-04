@@ -69,7 +69,7 @@ class BoxWeight extends Box4 {
 
 	// konstruktor bez parametrow
 	BoxWeight() {
-		//super(); // jw. - musimy przeslac odp. liczbe parametrow
+//		super(); // jw. - musimy przeslac odp. liczbe parametrow
 		weight = -1;
 	}
 
@@ -117,5 +117,8 @@ class BoxDemo4 {
 		myBox1.setDim(2, 3, 2, 100.001);
 		// raz jeszcze jego objetosc
 		System.out.println("myBox1: \n" + myBox1);
+		
+		Box4 box = myBox1;
+		System.out.println("myBox1: \n" + box);
 	}
 }

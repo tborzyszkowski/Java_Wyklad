@@ -1,8 +1,5 @@
 package _04_Dziedziczenie;
 
-// Przyklad wskazywania klasy podrzednej 
-// przez zmienna  klasy nadrzednej 
-// Klasa nadrzedna
 class A3 {
     int i, j;
     // ustawianie wartosci
@@ -11,7 +8,6 @@ class A3 {
     	j = b;
     }
 }
-// Klasa podrzedna
 class B3 extends A3 {
     int k;
     // ustawianie wartosci
@@ -27,7 +23,6 @@ class B33 extends A3{
     	k = c;
     }
 }
-
 class Dziedzictwo3 {
     public static void main(String args[]) {
     	A3 obA = new A3();
@@ -52,9 +47,9 @@ class Dziedzictwo3 {
 	// wypisujemy zawartosc
     	System.out.println("Zawartosc A: ");
     	System.out.println(" i = " + obA.i + " j = " + obA.j);
-    	//System.out.println(" k = " + obA.k );
+//    	System.out.println(" k = " + obA.k );
         // czy dostepne bedzie k
-    	System.out.println(" k = " + ((B3)obA).k);
+//    	System.out.println("((B3)obA).k = " + ((B3)obA).k);
     	//System.out.println(" k = " + ((obA.getClass())obA).k);
     	System.out.println(obA.getClass());
     	if(obA instanceof B3)

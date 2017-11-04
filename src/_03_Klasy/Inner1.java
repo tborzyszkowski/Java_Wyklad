@@ -22,7 +22,7 @@ class Outer1 {
     // definicja klasy wewnetrznej
      class Inner1 {
     	int x = 10;
-    	// int outer_x = 101;
+//    	int outer_x = 101;
     	void display() {
     		inner.x = 1001;
     		System.out.println("\ndisplay: outer_x = " + outer_x + "\ninner x = " + x + "\ninner.x = " + inner.x);

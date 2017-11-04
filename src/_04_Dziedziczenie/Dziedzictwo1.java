@@ -25,6 +25,7 @@ class B1 extends A1 {
     void setB(int a, int b, int c) {
     	setA(a,b);
     	k = c;
+//    	i = a;
     }
     // pokaz zawartosc klasy
     String zawartoscB() {
