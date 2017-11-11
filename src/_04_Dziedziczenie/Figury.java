@@ -1,5 +1,7 @@
 package _04_Dziedziczenie;
 
+import java.util.Random;
+
 // Przyklad hierarchii klas figur geometrycznych
 class Figura {
     double dim1, dim2;
@@ -57,6 +59,26 @@ class Figury {
 		System.out.println("Pole = " + figRef.pole());
 
 		figRef = f;   // figura 
-		System.out.println("Pole = " + figRef.pole());	
+		System.out.println("Pole = " + figRef.pole());
+		System.out.println("-----------------");
+		
+		Random rand = new Random();
+		
+		switch (rand.nextInt(3)) {
+		case 0:
+			figRef = f;
+			break;
+		case 1:
+			figRef = p;
+			break;
+		case 2:
+			figRef = t;
+			break;
+		default:
+			System.out.println("No Way");
+			break;
+		};
+		System.out.println("Pole  = " + figRef.pole());
+		System.out.println("Klasa = " + figRef.getClass());
     }
 } 

@@ -8,14 +8,16 @@ class AA {
     int testThis() { return this.test();}
 }
 class BB extends AA { 
-    int m(){ return 2;}
+    int m(){ return super.m(); } //return 2;}
 //    int testSuper() { return super.test(); }
     int testSuper() { return this.test(); }
-    int test() { return super.m();}
+    int superOne() { return super.m(); }
+    int test() { return this.m();}
 //    int test() { return m();}
 }
 class CC extends BB { 
     int m() { return 3; }
+    int superTwo() {return superOne(); }
     int testSuper() { return super.m(); }
 //    int test() { return super.m();}
 
@@ -24,10 +26,8 @@ class DynWia{
     public static void main(String[] args) {
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis());
-	System.out.println(b.test() + " " + b.testSuper() + " " + 
-			   b.testThis());
-	System.out.println(c.test() + " " + c.testSuper() + " " + 
-			   c.testThis());
+	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper());
+	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper());
   }
 }
 
