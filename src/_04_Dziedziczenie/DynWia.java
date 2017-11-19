@@ -8,7 +8,7 @@ class AA {
     int testThis() { return this.test();}
 }
 class BB extends AA { 
-    int m(){ return super.m(); } //return 2;}
+    int m(){ return 2; }//return super.m(); } //return 2;}
 //    int testSuper() { return super.test(); }
     int testSuper() { return this.test(); }
     int superOne() { return super.m(); }

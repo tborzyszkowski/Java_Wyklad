@@ -14,9 +14,9 @@ class AO2 {
     	System.out.println(" i = " + i + " j = " + j);
     }
     // reprezentacja napisowa
-//    public String toString() {
-//    	return "A: i = " + i + " j = " + j;
-//    }
+    public String toString() {
+    	return "A: i = " + i + " j = " + j;
+    }
 }
 
 class BO2 extends AO2 {
@@ -33,9 +33,9 @@ class BO2 extends AO2 {
     // reprezentacja napisowa
     // metoda ta takze nadpisuje metode toString z A 
     // ale wywoluje metode z A przez super
-//    public String toString() {
-//    	return "B: " + super.toString() + " k = " + k;
-//    }
+    public String toString() {
+    	return "B: " + super.toString() + " k = " + k;
+    }
 }
 // klasa testujaca
 class Overriding2 {

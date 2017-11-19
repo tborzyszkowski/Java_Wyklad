@@ -6,7 +6,7 @@ class AK {
     	//super();
     	i=5;
     	//super();
-    	System.out.println("Konstruktor z A");
+    	System.out.println("Konstruktor z A: " + i);
     }
     AK(){
     	//super();
@@ -15,17 +15,17 @@ class AK {
 }
 class BK extends AK {
     BK(int i) {
-//    	super(i+1);
-    	System.out.println("Konstruktor z B");
+    	super(i+1);
+    	System.out.println("Konstruktor z B: " + i);
     }
     BK(){//super();
     	}
     }
 class CK extends BK {
     CK() {
-    	super();
-//    	super(1);	
-    	System.out.println("Konstruktor z C");
+//    	super();
+    	super(2);	
+    	System.out.println("Konstruktor z C()");
     }
 }
 // klasa testujaca
