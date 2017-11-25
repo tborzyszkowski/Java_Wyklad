@@ -26,7 +26,7 @@ class TestIface {
 		Callback c = new Client();
 
 		c.callback(42);
-		// c.nonIfaceMeth();
+//		c.nonIfaceMeth();
 		((Client) c).nonIfaceMeth();
 	}
 }
