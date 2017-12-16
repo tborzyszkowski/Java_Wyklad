@@ -3,8 +3,8 @@ import java.util.ArrayList;
 
 class ForLoop {
 	public static void main(String args[]) {
-		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-		int result = 0;
+		long a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		long result = 0;
 
 		// normalna petla for
 		for (int i = 0; i < a.length; i++)
@@ -13,8 +13,8 @@ class ForLoop {
 
 		// inna forma petli for
 		result = 0;
-		for (int i : a)
-			result += i;
+		for (long x : a)
+			result += x;
 		System.out.println(result);
 
 		ArrayList<String> al = new ArrayList<String>();
