@@ -10,7 +10,7 @@ public class ArithExTest {
 		//fail("Not yet implemented"); // TODO
 
 		// check if multiply(10,5) returns 50
-		assertEquals("10 x 5 must be 50", 5, ArithEx.multiply(10, 5));
+		assertEquals("10 x 5 must be 50", 50, ArithEx.multiply(10, 5));
 	}
 	@Test
 	public void testAdd() {

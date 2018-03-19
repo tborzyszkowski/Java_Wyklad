@@ -47,6 +47,10 @@ class MultiThreadDemo {
 		new NewThread11("---6--- ");
 		new NewThread11("---7--- ");
 		new NewThread11("---8--- ");
+		new NewThread11("---9--- ");
+		new NewThread11("---10-- ");
+		new NewThread11("---11-- ");
+		new NewThread11("---12-- ");
 
 		try { // czekaj na zakonczenie wszystkich watkow
 			Thread.sleep(1000);
