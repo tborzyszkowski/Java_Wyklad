@@ -15,7 +15,8 @@ class ArrayListDemo{
 	a1.add("D");
 	a1.add("F");
 	a1.add(1,"A2");
-	a1.set(1,"A3");
+	a1.add(1,"A3");
+	//a1.set(1,"A3");
 	a1.add(3,new Integer(3));
 
 	System.out.println("Rozmiar po dodaniu   : " + a1.size());

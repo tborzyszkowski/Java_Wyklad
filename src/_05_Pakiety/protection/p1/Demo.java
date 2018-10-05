@@ -1,5 +1,6 @@
 package _05_Pakiety.protection.p1;
 
+
 public class Demo {
 
 	public static void main(String args[]) {

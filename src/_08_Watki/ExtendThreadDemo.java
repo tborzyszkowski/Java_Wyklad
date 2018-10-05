@@ -17,9 +17,10 @@ class NewThread2 extends Thread {
 		int a = 0;
 		try {
 
-			for (int i = 1000; i > 0; i--) {
-				Thread.sleep(1);
-				a++;
+			for (int i = 100000; i > 0; i--) {
+				//Thread.sleep(1);
+				//a++;
+				a = (int)Math.sin(a + 1) + 1;
 				//System.out.println("Nowy watek      > " + i);
 			}
 		} catch (// InterruptedException e
@@ -37,16 +38,17 @@ class ExtendThreadDemo {
 		new NewThread2(); // utworz nowy watek
 		Thread t = Thread.currentThread();
 		long time1 = System.currentTimeMillis(), 
-				time2;
+				time2, a = 0;;
 
 		t.setName("Watek glowny");
 		System.out.println("Watek glowny    : " + t);
 		try {
-			for (int i = 100; i > 0; i--) {
+			for (int i = 10000; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
-				Thread.sleep(10);
+				a++;
+				//Thread.sleep(0);
 			}
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			System.out.println("Watek glowny przerwany");
 		}
 		time2 = System.currentTimeMillis();

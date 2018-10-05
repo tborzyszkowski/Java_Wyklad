@@ -35,7 +35,7 @@ class PriorityDemo {
 
 		Clicker hi[] = new Clicker[n];
 		for (int i = 0; i < n; i++)
-			hi[i] = new Clicker(Thread.NORM_PRIORITY + 5);
+			hi[i] = new Clicker(Thread.NORM_PRIORITY + 4);
 		Clicker m[] = new Clicker[n];
 		for (int i = 0; i < n; i++)
 			m[i] = new Clicker(Thread.NORM_PRIORITY + 0);

@@ -9,8 +9,8 @@ class MyComp<E extends Comparable<E>> implements Comparator<E> {
 //		 return b.compareTo(a);
 //		 return a.compareTo(b);
 		return (a.toString().length() < b.toString().length() ? -1 :
-			(a.toString().length() > b.toString().length() ? 1 : 
-				a.compareTo(b) ));
+					(a.toString().length() > b.toString().length() ? 1 : 
+						a.compareTo(b) ));
 	}
 }
 
