@@ -3,7 +3,7 @@ package Laboratorium.Geometria;
 public class Punkt {
 	private double x;
 	private double y;
-	
+
 	public Punkt() {
 	}
 
@@ -30,31 +30,33 @@ public class Punkt {
 
 	@Override
 	public String toString() {
-		return "[ "+ x + ", " + y + " ]";
+		return "[ " + x + ", " + y + " ]";
 	}
-	
+
 	@Override
-    public boolean equals(Object obj) {
+	public boolean equals(Object obj) {
 		if (this == obj)
-	            return true;
-	    if (obj == null)
-	            return false;
-	    if (this.getClass() != obj.getClass())
-	            return false;
-	        
-	    Punkt other = (Punkt) obj;
-	    if(this.getX() == other.getX())
-	    	if(this.getY() == other.getY())
-	    		return true;
-	    	else
-	    		return false;
-	    else
-	    	return false;
+			return true;
+		if (obj == null)
+			return false;
+		if (this.getClass() != obj.getClass())
+			return false;
+		if (! (obj instanceof Punkt))
+			return false;
+		
+		Punkt other = (Punkt) obj;
+		if (this.getX() == other.getX())
+			if (this.getY() == other.getY())
+				return true;
+			else
+				return false;
+		else
+			return false;
 	}
-	
+
 	public double odleglosc(Punkt p) {
-		double x2 = (this.getX() - p.getX())*(this.getX() - p.getX());
-		double y2 = (this.getY() - p.getY())*(this.getY() - p.getY());
+		double x2 = (this.getX() - p.getX()) * (this.getX() - p.getX());
+		double y2 = (this.getY() - p.getY()) * (this.getY() - p.getY());
 		return Math.sqrt(x2 + y2);
 	}
 }
