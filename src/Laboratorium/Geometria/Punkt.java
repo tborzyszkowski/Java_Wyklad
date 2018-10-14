@@ -33,5 +33,9 @@ public class Punkt {
 		return "[ "+ x + ", " + y + " ]";
 	}
 	
-	
+	public double odleglosc(Punkt p) {
+		double x2 = (this.getX() - p.getX())*(this.getX() - p.getX());
+		double y2 = (this.getY() - p.getY())*(this.getY() - p.getY());
+		return Math.sqrt(x2 + y2);
+	}
 }
