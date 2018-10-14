@@ -6,6 +6,8 @@ class BoolDemo {
 		boolean b;
 
 		b = false;
+		b = 1 > 2;
+		
 		System.out.println("b = " + b);
 		b = true;
 //		b = 1;
