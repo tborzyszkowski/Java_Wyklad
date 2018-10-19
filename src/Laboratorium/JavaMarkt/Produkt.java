@@ -15,17 +15,19 @@ public class Produkt {
 		return nazwa;
 	}
 	public void setNazwa(String nazwa) {
-		boolean war = nazwa.contains("ab");
-		if (nazwa.contains("ab"))
-			this.nazwa = nazwa;
+//		boolean war = nazwa.contains("ab");
+//		if (nazwa.contains("ab"))
+//			this.nazwa = nazwa;
+		this.nazwa = nazwa;
 	}
 	public double getCena() {
 		return cena;
 	}
 	public void setCena(double cena) {
-		boolean war = cena > 10;
-		if (cena > 10)
-			this.cena = cena;
+//		boolean war = cena > 10;
+//		if (cena > 10)
+//			this.cena = cena;
+		this.cena = cena;
 	}
 
 	@Override
