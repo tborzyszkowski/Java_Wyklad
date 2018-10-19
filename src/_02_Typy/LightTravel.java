@@ -9,7 +9,7 @@ class LightTravel{
 	long seconds = days * 24 * 60 * 60;   // tyle to sekund
 	long distance = lightSpeed * seconds; // tyle przebedzie swiatlo
         // teraz odpowiedz
-	System.out.print("W ciagu " + days);
+	System.out.print("W ciagu " + days + " sekund: " + seconds);
 	System.out.print(" dni swiatlo przebedzie okolo ");
 	System.out.println("\n" + distance + " kilometrow");
 
