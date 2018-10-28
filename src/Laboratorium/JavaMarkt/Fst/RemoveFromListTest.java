@@ -1,4 +1,4 @@
-package Laboratorium.JavaMarkt;
+package Laboratorium.JavaMarkt.Fst;
 
 import java.util.*;
 

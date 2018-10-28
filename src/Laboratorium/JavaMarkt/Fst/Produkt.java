@@ -1,4 +1,4 @@
-package Laboratorium.JavaMarkt;
+package Laboratorium.JavaMarkt.Fst;
 
 public class Produkt {
 	private String nazwa;
