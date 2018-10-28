@@ -25,7 +25,7 @@ class PassOb {
 }
 
 // Klasa testujaca
-class PassObTest {
+class ParameterDemo {
 	public static void main(String args[]) {
 		PassOb ob1 = new PassOb(100, 22);
 		PassOb ob2 = new PassOb(ob1);

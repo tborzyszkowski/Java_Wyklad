@@ -5,6 +5,8 @@ class TwoDAgain{
     public static void main(String args[]) {
         // alokacja kolumn
 	int twoD[][] = new int[4][];
+	
+//	twoD[3][1] = 5;
         // alokacja wierszy
 
 	for(int i=0;i<twoD.length; i++){

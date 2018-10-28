@@ -21,6 +21,25 @@ class CallBy {
 		o.b /= 2;
 		System.out.println("Wewn: a = " + o.a + " b = " + o.b);
 	}
+	void fun(BoxedInt x) {
+		x.setX(x.getX() * 2);
+	}
+}
+
+class BoxedInt{
+	private int x;
+
+	public BoxedInt(int x) {
+		this.x = x;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
 }
 // Klasa testujaca
 public class CallByDemo {
@@ -40,6 +59,12 @@ public class CallByDemo {
 		ob.ByRef(ob);
 		System.out.println("Po wywolaniu przez zmienna: ");
 		System.out.println(" a = " + ob.a + " b = " + ob.b);
+		
+		int xx = 5;
+		BoxedInt x = new BoxedInt(xx);
+		ob.fun(x);
+		xx = x.getX();
+		
 	}
 }
 

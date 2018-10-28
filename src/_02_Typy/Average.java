@@ -8,8 +8,13 @@ class Average {
 
 		for (int i = 0; i < nums.length; i++)
 			result = result + nums[i];
+		System.out.println("Wartosc srednia = " + result / nums.length);
 
-		nums = new double[3];
+		result = 0;
+		for(double d : nums)
+			result += d;
+		
+//		nums = new double[3];
 		System.out.println("Wartosc srednia = " + result / nums.length);
 	}
 }

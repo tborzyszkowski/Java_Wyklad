@@ -20,5 +20,11 @@ class Conversion {
 		System.out.println("d = " + d + " b = " + b);
 		
 		System.out.println((Integer.MAX_VALUE ) + " " + Integer.MIN_VALUE);
+		
+		long ll = 1234567890123456789L;
+		double dd = ll;
+		float ff = ll;
+		ll = (long)ff;
+		
 	}
 }

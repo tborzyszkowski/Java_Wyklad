@@ -6,6 +6,7 @@ class Box1 {
 	double width;
 	double height;
 	double depth;
+	
 	public boolean equals(Object o){
 		Box1 box = (Box1) o;
 		if (this.width == box.width && this.height == box.height && this.depth == box.depth)
