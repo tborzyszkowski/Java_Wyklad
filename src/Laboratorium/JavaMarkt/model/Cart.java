@@ -1,10 +1,11 @@
 package Laboratorium.JavaMarkt.model;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Cart {
-	ArrayList<CartItem> items = new ArrayList<>();
-	ArrayList<IPromotion> promotions = new ArrayList<>();
+	List<CartItem> items = new ArrayList<>();
+	List<IPromotion> promotions = new ArrayList<>();
+	
 	double promotionSumOfProducts = 0;
 	
 	public double totalPriceOfProducts(){
@@ -19,7 +20,7 @@ public class Cart {
 			sum += it.getCurrentPrice();
 		return sum;
 	}
-	public ArrayList<CartItem> getItems() {
+	public List<CartItem> getItems() {
 		return items;
 	}
 	
@@ -29,11 +30,22 @@ public class Cart {
 		return this;
 	}
 
+	public Cart removeProduct(Product p) {
+		items.remove(new CartItem(p));
+		promotionSumOfProducts -= p.getPrice(); 
+		return this;
+	}
+	
 	public Cart addPromotion(IPromotion p) {
 		promotions.add(p);
 		return this;
 	}
 	
+	public Cart removePromotion(IPromotion p) {
+		promotions.remove(p);
+		return this;
+	}
+
 	public Cart applyPromotions(){
 		for(IPromotion p : promotions){
 			p.CalculateOffer(this);
@@ -42,8 +54,8 @@ public class Cart {
 	}
 	@Override
 	public String toString() {
-		return "Cart [\nitems=" + items + "\npromotions=" + promotions + "\npromotionSumOfProducts="
-				+ promotionSumOfProducts + "]";
+		return "Cart(\nitems=" + items + "\npromotions=" + promotions + "\npromotionSumOfProducts="
+				+ promotionSumOfProducts + "\n)";
 	}
 
 }

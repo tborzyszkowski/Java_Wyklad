@@ -26,7 +26,28 @@ public class CartItem {
 	}
 
 	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (this.getClass() != obj.getClass())
+			return false;
+		if (! (obj instanceof CartItem))
+			return false;
+		
+		CartItem other = (CartItem) obj;
+		if (this.getProduct().equals(other.getProduct()))
+			if (this.getCurrentPrice() == other.getCurrentPrice())
+				return true;
+			else
+				return false;
+		else
+			return false;
+	}
+	
+	@Override
 	public String toString() {
-		return "CartItem [product=" + product + ", currentPrice=" + currentPrice + "]";
+		return "CartItem( " + product + ", " + currentPrice + " )";
 	}
 }

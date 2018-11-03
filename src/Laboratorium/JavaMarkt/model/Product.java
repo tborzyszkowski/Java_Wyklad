@@ -1,5 +1,7 @@
 package Laboratorium.JavaMarkt.model;
 
+import Laboratorium.Geometria.Punkt;
+
 public class Product {
 	private String name;
 	private double price;
@@ -24,8 +26,29 @@ public class Product {
 	}
 	
 	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (this.getClass() != obj.getClass())
+			return false;
+		if (! (obj instanceof Product))
+			return false;
+		
+		Product other = (Product) obj;
+		if (this.getName() == other.getName())
+			if (this.getPrice() == other.getPrice())
+				return true;
+			else
+				return false;
+		else
+			return false;
+	}
+	
+	@Override
 	public String toString() {
-		return "Product [name=" + name + ", price=" + price + "]";
+		return "Product( " + name + ", " + price + " )";
 	}
 	
 }

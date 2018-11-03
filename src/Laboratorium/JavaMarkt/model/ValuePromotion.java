@@ -20,7 +20,7 @@ public class ValuePromotion implements IPromotion{
 
 	@Override
 	public String toString() {
-		return "ValuePromotion [5% off]";
+		return "ValuePromotion( 5% off )";
 	}
 	
 }

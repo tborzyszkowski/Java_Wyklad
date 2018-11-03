@@ -31,7 +31,7 @@ public class MugPromotion implements IPromotion{
 
 	@Override
 	public String toString() {
-		return "MugPromotion [Kubek promocyjny]";
+		return "MugPromotion( Kubek promocyjny )";
 	}
 	
 }
