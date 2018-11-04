@@ -14,6 +14,10 @@ class Readonly{
 	public Readonly(double rr) {
 		this.rr = rr;
 	}
+	
+//	void setRR(double val) {
+//		this.rr = val;
+//	}
 }
 
 public class FinalTest {

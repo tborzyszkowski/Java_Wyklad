@@ -42,7 +42,7 @@ class Dziedzictwo3 {
     			" k = " + obB.k + "\n");
 	
     // obA bedzie wskazywal na obB
-    	obA = obB;
+    	obA = obB33;
     //	obB = obA;
 	// wypisujemy zawartosc
     	System.out.println("Zawartosc A: ");
@@ -52,8 +52,8 @@ class Dziedzictwo3 {
 //    	System.out.println("((B3)obA).k = " + ((B3)obA).k);
     	//System.out.println(" k = " + ((obA.getClass())obA).k);
     	System.out.println(obA.getClass());
-    	if(obA instanceof B3)
-    		System.out.println(" k = " + ((B3)obA).k);
+    	if(obA instanceof B33)
+    		System.out.println(" k = " + ((B33)obA).k);
     	else
     		System.out.println("Zly typ");
    }

@@ -40,7 +40,7 @@ class B2 extends A2 {
 	// ustawianie wartosci
 	void setB(int a, int b, int c) {
 		setA(a, b);
-		// j= a+ b;
+//		j = a + b;
 		setJ(a + b);
 		k = c;
 	}

@@ -1,20 +1,29 @@
 package _05_Pakiety.InterfejsyEx;
 
-interface Soldat{
+interface Zolnierz{
 	void Strzelaj();
 }
 
 interface Pilkarz{
 	void Strzelaj();
 }
-public class Zolnierz implements Soldat, Pilkarz{
+public class Obywatel implements Zolnierz, Pilkarz{
 
 	public void Strzelaj() {
 		// ?????????????????????
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Obywatel z = new Obywatel();
+		
+		Obywatel s;
+		Pilkarz p;
+		
+		s = z;
+		s.Strzelaj();
+		
+		p = z;
+		p.Strzelaj();
 
 	}
 

@@ -23,6 +23,8 @@ class Question implements SharedConstants {
 			return YES; // 30%
 		else if (prob < 75)
 			return LATER; // 15%
+		else if (prob < 85)
+			return MAYBE; // 10%
 		else if (prob < 98)
 			return SOON; // 13%
 		else
@@ -32,39 +34,56 @@ class Question implements SharedConstants {
 }
 
 class AskMe implements SharedConstants {
-	static void answer(int result) {
+	static String answer(int result) {
+		String wynik = "";
 		switch (result) {
 		case NO:
-			System.out.println("No");
+			wynik = "No";
 			break;
 		case YES:
-			System.out.println("Yes");
+			wynik = "Yes";
 			break;
 		case MAYBE:
-			System.out.println("Maybe");
+			wynik = "Maybe";
 			break;
 		case LATER:
-			System.out.println("Later");
+			wynik = "Later";
 			break;
 		case SOON:
-			System.out.println("Soon");
+			wynik = "Soon";
 			break;
 		case NEVER:
-			System.out.println("Never");
+			wynik = "Never";
 			break;
 		}
+		return wynik;
 	}
 
 	public static void main(String args[]) {
-		Question q = new Question();
 
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
-		answer(q.ask());
+		Question q = new Question();
+		int wyniki[] = { 0, 0, 0, 0, 0, 0 };
+		int n = 100 * 1000 * 1000;
+		for (int i = 0; i < n; i++) {
+			wyniki[q.ask()]++;
+		}
+		for (int i = 0; i < wyniki.length; i++) {
+			System.out.print(answer(i) + "\t");
+		}
+		System.out.println();
+		for (int i = 0; i < wyniki.length; i++) {
+			System.out.print(((100.0 * wyniki[i]) / n) + "\t");
+		}
+		System.out.println();
+		System.out.println("30\t30\t10\t15\t13\t2");
+
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
+		// answer(q.ask());
 	}
 }

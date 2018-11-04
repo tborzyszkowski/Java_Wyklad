@@ -47,6 +47,9 @@ class Stack3 {
 		for (int i = 0; i < myStack2.size(); i++)
 			myStack2.push(i);
 
+		myStack1.push(1111);
+		myStack2.push(2222);
+		
 		// zdejmujemy ze stosow
 		System.out.println("Stos myStack1:");
 		for (int i = 0; i < myStack1.size(); i++)
