@@ -9,7 +9,7 @@ class Static1 {
     static void pisz(int x) {
     	System.out.println("x = " + x);
     	System.out.println("a = " + a);
-    	System.out.println("b = " + b + "\n");
+    	System.out.println("b = " + b);
     } 
     static void test(Integer i){
     	System.out.println("i = " + i.intValue());
