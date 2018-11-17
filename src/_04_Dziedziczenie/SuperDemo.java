@@ -13,6 +13,9 @@ class A {
 		super();
 		this.i = i;
 	}
+	public String toString() {
+		return "A.i = " + i;
+	}
 }
 
 class B extends A {
@@ -20,15 +23,16 @@ class B extends A {
 
 	// konstruktor
 	B(int a, int b) {
-		// i = 1;
-		// super(a);
+		//super();
+//		i = 1;
+		super(a);
 		super.i = a; // odwolania do i w A
-		i = b;
+		this.i = b;
 	}
 
 	// reprezentacja napisowa
 	public String toString() {
-		return "A.i = " + super.i + " B.i = " + i;
+		return super.toString() + " B.i = " + i;// +super.super.toString();
 	}
 }
 
