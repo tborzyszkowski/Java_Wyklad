@@ -30,6 +30,10 @@ public class Apprentice extends BodyWorker {
 			return valueOfScholarship = 800;
 		return valueOfScholarship;
 	}
+	
+	public String assistant() {
+		return getName() + " " + getSurname();
+	}
 
 	@Override
 	public String toString() {

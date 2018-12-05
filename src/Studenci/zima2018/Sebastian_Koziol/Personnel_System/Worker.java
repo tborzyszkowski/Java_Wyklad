@@ -16,7 +16,7 @@ public  class Worker {
 	public Worker() {
 		super();
 	}
-	
+
 	public String getName() {
 		return name;
 	}
