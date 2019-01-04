@@ -3,21 +3,21 @@ package _06_Kolekcje;
 import java.util.*;
 
 // TU definiujemy nowy Comparator
-class MyComp<E extends Comparable<E>> implements Comparator<E> {
+class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 	public int compare(E a, E b) {
 //		 odwracamy porzadek
 //		 return b.compareTo(a);
 //		 return a.compareTo(b);
-		return (a.toString().length() < b.toString().length() ? -1 :
-					(a.toString().length() > b.toString().length() ? 1 : 
-						a.compareTo(b) ));
-	}
+//		return (a.toString().length() < b.toString().length() ? -1 :
+//					(a.toString().length() > b.toString().length() ? 1 : 
+//						a.compareTo(b) ));
+//	}
 }
 
-class CompDemo {
+class MyComp {
 	public static void main(String args[]) {
 		// tworzymy obiekt klasy TreeSet z nowym porzadkiem
-		TreeSet<String> ts = new TreeSet<String>(new MyComp<String>());
+		TreeSet<String> ts = new TreeSet<String>(new MyComparator<String>());
 
 		ts.add("AAAA");
 		ts.add("HH");

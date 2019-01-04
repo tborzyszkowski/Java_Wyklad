@@ -7,8 +7,8 @@ public class Test {
 		AA a = new AA();
 		BB b2 = new BB();
 		BBB b3 = new BBB();
-//		a = b2;
-		a = b3;
+		a = b2;
+//		a = b3;
 		b3 = (BBB)a;
 	}
 

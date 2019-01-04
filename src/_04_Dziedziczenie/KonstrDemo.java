@@ -19,6 +19,7 @@ class BK extends AK {
     	System.out.println("Konstruktor z B: " + i);
     }
     BK(){//super();
+    	System.out.println("Konstruktor z B()");
     	}
     }
 class CK extends BK {

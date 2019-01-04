@@ -6,7 +6,7 @@ class Exc4 {
 		int a = 0, b = 0, c = 0, j = 0;
 		Random r = new Random();
 
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 5; i++) {
 			try {
 				b = r.nextInt(); 
 				c = r.nextInt(); 
@@ -25,4 +25,3 @@ class Exc4 {
 }
 
 // Skompiluj i uruchom.
-// Jaki b�dzie efekt obs�ugi b��du i jak zachowa si� p�tla?

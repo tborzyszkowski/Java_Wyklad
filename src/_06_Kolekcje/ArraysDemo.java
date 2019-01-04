@@ -21,7 +21,7 @@ public class ArraysDemo{
 	    System.out.print(a + "\t");
 	System.out.println();
 
-	// wype�nianie
+	// wypelnianie
 	Arrays.fill(array, 2, 6, -1);
 	System.out.println("Po wypelnieniu tablica ");
 	for(int a : array)
