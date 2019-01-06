@@ -3,7 +3,6 @@ package obiektowka.projekt;
 import obiektowka.projekt.organisms.Organism;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 
 public class World {
