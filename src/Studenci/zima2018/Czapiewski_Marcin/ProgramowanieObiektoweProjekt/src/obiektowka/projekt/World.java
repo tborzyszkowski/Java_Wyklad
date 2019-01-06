@@ -143,4 +143,24 @@ public class World {
     private boolean positionOnBoard(Position position) {
         return position.getX() >= 0 && position.getY() >= 0 && position.getX() < worldX && position.getY() < worldY;
     }
+
+    @Override
+    public String toString() {
+        var result = "\nturn: " + turn + "\n";
+        for(int y = 0; y < worldY; y++) {
+            for (int x = 0; x < worldX; x++) {
+                var org = getOrganismOnPosition(new Position(x, y));
+                if (org != null) {
+                    result += org.getSign();
+                }
+                else {
+                    result += separator;
+                }
+            }
+
+            result += '\n';
+        }
+
+        return result;
+    }
 }
