@@ -6,24 +6,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Action {
-    private ActionEnum action;
+    private ActionEnum actionType;
     private Position position;
     private int value;
     private Organism organism;
 
-    public Action(ActionEnum action, Position position, int value, Organism organism) {
-        this.action = action;
+    public Action(ActionEnum actionType, Position position, int value, Organism organism) {
+        this.actionType = actionType;
         this.position = position;
         this.value = value;
         this.organism = organism;
     }
 
-    public ActionEnum getAction() {
-        return action;
+    public ActionEnum getActionType() {
+        return actionType;
     }
 
-    public void setAction(ActionEnum action) {
-        this.action = action;
+    public void setActionType(ActionEnum actionType) {
+        this.actionType = actionType;
     }
 
     public Position getPosition() {
@@ -62,6 +62,6 @@ public class Action {
                 Map.entry(ActionEnum.A_REMOVE, String.format("%s remove from %s", className, positionString))
         );
 
-        return choice.get(action);
+        return choice.get(actionType);
     }
 }

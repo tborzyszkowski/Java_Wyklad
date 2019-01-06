@@ -87,8 +87,8 @@ public abstract class Organism {
         this.world = world;
     }
 
-    public abstract void move();
-    public abstract void action();
+    public abstract Iterable<Action> move();
+    public abstract Iterable<Action> action();
     public abstract void initParams();
     public abstract Organism clone();
 
@@ -103,5 +103,22 @@ public abstract class Organism {
         }
 
         return consequences;
+    }
+
+    public boolean ifReproduce() {
+        if (power >= powerToReproduce)
+                return true;
+
+        return false;
+    }
+
+    @Override
+    public String toString() {
+        return this.getClass().getName() + ": " +
+                "power=" + power +
+                ", initiative=" + initiative +
+                ", position=" + position +
+                ", liveLength=" + liveLength +
+                '}';
     }
 }

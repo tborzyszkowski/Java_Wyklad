@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c58161c9-eabf-417c-b93a-20ea06797e12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/obiektowka/projekt/World.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/obiektowka/projekt/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obiektowka/projekt/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/obiektowka/projekt/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obiektowka/projekt/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obiektowka/projekt/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obiektowka/projekt/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="60" column="130" selection-start-line="60" selection-start-column="130" selection-end-line="60" selection-end-column="130" />
+            <state relative-caret-position="34">
+              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -47,40 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+            <state relative-caret-position="750">
+              <caret line="121" selection-start-line="121" selection-end-line="121" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#856#857#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1134#1135#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1241#1242#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1334#1335#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
-                <element signature="e#1413#1414#0" expanded="true" />
-                <element signature="e#1474#1475#0" expanded="true" />
-                <element signature="e#1530#1531#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-                <element signature="e#1624#1625#0" expanded="true" />
-                <element signature="e#1656#1657#0" expanded="true" />
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1715#1716#0" expanded="true" />
-                <element signature="e#1756#1757#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
                 <element signature="e#1790#1791#0" expanded="true" />
               </folding>
             </state>
@@ -88,10 +62,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#252#253#0" expanded="true" />
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#406#407#0" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+                <element signature="e#873#874#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="393">
+              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,16 +99,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-              <folding>
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#214#215#0" expanded="true" />
-                <element signature="e#245#246#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-                <element signature="e#583#584#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,13 +120,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/ActionEnum.java" />
-        <option value="$PROJECT_DIR$/src/obiektowka/projekt/Action.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/Position.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/Action.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/World.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -151,6 +141,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -180,13 +171,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546695349401" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546780695973" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
@@ -226,18 +216,19 @@
       <workItem from="1546511367952" duration="2552000" />
       <workItem from="1546690198374" duration="1197000" />
       <workItem from="1546691773267" duration="476000" />
-      <workItem from="1546692847771" duration="2466000" />
+      <workItem from="1546692847771" duration="3100000" />
+      <workItem from="1546773048613" duration="6504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6817000" />
+    <option name="totallyTimeSpent" value="13955000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -296,74 +287,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
           <folding>
-            <element signature="e#190#191#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1790#1791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#873#874#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="60" column="130" selection-start-line="60" selection-start-column="130" selection-end-line="60" selection-end-column="130" />
+        <state relative-caret-position="34">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="104" column="28" selection-start-line="104" selection-start-column="28" selection-end-line="104" selection-end-column="28" />
+        <state relative-caret-position="393">
+          <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1134#1135#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1241#1242#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-            <element signature="e#1413#1414#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1530#1531#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1624#1625#0" expanded="true" />
-            <element signature="e#1656#1657#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1715#1716#0" expanded="true" />
-            <element signature="e#1756#1757#0" expanded="true" />
-            <element signature="e#1790#1791#0" expanded="true" />
           </folding>
         </state>
       </provider>
