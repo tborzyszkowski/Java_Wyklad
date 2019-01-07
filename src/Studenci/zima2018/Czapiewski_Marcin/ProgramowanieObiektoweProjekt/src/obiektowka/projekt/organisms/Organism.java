@@ -8,13 +8,13 @@ import obiektowka.projekt.World;
 import java.util.ArrayList;
 
 public abstract class Organism {
-    private int power;
-    private int initiative;
-    private Position position;
-    private int liveLength;
-    private int powerToReproduce;
-    private char sign;
-    private World world;
+    protected int power;
+    protected int initiative;
+    protected Position position;
+    protected int liveLength;
+    protected int powerToReproduce;
+    protected String sign;
+    protected World world;
 
     Organism(Organism organism) {
         power = organism.power;
@@ -71,11 +71,11 @@ public abstract class Organism {
         this.powerToReproduce = powerToReproduce;
     }
 
-    public char getSign() {
+    public String getSign() {
         return sign;
     }
 
-    public void setSign(char sign) {
+    public void setSign(String sign) {
         this.sign = sign;
     }
 

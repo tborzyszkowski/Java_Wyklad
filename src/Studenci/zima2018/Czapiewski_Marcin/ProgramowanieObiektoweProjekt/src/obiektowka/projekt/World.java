@@ -1,9 +1,12 @@
 package obiektowka.projekt;
 
+import obiektowka.projekt.organisms.Animal;
 import obiektowka.projekt.organisms.Organism;
+import obiektowka.projekt.organisms.Wolf;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
 
 public class World {
     private int worldX;
@@ -11,7 +14,7 @@ public class World {
     private int turn;
     private ArrayList<Organism> organisms;
     private ArrayList<Organism> newOrganisms;
-    private char separator;
+    private String separator;
 
     public World(int worldX, int worldY) {
         this.worldX = worldX;
@@ -19,7 +22,7 @@ public class World {
         turn = 0;
         organisms = new ArrayList<>();
         newOrganisms = new ArrayList<>();
-        separator = ' ';
+        separator = " ";
     }
 
     public void makeTurn() {
@@ -46,7 +49,7 @@ public class World {
             org.setPower(org.getPower() + 1);
 
             if (org.getLiveLength() < 1) {
-                System.out.println(getClass().getName() + ": died of old age at: " + org.getPosition().toString());
+                System.out.println(org. getClass().getSimpleName() + ": died of old age at: " + org.getPosition().toString());
             }
         }
 
@@ -93,7 +96,7 @@ public class World {
         return organism;
     }
 
-    public Iterable<Position> getNeighbouringPositions(Position position) {
+    public List<Position> getNeighbouringPositions(Position position) {
         var neighbouringPositions = new ArrayList<Position>();
         for (int y = -1; y < 2; y++) {
             for (int x = -1; x < 2; x++) {
@@ -107,7 +110,7 @@ public class World {
         return neighbouringPositions;
     }
 
-    public Iterable<Position> filterFreePositions(Iterable<Position> positions) {
+    public List<Position> filterFreePositions(Iterable<Position> positions) {
         var freePositions = new ArrayList<Position>();
 
         for (var pos : positions) {
@@ -119,8 +122,34 @@ public class World {
         return freePositions;
     }
 
+    public List<Position> filterPositionsWithoutAnimals(Iterable<Position> positions) {
+        var freePositions = new ArrayList<Position>();
+
+        for (var pos : positions) {
+            var orgFromPos = getOrganismOnPosition(pos);
+            if (orgFromPos == null || !(orgFromPos instanceof Animal)) {
+                freePositions.add(pos);
+            }
+        }
+
+        return freePositions;
+    }
+
+    public List<Position> filterPositionsWithOtherSpecies(Iterable<Position> positions) {
+        var fields = new ArrayList<Position>();
+
+        for (var pos : positions) {
+            var orgFromPos = getOrganismOnPosition(pos);
+            if (orgFromPos != null && !(orgFromPos instanceof Wolf)) {
+                fields.add(pos);
+            }
+        }
+
+        return fields;
+    }
+
     private void makeMove(Action action) {
-        System.out.println(action);
+        System.out.println(action.toString());
 
         var actionType = action.getActionType();
 

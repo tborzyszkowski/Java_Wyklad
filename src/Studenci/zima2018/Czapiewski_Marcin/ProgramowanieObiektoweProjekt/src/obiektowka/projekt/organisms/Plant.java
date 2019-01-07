@@ -1,13 +1,16 @@
 package obiektowka.projekt.organisms;
 
 import obiektowka.projekt.Action;
+import obiektowka.projekt.ActionEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
-public class Plant extends Organism {
+public abstract class Plant extends Organism {
     Plant(Plant plant) {
         super(plant);
     }
@@ -26,23 +29,23 @@ public class Plant extends Organism {
         var result = new ArrayList<Action>();
 
         if (ifReproduce()) {
-        //TODO
+            var pomPositions = getFreeNeighbouringPositions(super.position);
+
+            if (!pomPositions.isEmpty()) {
+                Random generator = new Random();
+
+                var newPosition = pomPositions.get(generator.nextInt(pomPositions.size()));
+                var newPlant = clone();
+                newPlant.position = newPosition;
+                power = power / 2;
+                result.add(new Action(ActionEnum.A_ADD, newPosition, 0,newPlant));
+            }
         }
 
         return result;
     }
 
-    public Iterable<Position> getFreeNeighbouringPositions() {
-        return  null;
-    }
-
-    @Override
-    public void initParams() {
-
-    }
-
-    @Override
-    public Organism clone() {
-        return null;
+    public List<Position> getFreeNeighbouringPositions(Position position) {
+        return world.filterFreePositions(world.getNeighbouringPositions(position));
     }
 }

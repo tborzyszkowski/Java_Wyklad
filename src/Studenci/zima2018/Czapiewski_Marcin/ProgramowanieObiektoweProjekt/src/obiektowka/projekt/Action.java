@@ -52,10 +52,10 @@ public class Action {
 
     @Override
     public String toString() {
-        var className = this.organism.getClass().getName();
+        var className = this.organism.getClass().getSimpleName();
         var positionString = position.toString();
 
-        HashMap<ActionEnum, String> choice = (HashMap<ActionEnum, String>)Map.ofEntries(
+        Map<ActionEnum, String> choice = Map.ofEntries(
                 Map.entry(ActionEnum.A_ADD, String.format("%s: add at: %s", className, positionString)),
                 Map.entry(ActionEnum.A_INCREASEPOWER, String.format("%s increase power: %s", className, value)),
                 Map.entry(ActionEnum.A_MOVE, String.format("%s move from: %s to: %s", className, organism.getPosition().toString(), positionString)),
