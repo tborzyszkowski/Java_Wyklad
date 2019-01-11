@@ -1,12 +1,14 @@
 package obiektowka.projekt;
 
 import obiektowka.projekt.organisms.Animal;
+import obiektowka.projekt.organisms.Grass;
 import obiektowka.projekt.organisms.Organism;
 import obiektowka.projekt.organisms.Wolf;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 
 public class World {
     private int worldX;
@@ -57,12 +59,24 @@ public class World {
 
         newOrganisms.removeIf(n -> !positionOnBoard(n.getPosition()));
 
+        growGrass();
+
         organisms.addAll(newOrganisms);
         organisms.sort(Comparator.comparing(Organism::getInitiative).reversed());
 
         newOrganisms.clear();
 
         turn++;
+    }
+
+    private void growGrass() {
+        var freePositions = getFreePositions();
+        var rnd = new Random();
+        for (var pos : freePositions) {
+            if (rnd.nextInt() % 4 == 0) {
+                newOrganisms.add(new Grass(pos, this));
+            }
+        }
     }
 
     public boolean addOrganism(Organism newOrganism) {
@@ -74,6 +88,20 @@ public class World {
         }
 
         return false;
+    }
+
+    private List<Position> getFreePositions() {
+        var freePositions = new ArrayList<Position>();
+        for (int i = 0; i < worldX; i++) {
+            for (int j = 0; j < worldY; j++) {
+                var position = new Position(i, j);
+                if (getOrganismOnPosition(position) == null) {
+                    freePositions.add(position);
+                }
+            }
+        }
+
+        return freePositions;
     }
 
     public Organism getOrganismOnPosition(Position position) {
