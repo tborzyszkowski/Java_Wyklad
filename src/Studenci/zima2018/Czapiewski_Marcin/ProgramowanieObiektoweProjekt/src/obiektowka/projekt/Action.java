@@ -22,10 +22,6 @@ public class Action {
         return actionType;
     }
 
-    public void setActionType(ActionEnum actionType) {
-        this.actionType = actionType;
-    }
-
     public Position getPosition() {
         return position;
     }
@@ -38,16 +34,8 @@ public class Action {
         return value;
     }
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     public Organism getOrganism() {
         return organism;
-    }
-
-    public void setOrganism(Organism organism) {
-        this.organism = organism;
     }
 
     @Override

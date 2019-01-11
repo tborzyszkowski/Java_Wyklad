@@ -30,6 +30,9 @@ public class Main {
         for(int i = 0; i < 100; i++) {
             scan.nextLine();
 
+            System.out.print("\033[H\033[2J");
+            System.out.flush();
+
             javaWorld.makeTurn();
             System.out.println(javaWorld);
         }

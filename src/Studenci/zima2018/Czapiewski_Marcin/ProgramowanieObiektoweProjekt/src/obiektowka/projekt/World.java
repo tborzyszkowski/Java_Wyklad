@@ -35,7 +35,7 @@ public class World {
 
                 if (positionOnBoard(org.getPosition())) {
                     actions = org.action();
-                    for(var a : actions) {
+                    for (var a : actions) {
                         makeMove(a);
                     }
                 }
@@ -49,7 +49,7 @@ public class World {
             org.setPower(org.getPower() + 1);
 
             if (org.getLiveLength() < 1) {
-                System.out.println(org. getClass().getSimpleName() + ": died of old age at: " + org.getPosition().toString());
+                System.out.println(org.getClass().getSimpleName() + ": died of old age at: " + org.getPosition().toString());
             }
         }
 
@@ -114,7 +114,7 @@ public class World {
         var freePositions = new ArrayList<Position>();
 
         for (var pos : positions) {
-            if(getOrganismOnPosition(pos) == null) {
+            if (getOrganismOnPosition(pos) == null) {
                 freePositions.add(pos);
             }
         }
@@ -155,15 +155,12 @@ public class World {
 
         if (actionType == ActionEnum.A_ADD) {
             newOrganisms.add(action.getOrganism());
-        }
-        else if (actionType == ActionEnum.A_INCREASEPOWER) {
+        } else if (actionType == ActionEnum.A_INCREASEPOWER) {
             var currentPower = action.getOrganism().getPower();
             action.getOrganism().setPower(currentPower + action.getValue());
-        }
-        else if (actionType == ActionEnum.A_MOVE) {
+        } else if (actionType == ActionEnum.A_MOVE) {
             action.getOrganism().setPosition(action.getPosition());
-        }
-        else if (actionType == ActionEnum.A_REMOVE) {
+        } else if (actionType == ActionEnum.A_REMOVE) {
             action.getOrganism().setPosition(new Position(-1, -1));
         }
     }
@@ -175,13 +172,12 @@ public class World {
     @Override
     public String toString() {
         var result = "\nturn: " + turn + "\n";
-        for(int y = 0; y < worldY; y++) {
+        for (int y = 0; y < worldY; y++) {
             for (int x = 0; x < worldX; x++) {
                 var org = getOrganismOnPosition(new Position(x, y));
                 if (org != null) {
                     result += org.getSign();
-                }
-                else {
+                } else {
                     result += separator;
                 }
             }

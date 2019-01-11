@@ -6,6 +6,8 @@ import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
 public abstract class Organism {
     protected int power;
@@ -43,10 +45,6 @@ public abstract class Organism {
         return initiative;
     }
 
-    public void setInitiative(int initiative) {
-        this.initiative = initiative;
-    }
-
     public Position getPosition() {
         return position;
     }
@@ -63,42 +61,40 @@ public abstract class Organism {
         this.liveLength = liveLength;
     }
 
-    public int getPowerToReproduce() {
-        return powerToReproduce;
-    }
-
-    public void setPowerToReproduce(int powerToReproduce) {
-        this.powerToReproduce = powerToReproduce;
-    }
-
     public String getSign() {
         return sign;
     }
 
-    public void setSign(String sign) {
-        this.sign = sign;
-    }
-
-    public World getWorld() {
-        return world;
-    }
-
-    public void setWorld(World world) {
-        this.world = world;
-    }
-
     public abstract Iterable<Action> move();
-    public abstract Iterable<Action> action();
+
     public abstract void initParams();
+
     public abstract Organism clone();
+
+    public Iterable<Action> action() {
+        var result = new ArrayList<Action>();
+        var birthPositions = getFreeNeighbouringPositions();
+
+        if (ifReproduce() && !birthPositions.isEmpty()) {
+            Random generator = new Random();
+
+            var newOrganismPosition = birthPositions.get(generator.nextInt(birthPositions.size()));
+            var newOrganism = clone();
+            newOrganism.position = newOrganismPosition;
+
+            power = power / 2;
+            result.add(new Action(ActionEnum.A_ADD, newOrganismPosition, 0, newOrganism));
+        }
+
+        return result;
+    }
 
     public Iterable<Action> getConsequences(Organism attackingOrganism) {
         var consequences = new ArrayList<Action>();
 
         if (power > attackingOrganism.power) {
-            consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1),0, attackingOrganism));
-        }
-        else {
+            consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
+        } else {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, this));
         }
 
@@ -106,15 +102,17 @@ public abstract class Organism {
     }
 
     public boolean ifReproduce() {
-        if (power >= powerToReproduce)
-                return true;
+        return power >= powerToReproduce;
 
-        return false;
+    }
+
+    protected List<Position> getFreeNeighbouringPositions() {
+        return world.filterFreePositions(world.getNeighbouringPositions(position));
     }
 
     @Override
     public String toString() {
-        return this.getClass().getName() + ": " +
+        return this.getClass().getSimpleName() + ": " +
                 "power=" + power +
                 ", initiative=" + initiative +
                 ", position=" + position +

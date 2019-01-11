@@ -23,29 +23,4 @@ public abstract class Plant extends Organism {
     public Iterable<Action> move() {
         return Collections.EMPTY_LIST;
     }
-
-    @Override
-    public Iterable<Action> action() {
-        var result = new ArrayList<Action>();
-
-        if (ifReproduce()) {
-            var pomPositions = getFreeNeighbouringPositions(super.position);
-
-            if (!pomPositions.isEmpty()) {
-                Random generator = new Random();
-
-                var newPosition = pomPositions.get(generator.nextInt(pomPositions.size()));
-                var newPlant = clone();
-                newPlant.position = newPosition;
-                power = power / 2;
-                result.add(new Action(ActionEnum.A_ADD, newPosition, 0,newPlant));
-            }
-        }
-
-        return result;
-    }
-
-    public List<Position> getFreeNeighbouringPositions(Position position) {
-        return world.filterFreePositions(world.getNeighbouringPositions(position));
-    }
 }
