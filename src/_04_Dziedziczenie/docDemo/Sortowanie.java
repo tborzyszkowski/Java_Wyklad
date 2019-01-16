@@ -156,7 +156,6 @@ class SortTest2 {
 	 * @see ElemInt
 	 * @param args
 	 *            nieużywane
-	 * @return nic
 	 */
 	public static void main(String args[]) {
 		Sortuj srt = new Sortuj(20);

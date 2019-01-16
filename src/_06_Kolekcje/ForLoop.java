@@ -29,6 +29,8 @@ class ForLoop {
 		
 		for (String v : al)
 			System.out.println(v);
+		
+		// while() ???
 	}
 	
 }

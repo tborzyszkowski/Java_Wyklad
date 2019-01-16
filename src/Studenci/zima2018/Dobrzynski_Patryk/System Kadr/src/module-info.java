@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author pdobrzynski
+ *
+ */
+module kadra {
+}

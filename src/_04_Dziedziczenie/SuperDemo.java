@@ -4,11 +4,7 @@ package _04_Dziedziczenie;
 
 class A {
 	int i;
-
-	A() {
-		i = 5;
-	}
-
+	A() { i = 5; }
 	A(int i) {
 		super();
 		this.i = i;
@@ -20,8 +16,6 @@ class A {
 
 class B extends A {
 	int i; // to i przykrywa i z klasy A
-
-	// konstruktor
 	B(int a, int b) {
 		//super();
 //		i = 1;
@@ -29,8 +23,6 @@ class B extends A {
 		super.i = a; // odwolania do i w A
 		this.i = b;
 	}
-
-	// reprezentacja napisowa
 	public String toString() {
 		return super.toString() + " B.i = " + i;// +super.super.toString();
 	}

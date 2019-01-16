@@ -1,25 +1,24 @@
 package _04_Dziedziczenie;
 
 abstract class A_1 {
-    // definicja klasy abstrakcyjnej 
-    // tylko naglowek, bez ciala
     abstract void callMe();
-    // zwykle, tj. w pelni zdefiniowane metody 
-    // sa takze dozwowlone w klasach abstrakcyjnych
     void callMeToo() {
     	System.out.println("A: callMeToo");
     	callMe();
     }
 }
 class B_1 extends A_1 {
-    // definiujemy callMe(), 
-    // wymagane by tworzyc instancje klasy B
     void callMe() {
     	System.out.println("B: callMe");
     }
     void callMeToo() {
     	System.out.println("B: callMeToo");
+//    	super.callMeToo();
     }
+//    void callSuperMeToo() {
+//    	super.callMeToo();
+//    }
+   
 }
 // klasa testujaca
 class SimpleAbs {

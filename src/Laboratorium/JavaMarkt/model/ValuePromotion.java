@@ -1,4 +1,4 @@
-package Laboratorium.JavaMarkt.model;
+ package Laboratorium.JavaMarkt.model;
 
 public class ValuePromotion implements IPromotion{
 
