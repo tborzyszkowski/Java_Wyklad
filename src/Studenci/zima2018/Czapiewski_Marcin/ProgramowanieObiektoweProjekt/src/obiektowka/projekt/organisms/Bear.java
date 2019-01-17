@@ -20,10 +20,10 @@ public class Bear extends Animal {
 
     @Override
     public void initParams() {
-        power = 18;
+        power = 27;
         initiative = 4;
-        liveLength = 20;
-        powerToReproduce = 11;
+        liveLength = 11;
+        powerToReproduce = 8;
         sign = "T";
     }
 

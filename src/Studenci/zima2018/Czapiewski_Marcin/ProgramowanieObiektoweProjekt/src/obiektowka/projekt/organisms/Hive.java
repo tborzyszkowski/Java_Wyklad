@@ -28,8 +28,8 @@ public class Hive extends Animal {
     public void initParams() {
         power = 6;
         initiative = 0;
-        liveLength = 50;
-        powerToReproduce = 40;
+        liveLength = 1000;
+        powerToReproduce = 45;
         sign = "H";
     }
 

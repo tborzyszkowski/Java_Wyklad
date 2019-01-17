@@ -21,10 +21,10 @@ public class Sheep extends Animal {
 
     @Override
     public void initParams() {
-        power = 3;
+        power = 4;
         initiative = 3;
-        liveLength = 8;
-        powerToReproduce = 8;
+        liveLength = 5;
+        powerToReproduce = 5;
         sign = "S";
     }
 
