@@ -1,6 +1,6 @@
-package obiektowka.projekt.Factories;
+package obiektowka.projekt.factories;
 
-import obiektowka.projekt.Enums.FactoryEnum;
+import obiektowka.projekt.enums.FactoryEnum;
 
 public class FactoryProducer {
     public static AbstractFactory getFactory(FactoryEnum factory) {

@@ -1,7 +1,7 @@
-package obiektowka.projekt.Factories;
+package obiektowka.projekt.factories;
 
-import obiektowka.projekt.Enums.AnimalEnum;
-import obiektowka.projekt.Enums.PlantEnum;
+import obiektowka.projekt.enums.AnimalEnum;
+import obiektowka.projekt.enums.PlantEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
 import obiektowka.projekt.organisms.Animal;
@@ -25,18 +25,7 @@ public class AnimalFactory extends AbstractFactory{
     }
 
     @Override
-    public Animal getAnimal(Animal animal) {
-        return (Animal)animal.clone();
-    }
-
-    @Override
     public Plant getPlant(PlantEnum plant, Position position, World world) {
         return null;
     }
-
-    @Override
-    public Plant getPlant(Plant plant) {
-        return null;
-    }
-
 }

@@ -14,9 +14,95 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Grass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeDefaultStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/CommandLineWorldSizeStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding>
+                <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeStrategy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/FactoryProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Animal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="51">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -26,108 +112,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/PlantFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Factories/AnimalFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="349">
               <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#835#836#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Dandelion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Factories/PlantFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#754#755#0" expanded="true" />
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Sheep.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Factories/FactoryProducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -137,6 +129,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -157,14 +150,23 @@
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Dandelion.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Sheep.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Toadstool.java" />
-        <option value="$PROJECT_DIR$/src/obiektowka/projekt/Main.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/Action.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/Position.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Animal.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Wolf.java" />
-        <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" />
         <option value="$PROJECT_DIR$/src/obiektowka/projekt/World.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/factories/FactoryProducer.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/bridge/FactoryAPI.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/factories/AbstractFactory.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/factories/AnimalFactory.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/factories/PlantFactory.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldStrategy.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeStrategy.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/strategy/CommandLineWorldSizeStrategy.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeDefaultStrategy.java" />
+        <option value="$PROJECT_DIR$/src/obiektowka/projekt/Main.java" />
       </list>
     </option>
   </component>
@@ -190,11 +192,6 @@
             <path>
               <item name="ProgramowanieObiektoweProjekt" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProgramowanieObiektoweProjekt" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProgramowanieObiektoweProjekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProgramowanieObiektoweProjekt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,14 +205,7 @@
               <item name="ProgramowanieObiektoweProjekt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="Factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProgramowanieObiektoweProjekt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProgramowanieObiektoweProjekt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="projekt" type="462c0819:PsiDirectoryNode" />
-              <item name="organisms" type="462c0819:PsiDirectoryNode" />
+              <item name="strategy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,11 +218,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547208485195" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="obiektowka.projekt.strategy" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -304,9 +300,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4225352" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4225352" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,27 +344,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/obiektowka/projekt/World.java</url>
-          <line>59</line>
+          <line>66</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/obiektowka/projekt/Main.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://F:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Object.java" />
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Sheep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/ActionEnum.java" />
     <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Action.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -377,86 +369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Animal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Toadstool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Wolf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#607#608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Position.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Grass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Factories/AbstractFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -477,10 +393,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Wolf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Toadstool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Sheep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/bridge/FactoryAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Plant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/AbstractFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/AnimalFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/FactoryProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/factories/PlantFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Grass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/organisms/Organism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/CommandLineWorldSizeStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/strategy/WorldSizeDefaultStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/obiektowka/projekt/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="57" column="19" selection-start-line="57" selection-start-column="19" selection-end-line="57" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

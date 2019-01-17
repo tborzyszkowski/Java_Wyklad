@@ -1,6 +1,6 @@
 package obiektowka.projekt;
 
-import obiektowka.projekt.Enums.ActionEnum;
+import obiektowka.projekt.enums.ActionEnum;
 import obiektowka.projekt.organisms.Organism;
 
 import java.util.Map;

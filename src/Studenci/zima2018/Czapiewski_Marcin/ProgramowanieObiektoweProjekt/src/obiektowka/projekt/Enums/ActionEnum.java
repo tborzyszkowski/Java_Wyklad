@@ -1,4 +1,4 @@
-package obiektowka.projekt.Enums;
+package obiektowka.projekt.enums;
 
 public enum ActionEnum {
     A_MOVE,

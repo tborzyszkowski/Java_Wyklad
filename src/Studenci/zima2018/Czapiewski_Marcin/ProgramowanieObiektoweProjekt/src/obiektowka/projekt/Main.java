@@ -1,16 +1,21 @@
 package obiektowka.projekt;
 
-import obiektowka.projekt.Enums.AnimalEnum;
-import obiektowka.projekt.Enums.FactoryEnum;
-import obiektowka.projekt.Enums.PlantEnum;
-import obiektowka.projekt.Factories.FactoryProducer;
+import obiektowka.projekt.enums.AnimalEnum;
+import obiektowka.projekt.enums.FactoryEnum;
+import obiektowka.projekt.enums.PlantEnum;
+import obiektowka.projekt.factories.FactoryProducer;
+import obiektowka.projekt.strategy.CommandLineWorldSizeStrategy;
+import obiektowka.projekt.strategy.WorldSizeDefaultStrategy;
+import obiektowka.projekt.strategy.WorldSizeStrategy;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        var javaWorld = new World(8, 8);
+        var worldStrategy = getWorldSizeStrategy(args);
+        var worldSize = worldStrategy.getWorldSize();
+        var javaWorld = new World(worldSize.getKey(), worldSize.getValue());
 
         var animalFactory = FactoryProducer.getFactory(FactoryEnum.ANIMAL_FACTORY);
         var plantFactory = FactoryProducer.getFactory(FactoryEnum.PLANT_FACTORY);
@@ -42,5 +47,14 @@ public class Main {
             javaWorld.makeTurn();
             System.out.println(javaWorld);
         }
+    }
+
+    private static WorldSizeStrategy getWorldSizeStrategy(String[] args) {
+
+        if (args.length > 0) {
+            return new CommandLineWorldSizeStrategy(args);
+        }
+
+        return new WorldSizeDefaultStrategy();
     }
 }

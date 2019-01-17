@@ -1,8 +1,11 @@
 package obiektowka.projekt;
 
-import obiektowka.projekt.Enums.ActionEnum;
+import obiektowka.projekt.enums.ActionEnum;
+import obiektowka.projekt.enums.FactoryEnum;
+import obiektowka.projekt.enums.PlantEnum;
+import obiektowka.projekt.factories.AbstractFactory;
+import obiektowka.projekt.factories.FactoryProducer;
 import obiektowka.projekt.organisms.Animal;
-import obiektowka.projekt.organisms.Grass;
 import obiektowka.projekt.organisms.Organism;
 import obiektowka.projekt.organisms.Wolf;
 
@@ -19,6 +22,8 @@ public class World {
     private ArrayList<Organism> newOrganisms;
     private String separator;
 
+    private AbstractFactory plantFactory;
+
     public World(int worldX, int worldY) {
         this.worldX = worldX;
         this.worldY = worldY;
@@ -26,6 +31,8 @@ public class World {
         organisms = new ArrayList<>();
         newOrganisms = new ArrayList<>();
         separator = " ";
+
+        plantFactory = FactoryProducer.getFactory(FactoryEnum.PLANT_FACTORY);
     }
 
     public void makeTurn() {
@@ -75,7 +82,7 @@ public class World {
         var rnd = new Random();
         for (var pos : freePositions) {
             if (rnd.nextInt() % 4 == 0) {
-                newOrganisms.add(new Grass(pos, this));
+                newOrganisms.add(plantFactory.getPlant(PlantEnum.GRASS, pos, this));
             }
         }
     }
