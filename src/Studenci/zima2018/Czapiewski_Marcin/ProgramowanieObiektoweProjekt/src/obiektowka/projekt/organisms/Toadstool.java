@@ -22,7 +22,7 @@ public class Toadstool extends Plant {
     public void initParams() {
         power = 0;
         initiative = 0;
-        liveLength = 10;
+        liveLength = 5;
         powerToReproduce = 5;
         sign = "T";
     }

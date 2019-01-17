@@ -3,11 +3,13 @@ package obiektowka.projekt;
 import obiektowka.projekt.enums.AnimalEnum;
 import obiektowka.projekt.enums.FactoryEnum;
 import obiektowka.projekt.enums.PlantEnum;
+import obiektowka.projekt.factories.AbstractFactory;
 import obiektowka.projekt.factories.FactoryProducer;
-import obiektowka.projekt.strategy.CommandLineWorldSizeStrategy;
-import obiektowka.projekt.strategy.WorldSizeDefaultStrategy;
-import obiektowka.projekt.strategy.WorldSizeStrategy;
+import obiektowka.projekt.strategies.CommandLineWorldSizeStrategy;
+import obiektowka.projekt.strategies.WorldSizeDefaultStrategy;
+import obiektowka.projekt.strategies.WorldSizeStrategy;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -20,20 +22,7 @@ public class Main {
         var animalFactory = FactoryProducer.getFactory(FactoryEnum.ANIMAL_FACTORY);
         var plantFactory = FactoryProducer.getFactory(FactoryEnum.PLANT_FACTORY);
 
-        var grass = plantFactory.getPlant(PlantEnum.GRASS,new Position(4, 0), javaWorld);
-        javaWorld.addOrganism(grass);
-
-        var sheep = animalFactory.getAnimal(AnimalEnum.SHEEP, new Position(0, 0), javaWorld);
-        javaWorld.addOrganism(sheep);
-
-        var dandelion = plantFactory.getPlant(PlantEnum.DANDELION, new Position(0, 4), javaWorld);
-        javaWorld.addOrganism(dandelion);
-
-        var wolf = animalFactory.getAnimal(AnimalEnum.WOLF, new Position(7, 7), javaWorld);
-        javaWorld.addOrganism(wolf);
-
-        var toadstool = plantFactory.getPlant(PlantEnum.TOADSTOOL, new Position(4, 4), javaWorld);
-        javaWorld.addOrganism(toadstool);
+        FillWorld(javaWorld, animalFactory, plantFactory);
 
         System.out.println(javaWorld.toString());
 
@@ -46,6 +35,29 @@ public class Main {
 
             javaWorld.makeTurn();
             System.out.println(javaWorld);
+        }
+    }
+
+    private static void FillWorld(World javaWorld, AbstractFactory animalFactory, AbstractFactory plantFactory) {
+        var freePositions = javaWorld.getFreePositions();
+        var rnd = new Random();
+        for (var pos : freePositions) {
+            var nextInt = rnd.nextInt();
+            if (nextInt % 10 == 0) {
+                javaWorld.addOrganism(animalFactory.getAnimal(AnimalEnum.WOLF, pos, javaWorld));
+            }
+            else if (nextInt % 10 == 1 || nextInt % 10 == 5) {
+                javaWorld.addOrganism(animalFactory.getAnimal(AnimalEnum.SHEEP, pos, javaWorld));
+            }
+            else if (nextInt % 10 == 2) {
+                javaWorld.addOrganism(plantFactory.getPlant(PlantEnum.GRASS, pos, javaWorld));
+            }
+            else if (nextInt % 10 == 3 || nextInt % 10 == 6) {
+                javaWorld.addOrganism(plantFactory.getPlant(PlantEnum.DANDELION, pos, javaWorld));
+            }
+            else if (nextInt % 10 == 4 || nextInt % 10 == 7) {
+                javaWorld.addOrganism(plantFactory.getPlant(PlantEnum.TOADSTOOL, pos, javaWorld));
+            }
         }
     }
 

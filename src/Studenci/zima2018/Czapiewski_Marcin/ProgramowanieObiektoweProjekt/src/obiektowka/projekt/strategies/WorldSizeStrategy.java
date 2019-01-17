@@ -1,4 +1,4 @@
-package obiektowka.projekt.strategy;
+package obiektowka.projekt.strategies;
 
 import java.util.Map;
 

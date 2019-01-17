@@ -6,6 +6,7 @@ import obiektowka.projekt.enums.PlantEnum;
 import obiektowka.projekt.factories.AbstractFactory;
 import obiektowka.projekt.factories.FactoryProducer;
 import obiektowka.projekt.organisms.Animal;
+import obiektowka.projekt.organisms.Dandelion;
 import obiektowka.projekt.organisms.Organism;
 import obiektowka.projekt.organisms.Wolf;
 
@@ -67,7 +68,7 @@ public class World {
 
         newOrganisms.removeIf(n -> !positionOnBoard(n.getPosition()));
 
-        growGrass();
+        performRandomEvents();
 
         organisms.addAll(newOrganisms);
         organisms.sort(Comparator.comparing(Organism::getInitiative).reversed());
@@ -77,12 +78,24 @@ public class World {
         turn++;
     }
 
-    private void growGrass() {
+    private void performRandomEvents() {
         var freePositions = getFreePositions();
         var rnd = new Random();
+
+        growGrass(freePositions, rnd);
+    }
+
+    private void growGrass(List<Position> freePositions, Random rnd) {
         for (var pos : freePositions) {
-            if (rnd.nextInt() % 4 == 0) {
+            var nextInt = rnd.nextInt();
+            if (nextInt % 15 == 0 || nextInt % 15 == 2 || nextInt % 15 == 3) {
                 newOrganisms.add(plantFactory.getPlant(PlantEnum.GRASS, pos, this));
+            }
+            else if (nextInt % 15 == 4 || nextInt % 15 == 5) {
+                newOrganisms.add(plantFactory.getPlant(PlantEnum.DANDELION, pos, this));
+            }
+            else if (nextInt % 15 == 6) {
+                newOrganisms.add(plantFactory.getPlant(PlantEnum.TOADSTOOL, pos, this));
             }
         }
     }
@@ -98,7 +111,7 @@ public class World {
         return false;
     }
 
-    private List<Position> getFreePositions() {
+    List<Position> getFreePositions() {
         var freePositions = new ArrayList<Position>();
         for (int i = 0; i < worldX; i++) {
             for (int j = 0; j < worldY; j++) {
