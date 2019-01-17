@@ -1,5 +1,6 @@
 package obiektowka.projekt;
 
+import obiektowka.projekt.Enums.ActionEnum;
 import obiektowka.projekt.organisms.Animal;
 import obiektowka.projekt.organisms.Grass;
 import obiektowka.projekt.organisms.Organism;

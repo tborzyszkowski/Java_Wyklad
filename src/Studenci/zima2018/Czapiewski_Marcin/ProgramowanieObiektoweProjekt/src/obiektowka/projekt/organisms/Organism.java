@@ -1,7 +1,7 @@
 package obiektowka.projekt.organisms;
 
 import obiektowka.projekt.Action;
-import obiektowka.projekt.ActionEnum;
+import obiektowka.projekt.Enums.ActionEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
 

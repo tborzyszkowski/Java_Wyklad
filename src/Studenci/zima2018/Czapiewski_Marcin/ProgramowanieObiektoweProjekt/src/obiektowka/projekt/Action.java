@@ -1,8 +1,8 @@
 package obiektowka.projekt;
 
+import obiektowka.projekt.Enums.ActionEnum;
 import obiektowka.projekt.organisms.Organism;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class Action {

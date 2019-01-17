@@ -1,6 +1,9 @@
 package obiektowka.projekt;
 
-import obiektowka.projekt.organisms.*;
+import obiektowka.projekt.Enums.AnimalEnum;
+import obiektowka.projekt.Enums.FactoryEnum;
+import obiektowka.projekt.Enums.PlantEnum;
+import obiektowka.projekt.Factories.FactoryProducer;
 
 import java.util.Scanner;
 
@@ -9,19 +12,22 @@ public class Main {
     public static void main(String[] args) {
         var javaWorld = new World(8, 8);
 
-        var grass = new Grass(new Position(4, 0), javaWorld);
+        var animalFactory = FactoryProducer.getFactory(FactoryEnum.ANIMAL_FACTORY);
+        var plantFactory = FactoryProducer.getFactory(FactoryEnum.PLANT_FACTORY);
+
+        var grass = plantFactory.getPlant(PlantEnum.GRASS,new Position(4, 0), javaWorld);
         javaWorld.addOrganism(grass);
 
-        var sheep = new Sheep(new Position(0, 0), javaWorld);
+        var sheep = animalFactory.getAnimal(AnimalEnum.SHEEP, new Position(0, 0), javaWorld);
         javaWorld.addOrganism(sheep);
 
-        var dandelion = new Dandelion(new Position(0, 4), javaWorld);
+        var dandelion = plantFactory.getPlant(PlantEnum.DANDELION, new Position(0, 4), javaWorld);
         javaWorld.addOrganism(dandelion);
 
-        var wolf = new Wolf(new Position(7, 7), javaWorld);
+        var wolf = animalFactory.getAnimal(AnimalEnum.WOLF, new Position(7, 7), javaWorld);
         javaWorld.addOrganism(wolf);
 
-        var toadstool = new Toadstool(new Position(4, 4), javaWorld);
+        var toadstool = plantFactory.getPlant(PlantEnum.TOADSTOOL, new Position(4, 4), javaWorld);
         javaWorld.addOrganism(toadstool);
 
         System.out.println(javaWorld.toString());
