@@ -6,7 +6,6 @@ import obiektowka.projekt.enums.PlantEnum;
 import obiektowka.projekt.factories.AbstractFactory;
 import obiektowka.projekt.factories.FactoryProducer;
 import obiektowka.projekt.organisms.Animal;
-import obiektowka.projekt.organisms.Dandelion;
 import obiektowka.projekt.organisms.Organism;
 import obiektowka.projekt.organisms.Wolf;
 
@@ -16,24 +15,33 @@ import java.util.List;
 import java.util.Random;
 
 public class World {
+    private static World instance = new World();
     private int worldX;
     private int worldY;
     private int turn;
     private ArrayList<Organism> organisms;
     private ArrayList<Organism> newOrganisms;
     private String separator;
-
     private AbstractFactory plantFactory;
 
-    public World(int worldX, int worldY) {
-        this.worldX = worldX;
-        this.worldY = worldY;
+    private World() {
         turn = 0;
         organisms = new ArrayList<>();
         newOrganisms = new ArrayList<>();
         separator = " ";
 
         plantFactory = FactoryProducer.getFactory(FactoryEnum.PLANT_FACTORY);
+    }
+
+    public static World getInstance() {
+        return instance;
+    }
+
+    public World init(int worldX, int worldY) {
+        instance.worldX = worldX;
+        instance.worldY = worldY;
+
+        return this;
     }
 
     public void makeTurn() {
@@ -82,20 +90,41 @@ public class World {
         var freePositions = getFreePositions();
         var rnd = new Random();
 
-        growGrass(freePositions, rnd);
+        growPlants(freePositions, rnd);
+
+        flowPlague(rnd);
     }
 
-    private void growGrass(List<Position> freePositions, Random rnd) {
+    private void flowPlague(Random rnd) {
+        List<Position> freePositions;
+        freePositions = getFreePositions();
+        var position = freePositions.get(rnd.nextInt(freePositions.size()));
+        var organism = getOrganismOnPosition(position);
+
+        if (!(organism instanceof Animal))
+            return;
+
+        var neighbouringAnimals = getNeighbouringAnimals(position);
+
+        if (rnd.nextInt() % 10 == 0) {
+            organisms.remove(organism);
+
+            for (var animal : neighbouringAnimals) {
+                if (rnd.nextInt() % 2 == 0)
+                organisms.remove(animal);
+            }
+        }
+    }
+
+    private void growPlants(List<Position> freePositions, Random rnd) {
         for (var pos : freePositions) {
             var nextInt = rnd.nextInt();
             if (nextInt % 15 == 0 || nextInt % 15 == 2 || nextInt % 15 == 3) {
                 newOrganisms.add(plantFactory.getPlant(PlantEnum.GRASS, pos, this));
-            }
-            else if (nextInt % 15 == 4 || nextInt % 15 == 5) {
+            } else if (nextInt % 15 == 4 || nextInt % 15 == 5) {
                 newOrganisms.add(plantFactory.getPlant(PlantEnum.DANDELION, pos, this));
-            }
-            else if (nextInt % 15 == 6) {
-                newOrganisms.add(plantFactory.getPlant(PlantEnum.TOADSTOOL, pos, this));
+            } else if (nextInt % 15 == 6 || nextInt % 15 == 6) {
+                newOrganisms.add(plantFactory.getPlant(PlantEnum.MUSHROOM, pos, this));
             }
         }
     }
@@ -157,6 +186,20 @@ public class World {
         }
 
         return neighbouringPositions;
+    }
+
+    private List<Animal> getNeighbouringAnimals(Position position) {
+        var positions = getNeighbouringPositions(position);
+        var neighbouringAnimals = new ArrayList<Animal>();
+
+        for (var pos : positions) {
+            var organism = getOrganismOnPosition(pos);
+            if (organism instanceof Animal) {
+                neighbouringAnimals.add((Animal) organism);
+            }
+        }
+
+        return neighbouringAnimals;
     }
 
     public List<Position> filterFreePositions(Iterable<Position> positions) {

@@ -4,10 +4,7 @@ import obiektowka.projekt.enums.AnimalEnum;
 import obiektowka.projekt.enums.PlantEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
-import obiektowka.projekt.organisms.Animal;
-import obiektowka.projekt.organisms.Plant;
-import obiektowka.projekt.organisms.Sheep;
-import obiektowka.projekt.organisms.Wolf;
+import obiektowka.projekt.organisms.*;
 
 public class AnimalFactory extends AbstractFactory{
     @Override
@@ -19,6 +16,18 @@ public class AnimalFactory extends AbstractFactory{
 
         if (animal == AnimalEnum.WOLF) {
             return new Wolf(position, world);
+        }
+
+        if (animal == AnimalEnum.BOAR) {
+            return new Boar(position, world);
+        }
+
+        if (animal == AnimalEnum.BEAR) {
+            return new Bear(position, world);
+        }
+
+        if (animal == AnimalEnum.HIVE) {
+            return new Hive(position, world);
         }
 
         return null;

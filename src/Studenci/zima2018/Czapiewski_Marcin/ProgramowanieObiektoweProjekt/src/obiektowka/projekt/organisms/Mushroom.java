@@ -1,41 +1,35 @@
 package obiektowka.projekt.organisms;
 
 import obiektowka.projekt.Action;
+import obiektowka.projekt.enums.ActionEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
-import obiektowka.projekt.enums.ActionEnum;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Sheep extends Animal {
-    Sheep(Animal animal) {
-        super(animal);
+public class Mushroom extends Plant {
+    Mushroom(Plant plant) {
+        super(plant);
         initParams();
     }
 
-    public Sheep(Position position, World world) {
+    public Mushroom(Position position, World world) {
         super(position, world);
         initParams();
     }
 
     @Override
     public void initParams() {
-        power = 3;
-        initiative = 3;
-        liveLength = 8;
-        powerToReproduce = 8;
-        sign = "S";
+        power = 0;
+        initiative = 0;
+        liveLength = 6;
+        powerToReproduce = 4;
+        sign = "M";
     }
 
     @Override
     public Organism clone() {
-        return new Sheep(this);
-    }
-
-    @Override
-    public List<Position> getNeighbouringPositions() {
-        return world.filterPositionsWithoutAnimals(world.getNeighbouringPositions(position));
+        return new Mushroom(this);
     }
 
     @Override
@@ -45,11 +39,13 @@ public class Sheep extends Animal {
         if (power > attackingOrganism.power) {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
         }
+        else if (attackingOrganism instanceof Boar) {
+            consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, this));
+            attackingOrganism.power+=3;
+        }
         else {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, this));
-            if (attackingOrganism instanceof Wolf || attackingOrganism instanceof Bear) {
-                attackingOrganism.power++;
-            }
+            consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
         }
 
         return consequences;

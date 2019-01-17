@@ -3,8 +3,6 @@ package obiektowka.projekt.organisms;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
 
-import java.util.List;
-
 public class Wolf extends Animal {
     Wolf(Animal animal) {
         super(animal);
@@ -18,20 +16,15 @@ public class Wolf extends Animal {
 
     @Override
     public void initParams() {
-        power = 6;
+        power = 10;
         initiative = 5;
-        liveLength = 15;
-        powerToReproduce = 12;
+        liveLength = 12;
+        powerToReproduce = 14;
         sign = "W";
     }
 
     @Override
     public Organism clone() {
         return new Wolf(this);
-    }
-
-    @Override
-    public List<Position> getNeighbouringPositions() {
-        return world.filterPositionsWithOtherSpecies(world.getNeighbouringPositions(position));
     }
 }

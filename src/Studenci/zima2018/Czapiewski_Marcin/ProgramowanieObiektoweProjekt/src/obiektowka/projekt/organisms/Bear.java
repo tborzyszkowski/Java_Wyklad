@@ -1,35 +1,35 @@
 package obiektowka.projekt.organisms;
 
 import obiektowka.projekt.Action;
-import obiektowka.projekt.enums.ActionEnum;
 import obiektowka.projekt.Position;
 import obiektowka.projekt.World;
+import obiektowka.projekt.enums.ActionEnum;
 
 import java.util.ArrayList;
 
-public class Toadstool extends Plant {
-    Toadstool(Plant plant) {
-        super(plant);
+public class Bear extends Animal {
+    Bear(Animal animal) {
+        super(animal);
         initParams();
     }
 
-    public Toadstool(Position position, World world) {
+    public Bear(Position position, World world) {
         super(position, world);
         initParams();
     }
 
     @Override
     public void initParams() {
-        power = 0;
-        initiative = 0;
-        liveLength = 5;
-        powerToReproduce = 5;
+        power = 18;
+        initiative = 4;
+        liveLength = 20;
+        powerToReproduce = 11;
         sign = "T";
     }
 
     @Override
     public Organism clone() {
-        return new Toadstool(this);
+        return new Bear(this);
     }
 
     @Override
@@ -38,10 +38,13 @@ public class Toadstool extends Plant {
 
         if (power > attackingOrganism.power) {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
+            power += 2;
         }
         else {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, this));
-            consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
+            if (attackingOrganism instanceof Wolf) {
+                attackingOrganism.power += 3;
+            }
         }
 
         return consequences;

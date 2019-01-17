@@ -17,8 +17,8 @@ public class PlantFactory extends AbstractFactory{
             return new Grass(position, world);
         }
 
-        if (plant == PlantEnum.TOADSTOOL) {
-            return new Toadstool(position, world);
+        if (plant == PlantEnum.MUSHROOM) {
+            return new Mushroom(position, world);
         }
 
         return null;

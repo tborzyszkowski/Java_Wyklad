@@ -41,6 +41,6 @@ public abstract class Animal extends Organism {
     }
 
     public List<Position> getNeighbouringPositions() {
-        return world.getNeighbouringPositions(position);
+        return world.filterPositionsWithOtherSpecies(world.getNeighbouringPositions(position));
     }
 }

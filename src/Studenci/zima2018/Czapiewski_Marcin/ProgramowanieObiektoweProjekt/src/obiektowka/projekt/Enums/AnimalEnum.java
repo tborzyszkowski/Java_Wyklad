@@ -2,5 +2,8 @@ package obiektowka.projekt.enums;
 
 public enum AnimalEnum {
     SHEEP,
-    WOLF
+    WOLF,
+    BOAR,
+    BEAR,
+    HIVE
 }
