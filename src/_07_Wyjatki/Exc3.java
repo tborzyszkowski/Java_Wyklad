@@ -5,7 +5,8 @@ class Exc3 {
      public static void main(String args[]) {
 	 int    a = 0, b = 0, c = 0, j = 0;
 	 Random r = new Random();
-
+	 long time1 = System.currentTimeMillis(), 
+				time2;
 	 for(int i = 0; i < 100000000; i++) {
 	     try {
 	    	 b = r.nextInt(); // zwraca jedną z 2^32 wartości
@@ -27,7 +28,9 @@ class Exc3 {
 	     //System.out.print  ("a = " + a + "\t b = " + b + "\t c = " + c);
 	     //System.out.println("\t b/c = " + b/c);
 	 }
+	 time2=System.currentTimeMillis();
 	 System.out.println("\nj = "+ j);
+	 System.out.println("Time: " + (time2-time1));
      }
 }
 

@@ -25,6 +25,7 @@ public class StreamTest {
 	public static void main(String[] args) {
 		ArrayList<User> users = new ArrayList<User>(
 				Arrays.asList(
+					new User(13, "Ktos", 	"Vai", 		18),
 					new User(1, "Steve", 	"Vai", 		40),
 				    new User(4, "Joe", 		"Smith", 	32),
 				    new User(3, "Steve", 	"Johnson", 	57),

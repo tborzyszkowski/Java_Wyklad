@@ -19,7 +19,7 @@ class HashMapDemo {
 
 		// wyswietlanie zbioru danych
 		for (Map.Entry<String, Double> m : set) {
-			System.out.print(m.getKey() + ": ");
+			System.out.print(m.getKey().hashCode() + " : " + m.getKey() + ": ");
 			System.out.println(m.getValue());
 		}
 		System.out.println();
@@ -30,10 +30,9 @@ class HashMapDemo {
 		System.out.println("---> Jan Kowalski: " + res);
 		
 		// wyswietlanie tradycyjne
-		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i
-				.hasNext();) {
+		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i.hasNext();) {
 			Map.Entry<String, Double> me = i.next();
-			System.out.print(me.getKey() + ": ");
+			System.out.print(me.getKey().hashCode() + " : " +me.getKey() + ": ");
 			System.out.println(me.getValue());
 		}
 		System.out.println();

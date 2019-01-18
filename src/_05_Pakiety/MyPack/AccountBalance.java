@@ -1,5 +1,3 @@
-// przyklad prostego pakietu
-// UWAGA: umiesc plik w katalogu MyPack
 package _05_Pakiety.MyPack;
 
 class Balance {

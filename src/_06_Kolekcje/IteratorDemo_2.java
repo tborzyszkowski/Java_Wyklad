@@ -19,6 +19,7 @@ class IteratorDemo_2 {
 		// iterowanie po elementach
 		for (Iterator<String> itr = al.iterator(); itr.hasNext();)
 			System.out.print(itr.next() + " ");
+			
 		System.out.println();
 
 		// inna wersja tego samego

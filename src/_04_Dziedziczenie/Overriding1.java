@@ -2,7 +2,6 @@ package _04_Dziedziczenie;
 
 import java.util.*;
 
-// Demonstracja nadpisania metody
 class AO1 {
     int i, j;
     
@@ -10,7 +9,6 @@ class AO1 {
     	i = a;
     	j = b;
     }
-    // wyswietl i oraz j
     void show() {
     	System.out.println("A: i = " + i + " j = " + j);
     }
@@ -23,12 +21,10 @@ class BO1 extends AO1 {
     	super(a, b);
     	k = c;
     }
-    // wyswietl k - metoda ta nadpisuje metode show z A
     void show() {
     	System.out.println("B: k = " + k);
     }
 }
-// klasa testujaca
 class Overriding1 {
     public static void main (String args[]) {
     	BO1 obB = new BO1(1, 2, 3);

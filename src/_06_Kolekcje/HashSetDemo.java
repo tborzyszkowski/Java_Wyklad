@@ -16,7 +16,7 @@ class HashSetDemo{
 	hs.add("G"); hs.add("N"); hs.add("U");
 
 	// w jakiej kolejnosci otrzymamy dane
-		System.out.println(hs);
+	System.out.println(hs);
 
 	hs.add("W"); hs.add("V"); hs.add("X");
 	hs.add("B"); hs.add("I"); hs.add("P");
