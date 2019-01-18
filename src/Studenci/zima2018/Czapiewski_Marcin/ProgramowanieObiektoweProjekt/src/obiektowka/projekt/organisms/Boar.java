@@ -24,7 +24,7 @@ public class Boar extends Animal {
     public void initParams() {
         power = 6;
         initiative = 4;
-        liveLength = 10;
+        liveLength = 11;
         powerToReproduce = 8;
         sign = "B";
     }
@@ -49,7 +49,7 @@ public class Boar extends Animal {
             consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, this));
             if (attackingOrganism instanceof Bear || attackingOrganism instanceof Wolf) {
                 var rnd = new Random();
-                if(rnd.nextInt() % 8 == 0) {
+                if(rnd.nextInt() % 10 == 0) {
                     consequences.add(new Action(ActionEnum.A_REMOVE, new Position(-1, -1), 0, attackingOrganism));
                 }
                 else {

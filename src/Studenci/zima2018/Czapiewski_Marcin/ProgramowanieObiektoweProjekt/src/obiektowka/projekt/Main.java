@@ -31,12 +31,12 @@ public class Main {
         while(true) {
             javaWorld.makeTurn();
             System.out.println(javaWorld);
-//            try {
-//                sleep(500);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-            scanner.nextLine();
+            try {
+                sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            //scanner.nextLine();
         }
     }
 

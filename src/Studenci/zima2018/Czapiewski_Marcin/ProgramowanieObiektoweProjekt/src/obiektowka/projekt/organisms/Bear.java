@@ -22,7 +22,7 @@ public class Bear extends Animal {
     public void initParams() {
         power = 27;
         initiative = 4;
-        liveLength = 11;
+        liveLength = 12;
         powerToReproduce = 8;
         sign = "T";
     }
