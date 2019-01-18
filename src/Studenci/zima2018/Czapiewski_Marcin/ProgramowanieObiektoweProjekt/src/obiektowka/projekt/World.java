@@ -102,7 +102,7 @@ public class World {
         var organism = getOrganismOnPosition(position);
 
         if (!(organism instanceof Animal))
-            return;
+++            return;
 
         var neighbouringAnimals = getNeighbouringAnimals(position);
 

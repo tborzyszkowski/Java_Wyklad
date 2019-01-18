@@ -24,7 +24,7 @@ public class Boar extends Animal {
     public void initParams() {
         power = 6;
         initiative = 4;
-        liveLength = 11;
+        liveLength = 12;
         powerToReproduce = 8;
         sign = "B";
     }
