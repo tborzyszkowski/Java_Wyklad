@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gameinfo>
+    <name>The World</name>
+    <subTitle>Made with LITIengine!</subTitle>
+    <description>A game simulating simple world.</description>
+    <version>v1.0a</version>
+    <developer>Damian Gawin</developer>
+</gameinfo>
