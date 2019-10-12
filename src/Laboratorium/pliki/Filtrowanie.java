@@ -1,4 +1,4 @@
-package lab.pliki;
+package Laboratorium.pliki;
 
 import java.io.*;
 import java.util.zip.*;

@@ -1,4 +1,4 @@
-package lab.pliki;
+package Laboratorium.pliki;
 
 /**
    @version 1.10 2000-06-07

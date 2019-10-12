@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author pdobrzynski
- *
- */
-module kadra {
-}

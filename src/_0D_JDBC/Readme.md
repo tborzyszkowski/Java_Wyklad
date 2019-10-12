@@ -1,1 +1,0 @@
-﻿[JDBC Tutorial](http://tutorials.jenkov.com/jdbc/index.html)
