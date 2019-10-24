@@ -22,6 +22,6 @@ class Promote {
 		// i wynik jest float
 		// (f * b) + (i / c) - (d * s): (f * b) + (i / c) jest promowane do
 		// double i wynik jest double
-		System.out.println(1.1234500007 - 0.1234500006);
+		System.out.println(1.123450000000007 - 0.123450000000006);
 	}
 }

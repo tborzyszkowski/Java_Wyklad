@@ -12,6 +12,6 @@ class ScopeErr {
 			// BLAD: kompilator zglosi, ze zmienna x juz jest zdefiniowana
 		}
 		int y = 2;
-		// int x = 5;
+//		int x = 5;
 	}
 }

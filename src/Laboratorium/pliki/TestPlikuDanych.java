@@ -53,7 +53,6 @@ package Laboratorium.pliki;
     static void zapiszDane(Pracownik1[] p, PrintWriter wy)
        throws IOException
     {
-       // zapisuje liczb� pracownik�w
        wy.println(p.length);
  
        for (int i = 0; i < p.length; i++)
@@ -83,6 +82,10 @@ package Laboratorium.pliki;
  
  class Pracownik1
  {
+    private String nazwisko;
+    private double pensja;
+    private Date dzienZatrudnienia;
+
     public Pracownik1() {}
  
     public Pracownik1(String n, double s,
@@ -126,10 +129,7 @@ package Laboratorium.pliki;
           + "]";
     }
  
-    /**
-       Przesy�a dane pracownika do obiektu zapisu
-       @param wy obiekt zapisu
-    */
+
     public void zapiszDane(PrintWriter wy) throws IOException
     {
        GregorianCalendar kalendarz = new GregorianCalendar();
@@ -159,8 +159,4 @@ package Laboratorium.pliki;
           // GregorianCalendar zaczyna liczenie miesi�cy od 0
        dzienZatrudnienia = kalendarz.getTime();
     }
- 
-    private String nazwisko;
-    private double pensja;
-    private Date dzienZatrudnienia;
  }
