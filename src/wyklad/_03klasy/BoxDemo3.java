@@ -27,10 +27,10 @@ class Box3{
     }
     // konstruktor z parametrami
     Box3(double w, double h, double d) {
-    	this((int)w,(int)d,(int)h);
-//    	width  = w; 
-//    	height = h; 
-//    	depth  = d;
+//    	this((int)w,(int)d,(int)h);
+    	width  = w;
+    	height = h;
+    	depth  = d;
     }
     // metoda zmieniajaca zawartosc obiektu
     // ale nie bedaca konstruktorem

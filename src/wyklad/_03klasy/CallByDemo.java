@@ -24,6 +24,9 @@ class CallBy {
 	void fun(BoxedInt x) {
 		x.setX(x.getX() * 2);
 	}
+	void funInt(Integer x) {
+		x++;
+	}
 }
 
 class BoxedInt{
@@ -64,7 +67,12 @@ public class CallByDemo {
 		BoxedInt x = new BoxedInt(xx);
 		ob.fun(x);
 		xx = x.getX();
-		
+
+		int yy = 5;
+		Integer y = new Integer(yy);
+		ob.funInt(y);
+		yy = y;
+
 	}
 }
 
