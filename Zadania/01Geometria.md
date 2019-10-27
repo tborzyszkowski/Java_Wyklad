@@ -30,5 +30,5 @@ Napisać klasę ``Odcinek``, która:
 
 ## Odcinek testy
 - dla tworzonych funkcjonalności dla klasy ``Odcinek`` stworzyć odpowiednie metody testowe
-- spróbować tworzyć nowe funkcjonalności zgodnie z , 
+- spróbować tworzyć nowe funkcjonalności zgodnie z Test Driven Development, 
 tj. najpierw piszemy testy do funkcjonalności, a potem funkcjonalność spełniającą testy
