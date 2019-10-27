@@ -1,4 +1,4 @@
-# Zadanie 
+# Zadanie: geometria płaska
 
 ## Punkt
 
