@@ -14,7 +14,7 @@ public class Punkt {
     }
 
     public Punkt(Punkt punkt) {
-        this(p.x, p.y);
+        this(punkt.x, punkt.y);
     }
 
     public double getX() {

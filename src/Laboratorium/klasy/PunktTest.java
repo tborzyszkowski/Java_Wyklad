@@ -7,12 +7,12 @@ public class PunktTest {
     @Test
     public void prototypeConstructorResult_getX() {
         // Arrange
-        Punkt punkt = new Punkt(1, 1);
+        Punkt punkt = new Punkt(1.0, 1.0);
 
         // Act
         Punkt newPunkt = new Punkt(punkt);
 
         // Assert
-        Assert.(1, newPunkt.getX());
+        Assert.assertEquals(1.0, newPunkt.getX(), 0.001);
     }
 }
