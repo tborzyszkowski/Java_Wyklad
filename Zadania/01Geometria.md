@@ -11,3 +11,7 @@ Napisać klasę ``Punkt``, która:
 - jest wyposażona w metody ``getX``, ``setX``, ``getY``, ``setY`
 - posiada metodę ``shift(x, y)`` pozwalającą przesunąć obiekt typu ``Punkt`` przesunąć o wektor (x, y)
 - posiada metodę ``distance(p)`` obliczającą odległość bieżącego od punktu (x, y)
+
+## Punt testy
+- do projektu dodać bibliotekę JUnit
+- dla tworzonych funkcjonalności dla klasy ``Punkt`` stworzyć odpowiednie metody testowe
