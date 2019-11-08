@@ -1,5 +1,5 @@
 ﻿Proszę utworzyć swój podkatalog w formacie:
-``NazwiskoImię_2018``  i do niego kopiować swoje pliki.
+``NazwiskoImię_2019``  i do niego kopiować swoje pliki.
 
 --------
 Uwaga:
