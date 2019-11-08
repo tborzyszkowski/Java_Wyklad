@@ -21,9 +21,9 @@ class Box3{
     }
     // konstruktor z parametrami
     Box3(int width, int height, int depth) {
-    	this.width  = 2*width; 
-    	this.height = 3*height; 
-    	this.depth  = 4*depth;
+    	this.width  = 2*width;
+		this.height = 3*height;
+		this.depth  = 4*depth;
     }
     // konstruktor z parametrami
     Box3(double w, double h, double d) {

@@ -67,10 +67,6 @@ class C22 extends B2 {
 	void setC(int a, int b, int c, int d) {
 		setB(a, b, c);
 		m = d;
-		C22 x = new C22();
-		x.setB(a, b, c);
-		System.out.println("C22.x.k = " + x.k);
-		System.out.println("C22.x.m = " + x.m);
 	}
 
 	String zawartoscC() {
