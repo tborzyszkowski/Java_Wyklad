@@ -24,9 +24,4 @@ public class FakturaTest {
         Assert.assertEquals(1, pierwsza.getNumerFaktury());
         Assert.assertEquals(2, druga.getNumerFaktury());
     }
-
-
-
-
-
 }
