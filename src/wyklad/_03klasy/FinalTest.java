@@ -12,14 +12,7 @@ class Readonly {
 	final double rr;
 
 	public Readonly(double rr) {
-		boolean go = true;
-//		for (int x = 0; x < 2; x++) {
-			if (go)
-				this.rr = rr;
-			else
-				this.rr = rr;
-		go = false;
-//		}
+		this.rr = rr;
 	}
 
 //	void setRR(double val) {

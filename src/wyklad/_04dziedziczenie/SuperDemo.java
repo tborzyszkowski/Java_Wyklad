@@ -1,12 +1,9 @@
 package wyklad._04dziedziczenie;
 
-// Przyklad uzycia super do odslaniania nazw
-
 class A {
 	int i;
 	A() { i = 5; }
 	A(int i) {
-		super();
 		this.i = i;
 	}
 	public String toString() {
@@ -15,16 +12,14 @@ class A {
 }
 
 class B extends A {
-	int i; // to i przykrywa i z klasy A
+	int i;
 	B(int a, int b) {
-		//super();
-//		i = 1;
-		super(a);
-		super.i = a; // odwolania do i w A
+		//super(a);
+		super.i = a;
 		this.i = b;
 	}
 	public String toString() {
-		return super.toString() + " B.i = " + i;// +super.super.toString();
+		return super.toString() + " B.i = " + i;
 	}
 }
 

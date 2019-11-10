@@ -1,16 +1,15 @@
 package wyklad._04dziedziczenie;
 
 class AO2 {
-    int i, j;    
+    int i;
     AO2(int a, int b) {
     	i = a;
-    	j = b;
     }
-    void show() {
-    	System.out.println(" i = " + i + " j = " + j);
+    void showOnConsole() {
+    	System.out.println((this));
     }
     public String toString() {
-    	return "A: i = " + i + " j = " + j;
+    	return "A { i = " + i + " }";
     }
 }
 
@@ -20,11 +19,11 @@ class BO2 extends AO2 {
     	super(a, b);
     	k = c;
     }
-    void show() {
-    	System.out.println(" k = " + k);
+    void showOnConsole() {
+    	System.out.println(this);
     }
     public String toString() {
-    	return "B: " + super.toString() + " k = " + k;
+    	return "B { " + super.toString() + " k = " + k + " }";
     }
 }
 class Overriding2 {
@@ -33,11 +32,9 @@ class Overriding2 {
 //    	AO2 obA = obB;
     	AO2 obA = new AO2(3,4);
 	
-    	obB.show();  // wywolanie show() z B
-    	// wywolanie metody toString z B,
-    	// ktora wywoluje toString z A
+    	obB.showOnConsole();
     	System.out.println(obB.getClass() + " " + obB); 
-    	obA.show();
+    	obA.showOnConsole();
     	System.out.println(obA.getClass() + " " + obA);
     }
 }
