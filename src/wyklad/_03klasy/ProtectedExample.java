@@ -24,7 +24,7 @@ public class ProtectedExample {
 	public static void main(String[] args) {
 		Base b = new Base();
 		Derived d = new Derived();
-		
+
 		d.F(b);
 		d.G(d);
 	}

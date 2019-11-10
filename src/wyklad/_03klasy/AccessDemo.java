@@ -1,6 +1,6 @@
 package wyklad._03klasy;
 
-// Przyklad roznic miedzy elementami public i private
+
 class Access {
 	int a; // dostep domyslny
 	public int b; // dostep dla wszystkich

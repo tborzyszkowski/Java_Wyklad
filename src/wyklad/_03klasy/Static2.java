@@ -1,7 +1,5 @@
 package wyklad._03klasy;
 
-// Demonstracja uzycia zmiennej statycznej i metody statycznej poza klasa
-
 class Static21 {
 	static int a = 10;
 	static int b = 20;
@@ -15,12 +13,11 @@ class Static21 {
 	}
 }
 
-// Klasa testujaca
 class Static2 {
 	public static void main(String args[]) {
-		// dostep do metody statycznej
+
 		Static21.callMe();
-		// dostep do zmiennej statycznej
+
 		System.out.println("b = " + Static21.b);
 
 		Static21 ob1 = new Static21();
@@ -33,6 +30,6 @@ class Static2 {
 		System.out.println("-----------------");
 		Static21.a = 27;
 		System.out.println("Static21.a = " + Static21.a);
-		System.out.println("ob1.a = " + ob1.a+" ob2.a = " + ob2.a);
+		System.out.println("ob1.a = " + ob1.a + " ob2.a = " + ob2.a);
 	}
 }

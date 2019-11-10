@@ -7,19 +7,23 @@ class Absolute {
 	int abs(int a) {
 		return (a > 0) ? a : -a;
 	}
+
 	// wartosc bezwzgledna dlugiej liczby calkowitej
 	long abs(long a) {
 		return (a > 0) ? a : -a;
 	}
+
 	// wartosc bezwzgledna liczby rzeczywistej
 	float abs(float a) {
 		return (a > 0) ? a : -a;
 	}
+
 	// wartosc bezwzgledna dlugiej liczby rzeczywistej
 	double abs(double a) {
 		return (a > 0) ? a : -a;
 	}
 }
+
 // Klasa testujaca
 class AbsDemo {
 	public static void main(String args[]) {
