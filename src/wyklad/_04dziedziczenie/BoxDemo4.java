@@ -6,7 +6,7 @@ class Box4 {
 	private double depth;
 
 	Box4(double width, double height, double depth) {
-		setValues(width, height , depth);
+		setValues(width, height, depth);
 	}
 
 	Box4(Box4 ob) {
@@ -21,11 +21,12 @@ class Box4 {
 		this(n, n, n);
 	}
 
-	private void setValues(double width, double height, double depth){
+	private void setValues(double width, double height, double depth) {
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
 	}
+
 	void setDim(double width, double height, double depth) {
 		setValues(width, height, depth);
 	}
@@ -67,7 +68,7 @@ class BoxWeight extends Box4 {
 	}
 
 	public String toString() {
-		return "BoxWeight{ " + super.toString()  + " Waga = " + weight +"}";
+		return "BoxWeight{ " + super.toString() + " Waga = " + weight + "}";
 	}
 
 }
@@ -90,7 +91,7 @@ class BoxDemo4 {
 		myBox1.setDim(2, 3, 2, 100.001);
 		// raz jeszcze jego objetosc
 		System.out.println("myBox1: \n" + myBox1);
-		
+
 		Box4 box = myBox1;
 		System.out.println("myBox1: \n" + box);
 	}

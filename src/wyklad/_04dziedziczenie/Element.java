@@ -3,11 +3,11 @@ package wyklad._04dziedziczenie;
 
 public class Element implements Cloneable {
 	int i = 5;
-	
-	void setI(int k){
+
+	void setI(int k) {
 		i = k;
 	}
-	
+
 	public Element clone() throws CloneNotSupportedException {
 		try {
 			Element cloned = (Element) super.clone();
@@ -18,7 +18,8 @@ public class Element implements Cloneable {
 			return null;
 		}
 	}
-	public String toString(){
+
+	public String toString() {
 		return "Element i = " + i;
 	}
 }
