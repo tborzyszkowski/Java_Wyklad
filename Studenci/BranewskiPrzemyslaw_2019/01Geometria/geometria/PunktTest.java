@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 class PunktTest {
 
 	@Test
-    public void prototypeConstructorResult_getX()
-    {
-        Punkt punkt = new Punkt(1.0, 1.0);
-        Punkt newPunkt = new Punkt(punkt);
-        assertEquals(1.0, newPunkt.getX(), 0.001);
+	public void prototypeConstructorResult_getX()
+	{
+       	Punkt punkt = new Punkt(1.0, 1.0);
+       	Punkt newPunkt = new Punkt(punkt);
+       	assertEquals(1.0, newPunkt.getX(), 0.001);
     }
 	
 	@Test
@@ -24,12 +24,12 @@ class PunktTest {
 	}
 	
 	@Test
-    public void prototypeConstructorResult_getY()
-    {
-        Punkt punkt = new Punkt(1.0, 1.0);
-        Punkt newPunkt = new Punkt(punkt);
-        assertEquals(1.0, newPunkt.getY(), 0.001);
-    }
+	public void prototypeConstructorResult_getY()
+	{
+       	Punkt punkt = new Punkt(1.0, 1.0);
+       	Punkt newPunkt = new Punkt(punkt);
+       	assertEquals(1.0, newPunkt.getY(), 0.001);
+	}
 	
 	@Test
 	public void prototypeConstructorResult_setY()

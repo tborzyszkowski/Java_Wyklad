@@ -5,17 +5,15 @@ import java.lang.Math;
 public class Punkt
 {
     private double x, y;
-
-    public Punkt()
+    
+    public Punkt(double x, double y)
     {
-        this.x = 0;
-        this.y = 0;
+        setPoint(x, y);
     }
     
-    public Punkt(double i, double j)
+    public Punkt()
     {
-        this.x = i;
-        this.y = j;
+    	this(0, 0);
     }
     
     public Punkt(Punkt p)
@@ -28,9 +26,9 @@ public class Punkt
         return x;
     }
     
-    public void setX(double i)
+    public void setX(double x)
     {
-        this.x = i;
+        this.x = x;
     }
     
     public double getY()
@@ -38,15 +36,20 @@ public class Punkt
         return y;
     }
     
-    public void setY(double j)
+    public void setY(double y)
     {
-        this.y = j;
+        this.y = y;
+    }
+    
+    public void setPoint(double x, double y)
+    {
+    	setX(x);
+    	setY(y);
     }
 
-    public void shift(double i, double j)
+    public void shift(double x, double y)
     {
-        this.x += i;
-        this.y += j;
+    	setPoint(this.x + x, this.y + y);
     }
 
     public double distance(Punkt p)

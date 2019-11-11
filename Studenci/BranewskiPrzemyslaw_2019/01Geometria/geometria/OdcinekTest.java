@@ -12,8 +12,8 @@ class OdcinekTest {
 		Punkt p1 = new Punkt(0, 0);
 		Punkt p2 = new Punkt(1, 1);
 		Odcinek segment = new Odcinek(p1, p2);
-		segment.shift(1, 2);
-		assertEquals(1.0, segment.fEdge.getX(), 0.001);
+		segment.shiftWhole(1, 2);
+		assertEquals(1.0, segment.getfEdgeX() , 0.001);
 	}
 	
 	@Test
@@ -22,8 +22,8 @@ class OdcinekTest {
 		Punkt p1 = new Punkt(0, 0);
 		Punkt p2 = new Punkt(1, 1);
 		Odcinek segment = new Odcinek(p1, p2);
-		segment.shift(1, 2);
-		assertEquals(2.0, segment.fEdge.getY(), 0.001);
+		segment.shiftWhole(1, 2);
+		assertEquals(2.0, segment.getfEdgeY(), 0.001);
 	}
 	
 	@Test
@@ -32,8 +32,8 @@ class OdcinekTest {
 		Punkt p1 = new Punkt(0, 0);
 		Punkt p2 = new Punkt(1, 1);
 		Odcinek segment = new Odcinek(p1, p2);
-		segment.shift(1, 2);
-		assertEquals(2.0, segment.sEdge.getX(), 0.001);
+		segment.shiftWhole(1, 2);
+		assertEquals(2.0, segment.getsEdgeX(), 0.001);
 	}
 	
 	@Test
@@ -42,8 +42,8 @@ class OdcinekTest {
 		Punkt p1 = new Punkt(0, 0);
 		Punkt p2 = new Punkt(1, 1);
 		Odcinek segment = new Odcinek(p1, p2);
-		segment.shift(1, 2);
-		assertEquals(3.0, segment.sEdge.getY(), 0.001);
+		segment.shiftWhole(1, 2);
+		assertEquals(3.0, segment.getsEdgeY(), 0.001);
 	}
 
 	@Test

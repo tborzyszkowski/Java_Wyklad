@@ -2,19 +2,12 @@ package geometria;
 
 public class Odcinek {
 	
-	Punkt fEdge;
-	Punkt sEdge;
+	private Punkt fEdge;
+	private Punkt sEdge;
 	
-	public Odcinek(Punkt p1, Punkt p2)
+	public Odcinek(double x1, double y1, double x2, double y2)
 	{
-		this.fEdge = new Punkt(p1);
-		this.sEdge = new Punkt(p2);
-	}
-	
-	public Odcinek(double fx, double fy, double sx, double sy)
-	{
-		this.fEdge = new Punkt(fx, fy);
-		this.sEdge = new Punkt(sx, sy);
+		setSegment(x1, y1, x2, y2);
 	}
 	
 	public Odcinek()
@@ -22,27 +15,66 @@ public class Odcinek {
 		this(0, 0, 1, 1);
 	}
 	
-	public Odcinek(Punkt p, double sx, double sy)
+	public Odcinek(Punkt p1, Punkt p2)
 	{
-		this(p.getX(), p.getY(), sx, sy);
+		this(p1.getX(), p1.getY(), p2.getX(), p2.getY());
 	}
 	
-	public Odcinek(double sx, Punkt p, double sy)
+	public Odcinek(Punkt p, double x2, double y2)
 	{
-		this(sx, sy, p.getX(), p.getY());
+		this(p.getX(), p.getY(), x2, y2);
 	}
 	
-	public Odcinek(double sx, double sy, Punkt p)
+	public Odcinek(double x2, Punkt p, double y2)
 	{
-		this(sx, sy, p.getX(), p.getY());
+		this(x2, y2, p.getX(), p.getY());
 	}
 	
-	public void shift(double x, double y)
+	public Odcinek(double x2, double y2, Punkt p)
 	{
-		this.fEdge.setX(this.fEdge.getX() + x);
-		this.fEdge.setY(this.fEdge.getY() + y);
-		this.sEdge.setX(this.sEdge.getX() + x);
-		this.sEdge.setY(this.sEdge.getY() + y);
+		this(x2, y2, p.getX(), p.getY());
+	}
+	
+	public double getfEdgeX()
+	{
+		return this.fEdge.getX();
+	}
+	
+	public double getfEdgeY()
+	{
+		return this.fEdge.getY();
+	}
+	
+	public double getsEdgeX()
+	{
+		return this.sEdge.getX();
+	}
+	
+	public double getsEdgeY()
+	{
+		return this.sEdge.getY();
+	}
+	
+	public void setfEdge(double x, double y)
+	{
+		this.fEdge = new Punkt(x, y);
+	}
+	
+	public void setsEdge(double x, double y)
+	{
+		this.sEdge = new Punkt(x, y);
+	}
+	
+	public void setSegment(double x1, double y1, double x2, double y2)
+	{
+		setfEdge(x1, y1);
+		setsEdge(x2, y2);
+	}
+	
+	public void shiftWhole(double x, double y)
+	{
+		this.fEdge.shift(x, y);
+		this.sEdge.shift(x, y);
 	}
 	
 	public double pointDistance(Punkt p)
@@ -50,8 +82,8 @@ public class Odcinek {
 		Punkt p3 = new Punkt();
 		double u, dx, dy, distance;
 		
-		dx = this.sEdge.getX() - this.fEdge.getX();
-		dy = this.sEdge.getY() - this.fEdge.getY();
+		dx = getsEdgeX() - getfEdgeX();
+		dy = getsEdgeY() - getfEdgeY();
 		
 		if(dx == 0 && dy == 0)
 		{
@@ -59,7 +91,7 @@ public class Odcinek {
 			return distance;
 		}
 		
-		u = ((p.getX() - this.fEdge.getX()) * dx + (p.getY() - this.fEdge.getY()) * dy) / (dx * dx + dy * dy);
+		u = ((p.getX() - getfEdgeX()) * dx + (p.getY() - getfEdgeY()) * dy) / (dx * dx + dy * dy);
 		
 		if(u <= 0)
 			distance = this.fEdge.distance(p);
@@ -67,8 +99,8 @@ public class Odcinek {
 			distance = this.sEdge.distance(p);
 		else
 		{
-			p3.setX(this.fEdge.getX() + u * dx);
-			p3.setY(this.fEdge.getY() + u * dy);
+			p3.setX(getfEdgeX() + u * dx);
+			p3.setY(getfEdgeY() + u * dy);
 			distance = p3.distance(p);
 		}
 		
