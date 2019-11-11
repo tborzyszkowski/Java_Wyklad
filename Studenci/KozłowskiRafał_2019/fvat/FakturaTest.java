@@ -22,6 +22,6 @@ public class FakturaTest {
         PozycjaFaktury lp2 = new PozycjaFaktury("Osełka", 3, 25.25, 18);
         fv3.dodajPozycje(lp1);
         fv3.dodajPozycje(lp2);
-        Assert.assertEquals(126.59, fv3.getWartoscFv(), 0.001);
+        Assert.assertEquals(126.59, fv3.getWartoscFv(), 0.01);
     }
 }

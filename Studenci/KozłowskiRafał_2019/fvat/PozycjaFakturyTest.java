@@ -12,7 +12,7 @@ public class PozycjaFakturyTest {
         PozycjaFaktury lp1 = new PozycjaFaktury("Maszynka", 1, 30.25, 23);
         PozycjaFaktury lp2 = new PozycjaFaktury("Osełka", 3, 25.25, 18);
 
-        Assert.assertEquals(30.25, lp1.getCenaNettoPoz(), 0.009);
+        Assert.assertEquals(30.25, lp1.getCenaNettoPoz(), 0.01);
     }
 
     @Test
