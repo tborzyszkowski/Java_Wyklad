@@ -1,8 +1,6 @@
 package wyklad._04dziedziczenie;
 
-// przyklad wywolan polimorficznych z wykorzystaniem 
-// zmiennych this i super
-class AA { 
+class AA {
     int m() { return 1; }
     int test() { return m();}
     int testThis() { return this.test();}
@@ -27,7 +25,7 @@ class DynWia{
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis());
 	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper());
-	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper());
+	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne());
   }
 }
 

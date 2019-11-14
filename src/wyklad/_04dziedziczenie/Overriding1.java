@@ -23,7 +23,7 @@ class BO1 extends AO1 {
 	}
 
 	String show() {
-		return "B: k = " + this.i;
+		return "B: k = " + this.i + super.show();
 	}
 }
 

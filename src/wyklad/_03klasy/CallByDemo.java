@@ -9,7 +9,7 @@ class CallBy {
 	}
 
 	void ByValue(int i, int j) {
-		i *= 2; // i = 2 * i
+		i *= 2;
 		j /= 2;
 		System.out.println("Wewn: i = " + i + " j = " + j);
 	}
@@ -74,5 +74,3 @@ public class CallByDemo {
 
 	}
 }
-
-// Integer ii = new Integer(i);

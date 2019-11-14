@@ -40,32 +40,27 @@ class Trojkat extends Figura {
 // Klasa testujaca
 class Figury {
 	public static void main(String args[]) {
-		Figura f = new Figura(10, 10);
+		Figura f;
 		Prostokat p = new Prostokat(5, 4);
 		Trojkat t = new Trojkat(5, 4);
 
 		Figura figRef;
 
-		figRef = p;   // prostokat
+		figRef = p;
 		System.out.println("Pole = " + figRef.pole());
 
 		figRef = t;   // trojkat
 		System.out.println("Pole = " + figRef.pole());
 
-		figRef = f;   // figura 
-		System.out.println("Pole = " + figRef.pole());
 		System.out.println("-----------------");
 
 		Random rand = new Random();
 
-		switch (rand.nextInt(3)) {
+		switch (rand.nextInt(2)) {
 			case 0:
-				figRef = f;
-				break;
-			case 1:
 				figRef = p;
 				break;
-			case 2:
+			case 1:
 				figRef = t;
 				break;
 			default:

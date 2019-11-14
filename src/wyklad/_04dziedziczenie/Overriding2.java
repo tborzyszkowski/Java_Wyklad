@@ -3,8 +3,8 @@ package wyklad._04dziedziczenie;
 class AO2 {
 	int i;
 
-	AO2(int a, int b) {
-		i = a;
+	AO2(int i) {
+		this.i = i;
 	}
 
 	void showOnConsole() {
@@ -19,9 +19,9 @@ class AO2 {
 class BO2 extends AO2 {
 	int k;
 
-	BO2(int a, int b, int c) {
-		super(a, b);
-		k = c;
+	BO2(int i, int k) {
+		super(i);
+		this.k = k;
 	}
 
 	void showOnConsole() {
@@ -35,9 +35,9 @@ class BO2 extends AO2 {
 
 class Overriding2 {
 	public static void main(String args[]) {
-		BO2 obB = new BO2(1, 2, 3);
-//    	AO2 obA = obB;
-		AO2 obA = new AO2(3, 4);
+		BO2 obB = new BO2(1, 2);
+		AO2 obA = obB;
+//		AO2 obA = new AO2(3);
 
 		obB.showOnConsole();
 		System.out.println(obB.getClass() + " " + obB);

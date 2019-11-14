@@ -1,23 +1,18 @@
 package wyklad._05pakiety;
 
-// przyklad rozszerzania interfejsow
-
 interface Aaaaa {
 	void meth1();
 
 	void meth2();
 }
 
-// interfejs Bbb rozszerza interfejs Aaa
-// zawiera wiec meth1 i meth2
+
 interface Bbb extends Aaaaa {
 	void meth1();
 
 	void meth3();
 }
 
-// ta klasa musi implementowac wszystkie metody z A i z B
-// abstract
 class MyClass implements Bbb {
 	public void meth1() {
 		System.out.println("Implementacja metody 1");
@@ -32,7 +27,6 @@ class MyClass implements Bbb {
 	}
 }
 
-// klasa testujaca
 class TestExtendIF {
 	public static void main(String args[]) {
 		MyClass ob = new MyClass();

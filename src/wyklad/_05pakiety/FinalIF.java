@@ -29,7 +29,7 @@ class Question implements SharedConstants {
 			return SOON; // 13%
 		else
 			return NEVER; // 2%
-		
+
 	}
 }
 
@@ -37,24 +37,24 @@ class AskMe implements SharedConstants {
 	static String answer(int result) {
 		String wynik = "";
 		switch (result) {
-		case NO:
-			wynik = "No";
-			break;
-		case YES:
-			wynik = "Yes";
-			break;
-		case MAYBE:
-			wynik = "Maybe";
-			break;
-		case LATER:
-			wynik = "Later";
-			break;
-		case SOON:
-			wynik = "Soon";
-			break;
-		case NEVER:
-			wynik = "Never";
-			break;
+			case NO:
+				wynik = "No";
+				break;
+			case YES:
+				wynik = "Yes";
+				break;
+			case MAYBE:
+				wynik = "Maybe";
+				break;
+			case LATER:
+				wynik = "Later";
+				break;
+			case SOON:
+				wynik = "Soon";
+				break;
+			case NEVER:
+				wynik = "Never";
+				break;
 		}
 		return wynik;
 	}
@@ -62,7 +62,7 @@ class AskMe implements SharedConstants {
 	public static void main(String args[]) {
 
 		Question q = new Question();
-		int wyniki[] = { 0, 0, 0, 0, 0, 0 };
+		int wyniki[] = {0, 0, 0, 0, 0, 0};
 		int n = 100 * 1000 * 1000;
 		for (int i = 0; i < n; i++) {
 			wyniki[q.ask()]++;
