@@ -4,6 +4,13 @@
 |----------------|:-----------|
 | 22.11.2019     |  10        |
 
+--- 
+Przekroczenie terminu o **n** zajęć wiąże się z karą:
+- punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
+
+--- 
+
+
 Po zakupach w sklepie internetowym, klientowi na wskazany adres email, będzie wysłana faktura VAT. 
 Twoim zadaniem jest napisanie logiki, która na podstawie zawartości koszyka z zakupami / produktami 
 będzie generowała dane do faktury VAT, takie jak:
