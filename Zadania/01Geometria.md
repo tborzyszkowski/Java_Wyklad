@@ -1,5 +1,9 @@
 # Zadanie: geometria płaska
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 22.11.2019     |  10        |
+
 ## Punkt
 
 Napisać klasę ``Punkt``, która:

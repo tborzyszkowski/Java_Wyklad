@@ -1,5 +1,9 @@
 # Zadanie: Bank
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 29.11.2019     |  10        |
+
 System bankowy pozwala na zlecenie operacji bankowych na rachunku klienta. 
 Do takich operacji należą:
 - wpłata środków na konto

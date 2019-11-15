@@ -1,5 +1,9 @@
 # Zadanie: JavaMarkt
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 29.11.2019     |  10        |
+
 Twoja firma dostała zlecenie na stworzenie oprogramowania dla dużego sklepu internetowego *JavaMarkt*. 
 Jedną z podstawowych funkcjonalności będzie oprogramowanie koszyka zakupów, 
 który potrafiłby uwzględniać różne promocje, rabaty oraz oferty specjalne, takie jak:
