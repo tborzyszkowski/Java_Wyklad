@@ -16,34 +16,48 @@ public class Odcinek {
     }
 
     public Odcinek(Punkt punkt, double x2, double y2) {
-        this.punkt1 = punkt;
-        this.punkt2 = new Punkt(x2, y2);
+        this.(punkt.getX(), punkt.getY(), x2, y2);
     }
 
-    public Punkt getPunkt1() {
-        return punkt1;
+    public Punkt getPunkt1X() {
+        return this.punkt1.getX();
     }
 
-    public Punkt getPunkt2() {
-        return punkt2;
+    public Punkt getPunkt2X() {
+        return this.punkt2.getX();
+    }
+    
+    public Punkt getPunkt1Y() {
+        return this.punkt1.getY();
+    }
+
+    public Punkt getPunkt2Y() {
+        return this.punkt2.getY();
     }
 
     public void shift(double x, double y) {
-        this.punkt1.setX(this.punkt1.getX() + x);
-        this.punkt1.setY(this.punkt1.getY() + y);
-        this.punkt2.setX(this.punkt2.getX() + x);
-        this.punkt2.setY(this.punkt2.getY() + y);
+        
+        this.punkt1.setX(getPunkt1X() + x);
+        this.punkt1.setY(getPunkt1Y() + y);
+        this.punkt2.setX(getPunkt2X() + x);
+        this.punkt2.setY(getPunkt2Y() + y);
+        
     }
 
     public double pointDistance(Punkt p) {
+        
+        Punkt punkt3;
+        double dx21, dx1, dy21, dy1;
 
-        double dx21 = this.punkt2.getX() - this.punkt1.getX();
-        double dx1 = p.getX() - this.punkt1.getX();
-        double dy21 = this.punkt2.getY() - this.punkt1.getY();
-        double dy1 = p.getY() - this.punkt1.getY();
+        double dx21 = getPunkt2X() - getPunkt1X();
+        double dx1 = p.getX() - getPunkt1X();
+        double dy21 = getPunkt2Y() - getPunkt1Y();
+        double dy1 = p.getY() - getPunkt1Y();
+        
         double u = ((dx21 * dx1) + (dy21 * dy1)) / ((dx21 * dx21) + (dy21 * dy21));
-        double x3 = this.punkt1.getX() + u * (this.punkt2.getX() - this.punkt1.getX());
-        double y3 = this.punkt1.getY() + u * (this.punkt2.getY() - this.punkt1.getY());
+        
+        double x3 = getPunkt1X() + u * (getPunkt2X() - getPunkt1X());
+        double y3 = getPunktY1() + u * (getPunkt2Y() - getPunkt1Y());
         Punkt punkt3 = new Punkt(x3, y3);
 
         if (u <= 0) {
@@ -54,11 +68,11 @@ public class Odcinek {
             return punkt3.distance(p);
         }
         else {
-            return punkt2.distance(p);
+            return this.punkt2.distance(p);
         }
 
 //            (x2 - x1)(x - x1) + (y2 - y1)(y - y1)
-//    u = ——————————————————————————
+//    u = —————————————————————————————————————————
 //                (x2 - x1)2 + (y2 - y1)2
     }
 
