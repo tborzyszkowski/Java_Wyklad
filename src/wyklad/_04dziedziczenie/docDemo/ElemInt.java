@@ -2,7 +2,7 @@ package wyklad._04dziedziczenie.docDemo;
 
 /**
  * Klasa elementów do posortowania.
- *   @author {@link http://julia.univ.gda.pl/~mattb/ Tomasz Borzyszkowski}
+ *   @author Jan Kowalski
  *   @version 1.0    
  */
 public class ElemInt extends Element {

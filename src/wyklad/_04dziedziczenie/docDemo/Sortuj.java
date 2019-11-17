@@ -1,6 +1,13 @@
 package wyklad._04dziedziczenie.docDemo;
 
-class Sortuj {
+/**
+* Klasa sortująca elementy typu Element.
+ *
+ * @version 1.0
+ * @see wyklad._04dziedziczenie.docDemo.Element
+ */
+
+public class Sortuj {
 	/**
 	 * Zmienne prywatne klasy sortującej
 	 */
@@ -26,7 +33,6 @@ class Sortuj {
 	 * @param e dodawany element klasy potomnej @see Element
 	 * @param i miejsce, na które wstawiamy element wyznaczone
 	 *          przez tablicę indeksy
-	 * @return nic
 	 */
 	public void dodajNa(Element e, int i) {
 		elms[indeksy[i]] = e;
@@ -47,8 +53,6 @@ class Sortuj {
 	/**
 	 * Metoda sortująca. Nie zmienia tablicy elementów.
 	 * Zamienia tylko indeksy w pośredniej tablicy indeksów.
-	 *
-	 * @return nic
 	 */
 	public void sortuj() {
 		for (int i = 0; i < elms.length - 1; i++) {

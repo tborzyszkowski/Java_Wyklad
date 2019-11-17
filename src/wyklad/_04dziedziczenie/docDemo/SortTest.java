@@ -3,7 +3,7 @@ package wyklad._04dziedziczenie.docDemo;
 /**
  * Klasa tastująca sortowanie elementów
  *
- * @author {@link http://julia.univ.gda.pl/~mattb/ Tomasz Borzyszkowski}
+ * @author Jan Kowalski
  * @version 1.0
  */
 public class SortTest {
@@ -11,7 +11,6 @@ public class SortTest {
 	 * Metoda demonstrująca sortowanie 20 elementów typu
 	 *
 	 * @param args nieużywane
-	 * @return nic
 	 * @see ElemInt
 	 */
 	public static void main(String args[]) {
