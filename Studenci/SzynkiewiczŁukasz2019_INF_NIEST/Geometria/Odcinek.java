@@ -3,7 +3,9 @@ public class Odcinek {
     private Punkt punkt1;
     private Punkt punkt2;
 
-    public Odcinek() {}
+    public Odcinek() {
+       this(0,0,0,0);
+    }
 
     public Odcinek(double x1, double y1, double x2, double y2) {
         this.punkt1 = new Punkt(x1, y1);
