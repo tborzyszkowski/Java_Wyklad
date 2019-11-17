@@ -49,7 +49,7 @@ class Figury {
 		figRef = p;
 		System.out.println("Pole = " + figRef.pole());
 
-		figRef = t;   // trojkat
+		figRef = t;
 		System.out.println("Pole = " + figRef.pole());
 
 		System.out.println("-----------------");
