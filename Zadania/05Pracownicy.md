@@ -51,7 +51,7 @@ trzema podstawowymi typami zatrudnionych pracowników:
         - numeru budynku 
         - numeru lokalu 
         - nazwy miasta
-    - skuteczność: wyrażona w trzech stałych typach “NISKA”, “ŚREDNIA”, “WYSOKA” 
+    - skuteczność: wyrażona w trzech stałych typach ``NISKA``, ``ŚREDNIA``, ``WYSOKA`` 
     - wysokość prowizji: wyrażona w procentach
 
 Rejestr powinien umożliwić realizację następujących zadań:
