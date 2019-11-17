@@ -1,17 +1,17 @@
 package Geometria.odcinek;
 
+import Geometria.punkt.Punkt;
+
 public class Odcinek {
-    private double x1;
-    private double y1;
-    private double x2;
-    private double y2;
+    private Punkt punktA;
+    private Punkt punktB;
 
     Odcinek(double x1, double y1, double x2, double y2){
-        this.x1 = x1;
-        this.y1 = y1;
-        this.x2 = x2;
-        this.y2 = y2;
+        this.punktA = new Punkt(x1, y1);
+        this.punktB = new Punkt(x2, y2);
     }
+
+
     Odcinek(){
         this(0,0,0,0);
     }
@@ -26,32 +26,26 @@ public class Odcinek {
     }
 
     Odcinek(double x, double y, Punkt punkt){
-        this(x, y, punkt.getX(), punkt.getY());
+        this(punkt, x, y);
     }
 
-    double getX1(){
-        return this.x1;
-    }
-    double getY1(){
-        return this.y1;
+    Punkt getPunktA(){
+        return this.punktA;
     }
 
-    double getX2(){
-        return this.x2;
-    }
-
-    double getY2(){
-        return this.y2;
+    Punkt getPunktB(){
+        return this.punktB;
     }
 
     void shift(double x, double y){
-        this.x1 = this.x1 + x;
-        this.x2 = this.x2 + x;
-        this.y1 = this.y1 + y;
-        this.y2 = this.y2 + y;
+        this.punktA.setX(this.getPunktA().getX() + x);
+        this.punktA.setY(this.getPunktA().getY() + y);
+        this.punktB.setX(this.getPunktB().getX() + x);
+        this.punktB.setY(this.getPunktB().getY() + y);
     }
 
     double length(){
-        return Math.sqrt(Math.pow(this.x1-this.x2,2)+Math.pow(this.y1-this.y2,2));
+        return Math.sqrt(Math.pow(this.punktA.getX() -this.punktB.getX(),2) +
+                Math.pow(this.punktA.getY()-this.punktB.getY(),2));
     }
 }
