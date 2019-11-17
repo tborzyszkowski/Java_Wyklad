@@ -80,7 +80,9 @@ Zastanów się w jaki sposób zamodelować obiekt pracownika w programie,
 zważywszy na to, że spora ilość cech jest wspólna dla każdego z poszczególnych typów pracownika. 
 Wszystkie obiekty rejestru przechowuje w pamięci komputera w wybranej przez Ciebie kolekcji 
 (Zastanów się która z kolekcji będzie najlepiej realizować zadania związane z rejestrem pracowników).
- 
+
+---
+
 W zadaniu oceniane będą:
 - Tworzenie klas: 20%
 - Kompozycja: 10%
