@@ -53,7 +53,6 @@ trzema podstawowymi typami zatrudnionych pracowników:
         - nazwy miasta
     - skuteczność: wyrażona w trzech stałych typach “NISKA”, “ŚREDNIA”, “WYSOKA” 
     - wysokość prowizji: wyrażona w procentach
----------
 
 Rejestr powinien umożliwić realizację następujących zadań:
 - dodanie dowolnego z typów pracownika do rejestru
