@@ -10,14 +10,14 @@ class BB extends AA {
 //    int testSuper() { return super.test(); }
     int testSuper() { return this.test(); }
     int superOne() { return super.m(); }
-    int test() { return this.m();}
+//    int test() { return this.m();}
 //    int test() { return m();}
 }
 class CC extends BB { 
     int m() { return 3; }
     int superTwo() {return superOne(); }
     int testSuper() { return super.m(); }
-//    int test() { return super.m();}
+    int test() { return super.m();}
 
 }
 class DynWia{
