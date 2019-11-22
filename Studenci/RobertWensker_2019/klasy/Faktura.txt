@@ -1,4 +1,4 @@
-Numer Faktury: 214336
+Numer Faktury: 214337
 Dane Kupujacego:
 Imie i Nazwisko: Wojtek Kowalski
 Adres: Aleja Rodla 45b, Malbork 82-400

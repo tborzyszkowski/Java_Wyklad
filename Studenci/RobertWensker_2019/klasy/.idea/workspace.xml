@@ -67,11 +67,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OdcinekTest.initPointsnDoublesEndingY" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OdcinekTest.initDoublesnPointsStartingY" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="klasy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="OdcinekTest" />
-      <option name="METHOD_NAME" value="initPointsnDoublesEndingY" />
+      <option name="METHOD_NAME" value="initDoublesnPointsStartingY" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OdcinekTest.testSetSY" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="klasy" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OdcinekTest" />
+      <option name="METHOD_NAME" value="testSetSY" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,23 +96,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PunktTest.TestSetY" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="klasy" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PunktTest" />
-      <option name="METHOD_NAME" value="TestSetY" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.FVat" />
-        <item itemvalue="JUnit.OdcinekTest" />
-        <item itemvalue="JUnit.OdcinekTest.initPointsnDoublesEndingY" />
         <item itemvalue="JUnit.PunktTest" />
-        <item itemvalue="JUnit.PunktTest.TestSetY" />
+        <item itemvalue="JUnit.OdcinekTest" />
+        <item itemvalue="JUnit.OdcinekTest.testSetSY" />
+        <item itemvalue="JUnit.OdcinekTest.initDoublesnPointsStartingY" />
       </list>
     </recent_temporary>
   </component>
