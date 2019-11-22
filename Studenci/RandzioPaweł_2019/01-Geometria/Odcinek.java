@@ -8,25 +8,17 @@ public class Odcinek{
 
     public Odcinek(){}
 
-    public Odcinek(double ax, double ay, double bx, double by){
-        Ax = ax;
-        Ay = ay;
-        Bx = bx;
-        By = by;
-    }
+    public Odcinek(double a, double b, double c, double d){setValues(a,b,c,d);}
 
-    public Odcinek(Punkt a, Punkt b){
-        Ax = a.x;
-        Ay = a.y;
-        Bx = b.x;
-        By = b.y;
-    }
+    public Odcinek(Punkt a, Punkt b){this(a.x,a.y,b.x,b.y);}
 
-    public Odcinek(Punkt p, double a, double b){
-        Ax = p.x;
-        Ay = p.y;
-        Bx = a;
-        By = b;
+    public Odcinek(Punkt p, double a, double b){this(p.x,p.y,a,b);}
+
+    private void setValues(double ax, double ay, double bx, double by){
+        this.Ax = ax;
+        this.Ay = ay;
+        this.Bx = bx;
+        this.By = by;
     }
 
     public void shift(double a, double b){

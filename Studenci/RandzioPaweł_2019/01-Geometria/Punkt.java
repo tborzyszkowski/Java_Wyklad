@@ -6,14 +6,13 @@ public class Punkt {
 
     public Punkt(){}
 
-    public Punkt(double x, double y){
+    public Punkt(double x, double y){setValues(x,y);}
+
+    public Punkt(Punkt pkt){this(pkt.x,pkt.y);}
+
+    private void setValues(double x, double y){
         this.x = x;
         this.y = y;
-    }
-
-    public Punkt(Punkt pkt){
-        x = pkt.x;
-        y = pkt.y;
     }
 
     public double getX(){
