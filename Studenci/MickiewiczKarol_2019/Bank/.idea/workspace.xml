@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e1ec2c4-fa17-4955-b671-41d4e686d9ef" name="Default Changelist" comment="" />
+    <list default="true" id="4e1ec2c4-fa17-4955-b671-41d4e686d9ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/FVAT.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/FVAT.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/out/production/FVAT/META-INF/FVAT.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Osoba/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Osoba/Seller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Facture.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Transaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Konto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KontoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KontoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Przelew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Przelew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/Faktura.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/out/production/Faktura/META-INF/Faktura.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Osoba/Klient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Osoba/Sprzedajacy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Faktura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Produkt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Transakcja.java" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,12 +50,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1TPnl6dQy5ClXAnu2XOYxmZfhLX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -37,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KontoTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Bank" />
@@ -50,6 +91,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="KontoTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KontoTest.przelew_naDrugimKoncieRośnieStanKonta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Bank" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KontoTest" />
+      <option name="METHOD_NAME" value="przelew_naDrugimKoncieRośnieStanKonta" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,23 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KontoTest.wykonajPrzelewWychodzący" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Bank" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KontoTest" />
-      <option name="METHOD_NAME" value="wykonajPrzelewWychodzący" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.KontoTest" />
+        <item itemvalue="JUnit.KontoTest.przelew_naDrugimKoncieRośnieStanKonta" />
         <item itemvalue="JUnit.KontoTest.wplac_kwotaDodatnia_zwiększonyStanKonta" />
         <item itemvalue="JUnit.KontoTest.przelew_naJednymKoncieMalejeStanKonta_naDrugimRośnie" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.KontoTest.wykonajPrzelewWychodzący" />
       </list>
     </recent_temporary>
   </component>
@@ -106,5 +147,16 @@
       <updated>1573370745444</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

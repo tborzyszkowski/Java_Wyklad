@@ -22,7 +22,7 @@ public class KontoTest {
     }
 
     @Test
-    public void przelew_naJednymKoncieMalejeStanKonta_naDrugimRośnie() {
+    public void przelew_naJednymKoncieMalejeStanKonta() throws InterruptedException {
         Konto konto1 = new Konto("1", 20);
 
         Konto konto2 = new Konto("2", 0);
@@ -30,6 +30,16 @@ public class KontoTest {
         Przelew przelew = new Przelew(konto1, konto2, 2);
 
         assertEquals(Integer.valueOf(18), Integer.valueOf(konto1.getHistoria().get(konto1.getHistoria().size()-1).get(4)));
+    }
+
+    @Test
+    public void przelew_naDrugimKoncieRośnieStanKonta() throws InterruptedException {
+        Konto konto1 = new Konto("1", 20);
+
+        Konto konto2 = new Konto("2", 0);
+
+        Przelew przelew = new Przelew(konto1, konto2, 2);
+
         assertEquals(Integer.valueOf(2), Integer.valueOf(konto2.getHistoria().get(konto2.getHistoria().size()-1).get(4)));
     }
 
