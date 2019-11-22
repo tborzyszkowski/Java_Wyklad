@@ -45,4 +45,25 @@ public class pozycja {
     public int get_ilosc(){ return ilosc; }
 
     public double get_podatek(){ return podatek; }
+
+    public void setNazwa(String nazwa) {
+        this.nazwa = nazwa;
+    }
+
+    public void setIlosc(int ilosc) {
+        this.ilosc = ilosc;
+        this.p_netto = this.ilosc * this.j_netto;
+        this.brutto = this. p_netto * this.podatek;
+    }
+
+    public void setJ_netto(double j_netto) {
+        this.j_netto = j_netto;
+        this.p_netto = this.ilosc * this.j_netto;
+        this.brutto = this. p_netto * this.podatek;
+    }
+
+    public void setPodatek(double podatek) {
+        this.podatek = podatek;
+        this.brutto = this. p_netto * this.podatek;
+    }
 }

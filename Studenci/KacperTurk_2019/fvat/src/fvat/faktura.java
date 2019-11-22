@@ -87,6 +87,27 @@ public class faktura {
 
     public double getBrutto() { return suma_brutto; }
 
+    public void setKlient(klient klientF) {
+        this.klientF = klientF;
+    }
+
+    public void setSprzedajacy(sprzedajacy sprzedajacyF) {
+        this.sprzedajacyF = sprzedajacyF;
+    }
+
+    public void setData_wystawienia(String data_wystawienia) {
+        this.data_wystawienia = data_wystawienia;
+    }
+
+    public void setData_sprzedazy(String data_sprzedazy) {
+        this.data_sprzedazy = data_sprzedazy;
+    }
+
+    public void setData_zaplaty(String data_zaplaty) {
+        this.data_zaplaty = data_zaplaty;
+    }
+
+
     public void add_brutto(double brut) {
         this.suma_brutto += brut;
     }

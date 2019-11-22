@@ -27,4 +27,16 @@ public class klient {
     public String getNIP() {
         return NIP;
     }
+
+    public void setNazwa_firmy(String nazwa_firmy) {
+        this.nazwa_firmy = nazwa_firmy;
+    }
+
+    public void setAdres(String adres) {
+        this.adres = adres;
+    }
+
+    public void setNIP(String NIP) {
+        this.NIP = NIP;
+    }
 }

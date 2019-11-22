@@ -35,4 +35,20 @@ public class sprzedajacy {
     public String getNr_konta() {
         return nr_konta;
     }
+
+    public void setNazwa_firmy(String nazwa_firmy) {
+        this.nazwa_firmy = nazwa_firmy;
+    }
+
+    public void setAdres(String adres) {
+        this.adres = adres;
+    }
+
+    public void setNIP(String NIP) {
+        this.NIP = NIP;
+    }
+
+    public void setNr_konta(String nr_konta) {
+        this.nr_konta = nr_konta;
+    }
 }

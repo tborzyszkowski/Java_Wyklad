@@ -41,6 +41,15 @@ public class Odcinek {
 
     public double getY2() { return this.B.getY();}
 
+    public void setA(Punkt a) {
+        A = a;
+    }
+
+    public void setB(Punkt b) {
+        B = b;
+    }
+
+
     public double pointDistance(Punkt p){
         double x1= this.A.getX();
         double y1= this.A.getY();
