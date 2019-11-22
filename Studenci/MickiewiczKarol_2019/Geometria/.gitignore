@@ -1,4 +1,7 @@
 # Default ignored files
-.idea
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/workspace.xml
 out
-Geometria.iml
+/Geometria.iml
