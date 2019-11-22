@@ -3,7 +3,7 @@ import java.lang.*;
 
 
 class methods {
-    int countOccurence(String cardType) throws IOException {
+    static int countOccurence(String cardType) throws IOException {
         BufferedReader csvRead = new BufferedReader(new FileReader("SalesJan2009.csv"));
         String row;
         int count = 0;
