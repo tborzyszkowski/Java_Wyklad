@@ -2,40 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e1ec2c4-fa17-4955-b671-41d4e686d9ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FVAT/FVAT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/FVAT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/out/production/FVAT/META-INF/FVAT.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Osoba/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Osoba/Seller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Facture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../FVAT/src/Zamówienie/Transaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Osoba/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Osoba/Seller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Tests/ProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Zamówienie/Facture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Zamówienie/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FVAT/src/Zamówienie/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/Geometria.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/src/Odcinek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/src/OdcinekTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/src/Punkt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Geometria/src/PunktTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gmail.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Konto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Konto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KontoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KontoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Przelew.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Przelew.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/Faktura.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/out/production/Faktura/META-INF/Faktura.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Osoba/Klient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Osoba/Sprzedajacy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Faktura.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Produkt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Faktura/src/main/java/Zamówienie/Transakcja.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,10 +53,15 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FVAT" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karol\IdeaProjects\Java_Wyklad\Studenci\MickiewiczKarol_2019\Bank" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,6 +143,14 @@
       <option name="presentableId" value="Default" />
       <updated>1573370745444</updated>
     </task>
+    <task id="LOCAL-00001" summary="Zadanie zakończono.">
+      <created>1574447604215</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574447604215</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,5 +163,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Zadanie zakończono." />
+    <option name="LAST_COMMIT_MESSAGE" value="Zadanie zakończono." />
   </component>
 </project>
