@@ -18,10 +18,10 @@ public class StalaTest {
 	public static void main(String[] args) {
 		Stala s1 = new Stala(10);
 		Stala s2 = new Stala(20);
-		
+
 		System.out.println(s1);
 		System.out.println(s2);
-		
+
 //		s1.stala = 30;
 	}
 

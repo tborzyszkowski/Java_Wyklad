@@ -1,58 +1,56 @@
 package wyklad._04dziedziczenie;
 
-// Prosty przyklad dziedziczenia
-// Klasa nadrzedna
 class A1 {
-    private int i, j;
-    // ustawianie wartosci
-    void setA(int a, int b) {
-    	i = a;
-    	j = b;
-    }
-    // pokaz zawartosc klasy
-    String zawartoscA() {
-    	return "\ti = " + i + "\tj = " +j;
-    } 
-    // suma zawartosci
-    int sumaA() {
-    	return i + j;
-    }
+	private int i;
+
+	void setA(int i) {
+		this.i = i;
+	}
+
+	int getI() {
+		return i;
+	}
+
+	int sumaA() {
+		return i;
+	}
+
+	public String toString() {
+		return "A1 { i = " + i + " }";
+	}
 }
-// Klasa podrzedna
+
 class B1 extends A1 {
-    int k;
-    // ustawianie wartosci
-    void setB(int a, int b, int c) {
-    	setA(a,b);
-    	k = c;
-//    	i = a;
-    }
-    // pokaz zawartosc klasy
-    String zawartoscB() {
-    	return zawartoscA() + "\tk = " + k;
-    }
-    // suma zawartosci
-    int sumaB() {
-    	return sumaA() + k;
-    }
+	int j;
+
+	void setB(int i, int j) {
+		setA(i);
+		this.j = j;
+	}
+
+	int sumaB() {
+		return sumaA() + j;
+	}
+
+	public String tosString() {
+		return "B1 { " + super.toString() + " j = " + j + " }";
+	}
 }
 
 class Dziedzictwo1 {
-    public static void main(String args[]) {
-    	A1 obA = new A1();
-    	B1 obB = new B1();
+	public static void main(String args[]) {
+		A1 obA = new A1();
+		B1 obB = new B1();
 
-	// ustawiamy wartosci
-    	obA.setA(10,20);
-    	obB.setB(1,2,3);
-    	obB.setA(-1, -2);
-	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: " + obA.zawartoscA());
-    	System.out.println("Zawartosc B: " + obB.zawartoscB() + "\n");
-	
- 	// wypisujemy sumy
-    	System.out.println("Suma A: " + obA.sumaA());
-    	System.out.println("Suma B: " + obB.sumaB());
-    	System.out.println("Suma B: " + obB.sumaA() + "\n");
-   }
+		obA.setA(10);
+		obB.setB(1, 2);
+		obB.setA(-1);
+
+		System.out.println("Zawartosc A: " + obA);
+		System.out.println("Zawartosc B: " + obB);
+
+		System.out.println("Suma A: " + obA.sumaA());
+		System.out.println("Suma B: " + obB.sumaB());
+		System.out.println("Suma B: " + obB.sumaA());
+	}
 }

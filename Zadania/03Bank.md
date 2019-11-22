@@ -1,5 +1,15 @@
 # Zadanie: Bank
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 29.11.2019     |  10        |
+
+--- 
+Przekroczenie terminu o **n** zajęć wiąże się z karą:
+- punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
+
+--- 
+
 System bankowy pozwala na zlecenie operacji bankowych na rachunku klienta. 
 Do takich operacji należą:
 - wpłata środków na konto

@@ -1,34 +1,47 @@
 package wyklad._04dziedziczenie;
 
 class AO3 {
-	int i, j;
-	AO3(int a, int b) {
-		i = a;
-		j = b;
+	int i;
+
+	AO3(int i) {
+		this.i = i;
 	}
-	void show() {
-		System.out.println(" i = " + i + " j = " + j);
+
+	void showOnConsole() {
+		System.out.println((this));
+	}
+
+	public String toString() {
+		return "A { i = " + i + " }";
 	}
 }
+
 class BO3 extends AO3 {
-	int k;
-	BO3(int a, int b, int c) {
-		super(a, b);
-		k = c;
+	int j;
+
+	BO3(int i, int j) {
+		super(i);
+		this.j = j;
 	}
-	void show(String msg) {
-		System.out.println(msg + k);
+
+	void showOnConsole(String msg) {
+		System.out.println(msg + this);
+	}
+
+	public String toString() {
+		return "B { " + super.toString() + " j = " + j + " }";
 	}
 }
+
 class Overriding3 {
 	public static void main(String args[]) {
-		BO3 obB = new BO3(1, 2, 3);
+		BO3 obB = new BO3(1, 2);
 		AO3 obA = obB;
 
-		obB.show(); // wywolanie show() z A
-		obB.show("To jest k: "); // wywolanie show() z B
-		obA.show();
-//		obA.show("aaa");
-		((BO3)obA).show("aaa");
+		obB.showOnConsole();
+		obB.showOnConsole("To jest k: ");
+		obA.showOnConsole();
+//		obA.showOnConsole("aaa");
+		((BO3) obA).showOnConsole("aaa");
 	}
 }

@@ -1,5 +1,15 @@
 # Zadanie: JavaMarkt
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 29.11.2019     |  10        |
+
+--- 
+Przekroczenie terminu o **n** zajęć wiąże się z karą:
+- punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
+
+--- 
+
 Twoja firma dostała zlecenie na stworzenie oprogramowania dla dużego sklepu internetowego *JavaMarkt*. 
 Jedną z podstawowych funkcjonalności będzie oprogramowanie koszyka zakupów, 
 który potrafiłby uwzględniać różne promocje, rabaty oraz oferty specjalne, takie jak:

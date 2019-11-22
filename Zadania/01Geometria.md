@@ -1,5 +1,15 @@
 # Zadanie: geometria płaska
 
+| Termin oddania | Punkty     |
+|----------------|:-----------|
+| 22.11.2019     |  10        |
+
+--- 
+Przekroczenie terminu o **n** zajęć wiąże się z karą:
+- punkty uzyskania za realizację zadania są dzielone przez **2<sup>n</sup>**.
+
+--- 
+
 ## Punkt
 
 Napisać klasę ``Punkt``, która:

@@ -1,60 +1,96 @@
 package wyklad._04dziedziczenie;
 
-class A3 {
-    int i, j;
-    // ustawianie wartosci
-    void setA(int a, int b) {
-    	i = a;
-    	j = b;
-    }
+import java.util.Random;
+
+class Base {
+	private int i;
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
+	@Override
+	public String toString() {
+		return "Base{" +
+				"i=" + i +
+				'}';
+	}
 }
-class B3 extends A3 {
-    int k;
-    // ustawianie wartosci
-    void setB(int a, int b, int c) {
-    	setA(a,b);
-    	k = c;
-    }
+
+class Derived1 extends Base {
+	private int k;
+
+	public int getK() {
+		return k;
+	}
+
+	public void setK(int k) {
+		this.k = k;
+	}
+
+	@Override
+	public String toString() {
+		return "Derived1 {" +
+				" k = " + k +
+				" " + super.toString() +
+				" }";
+	}
 }
-class B33 extends A3{
-	int k;
-    void setB(int a, int b, int c) {
-    	setA(a,b);
-    	k = c;
-    }
+
+class Derived2 extends Base {
+	private int k;
+
+	public int getK() {
+		return k;
+	}
+
+	public void setK(int k) {
+		this.k = k;
+	}
+
+	@Override
+	public String toString() {
+		return "Derived2 {" +
+				" k = " + k +
+				" " + super.toString() +
+				" }";
+	}
 }
+
 class Dziedzictwo3 {
-    public static void main(String args[]) {
-    	A3 obA = new A3();
-    	B3 obB = new B3();
-    	B33 obB33 = new B33();
+	public static void main(String args[]) {
+		Base base = new Base();
+		Derived1 der1 = new Derived1();
+		Derived2 der2 = new Derived2();
+		Random rnd = new Random();
 
-	// ustawiamy wartosci
-    	obA.setA(10,20);
-    	obB.setB(1,2,3);
-    	obB33.setB(-1, -2, -3);
+		base.setI(1);
+		der1.setI(11);
+		der1.setK(111);
+		der2.setI(22);
+		der2.setK(222);
 
-	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: ");
-    	System.out.println(" i = " + obA.i + " j = " + obA.j);
-    	System.out.println("Zawartosc B: ");
-    	System.out.println(" i = " + obB.i + " j = " + obB.j + 
-    			" k = " + obB.k + "\n");
-	
-    // obA bedzie wskazywal na obB
-    	obA = obB33;
-    //	obB = obA;
-	// wypisujemy zawartosc
-    	System.out.println("Zawartosc A: ");
-    	System.out.println(" i = " + obA.i + " j = " + obA.j);
-//    	System.out.println(" k = " + obA.k );
-        // czy dostepne bedzie k
-//    	System.out.println("((B3)obA).k = " + ((B3)obA).k);
-    	//System.out.println(" k = " + ((obA.getClass())obA).k);
-    	System.out.println(obA.getClass());
-    	if(obA instanceof B33)
-    		System.out.println(" k = " + ((B33)obA).k);
-    	else
-    		System.out.println("Zly typ");
-   }
+		System.out.println(base);
+		System.out.println(der1);
+		System.out.println(der2);
+
+		if (rnd.nextBoolean())
+			base = der1;
+		else
+			base = der2;
+
+		System.out.println(base);
+
+		System.out.println("((Der2)base).k = " + ((Derived2) base).getK());
+
+		System.out.println(base.getClass());
+		if (base instanceof Derived2)
+			System.out.println(" k = " + ((Derived2) base).getK());
+		else
+			System.out.println("Zly typ");
+	}
 }

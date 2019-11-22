@@ -1,104 +1,78 @@
 package wyklad._04dziedziczenie;
 
-// Definicja prostej klasy z metodami i konstruktorami
-
-// klasa nadrzedna
 class Box4 {
 	private double width;
 	private double height;
 	private double depth;
 
-	// konstruktor klonujacy
+	Box4(double width, double height, double depth) {
+		setValues(width, height, depth);
+	}
+
 	Box4(Box4 ob) {
-		width = ob.width;
-		height = ob.height;
-		depth = ob.depth;
+		this(ob.width, ob.height, ob.depth);
 	}
 
-	// konstruktor bez parametrow
 	Box4() {
-		width = -1;
-		height = -1;
-		depth = -1;
+		this(-1, -1, -1);
 	}
 
-	// konstruktor z jednym parametrem
 	Box4(int n) {
-		width = n; // tu konwersja int do double
-		height = n;
-		depth = n;
+		this(n, n, n);
 	}
 
-	// konstruktor z parametrami
-	Box4(double w, double h, double d) {
-		width = w;
-		height = h;
-		depth = d;
+	private void setValues(double width, double height, double depth) {
+		this.width = width;
+		this.height = height;
+		this.depth = depth;
 	}
 
-	// metoda zmieniajaca zawartosc obiektu
-	// ale nie bedaca konstruktorem
-	// nic nie zwraca, wiec typ wynikowy to void
-	void setDim(double w, double h, double d) {
-		width = w;
-		height = h;
-		depth = d;
+	void setDim(double width, double height, double depth) {
+		setValues(width, height, depth);
 	}
 
-	// metoda obliczajaca objetosc
 	double volume() {
-		// tu metoda oddaje obietosc
-		return width * height * depth;
+		return this.width * this.height * this.depth;
 	}
 
-	// reprezentacja napisowa obiektu Box
 	public String toString() {
-		return " Objetosc =\t" + this.volume();
+		return this.getClass().getSimpleName() + "{ Objetosc = " + this.volume() + " }";
 	}
 }
 
-// klasa potomna
 class BoxWeight extends Box4 {
 	private double weight;
 
-	// konstruktor klonujacy
 	BoxWeight(BoxWeight ob) {
-		super(ob); // tu odwolujemy sie do konstruktora Box(Box ob)
+		super(ob);
 		weight = ob.weight;
 	}
 
-	// konstruktor bez parametrow
 	BoxWeight() {
-//		super(); // jw. - musimy przeslac odp. liczbe parametrow
 		weight = -1;
 	}
 
-	// konstruktor z dwoma parametremami
-	BoxWeight(int n, double m) {
-		super(n); // tu wysulamy tylko jeden parametr
-		weight = m; // a tu uzywamy drugiego
+	BoxWeight(int n, double weight) {
+		super(n);
+		this.weight = weight;
 	}
 
-	// konstruktor z parametrami
-	BoxWeight(double w, double h, double d, double m) {
-		super(w, h, d);
-		weight = m;
+	BoxWeight(double width, double height, double depth, double weight) {
+		super(width, height, depth);
+		this.weight = weight;
 	}
 
-	// metoda zmieniajaca zawartosc obiektu
-	void setDim(double w, double h, double d, double m) {
-		super.setDim(w, h, d);
-		weight = m;
+	void setDim(double width, double height, double depth, double weight) {
+		super.setDim(width, height, depth);
+		this.weight = weight;
 	}
 
-	// reprezentacja napisowa obiektu BoxWeight
 	public String toString() {
-		return super.toString() + "\n" + " Waga     =\t" + weight;
+		return "BoxWeight{ " + super.toString() + " Waga = " + weight + "}";
 	}
 
 }
 
-// definicja klasy demonstrujacej uzycie klasy Box
 class BoxDemo4 {
 	public static void main(String args[]) {
 		// utworzenie instancji klasy Box
@@ -117,7 +91,7 @@ class BoxDemo4 {
 		myBox1.setDim(2, 3, 2, 100.001);
 		// raz jeszcze jego objetosc
 		System.out.println("myBox1: \n" + myBox1);
-		
+
 		Box4 box = myBox1;
 		System.out.println("myBox1: \n" + box);
 	}
