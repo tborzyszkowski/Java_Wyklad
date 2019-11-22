@@ -75,11 +75,11 @@ public class Odcinek {
         double x2 = this.endx;
         double y1 = this.starty;
         double y2 = this.endy;
-        double A = x - x1; // position of point rel one end of line
+        double A = x - x1;
         double B = y - y1;
-        double C = x2 - x1; // vector along line
+        double C = x2 - x1; 
         double D = y2 - y1;
-        double E = -D; // orthogonal vector
+        double E = -D; 
         double F = C;
 
         double dot = A * E + B * F;
