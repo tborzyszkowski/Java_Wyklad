@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14217e05-bb9b-478b-bfe0-16928cc20c86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled1/untitled1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/OfficeEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/OfficeEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/OfficeEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/OfficeEmployeeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/PhisicalEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/PhisicalEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/TradesmanEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/TradesmanEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/TradesmanEmployeeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/TradesmanEmployeeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/EmployeeRegister/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/EmployeeRegister/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfficeEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfficeEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfficeEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfficeEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhisicalEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhisicalEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TradesmanEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TradesmanEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TradesmanEmployeeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TradesmanEmployeeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1TjnmJ7jV29Y7EuHuttvDqTrwqn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.main">
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main" />
+      <module name="EmployeeRegister" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OfficeEmployeeTest.prototypeConstructorGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmployeeRegister" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OfficeEmployeeTest" />
+      <option name="METHOD_NAME" value="prototypeConstructorGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PhisicalEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmployeeRegister" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PhisicalEmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradesmanEmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmployeeRegister" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TradesmanEmployeeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TradesmanEmployeeTest.prototypeConstructorGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmployeeRegister" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TradesmanEmployeeTest" />
+      <option name="METHOD_NAME" value="prototypeConstructorGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.main" />
+        <item itemvalue="JUnit.PhisicalEmployeeTest" />
+        <item itemvalue="JUnit.TradesmanEmployeeTest" />
+        <item itemvalue="JUnit.OfficeEmployeeTest.prototypeConstructorGet" />
+        <item itemvalue="JUnit.TradesmanEmployeeTest.prototypeConstructorGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14217e05-bb9b-478b-bfe0-16928cc20c86" name="Default Changelist" comment="" />
+      <created>1573982529284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573982529284</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/PhisicalEmployee.java</url>
+          <line>19</line>
+          <properties class="PhisicalEmployee" method="corporationValue">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
