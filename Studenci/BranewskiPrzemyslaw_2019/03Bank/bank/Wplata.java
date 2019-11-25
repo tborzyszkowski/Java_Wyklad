@@ -68,6 +68,6 @@ public class Wplata {
 	public String toString()
 	{
 		return "\n\t-----------------\n\tData wplaty: " +
-				getDataWplaty() + ", kwota wplaty: " + getKwotaWplaty() + " PLN";
+			getDataWplaty() + ", kwota wplaty: " + getKwotaWplaty() + " PLN";
 	}
 }

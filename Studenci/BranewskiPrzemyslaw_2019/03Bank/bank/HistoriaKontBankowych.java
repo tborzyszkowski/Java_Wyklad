@@ -47,8 +47,8 @@ public class HistoriaKontBankowych {
 				for(Przelew przelew : przelewy)
 				{
 					if(przelew.getDataOperacji().equals(dataDo) &&
-							(przelew.getNadawca().getNumerKonta().equals(konto.getNumerKonta()) ||
-							 przelew.getOdbiorca().getNumerKonta().equals(konto.getNumerKonta())))
+					  (przelew.getNadawca().getNumerKonta().equals(konto.getNumerKonta()) ||
+					   przelew.getOdbiorca().getNumerKonta().equals(konto.getNumerKonta())))
 							historia = historia + przelew.toString()+ "\n\n";
 				}
 				
@@ -80,8 +80,10 @@ public class HistoriaKontBankowych {
 	
 	public static void main(String[] args) 
 	{
-		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001", "Jan", "Kowalski", "ul. Sikorskiego 73, 61-001 Poznan", "69020639261");
-		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238", "Krzysztof", "Nowak", "ul. Grójecka 13, 00-000 Warszawa", "57111105095");
+		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001", "Jan", "Kowalski",
+							 "ul. Sikorskiego 73, 61-001 Poznan", "69020639261");
+		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238", "Krzysztof", "Nowak",
+							 "ul. Grójecka 13, 00-000 Warszawa", "57111105095");
 		
 		HistoriaKontBankowych historia = new HistoriaKontBankowych();
 		historia.dodajKontoDoBazy(nadawca);

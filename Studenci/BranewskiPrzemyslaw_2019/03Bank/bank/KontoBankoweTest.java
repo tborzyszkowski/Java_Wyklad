@@ -10,9 +10,9 @@ class KontoBankoweTest {
 	public void stringConstructorSrodkiCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-				  							  "Jan", "Kowalski", 
-				  							  "ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  "69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		double srodki = 0.00;
 		assertEquals(srodki, konto.getSrodki(), 0.01);
 	}
@@ -21,9 +21,9 @@ class KontoBankoweTest {
 	public void stringConstructorNumerKontaCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		String numerKonta = "37 1240 1169 0000 2117 6900 1001";
 		assertEquals(numerKonta, konto.getNumerKonta());
 	}
@@ -32,9 +32,9 @@ class KontoBankoweTest {
 	public void stringConstructorImieCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		String imie = "Jan";
 		assertEquals(imie, konto.getImie());
 	}
@@ -43,9 +43,9 @@ class KontoBankoweTest {
 	public void stringConstructorNazwiskoCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		String nazwisko = "Kowalski";
 		assertEquals(nazwisko, konto.getNazwisko());
 	}
@@ -54,9 +54,9 @@ class KontoBankoweTest {
 	public void stringConstructorAdresCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		String adres = "ul. Sikorskiego 73, 61-001 Poznan";
 		assertEquals(adres, konto.getAdres());
 	}
@@ -65,9 +65,9 @@ class KontoBankoweTest {
 	public void stringConstructorPeselCheck()
 	{
 		KontoBankowe konto = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		String pesel = "69020639261";
 		assertEquals(pesel, konto.getPesel());
 	}
@@ -76,9 +76,9 @@ class KontoBankoweTest {
 	public void classConstructorSrodkiCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-				  							  "Jan", "Kowalski", 
-				  							  "ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  "69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		double srodki = 0.00;
 		assertEquals(srodki, konto2.getSrodki(), 0.01);
@@ -88,9 +88,9 @@ class KontoBankoweTest {
 	public void classConstructorNumerKontaCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		String numerKonta = "37 1240 1169 0000 2117 6900 1001";
 		assertEquals(numerKonta, konto2.getNumerKonta());
@@ -100,9 +100,9 @@ class KontoBankoweTest {
 	public void classConstructorImieCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		String imie = "Jan";
 		assertEquals(imie, konto2.getImie());
@@ -112,9 +112,9 @@ class KontoBankoweTest {
 	public void classConstructorNazwiskoCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		String nazwisko = "Kowalski";
 		assertEquals(nazwisko, konto2.getNazwisko());
@@ -124,9 +124,9 @@ class KontoBankoweTest {
 	public void classConstructorAdresCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		String adres = "ul. Sikorskiego 73, 61-001 Poznan";
 		assertEquals(adres, konto2.getAdres());
@@ -136,9 +136,9 @@ class KontoBankoweTest {
 	public void classConstructorPeselCheck()
 	{
 		KontoBankowe konto1 = new KontoBankowe(0.00, "37 1240 1169 0000 2117 6900 1001",
-											  "Jan", "Kowalski", 
-											  "ul. Sikorskiego 73, 61-001 Poznan", 
-											  "69020639261");
+							"Jan", "Kowalski", 
+							"ul. Sikorskiego 73, 61-001 Poznan", 
+							"69020639261");
 		KontoBankowe konto2 = new KontoBankowe(konto1);
 		String pesel = "69020639261";
 		assertEquals(pesel, konto2.getPesel());

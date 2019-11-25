@@ -11,13 +11,13 @@ class PrzelewTest {
 	public void constructorDataOperacjiCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 25.00;
 		LocalDate data = LocalDate.now();
 		Przelew przelew = new Przelew(LocalDate.now(), nadawca, odbiorca, kwota);
@@ -28,13 +28,13 @@ class PrzelewTest {
 	public void constructorNadawcaCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 25.00;
 		LocalDate data = LocalDate.now();
 		Przelew przelew = new Przelew(data, nadawca, odbiorca, kwota);
@@ -45,13 +45,13 @@ class PrzelewTest {
 	public void constructorOdbiorcaCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 25.00;
 		LocalDate data = LocalDate.now();
 		Przelew przelew = new Przelew(data, nadawca, odbiorca, kwota);
@@ -62,13 +62,13 @@ class PrzelewTest {
 	public void constructorKwotaOperacjiCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 25.00;
 		LocalDate data = LocalDate.now();
 		Przelew przelew = new Przelew(data, nadawca, odbiorca, 25.00);
@@ -79,13 +79,13 @@ class PrzelewTest {
 	public void constructorDateCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 25.00;
 		LocalDate data = LocalDate.now();
 		Przelew przelew = new Przelew(LocalDate.now(), nadawca, odbiorca, kwota);
@@ -96,13 +96,13 @@ class PrzelewTest {
 	public void successfulPrzelewSrodkiNadawcyInsideCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 20.00;
 		double srodki = 30.00;
 		LocalDate data = LocalDate.now();
@@ -114,13 +114,13 @@ class PrzelewTest {
 	public void successfulPrzelewSrodkiOdbiorcyInsideCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 20.00;
 		double srodki = 120.00;
 		LocalDate data = LocalDate.now();
@@ -132,13 +132,13 @@ class PrzelewTest {
 	public void successfulPrzelewSrodkiNadawcyOutsideCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 20.00;
 		double srodki = 30.00;
 		LocalDate data = LocalDate.now();
@@ -150,13 +150,13 @@ class PrzelewTest {
 	public void successfulPrzelewSrodkiOdbiorcyOutsideCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 20.00;
 		double srodki = 120.00;
 		LocalDate data = LocalDate.now();
@@ -168,13 +168,13 @@ class PrzelewTest {
 	public void failPrzelewSrodkiNadawcyCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 120.00;
 		double srodki = 50.00;
 		LocalDate data = LocalDate.now();
@@ -186,13 +186,13 @@ class PrzelewTest {
 	public void failPrzelewSrodkiOdbiorcyCheck()
 	{
 		KontoBankowe nadawca = new KontoBankowe(50.00, "37 1240 1169 0000 2117 6900 1001",
-				  								"Jan", "Kowalski", 
-				  								"ul. Sikorskiego 73, 61-001 Poznan", 
-				  							  	"69020639261");
+				  			"Jan", "Kowalski", 
+				  			"ul. Sikorskiego 73, 61-001 Poznan", 
+				  			"69020639261");
 		KontoBankowe odbiorca = new KontoBankowe(100.00, "12 1240 0000 8463 0099 4555 9238",
-												 "Krzysztof", "Nowak",
-												 "ul. Grójecka 13, 00-000 Warszawa",
-												 "57111105095");
+							"Krzysztof", "Nowak",
+							"ul. Grójecka 13, 00-000 Warszawa",
+							"57111105095");
 		double kwota = 120.00;
 		double srodki = 100.00;
 		LocalDate data = LocalDate.now();

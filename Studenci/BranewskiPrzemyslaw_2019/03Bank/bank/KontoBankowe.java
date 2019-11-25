@@ -11,7 +11,7 @@ public class KontoBankowe {
 	
 	
 	public KontoBankowe(double srodki, String numerKonta, String imie,
-						String nazwisko, String adres, String pesel)
+				String nazwisko, String adres, String pesel)
 	{
 		setKonto(srodki, numerKonta, imie, nazwisko, adres, pesel);
 	}
@@ -97,7 +97,7 @@ public class KontoBankowe {
 	public String toString()
 	{
 		return "\n\tRachunek otwarto na " + getImie() + " " + getNazwisko() + 
-				"\n\tZamieszkala/y: " + getAdres() + "\n\tnr konta: " + getNumerKonta() +
-				"\n\twolne srodki: " + getSrodki();
+			"\n\tZamieszkala/y: " + getAdres() + "\n\tnr konta: " + getNumerKonta() +
+			"\n\twolne srodki: " + getSrodki();
 	}
 }
