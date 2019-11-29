@@ -4,11 +4,10 @@ import java.util.ArrayList;
 
 public class Product {
     private String code;
-    private  String name;
-    private  double price;
+    private String name;
+    private double price;
     private double discountPrice;
     private double discount;
-    private String accesory;
 
     public Product(String code,String name,double price){
         this.code = code;
@@ -48,8 +47,15 @@ public class Product {
     public void setDiscountPrice(double discountPrice) {
         this.discountPrice = discountPrice;
     }
+    public double getDiscount() {
+        return discountPrice;
+    }
 
-    public void discounterP(Product product){
+    public void setDiscount(double discountPrice) {
+        this.discountPrice = discountPrice;
+    }
+
+    /*public void discounterP(Product product){
         if(price>300){
             this.discount = 0.95;
         }
@@ -60,5 +66,5 @@ public class Product {
             this.accesory = "kubek";
         }
 
-    }
+    }*/
 }
