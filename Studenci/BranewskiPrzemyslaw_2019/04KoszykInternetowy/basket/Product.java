@@ -74,6 +74,6 @@ public class Product {
 				"\n\tKod: " + getCode() + "\t|\tNazwa: " + getName() +
 				"\n-----------------------------------------" +
 				"\n\tCena: " + getPrice() + "\t|\tCena po rabacie: " + 
-				getDiscountPrice() + "\n";
+				String.format("%.2f", getDiscountPrice()) + "\n";
 	}
 }

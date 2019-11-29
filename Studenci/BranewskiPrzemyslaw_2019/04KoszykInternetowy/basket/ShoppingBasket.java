@@ -226,7 +226,7 @@ public class ShoppingBasket {
 	}
 	
 	
-	public double getSummaryPrice()
+	public double getSummaryPriceWODiscount()
 	{
 		double outcome = 0.00;
 		for(int i = 0; i < this.basket.size(); i++)
@@ -235,48 +235,89 @@ public class ShoppingBasket {
 	}
 	
 	
-	public double setAndApplyThe300Discount()
+	public double getSummaryOfDiscountPrice()
 	{
-		double outcome = getSummaryPrice();
-		if(outcome > 300.00)	
-			outcome = outcome - outcome * 0.05;
+		double outcome = 0.00;
+		for(int i = 0; i < this.basket.size(); i++)
+			outcome += this.basket.get(i).getDiscountPrice();
 		return outcome;
 	}
 	
 	
-	public double setAndApplyThe3rdFree()
-	{
-		double outcome = getSummaryPrice();
-		Product var = null;
-		if(this.basket.size() >= 3 && outcome <= 300.00)
-		{
-			var = findTheCheapestOne();
-			outcome = outcome - var.getPrice();
-		}
-		return outcome;
+	public void setThe300Discount()
+	{	
+		for(int i = 0; i < this.basket.size(); i++)
+			this.basket.get(i).setDiscountPrice(0.95 *
+					this.basket.get(i).getPrice());
 	}
 	
-	public void setAndApplyTheFreeMug()
+	
+	public void setThe3rdFree()
 	{
-		double outcome = getSummaryPrice();
+		Product var = findTheCheapestOne();
+		int i = this.basket.indexOf(var);
+		this.basket.get(i).setDiscountPrice(0.00);
+	}
+	
+	
+	public void setTheFreeMug()
+	{
 		Product mug = new Product("0", "The JavaMarkt Mug", 0.00, 0.00);
-		if(outcome > 200.00 && outcome <= 300 && this.basket.size() < 3)
-			this.basket.add(mug);
+		addToShoppingBasket(mug);
 	}
 	
 	
-	public double setAndApplyThe30PercentDiscount(Product discount)
+	public void setThe30PercentDiscount()
 	{
-		double outcome = getSummaryPrice();
-		if(this.basket.contains(discount))
-			outcome -= discount.getPrice() * 0.3;
-		return outcome;
+		Product discount = new Product("99", "Asus Mouse", 100.00, 100.00);
+		for(int i = 0; i < this.basket.size(); i++)
+		{
+			if(this.basket.get(i).getCode().equals(discount.getCode()))
+			{
+				this.basket.get(i).setDiscountPrice(this.basket.get(i).getPrice() * 0.70);
+				break;
+			}
+		}
+	}
+	
+	
+	public void resetDiscount()
+	{
+		Product mug = new Product("0", "The JavaMarkt Mug", 0.00, 0.00);
+		
+		for(int i = this.basket.size() - 1; i >= 0; i--)
+			if(this.basket.get(i).getCode().equals(mug.getCode()))
+			{
+				this.basket.remove(i);
+				break;
+			}
+		
+		for(int i = 0; i < this.basket.size(); i++)
+			this.basket.get(i).setDiscountPrice(this.basket.get(i).getPrice());
+	}
+	
+	
+	public double setAndApplyDiscount()
+	{
+		resetDiscount();
+		double totalPrice = getSummaryPriceWODiscount();
+		if(totalPrice > 300)
+			setThe300Discount();
+		else if(totalPrice > 200 && this.basket.size() >= 3)
+			setThe3rdFree();
+		else if(totalPrice > 200 && this.basket.size() < 3)
+			setTheFreeMug();
+		setThe30PercentDiscount();
+		
+		return getSummaryOfDiscountPrice();
 	}
 	
 	
 	public String toString()
 	{
-		String outcome = "Total cost: " + getSummaryPrice() + " PLN\n\n";
+		String outcome = "Total cost: " + String.format("%.2f", 
+				setAndApplyDiscount()) + " PLN\n\n";
+		defaultSortShoppingBasket();
 		for(int i = 0; i < this.basket.size(); i++)
 		{
 			outcome += this.basket.get(i).toString() + "\n\n";
