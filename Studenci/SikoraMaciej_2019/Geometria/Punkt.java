@@ -14,8 +14,7 @@ public class Punkt{
     }
 
     public Punkt(Punkt pkt){
-        x = pkt.x;
-        y = pkt.y;
+        this(pkt.x, pkt.y);
     }
 
 

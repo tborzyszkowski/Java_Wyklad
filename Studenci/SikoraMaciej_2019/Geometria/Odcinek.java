@@ -10,33 +10,23 @@ public class Odcinek{
     // KONSTRUKTORY
     public Odcinek(){}
 
-    public Odcinek(Punkt pkt1, Punkt pkt2){
-        x1 = pkt1.x;
-        y1 = pkt1.y;
-        x2 = pkt2.x;
-        y2 = pkt2.y;
-    }
-
     public Odcinek(double a1, double b1, double a2, double b2){
         x1 = a1;
         y1 = b1;
         x2 = a2;
         y2 = b2;
+    }
 
+    public Odcinek(Punkt pkt1, Punkt pkt2){
+        this(pkt1.x, pkt1.y, pkt2.x, pkt2.y);
     }
 
     public Odcinek(Punkt pkt, double a2, double b2){
-        x1 = pkt.x;
-        y1 = pkt.y;
-        x2 = a2;
-        y2 = b2;
+        this(pkt.x, pkt.y, a2, b2);
     }
 
     public Odcinek(double a1, double b1, Punkt pkt){
-        x1 = a1;
-        y1 = b1;
-        x2 = pkt.x;
-        y2 = pkt.y;
+        this(a1, b1, pkt.x, pkt.y);
     }
     // METODY
 
