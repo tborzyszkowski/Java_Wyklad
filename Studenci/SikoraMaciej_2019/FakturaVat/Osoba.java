@@ -14,10 +14,7 @@ public class Osoba {
     }
 
     public Osoba(Osoba os){
-        firma = os.firma;
-        adres = os.adres;
-        NIP = os.NIP;
-        bank = os.bank;
+        this(os.firma, os.adres, os.NIP, os.bank);
     }
 
 }

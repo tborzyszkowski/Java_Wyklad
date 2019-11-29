@@ -16,11 +16,7 @@ public class Pozycja {
     }
 
     public Pozycja(Pozycja fak){
-        prod = fak.prod;
-        ilosc = fak.ilosc;
-        netto = fak.netto;
-        vat = fak.vat;
-        brutto = fak.brutto;
+        this(fak.prod, fak.ilosc);
 
     }
 
