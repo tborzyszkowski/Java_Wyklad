@@ -198,27 +198,6 @@ public class CartTest {
         cart.SumaRabat();
         Assert.assertEquals(cart.getSumaRabat(), 285,0.1);
     }
-
-    @Test
-    public void conslusion201(){
-        Product product = new Product (1111,"Telewizor",100);
-        Product product2 = new Product (2222,"Laptop",101);
-        Cart cart = new Cart();
-        cart.addProduct(product2);
-        cart.addProduct(product);
-        cart.sorting();
-        cart.sumPrice();
-        cart.conclusion();
-        cart.SumaRabat();
-        ArrayList<Product> koszyk = new ArrayList<>();
-        koszyk.add(product2);
-        koszyk.add(product);
-        koszyk.add(cart.getFreekubek());
-        Assert.assertEquals(cart.getSumaRabat(), 201,0.1);
-        Assert.assertEquals(cart.getProductlist(), koszyk);
-    }
-
-
     @Test
     public void conslusion200(){
         Product product = new Product (1111,"Telewizor",100);
