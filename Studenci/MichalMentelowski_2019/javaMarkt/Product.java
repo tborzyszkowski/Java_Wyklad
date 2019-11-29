@@ -50,6 +50,7 @@ public class Product {
     public double getDiscount() {
         return discountPrice;
     }
+<<<<<<< HEAD
 
     public void setDiscount(double discountPrice) {
         this.discountPrice = discountPrice;
@@ -62,3 +63,23 @@ public class Product {
                 "\nDiscount Price: " + discountPrice;
     }
 }
+=======
+
+    public void setDiscount(double discountPrice) {
+        this.discountPrice = discountPrice;
+    }
+
+    /*public void discounterP(Product product){
+        if(price>300){
+            this.discount = 0.95;
+        }
+        if(price>200){
+            this.accesory = "kubek";
+        }
+        if(price<200){
+            this.accesory = "kubek";
+        }
+
+    }*/
+}
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee

@@ -15,10 +15,17 @@ public class Cart {
     public void discounterC(Cart cart){
         if(this.cart.size()==3){
             thirdGratis();
+<<<<<<< HEAD
         }
         else{
             blackFriday();
         }
+=======
+            }
+        else{
+            blackFriday();
+        }
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
         double sum = 0;
         for (Product p : this.cart) {
             sum += p.getPrice();
@@ -29,7 +36,11 @@ public class Cart {
             for (Product p : this.cart) {
                 p.setDiscount(0.95);
             }
+<<<<<<< HEAD
     }
+=======
+        }
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
 
 
 
@@ -44,16 +55,22 @@ public class Cart {
     public String getAccesory() {
         return accesory;
     }
+<<<<<<< HEAD
     public void addProduct(Product product){
         this.cart.add(product);
     }
+=======
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
 
     public void setAccesory(String accesory) {
         this.accesory = accesory;
     }
+<<<<<<< HEAD
     public ArrayList<Product> getProductlist() {
         return cart;
     }
+=======
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
 
     public double findCheapest() {
         double low = 99999999;
@@ -63,6 +80,23 @@ public class Cart {
         }
         return low;
     }
+<<<<<<< HEAD
+=======
+    public ArrayList<Product> findCheapestN(int n) {
+        double low = 99999999;
+        ArrayList<Product> tab = new ArrayList<>();
+        for (int i = n;i>0;i--) {
+            for (Product p : this.cart) {
+                if (p.getPrice() < low) {
+                    low = p.getPrice();
+                    tab.add()
+                }
+            }
+        }
+        return tab;
+    }
+
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
     public double findMostExpensive(){
         double high = 0;
         for(Product p:this.cart){
@@ -95,8 +129,12 @@ public class Cart {
         }
         return sum;
     }
+<<<<<<< HEAD
 
     //DISCOUNTS
+=======
+   //DISCOUNTS
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
     public void thirdGratis(){
         double low = findCheapest();
         for(Product p:this.cart){
@@ -111,11 +149,14 @@ public class Cart {
                 p.setDiscount(0.70);
         }
     }
+<<<<<<< HEAD
     public void printCart(){
         for (Product product : cart) {
             System.out.println(product);
         }
     }
+=======
+>>>>>>> fe1ce42d3ee20b0f4c55367d5a608090417802ee
 
 
 }
