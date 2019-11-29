@@ -20,12 +20,9 @@ public class Faktura {
     }
 
     public Faktura(Klient klient, Produkty...produkty) {
-        this.klient = klient;
-        this.wystawienie = new Date().toString();
-        this.zaplata = new Date(System.currentTimeMillis()-24*60*60*1000).toString();
-        this.sprzedaz = new Date(System.currentTimeMillis()-48*60*60*1000).toString();
-        this.nr_faktury++;
-        this.produkty = produkty;
+        this(klient, new Date().toString(), new Date(System.currentTimeMillis()-24*60*60*1000).toString(),
+                new Date(System.currentTimeMillis()-48*60*60*1000).toString(), nr_faktury++, produkty);
+
     }
 
     public void setNowyNrFaktury(int n) {
