@@ -42,6 +42,6 @@ class TestExtendIF {
 		((Bbb) a).meth3();
 		b.meth3();
 		a = b;
-//		 b=a;
+//		b = a;
 	}
 }

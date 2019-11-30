@@ -1,7 +1,7 @@
 package wyklad._05pakiety;
 
-import wyklad._05pakiety.MyPack2.Balance;
-//import wyklad._05pakiety.MyPack1.Balance;
+import wyklad._05pakiety.MyPack2.*;
+//import wyklad._05pakiety.MyPack1.*;
 
 //class Balance {
 //	String name;
