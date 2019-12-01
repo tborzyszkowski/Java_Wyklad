@@ -7,18 +7,17 @@ public class Odcinek {
        this(0,0,0,0);
     }
 
-    public Odcinek(double x1, double y1, double x2, double y2) {
-        this.punkt1 = new Punkt(x1, y1);
-        this.punkt2 = new Punkt(x2, y2);
-    }
-
     public Odcinek(Punkt punkt1, Punkt punkt2) {
         this.punkt1 = punkt1;
         this.punkt2 = punkt2;
     }
+    
+    public Odcinek(double x1, double y1, double x2, double y2) {
+        this.punkt1 = this(new Punkt(x1, y1), new Punkt(x2, y2));
+    }
 
-    public Odcinek(Punkt punkt, double x2, double y2) {
-        this.(punkt.getX(), punkt.getY(), x2, y2);
+    public Odcinek(Punkt punkt, double x, double y) {
+        this.(punkt, new Punkt(x, y));
     }
 
     public Punkt getPunkt1X() {
