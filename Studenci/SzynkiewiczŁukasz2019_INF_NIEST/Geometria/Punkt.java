@@ -2,16 +2,13 @@ public class Punkt {
     private double x;
     private double y;
 
-    public Punkt() {};
+    public Punkt() {
+        this(0,0);
+    }
 
     public Punkt(double x, double y) {
         this.x = x;
         this.y = y;
-    }
-
-    public Punkt(Punkt punkt) {
-        this.x = punkt.getX();
-        this.y =punkt.getY();
     }
 
     public double getX() {
