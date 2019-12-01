@@ -58,18 +58,6 @@ public class accountTest {
     }
 
     @Test
-    public void getOperations()  {
-    Client client = new Client ("Wojtek Kowalski", "Poziomkowa 31", 99011);
-    account konto = new account (client);
-    LocalDate ld1 = LocalDate.parse("2019-11-27");
-    konto.paymentnotToday(konto, 50,ld1);
-    ArrayList<history> operations = new ArrayList<>();
-    history historia = new history (ld1,50,50 );
-    operations.add(historia);
-    Assert.assertEquals(operations, konto.getOperations());
-    }
-
-    @Test
     public  void checkhistory()  {
         Client client = new Client ("Wojtek Kowalski", "Poziomkowa 31", 99011);
         Client client2 = new Client ("Wojt Kowalski", "Poziomkowa 31", 99011);

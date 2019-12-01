@@ -1,10 +1,10 @@
 public class Product {
-    private int code;
+    private String code;
     private String name;
-    private int price;
+    private double price;
     private double discountPrice;
 
-    public Product (int code, String name, int price){
+    public Product (String code, String name, double price){
        this.code=code;
        this.name=name;
        this.price=price;
@@ -12,11 +12,11 @@ public class Product {
     }
 
     public Product (){ }
-    public int getCode() {
+    public String getCode() {
         return code;
     }
 
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
 
@@ -28,7 +28,7 @@ public class Product {
         this.name = name;
     }
 
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
 

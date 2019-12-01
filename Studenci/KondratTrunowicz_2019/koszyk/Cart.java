@@ -83,7 +83,7 @@ public class Cart {
             productlist.get(productlist.size()-1).setDiscountPrice(0);
         }
         if (suma > 200){
-            Product FreeKubek = new Product (1001,"Kubek",0);
+            Product FreeKubek = new Product ("1001","Kubek",0);
             productlist.add(FreeKubek);
         }
     }
@@ -123,6 +123,6 @@ public class Cart {
     }
 
     public Product getFreekubek() {
-        return new Product (1001,"Kubek",0);
+        return new Product ("1001","Kubek",0);
     }
 }
