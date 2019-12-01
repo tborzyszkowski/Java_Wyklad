@@ -1,5 +1,6 @@
-package wyklad._06kolekcje;
-public interface Set<E> extends Collection<E> {
+package wyklad._06kolekcje.interfejsy;
+
+public interface Set<E> extends wyklad._06kolekcje.interfejsy.Collection<E> {
     // Basic Operations
     int size();
     boolean isEmpty();

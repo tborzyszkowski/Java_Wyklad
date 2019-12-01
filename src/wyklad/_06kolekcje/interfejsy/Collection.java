@@ -1,4 +1,4 @@
-package wyklad._06kolekcje;
+package wyklad._06kolekcje.interfejsy;
 
 public interface Collection<E> extends Iterable<E> {
     // Basic Operations
@@ -45,10 +45,3 @@ public interface Collection<E> extends Iterable<E> {
     <T> T[] toArray(T[] a);
 }
 
-// -------------------------------------------
-public interface Iterator<E> {
-    boolean hasNext();
-    E next();      
-    void remove(); // Optional: removes the last element 
-    //                          that was returned by next. 
-}

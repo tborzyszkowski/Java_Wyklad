@@ -1,7 +1,10 @@
-package wyklad._06kolekcje;
-// Queues typically, but do not necessarily, order elements 
+package wyklad._06kolekcje.interfejsy;
+
+import wyklad._06kolekcje.interfejsy.Collection;
+
+// Queues typically, but do not necessarily, order elements
 // in a FIFO (first-in-first-out) manner. 
-public interface Queue<E> extends Collection<E> {
+public interface Queue<E> extends wyklad._06kolekcje.interfejsy.Collection<E> {
     // Retrieves, but does not remove, the head of this queue.
     E element();
     // Inserts the specified element into this queue, if possible
