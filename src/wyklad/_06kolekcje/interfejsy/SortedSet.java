@@ -1,6 +1,6 @@
-package wyklad._06kolekcje;
+package wyklad._06kolekcje.interfejsy;
 
-import wyklad._06kolekcje.interfejsy.Set;
+import java.util.Comparator;
 
 public interface SortedSet<E> extends Set<E> {
     //Range-view
