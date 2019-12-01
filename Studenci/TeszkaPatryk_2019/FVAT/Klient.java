@@ -12,12 +12,9 @@ public class Klient {
 
     public Klient(Klient klient) {this(klient.nazwa_firmy, klient.nip, klient.adres);}
 
-    public Klient() {
-        this.nazwa_firmy =  "JakasFirma";
-        this.nip = "4325453";
-        this.adres = "Gdańsk, Partyzantow 555/0";
-    }
+    public Klient() {this("Adam Japkowicz", "53253", "ul.Długa 55");}
 
+    
     public String getNip() {
         return nip;
     }

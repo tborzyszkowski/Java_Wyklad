@@ -13,9 +13,7 @@ public class Produkty {
     }
 
     public Produkty(String nazwa_prod, float cena_netto, float podatek) {
-        this.nazwa_prod = nazwa_prod;
-        this.cena_netto = cena_netto;
-        this.podatek = podatek;
+        this(nazwa_prod, cena_netto, podatek, 1);
     }
 
     public  Produkty() {}
