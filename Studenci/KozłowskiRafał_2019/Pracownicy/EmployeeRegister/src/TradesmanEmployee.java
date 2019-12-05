@@ -2,12 +2,12 @@ public class TradesmanEmployee extends Employee {
     private static String effectivnessType[] = {"LOW", "MEDIUM", "HIGH"};
     private double provision;
     private int effectiveness; //0-low, 1-medium, 2-high
+
     TradesmanEmployee(String name, String surname, int age, int experience,String city, String street, int buildNum, int localNum, double provision, int effectiveness){
         validateProvision(provision);
         this.provision=provision;
         validateEffectiveness(effectiveness);
         this.effectiveness=effectiveness;
-        this.addEmployeeList(this);
         this.setCityName(city);
         this.setEmpName(name);
         this.setEmpSurname(surname);

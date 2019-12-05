@@ -5,7 +5,6 @@ public class PhisicalEmployee extends Employee {
         validateStrength(strength);
         this.strength = strength;
         this.setCityName(city);
-        this.addEmployeeList(this);
         this.setEmpName(name);
         this.setEmpSurname(surname);
         this.setEmpAge(age);
@@ -13,7 +12,6 @@ public class PhisicalEmployee extends Employee {
         this.setStreetName(street);
         this.setBuildNumber(buildNum);
         this.setLocalNumber(localNum);
-
     }
 
 

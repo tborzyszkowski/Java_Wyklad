@@ -6,8 +6,6 @@ public class OfficeEmployee extends Employee {
     OfficeEmployee(String name, String surname, int age, int experience,String city, String street, int buildNum, int localNum, int intelect){
         validateIntelect(intelect);
         this.intelect = intelect;
-        this.addEmployeeList(this);  //creates id for object
-//        this.setId();
         this.setCityName(city);
         this.officeId = ++lastOfficeId;
         this.setEmpName(name);
