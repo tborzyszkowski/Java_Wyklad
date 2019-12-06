@@ -11,8 +11,10 @@ class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 //		return (a.toString().length() < b.toString().length() ? -1 :
 //					(a.toString().length() > b.toString().length() ? 1 : 
 //						a.compareTo(b) ));
-//	}
+	return 0;
+	}
 }
+
 
 class MyComp {
 	public static void main(String args[]) {

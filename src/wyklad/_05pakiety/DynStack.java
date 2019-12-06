@@ -19,7 +19,6 @@ class DynStack implements IntStack {
 			stck = temp;
 			System.out.println("Nowy rozmiar stosu: " + stck.length);
 		}
-		;
 		stck[++top_of_stack] = item;
 	}
 

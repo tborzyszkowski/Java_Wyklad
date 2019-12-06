@@ -1,6 +1,3 @@
-// UWAGA: umiesc plik w katalogu MyPack2
-// W tej wersji klasa Balance, jej konstruktor, 
-// oraz metoda show() 
 package wyklad._05pakiety.MyPack1;
 
 public class Balance {

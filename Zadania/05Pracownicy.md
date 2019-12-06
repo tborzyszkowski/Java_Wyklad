@@ -2,7 +2,7 @@
 
 | Termin oddania | Punkty     |
 |----------------|:-----------|
-|       |           |
+| 20.12.2019     |    20      |
 
 --- 
 Przekroczenie terminu o **n** zajęć wiąże się z karą:
