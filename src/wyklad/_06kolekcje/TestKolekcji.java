@@ -7,13 +7,13 @@ public class TestKolekcji {
 	public static void main(String[] args) {
 		Random rand = new Random();
 		
-		final int K = 10000000;
+		final int K = 10 * 1000 * 1000;
 		Integer findMe[] = new Integer[K];
 		
 		for(int i =0; i<K; i++)
-			findMe[i] = rand.nextInt(20000000);
+			findMe[i] = rand.nextInt(20 * 1000 * 1000);
 		
-		final int N = 100000000;
+		final int N = 100 * 1000 * 1000;
 		ArrayList<Integer> listInt = new ArrayList<Integer>(N);
 		
 		long time1 = System.currentTimeMillis(), 
@@ -23,7 +23,7 @@ public class TestKolekcji {
 		// Lista
 //		
 //		for(int i = 0; i < N; i++)
-//			listInt.add(rand.nextInt(1000000));
+//			listInt.add(rand.nextInt(1000 * 1000));
 //		
 //		time2 = System.currentTimeMillis();
 //		System.out.println("List add time("+ N +") = "+ (time2 - time1));
@@ -48,7 +48,7 @@ public class TestKolekcji {
 		time1 = System.currentTimeMillis(); 
 		
 		for(int i = 0; i < N; i++)
-			hashInt.add(rand.nextInt(1000000));
+			hashInt.add(rand.nextInt(1000 * 1000));
 		
 		time2 = System.currentTimeMillis();
 		System.out.println("Hash add time("+ N +") = "+ (time2 - time1));
@@ -68,7 +68,7 @@ public class TestKolekcji {
 		time1 = System.currentTimeMillis(); 
 		
 		for(int i = 0; i < N; i++)
-			treeInt.add(rand.nextInt(1000000));
+			treeInt.add(rand.nextInt(1000 * 1000));
 		
 		time2 = System.currentTimeMillis();
 		System.out.println("Tree add time("+ N +")  = "+ (time2 - time1));
