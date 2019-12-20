@@ -15,7 +15,7 @@ class EmployeeTest {
         hireDate.setYear(110);
         Employee empForTest = new Dealer("Alojzy", "Krolikowski", birthDate,
                 new Date(110, 11, 15),
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
         assertEquals((new Date()).getYear() - birthDate.getYear(), empForTest.getAge());
     }
 
@@ -28,7 +28,7 @@ class EmployeeTest {
         hireDate.setYear(110);
         Employee empForTest = new Dealer("Alojzy", "Krolikowski", birthDate,
                 new Date(110, 11, 15),
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
         assertEquals((new Date()).getYear() - birthDate.getYear() -1, empForTest.getAge());
     }
 
@@ -39,7 +39,7 @@ class EmployeeTest {
         Date hireDate = new Date();
         hireDate.setYear(110);
         Employee empForTest = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
         assertEquals((new Date()).getYear() - hireDate.getYear(), empForTest.getExperience());
     }
 
@@ -51,7 +51,7 @@ class EmployeeTest {
         hireDate.setYear(110);
         hireDate.setDate(hireDate.getDate()+1);
         Employee empForTest = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);
         assertEquals((new Date()).getYear() - hireDate.getYear() -1, empForTest.getExperience());
     }
 
