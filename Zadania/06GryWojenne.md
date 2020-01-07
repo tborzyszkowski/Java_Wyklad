@@ -15,7 +15,7 @@ W grze biorą udział dwaj generałowie ze swoimi armiami. Każdy generał posia
 Żołnierze posiadają:
 - stopień wojskowy: szeregowy 
     (wartość: 1), kapral (wartość: 2), kapitan (wartość: 3) i major (wartość: 4)
-- oświadczenie
+- doświadczenie
 - siła żołnierza jest obliczana jako iloczyn jego stopnia i doświadczenia
 - żołnierz ginie, gdy jego doświadczenie = 0
 - jeżeli doświadczenie osiągnie pięciokrotność wartości stopnia, 

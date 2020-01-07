@@ -35,7 +35,7 @@ class ArrayListDemoG {
 		System.out.println("Zawartosc a1         : " + a1);
 		
 		a1.clear();
-		for (int i = 0; i < 100000; i++) {
+		for (int i = 0; i < 1000* 1000; i++) {
 			a1.add(i);
 		}
 		System.out.println("a1.size(): "+ a1.size());// + "\n" + a1);

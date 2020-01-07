@@ -59,7 +59,7 @@ public class TestKolekcji {
 				hashInt.contains(findMe[i]);
 		}	
 		time2 = System.currentTimeMillis();
-		System.out.println("Hash find time("+ N +") = "+ (time2 - time1));
+		System.out.println("Hash find time("+ K +") = "+ (time2 - time1));
 
 		///////////////////////////////////////
 		// Tree
@@ -79,7 +79,7 @@ public class TestKolekcji {
 			treeInt.contains(findMe[i]);
 		}	
 		time2 = System.currentTimeMillis();
-		System.out.println("Tree find time("+ N +") = "+ (time2 - time1));
+		System.out.println("Tree find time("+ K +") = "+ (time2 - time1));
 
 	}
 
