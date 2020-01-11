@@ -1,4 +1,4 @@
-package _07_Wyjatki;
+package wyklad._07wyjatki;
 class Exc9b {
 	static void throwOne() throws IllegalAccessException {
 		System.out.println("Wewnątrz metody");

@@ -1,4 +1,4 @@
-package _07_Wyjatki;
+package wyklad._07wyjatki;
 
 class MyException11 extends Exception {
 	
@@ -20,7 +20,8 @@ class MyException11 extends Exception {
 }
 
 class ExcC {
-	static void oblicz(int a) throws MyException11 {
+	static void oblicz(int a) throws MyException11
+	{
 		System.out.println("Wywołanie oblicz(" + a + ")");
 		if (a > 10)
 			throw new MyException11(a);

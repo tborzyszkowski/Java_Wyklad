@@ -1,4 +1,4 @@
-package _07_Wyjatki;
+package wyklad._07wyjatki;
 
 class Exc7 {
 	static void nesttry(int a) {

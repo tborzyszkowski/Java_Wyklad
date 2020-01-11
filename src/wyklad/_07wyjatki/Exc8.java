@@ -1,4 +1,4 @@
-package _07_Wyjatki;
+package wyklad._07wyjatki;
 class Exc8 {
 	static void demoproc() throws NullPointerException {
 		try {

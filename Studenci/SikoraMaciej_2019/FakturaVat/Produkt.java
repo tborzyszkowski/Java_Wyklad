@@ -10,7 +10,8 @@ public class Produkt {
     }
 
     public Produkt(Produkt prod){
-        this(prod.nazwa, prod.cena);
+        nazwa = prod.nazwa;
+        cena = prod.cena;
     }
 
     double podajCene(){
