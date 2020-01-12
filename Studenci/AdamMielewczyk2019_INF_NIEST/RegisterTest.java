@@ -13,11 +13,11 @@ class RegisterTest {
         Date hireDate = new Date();
         hireDate.setYear(birthDate.getYear()+25);
         Employee empForTest0 = new OfficeEmployee("Wojtek", "Lew", birthDate, hireDate,
-                new Employee.Address("Gdynia", "Odrębna", 19), 120);//value 600
+                new Address("Gdynia", "Odrębna", 19), 120);//value 600
         Employee empForTest1 = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
         Employee empForTest2 = new Labourer("Patryk", "Krolikowska", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 23), 50);//value 8
+                new Address("Wejherowo", "Okrezna", 23), 50);//value 8
 
         Register register = new Register();
         register.addEmployee(empForTest0);
@@ -37,11 +37,11 @@ class RegisterTest {
         Date hireDate = new Date();
         hireDate.setYear(birthDate.getYear()+25);
         Employee empForTest0 = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
         Employee empForTest1 = new Labourer("Patryk", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 23), 50);//value 8
+                new Address("Wejherowo", "Okrezna", 23), 50);//value 8
         Employee empForTest2 = new OfficeEmployee("Wojtek", "Lew", birthDate, hireDate,
-                new Employee.Address("Gdynia", "Odrębna", 19), 120);//value 600
+                new Address("Gdynia", "Odrębna", 19), 120);//value 600
         Register register = new Register();
         register.addEmployee(empForTest0);
         register.addEmployee(empForTest1);
@@ -60,11 +60,11 @@ class RegisterTest {
         Date hireDate = new Date();
         hireDate.setYear(birthDate.getYear()+25);
         Employee empForTest0 = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
         Employee empForTest1 = new Labourer("Patryk", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 23), 50);//value 8
+                new Address("Wejherowo", "Okrezna", 23), 50);//value 8
         Employee empForTest2 = new OfficeEmployee("Wojtek", "Lew", birthDate, hireDate,
-                new Employee.Address("Gdynia", "Odrębna", 19), 120);//value 600
+                new Address("Gdynia", "Odrębna", 19), 120);//value 600
         Register register = new Register();
         register.addEmployee(empForTest0);
         register.addEmployee(empForTest1);
@@ -79,11 +79,11 @@ class RegisterTest {
         Date birthDate = new Date(89,11,23);
         Date hireDate = new Date(114,11,23);
         Employee empForTest0 = new Dealer("Alojzy", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
+                new Address("Wejherowo", "Okrezna", 13), 5, Dealer.Efficiency.ŚREDNIA);//value 450
         Employee empForTest1 = new Labourer("Patryk", "Krolikowski", birthDate, hireDate,
-                new Employee.Address("Wejherowo", "Okrezna", 23), 50);//value 8
+                new Address("Wejherowo", "Okrezna", 23), 50);//value 8
         Employee empForTest2 = new OfficeEmployee("Wojtek", "Lew", birthDate, hireDate,
-                new Employee.Address("Gdynia", "Odrębna", 19), 120);//value 600
+                new Address("Gdynia", "Odrębna", 19), 120);//value 600
         Register register = new Register();
         register.addEmployee(empForTest0);
         register.addEmployee(empForTest1);
