@@ -53,7 +53,7 @@ class MultiThreadDemo {
 		new NewThread11("---12-- ");
 
 		try { // czekaj na zakonczenie wszystkich watkow
-			Thread.sleep(1000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}

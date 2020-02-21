@@ -1,22 +1,21 @@
 package Laboratorium.test;
 
-class G {
-	String a() { return "1"; }
-	String b() { return this.a() + "2"; }
-	String c() { return b() + "3"; }
+class F {
+	String a() { return "Fa"; }
+	String b() { return this.a() + "Fb"; }
 }
-
+class G extends F {
+	String a() { return "Ga"; }
+	String b() { return super.b() + "Gb"; }
+}
 class H extends G {
-	String a() { return "4"; }
-	String b() { return super.b() + "5"; }
-	String c() { return b() + "6"; }
-	String d() { return super.c() + "7"; }
+	String a() { return "Ha"; }
+	String b() { return super.b() + super.a() + "Hb"; }
 }
-
 public class Zad4 {
 	public static void main(String[] args) {
-		G g = new G(); H h = new H();
-		System.out.println(g.b() + " " + g.c());
-		System.out.println(h.b() + " " + h.c() + " " + h.d());
+		F f = new F(); G g = new G(); H h = new H();
+		System.out.println(f.b() + " " + g.b() + " " + h.b());
 	}
 }
+

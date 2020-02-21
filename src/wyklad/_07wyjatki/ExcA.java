@@ -24,8 +24,8 @@ class ExcA {
 //			return a++;
 //		}
 //		finally {
-//			System.out.println("finally w procB: " + a);
 //			a++;
+//			System.out.println("finally w procB: " + a);
 //		}
 //	}
 
@@ -42,39 +42,39 @@ class ExcA {
 //		}
 //	}
 
-//	static class IntWrapper {
-//		private int val;
-//
-//		public IntWrapper(int val) {
-//			this.val = val;
-//		}
-//		public IntWrapper Inc() {val++; return this;}
-//
-//		public int getVal() {
-//			return val;
-//		}
-//
-//		public void setVal(int val) {
-//			this.val = val;
-//		}
-//		@Override
-//		public String toString() {
-//			return "" + val;
-//		}
-//	}
-//
-//	static IntWrapper procB() {
-//		IntWrapper a = new IntWrapper(1);
-//
-//		try {
-//			System.out.println("Wewnatrz procB: " + a + ": " + a.hashCode());
-//			return a.Inc();
-//		} finally {
-//			System.out.println("finally w procB-1: " + a + ": " + a.hashCode());
-//			a.Inc();
-//			System.out.println("finally w procB-2: " + a + ": " + a.hashCode());
-//		}
-//	}
+	static class IntWrapper {
+		private int val;
+
+		public IntWrapper(int val) {
+			this.val = val;
+		}
+		public IntWrapper Inc() {val++; return this;}
+
+		public int getVal() {
+			return val;
+		}
+
+		public void setVal(int val) {
+			this.val = val;
+		}
+		@Override
+		public String toString() {
+			return "" + val;
+		}
+	}
+
+	static IntWrapper procB() {
+		IntWrapper a = new IntWrapper(1);
+
+		try {
+			System.out.println("Wewnatrz procB: " + a + ": " + a.hashCode());
+			return a.Inc();
+		} finally {
+			System.out.println("finally w procB-1: " + a + ": " + a.hashCode());
+			a.Inc();
+			System.out.println("finally w procB-2: " + a + ": " + a.hashCode());
+		}
+	}
 
 //	static void procC() {
 //		try {

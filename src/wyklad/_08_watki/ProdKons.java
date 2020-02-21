@@ -67,7 +67,7 @@ class Konsument1 implements Runnable {
 		while (true) {
 			b.get();
 			try {
-				Thread.sleep(100);
+				Thread.sleep(1500);
 			} catch (InterruptedException e) {
 				System.out.println("....");
 			}

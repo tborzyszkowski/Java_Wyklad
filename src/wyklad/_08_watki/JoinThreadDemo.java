@@ -19,7 +19,7 @@ class NewThread3 implements Runnable {
 			for (int i = 5; i > 0; i--) {
 				System.out.println(name + "      > " + i);
 				Thread.sleep(1 + czas);
-			}
+		}
 		} catch (InterruptedException e) {
 			System.out.println("Watek " + name + " przerwany");
 		}
@@ -29,10 +29,10 @@ class NewThread3 implements Runnable {
 
 class JoinThreadDemo {
 	public static void main(String args[]) {
-		NewThread3 ob1 = new NewThread3("Pierwszy", 4);
-		NewThread3 ob2 = new NewThread3("Drugi   ", 3);
-		NewThread3 ob3 = new NewThread3("Trzeci  ", 2);
-		NewThread3 ob4 = new NewThread3("Czwarty ", 1);
+		NewThread3 ob1 = new NewThread3("Pierwszy", 40);
+		NewThread3 ob2 = new NewThread3("Drugi   ", 30);
+		NewThread3 ob3 = new NewThread3("Trzeci  ", 20);
+		NewThread3 ob4 = new NewThread3("Czwarty ", 10);
 
 		System.out
 				.println("Watek " + ob1.name + " dziala : " + ob1.t.isAlive());
@@ -45,7 +45,7 @@ class JoinThreadDemo {
 		// oczekiwanie na zakonczenie dzialania watkow
 		try {
 			System.out.println("Czekamy na zakonczenie dzialania watkow");
-			//ob1.t.join();
+//			ob1.t.join();
 			System.out.println("Pierwszy: join()");
 			ob2.t.join();
 			System.out.println("Drugi   : join()");

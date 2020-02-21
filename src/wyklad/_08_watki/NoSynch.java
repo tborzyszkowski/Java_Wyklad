@@ -6,7 +6,7 @@ class CallMe2 {
     void call(String msg, String par1, String par2) {
     	System.out.print(par1 + msg);
     	try {
-    		Thread.sleep(1);
+    		Thread.sleep(0);
     	} catch (InterruptedException e) {
     		System.out.println("Przerwane");
     	}
@@ -37,18 +37,22 @@ class NoSynch {
     	CallMe2 target = new CallMe2();
     	// trzy obiekty-watki korzystajace z tego samego
     	// zasobu krytycznego
-    	Caller2 ob1 = new Caller2(target, "Witaj", "{", "}");
+	    long time1 = System.currentTimeMillis();
+	    Caller2 ob1 = new Caller2(target, "Witaj", "{", "}");
     	Caller2 ob2 = new Caller2(target, "Synchronizowany","[", "]");
     	Caller2 ob3 = new Caller2(target, "Swiecie","(",")");
    
 	// oczekiwanie na zakonczenie watkow
-	try {
-	    ob1.t.join();
-	    ob2.t.join();
-	    ob3.t.join();
-	} catch (InterruptedException e) {
-	    System.out.println("Przerwane");
-	}
+		try {
+	        ob1.t.join();
+	        ob2.t.join();
+	        ob3.t.join();
+		} catch (InterruptedException e) {
+	        System.out.println("Przerwane");
+		}
+	    long time2 = System.currentTimeMillis();
+	    System.out.println(" ["+(time2-time1)+"]");
+
     }
 }
 

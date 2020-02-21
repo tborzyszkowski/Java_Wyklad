@@ -7,7 +7,7 @@ class CallMe {
 	void call(String msg, String par1, String par2) {
     	System.out.print(par1 + msg);
     	try {
-    		Thread.sleep(1);
+    		Thread.sleep(10);
     	} catch (InterruptedException e) {
     		System.out.println("Przerwane");
     	}
@@ -43,7 +43,8 @@ public class Synchronized {
     	CallMe target = new CallMe();
     	// trzy obiekty-watki korzystajace z tego samego
     	// zasobu krytycznego
-    	Caller ob1 = new Caller(target, "Witaj", "{", "}");
+	    long time1 = System.currentTimeMillis();
+	    Caller ob1 = new Caller(target, "Witaj", "{", "}");
     	Caller ob2 = new Caller(target, "Synchronizowany","[", "]");
     	Caller ob3 = new Caller(target, "Swiecie","(",")");
    
@@ -55,6 +56,8 @@ public class Synchronized {
     	} catch (InterruptedException e) {
     		System.out.println("Przerwane");
     	}
+	    long time2 = System.currentTimeMillis();
+	    System.out.println(" ["+(time2-time1)+"]");
     }
 }
 

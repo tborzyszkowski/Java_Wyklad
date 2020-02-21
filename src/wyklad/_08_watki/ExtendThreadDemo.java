@@ -17,7 +17,7 @@ class NewThread2 extends Thread {
 		int a = 0;
 		try {
 
-			for (int i = 100000; i > 0; i--) {
+			for (int i = 100000000; i > 0; i--) {
 				//Thread.sleep(1);
 				//a++;
 				a = (int)Math.sin(a + 1) + 1;
@@ -43,7 +43,7 @@ class ExtendThreadDemo {
 		t.setName("Watek glowny");
 		System.out.println("Watek glowny    : " + t);
 		try {
-			for (int i = 10000; i > 0; i--) {
+			for (int i = 100000000; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
 				a++;
 				//Thread.sleep(0);
