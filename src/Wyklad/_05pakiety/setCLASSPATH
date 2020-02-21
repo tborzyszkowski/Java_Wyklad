@@ -1,0 +1,8 @@
+if [ "$CLASSPATH" = "" ] 
+then  
+      CLASSPATH=/home/tomek/dydakt/java/02_03/Programy/5/:.
+else  
+      CLASSPATH=$CLASSPATH:/home/tomek/dydakt/java/02_03/Programy/5/:.
+fi
+
+export CLASSPATH
