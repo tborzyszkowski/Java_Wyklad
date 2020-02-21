@@ -1,1 +1,0 @@
-javadoc -private -d doc wyklad._04dziedziczenie.docDemo
