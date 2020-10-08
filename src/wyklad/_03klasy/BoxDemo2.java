@@ -1,21 +1,5 @@
 package wyklad._03klasy;
 
-// Definicja prostej klasy (tylko dane, zadnych metod)
-
-class Box1 {
-	double width;
-	double height;
-	double depth;
-	
-	public boolean equals(Object o){
-		Box1 box = (Box1) o;
-		if (this.width == box.width && this.height == box.height && this.depth == box.depth)
-			return true;
-		else
-			return false;
-	}
-}
-
 class BoxDemo2 {
 	public static void main(String args[]) {
 		Box1 myBox1 = new Box1();
@@ -23,30 +7,34 @@ class BoxDemo2 {
 		Box1 myBox3 = myBox1;
 		double vol;
 
-		myBox1.width = 10;
-		myBox1.height = 20;
-		myBox1.depth = 15;
+		myBox1.setWidth(10);
+		myBox1.setHeight(20);
+		myBox1.setDepth(15);
 
-		myBox2.width = 2;
-		myBox2.height = 3;
-		myBox2.depth = 4;
+		myBox2.setWidth(2);
+		myBox2.setHeight(3);
+		myBox2.setDepth(4);
 
-		vol = myBox1.width * myBox1.height * myBox1.depth;
+		vol = myBox1.getWidth() * myBox1.getHeight() * myBox1.getDepth();
 
 		System.out.println("\nObjetosc myBox1 = " + vol);
 
-		vol = myBox2.width * myBox2.height * myBox2.depth;
+		vol = myBox2.getWidth() * myBox2.getHeight() * myBox2.getDepth();
 
 		System.out.println("Objetosc myBox2 = " + vol + "\n");
 		System.out.println("myBox1 == myBox2: " + (myBox1 == myBox2));
 		System.out.println("myBox1 == myBox3: " + (myBox1 == myBox3));
 		System.out.println("myBox1 -eq myBox2: " + (myBox1.equals(myBox2)));
 		System.out.println("myBox1 -eq myBox3: " + (myBox1.equals(myBox3)));
-		myBox1.width = 2;
-		myBox1.height = 3;
-		myBox1.depth = 4;
+		myBox1.setWidth(2);
+		myBox1.setHeight(3);
+		myBox1.setDepth(4);
 		System.out.println("myBox1 == myBox2: " + (myBox1 == myBox2));
 		System.out.println("myBox1 -eq myBox2: " + (myBox1.equals(myBox2)));
-
+		myBox1 = myBox2;
+		System.out.println("myBox1 == myBox2: " + (myBox1 == myBox2));
+		System.out.println("myBox1 -eq myBox2: " + (myBox1.equals(myBox2)));
+		myBox1.setWidth(15);
+		System.out.println(myBox2.getWidth());
 	}
 }

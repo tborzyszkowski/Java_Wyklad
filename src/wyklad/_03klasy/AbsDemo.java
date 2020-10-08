@@ -1,23 +1,5 @@
 package wyklad._03klasy;
 
-class Absolute {
-	int abs(int a) {
-		return (a > 0) ? a : -a;
-	}
-
-	long abs(long a) {
-		return (a > 0) ? a : -a;
-	}
-
-	float abs(float a) {
-		return (a > 0) ? a : -a;
-	}
-
-	double abs(double a) {
-		return (a > 0) ? a : -a;
-	}
-}
-
 class AbsDemo {
 	public static void main(String args[]) {
 		Absolute ob = new Absolute();
