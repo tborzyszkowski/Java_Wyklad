@@ -7,18 +7,19 @@ public class CalculatorTest {
 	@Test
 	public void testAddOne(){
 		// Arrange
-		Calculator calculator = new Calculator();
+		// sut = System Under Test
+		Calculator sut = new Calculator();
 		// Act
-		calculator.add(1);
+		sut.add(1);
 		// Assert
-		assertEquals("0+1 = 1", 1, calculator.getState());
+		assertEquals("0+1 = 1", 1, sut.getState());
 	}
 
 	@Test
 	public void testMultOneByTwo(){
-		Calculator calculator = new Calculator();
-		calculator.setState(1);
-		calculator.mult(2);
-		assertEquals("1*2 = 2", 2, calculator.getState());
+		Calculator sut = new Calculator();
+		sut.setState(1);
+		sut.mult(2);
+		assertEquals("1*2 = 2", 2, sut.getState());
 	}
 }

@@ -2,9 +2,9 @@ package wyklad._03klasy;
 
 class BoxDemo2 {
 	public static void main(String args[]) {
-		Box1 myBox1 = new Box1();
-		Box1 myBox2 = new Box1();
-		Box1 myBox3 = myBox1;
+		Box myBox1 = new Box();
+		Box myBox2 = new Box();
+		Box myBox3 = myBox1;
 		double vol;
 
 		myBox1.setWidth(10);
@@ -15,11 +15,11 @@ class BoxDemo2 {
 		myBox2.setHeight(3);
 		myBox2.setDepth(4);
 
-		vol = myBox1.getWidth() * myBox1.getHeight() * myBox1.getDepth();
+		vol = myBox1.volume();
 
-		System.out.println("\nObjetosc myBox1 = " + vol);
+		System.out.println("\nObjetosc myBox = " + vol);
 
-		vol = myBox2.getWidth() * myBox2.getHeight() * myBox2.getDepth();
+		vol = myBox2.volume();
 
 		System.out.println("Objetosc myBox2 = " + vol + "\n");
 		System.out.println("myBox1 == myBox2: " + (myBox1 == myBox2));

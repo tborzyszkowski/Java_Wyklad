@@ -1,57 +1,23 @@
 package wyklad._03klasy;
 
-class Box3 {
-	private double width;
-	private double height;
-	private double depth;
-
-	Box3() {
-		width = 0;
-		height = 0;
-		depth = 0;
-	}
-
-	Box3(int n) {
-		width = n;
-		height = n;
-		depth = n;
-	}
-
-	Box3(int width, int height, int depth) {
-		this.width = 2 * width;
-		this.height = 3 * height;
-		this.depth = 4 * depth;
-	}
-
-	Box3(double w, double h, double d) {
-//    	this((int)w,(int)d,(int)h);
-		width = w;
-		height = h;
-		depth = d;
-	}
-
-	void setDim(double w, double h, double d) {
-		width = w;
-		height = h;
-		depth = d;
-	}
-
-	double volume() {
-		return width * height * depth;
-	}
-}
 
 class BoxDemo3 {
 	public static void main(String args[]) {
-		Box3 myBox1 = new Box3();
-		Box3 myBox2 = new Box3(2);
-		Box3 myBox3 = new Box3(3, 4.0, 5);
+		Box myBox1 = new Box();
+		Box myBox2 = new Box(1);
+		Box myBox3 = new Box(2, 2.0, 2);
+		Box myBox4 = new Box(2.0, 2.0, 2.0);
+		Box myBox5 = new Box(2, 2, 2.0);
+		Box myBox6 = new Box(2, 2, 2);
 
-		System.out.println("\nObjetosc myBox1 = " + myBox1.volume());
-		System.out.println("Objetosc myBox2 = " + myBox2.volume());
-		System.out.println("Objetosc myBox3 = " + myBox3.volume());
+		System.out.println("Objetosc myBox1 = " + myBox1.volume() + " w: " + myBox1.getWidth());
+		System.out.println("Objetosc myBox2 = " + myBox2.volume() + " w: " + myBox2.getWidth());
+		System.out.println("Objetosc myBox3 = " + myBox3.volume() + " w: " + myBox3.getWidth());
+		System.out.println("Objetosc myBox4 = " + myBox4.volume() + " w: " + myBox4.getWidth());
+		System.out.println("Objetosc myBox5 = " + myBox5.volume() + " w: " + myBox5.getWidth());
+		System.out.println("Objetosc myBox6 = " + myBox6.volume() + " w: " + myBox6.getWidth());
 
 		myBox1.setDim(2, 3, 2);
-		System.out.println("\nObjetosc myBox1 = " + myBox1.volume() + "\n");
+		System.out.println("Objetosc myBox1 = " + myBox1.volume());
 	}
 }
