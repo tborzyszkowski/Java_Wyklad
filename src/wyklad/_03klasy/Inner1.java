@@ -1,7 +1,5 @@
 package wyklad._03klasy;
 
-// Demonstracja klas wewnetrznych
-
 class Outer1 {
 	int outer_x = 100;
 	Inner1 inner = new Inner1();
@@ -12,8 +10,8 @@ class Outer1 {
 		inner.display();
 		this.inner.x = 3;
 		System.out.println("this.inner.x = " + this.inner.x + " inner.x = " + inner.x);
-//    	Inner1.x = 11;
-//    	x = 12;
+//		Inner1.x = 11;
+//		x = 12;
 	}
 
 	void printInner() {
@@ -21,11 +19,10 @@ class Outer1 {
 		inner.display();
 	}
 
-	// definicja klasy wewnetrznej
 	class Inner1 {
 		int x = 10;
 
-		//    	int outer_x = 101;
+//		int outer_x = 101;
 		void display() {
 			inner.x = 1001;
 			System.out.println("\ndisplay: outer_x = " + outer_x + "\ninner x = " + x + "\ninner.x = " + inner.x);

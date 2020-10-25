@@ -2,12 +2,10 @@ package wyklad._03klasy;
 
 class Static1 {
 	static int a = 3;
-	static int b = 1;
 
 	static void pisz(int x) {
 		System.out.println("x = " + x);
 		System.out.println("a = " + a);
-		System.out.println("b = " + b);
 	}
 
 	static void test(Integer i) {
@@ -16,7 +14,7 @@ class Static1 {
 
 	static {
 		System.out.println("Blok statyczny wykonany");
-		b = b * 4;
+		a = a * 3;
 	}
 
 	public static void main(String args[]) {

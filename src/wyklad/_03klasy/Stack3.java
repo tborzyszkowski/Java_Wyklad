@@ -1,31 +1,31 @@
 package wyklad._03klasy;
 
 class Stack {
-	private int stck[]; // TU: tablica bez rozmiaru
-	private int top_of_stack;
+	private int elements[];
+	private int topOfStack;
 
-	Stack(int size) {
-		stck = new int[size];
-		top_of_stack = -1;
+	public Stack(int size) {
+		elements = new int[size];
+		topOfStack = -1;
 	}
 
-	int size() {
-		return stck.length;
+	public int size() {
+		return elements.length;
 	}
 
-	void push(int item) {
-		if (top_of_stack == stck.length - 1)
+	public void push(int item) {
+		if (topOfStack == elements.length - 1)
 			System.out.println("Stos pelen");
 		else
-			stck[++top_of_stack] = item;
+			elements[++topOfStack] = item;
 	}
 
-	int pop() {
-		if (top_of_stack < 0) {
+	public int pop() {
+		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;
 		} else
-			return stck[top_of_stack--];
+			return elements[topOfStack--];
 	}
 }
 

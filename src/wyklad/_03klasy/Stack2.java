@@ -1,30 +1,28 @@
 package wyklad._03klasy;
 
 class Stack21 {
-	private int stck[] = new int[10];
-	private int top_of_stack;
+	private int elements[] = new int[10];
+	private int topOfStack;
 
 	Stack21() {
-		top_of_stack = -1;
+		topOfStack = -1;
 	}
 
-	void push(int item) {
-		if (top_of_stack == 9)
+	public void push(int item) {
+		if (topOfStack == 9)
 			System.out.println("Stos pelen");
 		else
-			stck[++top_of_stack] = item;
+			elements[++topOfStack] = item;
 	}
 
-	int pop() {
-		if (top_of_stack < 0) {
+	public int pop() {
+		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;
 		} else
-			return stck[top_of_stack--];
+			return elements[topOfStack--];
 	}
 }
-
-// Klasa testujaca stos
 
 class Stack2 {
 	public static void main(String args[]) {
@@ -43,8 +41,8 @@ class Stack2 {
 		for (int i = 0; i < 12; i++)
 			System.out.println(myStack2.pop());
 
-//		 myStack1.top_of_stack = -2;
-//		 myStack2.stck[3] = 100;
+//		 myStack1.topOfStack = -2;
+//		 myStack2.elements[3] = 100;
 
 	}
 }

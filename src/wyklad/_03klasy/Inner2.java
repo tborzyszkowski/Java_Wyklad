@@ -10,14 +10,12 @@ class Outer {
 		inner.display();
 		System.out.println(inner.y);
 		Inner2.z++;
-//    	Inner2.y++;
+//		Inner2.y++;
 	}
 
-	// definicja klasy wewnetrznej
 	static class Inner2 {
 		static int z = 20;
-		int y = 10;  // dodajemy lokalny y w klasie wewnetrznej
-		// nie jest on widoczny na zewnatrz
+		int y = 10;
 		//int outer_x = 200;
 		Outer oo = new Outer();
 

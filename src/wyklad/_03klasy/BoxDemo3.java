@@ -19,5 +19,8 @@ class BoxDemo3 {
 
 		myBox1.setDim(2, 3, 2);
 		System.out.println("Objetosc myBox1 = " + myBox1.volume());
+//		myBox1.height = 3;
+//		myBox1.aqqq = 8;
+
 	}
 }

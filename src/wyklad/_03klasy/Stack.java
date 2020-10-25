@@ -4,12 +4,10 @@ class Stack1 {
 	int stck[] = new int[10];
 	int top_of_stack;
 
-	// inicjalizacja wierzcholka stosu
 	Stack1() {
 		top_of_stack = -1;
 	}
 
-	// wkladanie na stos
 	void push(int item) {
 		if (top_of_stack == 9)
 			System.out.println("Stos pelen");
@@ -17,7 +15,6 @@ class Stack1 {
 			stck[++top_of_stack] = item;
 	}
 
-	// zdejmowanie ze stosu
 	int pop() {
 		if (top_of_stack < 0) {
 			System.out.println("Stos pusty");

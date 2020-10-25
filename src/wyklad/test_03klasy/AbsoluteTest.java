@@ -13,7 +13,8 @@ public class AbsoluteTest {
 		Absolute sut = new Absolute();
 		float arg = -123456789.123456789f;
 		float result = sut.abs(arg);
-		assertEquals("int: abs(-123456789.123456789f) = 123456789.123456789f", 123456789.123456789f, result, 0.0);
+		assertEquals("int: abs(-123456789.123456789f) = 123456789.123456789f",
+				123456789.123456789f, result, 0.00001);
 	}
 
 	@Test

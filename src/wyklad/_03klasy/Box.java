@@ -1,6 +1,5 @@
 package wyklad._03klasy;
 
-import java.util.Objects;
 
 public class Box {
 	private double width = 0;
