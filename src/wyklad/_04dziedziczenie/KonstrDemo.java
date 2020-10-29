@@ -3,9 +3,9 @@ package wyklad._04dziedziczenie;
 class AK {
 	AK(int i) {
 		//super();
-		i = 5;
+		int x = i + 1;
 		//super();
-		System.out.println("Konstruktor z A: " + i);
+		System.out.println("Konstruktor z A: " + x);
 	}
 	AK() {
 		//super();
@@ -29,7 +29,7 @@ class CK extends BK {
 	}
 }
 class KonstrDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		new CK();
 	}
 }
