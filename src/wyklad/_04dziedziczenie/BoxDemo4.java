@@ -74,7 +74,7 @@ class BoxWeight extends Box4 {
 }
 
 class BoxDemo4 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		// utworzenie instancji klasy Box
 		BoxWeight myBox1 = new BoxWeight();
 		BoxWeight myBox2 = new BoxWeight(2, 3);

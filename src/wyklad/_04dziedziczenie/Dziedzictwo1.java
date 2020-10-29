@@ -38,7 +38,7 @@ class B1 extends A1 {
 }
 
 class Dziedzictwo1 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		A1 obA = new A1();
 		B1 obB = new B1();
 

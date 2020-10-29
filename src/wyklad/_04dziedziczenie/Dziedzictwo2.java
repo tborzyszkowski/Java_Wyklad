@@ -63,7 +63,7 @@ class C22 extends B2 {
 }
 
 class Dziedzictwo2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		A2 obA = new A2(10, 20);
 		B2 obB = new B2(1, 2, 3);
 		C22 obC = new C22(-1, -2, -3, -4);

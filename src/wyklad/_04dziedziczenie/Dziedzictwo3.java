@@ -59,7 +59,7 @@ class Derived2 extends Base {
 }
 
 class Dziedzictwo3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Base base = new Base();
 		Derived1 der1 = new Derived1();
 		Derived2 der2 = new Derived2();

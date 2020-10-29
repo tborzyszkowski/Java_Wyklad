@@ -24,7 +24,7 @@ class B extends A {
 }
 
 class SuperDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		B obB = new B(1, 2);
 
 		System.out.println(obB);
