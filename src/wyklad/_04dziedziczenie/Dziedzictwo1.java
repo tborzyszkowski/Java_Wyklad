@@ -32,7 +32,7 @@ class B1 extends A1 {
 		return sumaA() + j;
 	}
 
-	public String tosString() {
+	public String toString() {
 		return "B1 { " + super.toString() + " j = " + j + " }";
 	}
 }

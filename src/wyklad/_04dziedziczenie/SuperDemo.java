@@ -14,7 +14,7 @@ class A {
 class B extends A {
 	int i;
 	B(int a, int b) {
-		//super(a);
+		super(a);
 		super.i = a;
 		this.i = b;
 	}
