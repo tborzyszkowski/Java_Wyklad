@@ -8,6 +8,7 @@ class A2 {
 		this.i = i;
 		this.j = j;
 	}
+	A2(){}
 
 	public String toString() {
 		return "\ti = " + i + "\tj = " + j;
@@ -30,9 +31,10 @@ class B2 extends A2 {
 	int k;
 
 	B2(int i, int j, int k) {
+//		super();
 		super(i, j);
 //		this.j = i + j;
-		setJ(i + j);
+//		setJ(i + j);
 		this.k = k;
 	}
 

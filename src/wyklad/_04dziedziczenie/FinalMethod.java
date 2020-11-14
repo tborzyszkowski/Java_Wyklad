@@ -7,9 +7,9 @@ class AF {
 }
 
 class BF extends AF {
-//    void finalMethod() {
+//	void finalMethod() {
 //		System.out.println("To jest nielegalne");
-//    }
+//	}
 }
 
 class FinalMethod {

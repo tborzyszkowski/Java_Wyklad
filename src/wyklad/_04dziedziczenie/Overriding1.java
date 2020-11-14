@@ -5,8 +5,8 @@ import java.util.Random;
 class AO1 {
 	int i;
 
-	AO1(int a) {
-		i = a;
+	AO1(int i) {
+		this.i = i;
 	}
 
 	String show() {
@@ -17,20 +17,20 @@ class AO1 {
 class BO1 extends AO1 {
 	int i;
 
-	BO1(int a, int b) {
-		super(a);
-		this.i = b;
+	BO1(int ai, int i) {
+		super(ai);
+		this.i = i;
 	}
 
 	String show() {
-		return "B: k = " + this.i + super.show();
+		return "B: i = " + this.i + super.show();
 	}
 }
 
 class Overriding1 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		BO1 obB = new BO1(1, 2);
-		//AO1 obA = obB;
+//		AO1 obA = obB;
 		AO1 obA = new AO1(4);
 
 		System.out.println(obB.show());

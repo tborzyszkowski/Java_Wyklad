@@ -24,13 +24,9 @@ class DynWia{
     public static void main(String[] args) {
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis());
-	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper());
+	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // 1 1 2 // 2 2 2
 	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne());
-  }
+  } // 2 2  2 2
 }
 
-
-
-// obj.methC() = C.methC(b)
-// b.testThis() = B.testThis(b) = A.testThis(b) = b.test() = B.test(b) = b.m() = B.m(b) = 2
-//// c.superOne() = B.superOne(c) = A.m(c) = 1
+// b.testThis()  =  A.testThis(b)  =  b.test() = A.test(b) = {this.m()} = b.m() = B.m(b) = 2

@@ -37,10 +37,8 @@ class Trojkat extends Figura {
 	}
 }
 
-// Klasa testujaca
 class Figury {
 	public static void main(String args[]) {
-		Figura f;
 		Prostokat p = new Prostokat(5, 4);
 		Trojkat t = new Trojkat(5, 4);
 

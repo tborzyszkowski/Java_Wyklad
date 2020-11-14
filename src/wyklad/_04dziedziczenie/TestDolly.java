@@ -15,6 +15,6 @@ public class TestDolly {
 		d1.w = 321;
 		System.out.println("D1: " + d1);
 		System.out.println("D2: " + d2);
-		System.out.println("D2: " + d3);
+		System.out.println("D3: " + d3);
 	}
 }

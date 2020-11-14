@@ -16,7 +16,7 @@ class B_1 extends A_1 {
 
 	void callMeToo() {
 		System.out.println("B: callMeToo");
-//    	super.callMeToo();
+		super.callMeToo();
 	}
 //    void callSuperMeToo() {
 //    	super.callMeToo();
