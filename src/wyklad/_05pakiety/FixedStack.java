@@ -2,27 +2,27 @@ package wyklad._05pakiety;
 
 class FixedStack implements IntStack {
 
-	private int stck[];
-	private int top_of_stack;
+	private int elements[];
+	private int topOfStack;
 
 	FixedStack(int size) {
-		stck = new int[size];
-		top_of_stack = -1;
+		elements = new int[size];
+		topOfStack = -1;
 	}
 
 	public void push(int item) {
-		if (top_of_stack == stck.length - 1)
-			System.out.println("Stos pelen");
+		if (topOfStack == elements.length - 1)
+			System.out.println("Stos pełen");
 		else
-			stck[++top_of_stack] = item;
+			elements[++topOfStack] = item;
 	}
 
 	public int pop() {
-		if (top_of_stack < 0) {
+		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;
 		} else
-			return stck[top_of_stack--];
+			return elements[topOfStack--];
 	}
 }
 

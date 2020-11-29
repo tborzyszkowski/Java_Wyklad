@@ -1,5 +1,5 @@
 package wyklad._06kolekcje;
-// implementacja stosow w oparciu o kolekcje
+
 import java.util.*;
 
 class Stack22 {
@@ -28,21 +28,17 @@ class Stack22 {
 	}
 }
 
-// Klasa testujaca stos
 class Stack_1 {
 	public static void main(String args[]) {
 		Stack22 myStack = new Stack22(10);
 
-		// wkladamy liczby na stos
 		for (int i = 0; i < 15; i++)
 			myStack.push(new Integer(i));
 
-		// !! takie elementy takze mozemy przechowywac na stosie !!
 		myStack.push("Ala ma kota");
 
 		System.out.println("Czy stos jest pusty? : " + myStack.isEmpty());
 
-		// zdejmujemy ze stosu
 		System.out.println("Stos myStack:");
 		for (int i = 0; i < 16; i++) {
 			Object o = myStack.pop();

@@ -36,7 +36,7 @@ class TestExtendIF {
 		ob.meth3();
 //		pierwszy.meth3();
 		((Drugi) pierwszy).meth3();
-		drugi.meth3();
+		drugi.meth2();
 		pierwszy = drugi;
 //		drugi = pierwszy;
 	}

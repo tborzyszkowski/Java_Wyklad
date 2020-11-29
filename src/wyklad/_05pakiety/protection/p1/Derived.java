@@ -3,13 +3,10 @@ package wyklad._05pakiety.protection.p1;
 class Derived extends Protection {
 
 	Derived() {
-		System.out.println("konstruktor klasy dziedziczacej");
-		System.out.println("n     = " + n);
-
-//		 System.out.println("n_pri = " + n_pri);
-
-
-		System.out.println("n_pro = " + n_pro);
-		System.out.println("n_pub = " + n_pub);
+		System.out.println("konstruktor klasy dziedziczącej");
+//		System.out.println("nPrivate = " + nPrivate);
+		System.out.println("nPackage = " + nPackage);
+		System.out.println("nProtected = " + nProtected);
+		System.out.println("nPublic = " + nPublic);
 	}
 }

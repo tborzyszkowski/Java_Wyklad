@@ -1,7 +1,7 @@
 package wyklad._04dziedziczenie.docDemo;
 
 /**
-* Klasa sortująca elementy typu Element.
+ * Klasa sortująca elementy typu Element.
  *
  * @version 1.0
  * @see wyklad._04dziedziczenie.docDemo.Element

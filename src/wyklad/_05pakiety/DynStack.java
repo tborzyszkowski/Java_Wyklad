@@ -2,32 +2,31 @@ package wyklad._05pakiety;
 
 class DynStack implements IntStack {
 
-	private int stck[];
-	private int top_of_stack;
+	private int element[];
+	private int topOfStack;
 
 	DynStack(int size) {
-		stck = new int[size];
-		top_of_stack = -1;
+		element = new int[size];
+		topOfStack = -1;
 	}
 
 	public void push(int item) {
-		// jezeli stos jest pelen, to zarezerwuj wiekszy stos
-		if (top_of_stack == stck.length - 1) {
-			int temp[] = new int[stck.length * 2]; // dwa razy wiekszy
-			for (int i = 0; i < stck.length; i++)
-				temp[i] = stck[i];
-			stck = temp;
-			System.out.println("Nowy rozmiar stosu: " + stck.length);
+		if (topOfStack == element.length - 1) {
+			int temp[] = new int[element.length * 2];
+			for (int i = 0; i < element.length; i++)
+				temp[i] = element[i];
+			element = temp;
+			System.out.println("Nowy rozmiar stosu: " + element.length);
 		}
-		stck[++top_of_stack] = item;
+		element[++topOfStack] = item;
 	}
 
 	public int pop() {
-		if (top_of_stack < 0) {
+		if (topOfStack < 0) {
 			System.out.println("Stos pusty");
 			return 0;
 		} else
-			return stck[top_of_stack--];
+			return element[topOfStack--];
 	}
 }
 
