@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.List;
 
 public class Sort {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		List<String> li = Arrays.asList(args);
 		// posortuj
 		Collections.sort(li);

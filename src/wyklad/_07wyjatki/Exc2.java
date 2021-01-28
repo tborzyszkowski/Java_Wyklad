@@ -1,18 +1,15 @@
 package wyklad._07wyjatki;
 
 class Exc2 {
-	public static void main(String args[]) {
-		// początek testowanego bloku
+	public static void main(String[] args) {
 		try {
-			int d = 0;
-//			int a = 42 / d; // tu powinien być błąd
+//			int d = 0;
+//			int a = 42 / d;
 			double a = Math.sqrt(-1)+1;
 			System.out.println("Tego nie zobaczymy "+ (a+1)
 					+ " " + Double.isNaN(a));
 			System.out.println("aqq:" + a + " "+ Double.isNaN(a));
 		}
-		// obsługa błędu arytmetycznego (tu dzielenie przez zero)
-
 		catch (ArithmeticException e) {
 			System.err.println("Dzielenie przez zero: " + e);
 		} 

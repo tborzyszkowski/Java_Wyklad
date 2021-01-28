@@ -36,7 +36,7 @@ class IteratorDemo {
 		System.out.print("Zmodyfikowana lista :");
 		itr = al.iterator();
 		while (itr.hasNext()) {
-			Object element = itr.next();
+			String element = itr.next();
 			System.out.print(element + " ");
 		}
 		System.out.println();
@@ -44,7 +44,7 @@ class IteratorDemo {
 		// wyswietlarnie listy od konca
 		System.out.print("Lista od konca:");
 		while (litr.hasPrevious()) {
-			Object element = litr.previous();
+			String element = litr.previous();
 			System.out.print(element + " ");
 		}
 		System.out.println();

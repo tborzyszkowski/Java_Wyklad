@@ -1,23 +1,19 @@
 package wyklad._08_watki;
-// przyklad tworzenia nowego watku 
-// przez rozszerzenie klasy Thread
+
 class NewThread2 extends Thread {
 
 	NewThread2() {
-		// tworzenie nowego watku
 		super("Nowy watek");
 		System.out.println("Nowy watek      > " + this);
-		// uruchom watek
 		start();
 	}
 
-	// kod nowego watku
 	public void run() {
 		long time1 = System.currentTimeMillis(), time2;
 		int a = 0;
 		try {
 
-			for (int i = 100000000; i > 0; i--) {
+			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 				//Thread.sleep(1);
 				//a++;
 				a = (int)Math.sin(a + 1) + 1;
@@ -35,7 +31,7 @@ class NewThread2 extends Thread {
 
 class ExtendThreadDemo {
 	public static void main(String args[]) {
-		new NewThread2(); // utworz nowy watek
+		new NewThread2();
 		Thread t = Thread.currentThread();
 		long time1 = System.currentTimeMillis(), 
 				time2, a = 0;;
@@ -43,9 +39,10 @@ class ExtendThreadDemo {
 		t.setName("Watek glowny");
 		System.out.println("Watek glowny    : " + t);
 		try {
-			for (int i = 100000000; i > 0; i--) {
+			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
-				a++;
+//				a++;
+				a = (int)Math.sin(a + 1) + 1;
 				//Thread.sleep(0);
 			}
 		} catch (Exception e) {

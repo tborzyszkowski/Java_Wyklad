@@ -13,9 +13,9 @@ class Exc7 {
 			System.out.println("Indeks tablicy poza zakresem: " + e);
 		}
 	}
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		try {
-			int a = args.length;
+			int a = 1;
 			int b = 42 / a; 
 			System.out.println("a = " + a);
 			nesttry(a); 

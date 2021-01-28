@@ -1,8 +1,8 @@
 package wyklad._07wyjatki;
 class Exc5 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		try {
-			int a = args.length;
+			int a = 0;
 			System.out.println("a = " + a);
 			int b = 2 / a;
 			int c[] = { 1, 2 };

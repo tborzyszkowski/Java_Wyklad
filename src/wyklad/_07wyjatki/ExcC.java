@@ -4,7 +4,7 @@ class MyException11 extends Exception {
 	
 	private static final long serialVersionUID = 231231L;
 	
-	private int detail;
+	private final int detail;
 
 	MyException11(int a) {
 		detail = a;
@@ -35,6 +35,7 @@ class ExcC {
 		} catch (MyException11 e) {
 			System.out.println("Obsługa wyjątku: " + e);
 			e.printStackTrace();
+			System.err.println();
 			System.out.println("e.detail: " + e.getDetail());
 		}
 	}

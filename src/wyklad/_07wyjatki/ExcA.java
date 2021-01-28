@@ -1,27 +1,29 @@
 package wyklad._07wyjatki;
 
 class ExcA {
-	static void procA() throws RuntimeException {
-		int a = 1;
-		try {
-			System.out.println("Wewnatrz procA: " + a);
-			a++;
-			throw new RuntimeException("To tylko test: " + a);
-		} catch (RuntimeException e) {
-			a++;
-			System.out.println("Wewnatrz catch: " + a + " e: " + e);
-			throw e;
-		} finally {
-			System.out.println("finally w procA: " + (++a));
-			//a = a / (a-a);
-		}
-	}
+//	static void procA() throws RuntimeException {
+//		int a = 1;
+//		try {
+//			System.out.println("Wewnatrz procA: " + a);
+//			a++;
+//			if(1 == 1)
+//				throw new RuntimeException("To tylko test: " + a);
+//		} catch (RuntimeException e) {
+//			a++;
+//			System.out.println("Wewnatrz catch: " + a + " e: " + e);
+//			throw e;
+//		} finally {
+//			System.out.println("finally w procA: " + (++a));
+////			a = a / (a-a);
+//		}
+//		System.out.println("Po try-catch-finally");
+//	}
 
 //	static int procB() {
 //		int a = 1;
 //		try {
-//			System.out.println("Wewnatrz procB");
-//			return a++;
+//			System.out.println("Wewnatrz procB: " + a);
+//			return ++a;
 //		}
 //		finally {
 //			a++;
@@ -32,8 +34,8 @@ class ExcA {
 //	static Integer procB() {
 //		Integer a = 1;
 //		try {
-//			System.out.println("Wewnatrz procB: " + a + ": " + a.hashCode());
-//			return a++;
+//			System.out.println("Wewnatrz procB-1:  " + a + ": " + a.hashCode());
+//			return ++a;
 //		}
 //		finally {
 //			System.out.println("finally w procB-1: " + a + ": " + a.hashCode());
@@ -67,7 +69,7 @@ class ExcA {
 		IntWrapper a = new IntWrapper(1);
 
 		try {
-			System.out.println("Wewnatrz procB: " + a + ": " + a.hashCode());
+			System.out.println("Wewnatrz procB-0:  " + a + ": " + a.hashCode());
 			return a.Inc();
 		} finally {
 			System.out.println("finally w procB-1: " + a + ": " + a.hashCode());
@@ -76,22 +78,22 @@ class ExcA {
 		}
 	}
 
-//	static void procC() {
-//		try {
-//			System.out.println("Wewnatrz procC");
-//		} finally {
-//			System.out.println("finally w procC");
-//		}
-//	}
-
-	public static void main(String args[]) {
+	static void procC() {
 		try {
-			procA();
+			System.out.println("Wewnatrz procC");
+		} finally {
+			System.out.println("finally w procC");
 		}
-		catch (Exception e) {
-			System.out.println("Main: wyjatek z procA obsłużony"+e);
-		}
+	}
+
+	public static void main(String[] args) {
+//		try {
+//			procA();
+//		}
+//		catch (Exception e) {
+//			System.out.println("Main: wyjatek z procA obsłużony"+e);
+//		}
 //		System.out.println("B: " + procB());
-//		procC();
+		procC();
 	}
 }

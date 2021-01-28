@@ -1,64 +1,62 @@
 package wyklad._06kolekcje;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
-import java.io.*;
-import java.util.List;
 
 public class Anagrams2 {
-    public static void main(String[] args) {
-    	long time1 = System.currentTimeMillis(), 
+	public static void main(String[] args) {
+		long time1 = System.currentTimeMillis(),
 				time2;
-        int minGroupSize = Integer.parseInt(args[1]);
- 
-        // Read words from file and put into simulated multimap
-        Map<String, TreeSet<String>> m = new HashMap<String, TreeSet<String>>();
-        try {
-            Scanner s = new Scanner(new File(args[0]));
-            String word;
-            while(s.hasNext()) {
-                String alpha = alphabetize(word = s.next());
-                TreeSet<String> l = m.get(alpha);
-                if (l==null)
-                    m.put(alpha, l=new TreeSet<String>());
-                l.add(word);
-            }
-        } catch(IOException e) {
-            System.err.println(e);
-            System.exit(1);
-        }
+		int minGroupSize = Integer.parseInt(args[1]);
 
-        // Make a List of all permutation groups above size threshold
-        List<TreeSet<String>> winners = new ArrayList<TreeSet<String>>();
-        for (TreeSet<String> l : m.values() ) {
-            if (l.size() >= minGroupSize)
-                winners.add(l);
-   }
+		Map<String, ArrayList<String>> m = new HashMap<String, ArrayList<String>>();
+		try {
+			Scanner s = new Scanner(new File(args[0]));
+			String word;
+			while (s.hasNext()) {
+				String alpha = alphabetize(word = s.next());
+				ArrayList<String> l = m.get(alpha);
+				if (l == null)
+					m.put(alpha, l = new ArrayList<String>());
+				l.add(word);
+			}
+		} catch (IOException e) {
+			System.err.println(e);
+			System.exit(1);
+		}
 
-        // Sort permutation groups according to size
-        Collections.sort(winners, new Comparator<TreeSet<String>>() {
-            public int compare(TreeSet<String> o1, TreeSet<String> o2) {
-                return o2.size() - o1.size();
-            }
-        });
+		List<ArrayList<String>> winners = new ArrayList<ArrayList<String>>();
+		for (ArrayList<String> l : m.values()) {
+			if (l.size() >= minGroupSize)
+				winners.add(l);
+		}
 
-        time2 = System.currentTimeMillis();
-        		
-        // Print permutation groups
-        for (TreeSet<String> l : winners ) {
-            System.out.println(l.size() + ": " + l);
-        }
-        System.out.println(winners.size());
-        System.out.println("Time: " +  (time2 - time1));
-}
+		Collections.sort(winners, new Comparator<ArrayList<String>>() {
+			public int compare(ArrayList<String> o1, ArrayList<String> o2) {
+				return o2.size() - o1.size();
+			}
+		});
 
-    private static String alphabetize(String s) {
-        int count[] = new int[256];
-        int len = s.length();
-        for (int i=0; i<len; i++)
-            count[s.charAt(i)]++;
-        StringBuffer result = new StringBuffer(len);
-        for (char c='a'; c<='z'; c++)
-            for (int i=0; i<count[c]; i++)
-                result.append(c);
-        return result.toString();
-    }
+		time2 = System.currentTimeMillis();
+
+		// Print permutation groups
+		for (ArrayList<String> l : winners) {
+			System.out.println(l.size() + ": " + l);
+		}
+		System.out.println(winners.size());
+		System.out.println("Time: " + (time2 - time1));
+	}
+
+	private static String alphabetize(String s) {
+		int[] count = new int[256];
+		int len = s.length();
+		for (int i = 0; i < len; i++)
+			count[s.charAt(i)]++;
+		StringBuffer result = new StringBuffer(len);
+		for (char c = 'a'; c <= 'z'; c++)
+			for (int i = 0; i < count[c]; i++)
+				result.append(c);
+		return result.toString();
+	}
 }

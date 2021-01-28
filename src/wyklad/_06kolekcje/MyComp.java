@@ -2,12 +2,12 @@ package wyklad._06kolekcje;
 
 import java.util.*;
 
-// TU definiujemy nowy Comparator
 class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 	public int compare(E a, E b) {
-//		 odwracamy porzadek
-//		 return b.compareTo(a);
-//		 return a.compareTo(b);
+//		odwracamy porzadek
+//		return b.compareTo(a);
+//		return a.compareTo(b);
+//		return a.compareTo(b);
 		return (a.toString().length() < b.toString().length() ? -1 :
 					(a.toString().length() > b.toString().length() ? 1 :
 						a.compareTo(b) ));
@@ -19,7 +19,8 @@ class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 class MyComp {
 	public static void main(String args[]) {
 		// tworzymy obiekt klasy TreeSet z nowym porzadkiem
-		TreeSet<String> ts = new TreeSet<String>(new MyComparator<String>());
+		TreeSet<String> ts = //new TreeSet<String>();
+			new TreeSet<String>(new MyComparator<String>());
 
 		ts.add("AAAA");
 		ts.add("HH");

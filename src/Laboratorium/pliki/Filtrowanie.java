@@ -8,11 +8,11 @@ public class Filtrowanie {
 
 	public static void main(String[] args) throws IOException {
 		ZipOutputStream zout = new ZipOutputStream(
-				new FileOutputStream("dane.zip")
+				new FileOutputStream("Resources\\dane.zip")
 				);
 		DataOutputStream dout = new DataOutputStream(zout);
 		
-		ZipEntry ze = new ZipEntry("dane.dat");
+		ZipEntry ze = new ZipEntry("Resources\\dane.dat");
 		zout.putNextEntry(ze);
 		
 		// zapis do pliku binarnego
@@ -26,7 +26,7 @@ public class Filtrowanie {
 		
 		// treaz czytamy
 		ZipInputStream zin = new ZipInputStream(
-				new FileInputStream("dane.zip")
+				new FileInputStream("Resources\\dane.zip")
 				);
 		DataInputStream din = new DataInputStream(zin);
 

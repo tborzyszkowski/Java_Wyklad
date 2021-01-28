@@ -1,35 +1,33 @@
 package wyklad._08_watki;
-// Poprawna implementacja modelu producenta-konsumenta
 
 class Bufor1 {
 	int n;
-	// czy jest cos w buforze
 	boolean jest = false;
 
 	synchronized int get() {
 		if (!jest)
 			try {
-				wait(); // czekamy az bedzie co jesc
+				wait();
 			} catch (InterruptedException e) {
 				System.out.println("Przerwane");
 			}
 		System.out.println("Konsumpcja: " + n);
-		jest = false; // zjedlismy co bylo do zjedzenia
-		notify(); // budzimy producenta
+		jest = false;
+		notify();
 		return n;
 	}
 
 	synchronized void put(int n) {
 		if (jest)
 			try {
-				wait(); // czekamy na popyt
+				wait();
 			} catch (InterruptedException e) {
 				System.out.println("Przerwane");
 			}
 		this.n = n;
-		jest = true; // jest co jesc
+		jest = true;
 		System.out.println("Produkcja:  " + n);
-		notify(); // budzimy konsumanta
+		notify();
 	}
 }
 
@@ -47,7 +45,7 @@ class Producent1 implements Runnable {
 		while (true) {
 			b.put(i++);
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(2000);
 			} catch (InterruptedException e) {
 				System.out.println("....");
 			}
@@ -67,7 +65,7 @@ class Konsument1 implements Runnable {
 		while (true) {
 			b.get();
 			try {
-				Thread.sleep(1500);
+				Thread.sleep(500);
 			} catch (InterruptedException e) {
 				System.out.println("....");
 			}
@@ -76,7 +74,7 @@ class Konsument1 implements Runnable {
 }
 
 class ProdKons {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Bufor1 b = new Bufor1();
 		new Producent1(b);
 		new Konsument1(b);

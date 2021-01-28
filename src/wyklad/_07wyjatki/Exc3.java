@@ -8,7 +8,7 @@ class Exc3 {
 		Random r = new Random();
 		long time1 = System.currentTimeMillis(),
 				time2;
-		for (int i = 0; i < 100000000; i++) {
+		for (int i = 0; i < 1000 * 1000 * 100; i++) {
 			try {
 				b = r.nextInt(); // zwraca jedną z 2^32 wartości
 				//Thread.sleep(1);

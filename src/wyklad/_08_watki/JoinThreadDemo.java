@@ -1,5 +1,4 @@
 package wyklad._08_watki;
-// przyklad uzycia join do oczekiwania na zakonczenie watku
 
 class NewThread3 implements Runnable {
 	int czas;
@@ -28,33 +27,33 @@ class NewThread3 implements Runnable {
 }
 
 class JoinThreadDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		NewThread3 ob1 = new NewThread3("Pierwszy", 40);
 		NewThread3 ob2 = new NewThread3("Drugi   ", 30);
 		NewThread3 ob3 = new NewThread3("Trzeci  ", 20);
 		NewThread3 ob4 = new NewThread3("Czwarty ", 10);
 
-		System.out
-				.println("Watek " + ob1.name + " dziala : " + ob1.t.isAlive());
-		System.out
-				.println("Watek " + ob2.name + " dziala : " + ob2.t.isAlive());
-		System.out
-				.println("Watek " + ob3.name + " dziala : " + ob3.t.isAlive());
-		System.out
-				.println("Watek " + ob4.name + " dziala : " + ob4.t.isAlive());
-		// oczekiwanie na zakonczenie dzialania watkow
+		state(ob1, ob2, ob3, ob4);
+
 		try {
 			System.out.println("Czekamy na zakonczenie dzialania watkow");
-//			ob1.t.join();
+			ob1.t.join();
 			System.out.println("Pierwszy: join()");
 			ob2.t.join();
 			System.out.println("Drugi   : join()");
 			ob3.t.join();
 			System.out.println("Trzeci  : join()");
-			ob4.t.join();
+//			ob4.t.join();
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}
+
+		state(ob1, ob2, ob3, ob4);
+
+		System.out.println("Koniec watku glownego");
+	}
+
+	private static void state(NewThread3 ob1, NewThread3 ob2, NewThread3 ob3, NewThread3 ob4) {
 		System.out
 				.println("Watek " + ob1.name + " dziala : " + ob1.t.isAlive());
 		System.out
@@ -63,6 +62,5 @@ class JoinThreadDemo {
 				.println("Watek " + ob3.name + " dziala : " + ob3.t.isAlive());
 		System.out
 				.println("Watek " + ob4.name + " dziala : " + ob4.t.isAlive());
-		System.out.println("Koniec watku glownego");
 	}
 }

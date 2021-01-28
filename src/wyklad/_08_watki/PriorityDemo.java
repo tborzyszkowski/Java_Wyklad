@@ -1,35 +1,28 @@
 package wyklad._08_watki;
-// przyklad uzycia priorytetow
 
 class Clicker implements Runnable {
 	long click = 0;
 	Thread t;
-	// zmienna nie bedzie optymalizowana
-	// np. przechowywana w rejestrze
 	private volatile boolean running = true;
-
 	public Clicker(int p) {
 		t = new Thread(this);
 		t.setPriority(p);
 	}
-
 	public void run() {
 		while (running) {
 			click++;
 		}
 	}
-
 	public void stop() {
 		running = false;
 	}
-
 	public void start() {
 		t.start();
 	}
 }
 
 class PriorityDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
 		int n = 8;
 
@@ -48,7 +41,7 @@ class PriorityDemo {
 			m[i].start();
 			hi[i].start();
 		}
-		try { // dajemy watkom czas na dzialanie
+		try {
 			for (int i = 0; i < 20; i++) {
 				Thread.sleep(1000);
 				System.out.print(".");
@@ -63,7 +56,7 @@ class PriorityDemo {
 			m[i].stop();
 			hi[i].stop();
 		}
-		// czekamy na zatrzymanie watkow potomnych
+
 		try {
 			for (int i = 0; i < n; i++) {
 				hi[i].t.join();
