@@ -17,9 +17,9 @@ class Static1 {
 		a = a * 3;
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		pisz(1234);
-		test(new Integer(3));
+//		test(new Integer(3));
 
 		pisz(56789);
 	}

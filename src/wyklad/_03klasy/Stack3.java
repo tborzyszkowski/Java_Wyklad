@@ -1,7 +1,7 @@
 package wyklad._03klasy;
 
 class Stack {
-	private int elements[];
+	private int[] elements;
 	private int topOfStack;
 
 	public Stack(int size) {

@@ -15,7 +15,7 @@ class Client implements Callback {
 }
 
 class TestIface {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Callback c = new Client();
 
 		c.callback(42);
@@ -32,7 +32,7 @@ class AnotherClient implements Callback {
 }
 
 class TestIface2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Callback c = new Client();
 		AnotherClient ob = new AnotherClient();
 

@@ -1,11 +1,12 @@
 package wyklad._03klasy;
 
 class BoxDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Box myBox = new Box();
 		double vol;
 
-		vol = myBox.getWidth() * myBox.getHeight() * myBox.getDepth();
+//		vol = myBox.getWidth() * myBox.getHeight() * myBox.getDepth();
+		vol = myBox.volume();
 
 		System.out.println("Objetosc = " + vol);
 
@@ -13,7 +14,8 @@ class BoxDemo {
 		myBox.setHeight(20);
 		myBox.setDepth(15);
 
-		vol = myBox.getWidth() * myBox.getHeight() * myBox.getDepth();
+//		vol = myBox.getWidth() * myBox.getHeight() * myBox.getDepth();
+		vol = myBox.volume();
 
 		System.out.println("Objetosc = " + vol);
 	}

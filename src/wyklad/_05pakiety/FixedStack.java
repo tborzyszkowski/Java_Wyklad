@@ -2,7 +2,7 @@ package wyklad._05pakiety;
 
 class FixedStack implements IntStack {
 
-	private int elements[];
+	private int[] elements;
 	private int topOfStack;
 
 	FixedStack(int size) {

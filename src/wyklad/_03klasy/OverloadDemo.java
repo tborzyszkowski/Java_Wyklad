@@ -28,7 +28,7 @@ class Overload {
 		System.out.println("double a = " + a + " int b = " + b);
 		return 0;
 	}
-	int test(float a, int b) {
+	int test(float a, float b) {
 		System.out.println("float a = " + a + " int b = " + b);
 		return 0;
 	}
@@ -47,7 +47,7 @@ class Overload {
 }
 
 class OverloadDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Overload ob = new Overload();
 		ob.test();
 		ob.test(10);

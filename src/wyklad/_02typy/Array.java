@@ -1,9 +1,8 @@
 package wyklad._02typy;
 
-// Demonstracja tablicy jednowymiarowej
 class Array {
-	public static void main(String args[]) {
-		int monthDays[];
+	public static void main(String[] args) {
+		int[] monthDays;
 		monthDays = new int[14];
 		// nadajemy wartosci
 		monthDays[0] = 31; // styczen

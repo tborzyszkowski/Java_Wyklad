@@ -24,7 +24,7 @@ class Implementacja implements Drugi {
 }
 
 class TestExtendIF {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Implementacja ob = new Implementacja();
 		Pierwszy pierwszy;
 		Drugi drugi;

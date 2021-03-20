@@ -2,7 +2,7 @@ package wyklad._05pakiety;
 
 class DynStack implements IntStack {
 
-	private int element[];
+	private int[] element;
 	private int topOfStack;
 
 	DynStack(int size) {
@@ -12,7 +12,7 @@ class DynStack implements IntStack {
 
 	public void push(int item) {
 		if (topOfStack == element.length - 1) {
-			int temp[] = new int[element.length * 2];
+			int[] temp = new int[element.length * 2];
 			for (int i = 0; i < element.length; i++)
 				temp[i] = element[i];
 			element = temp;
@@ -31,7 +31,7 @@ class DynStack implements IntStack {
 }
 
 class IFTest2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		DynStack myStack1 = new DynStack(5);
 		DynStack myStack2 = new DynStack(8);
 
@@ -50,7 +50,7 @@ class IFTest2 {
 }
 
 class IFTest3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		IntStack myStack;
 		DynStack ds = new DynStack(5);
 		FixedStack fs = new FixedStack(8);

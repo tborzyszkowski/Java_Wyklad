@@ -6,11 +6,11 @@ class Access {
 	public int b;
 	private int c;
 
-	void setC(int i) { // ustaw c
+	void setC(int i) {
 		c = i * 2;
 	}
 
-	int getC() { // pobierz c
+	int getC() {
 		return c * 2;
 	}
 }

@@ -1,10 +1,10 @@
 package wyklad._03klasy;
 
 class Stack21 {
-	private int elements[] = new int[10];
+	private int[] elements = new int[10];
 	private int topOfStack;
 
-	Stack21() {
+	public Stack21() {
 		topOfStack = -1;
 	}
 

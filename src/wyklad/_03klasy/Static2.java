@@ -12,7 +12,7 @@ class Static21 {
 }
 
 class Static2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Static21.callMe();
 

@@ -1,7 +1,7 @@
 package wyklad._03klasy;
 
 class AbsDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Absolute ob = new Absolute();
 		System.out.println("int    abs = " + ob.abs((short) -100));
 		System.out.println("int    abs = " + ob.abs(-100));
