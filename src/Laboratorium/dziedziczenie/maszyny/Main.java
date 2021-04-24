@@ -16,5 +16,18 @@ public class Main {
 
 		kosiarka.wyswietl();
 
+		Pojazd pojazd1 = new Pojazd("125p",
+				"Fiat",
+				40);
+		Pojazd pojazd2 = new Pojazd("125p",
+				"Fiat",
+				40);
+
+		pojazd1.wyswietl();
+		pojazd2.wyswietl();
+
+		Jednoslad jednoslad = new Jednoslad("aaa", "bbb", 10, "moj typ");
+
+		jednoslad.wyswietl();
 	}
 }

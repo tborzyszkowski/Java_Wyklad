@@ -9,6 +9,14 @@ public class Kosiarka extends Maszyna{
 		this.czyMelekser = czyMelekser;
 	}
 
+	public boolean isCzyMelekser() {
+		return czyMelekser;
+	}
+
+	public void setCzyMelekser(boolean czyMelekser) {
+		this.czyMelekser = czyMelekser;
+	}
+
 	@Override
 	public String toString() {
 		return "Kosiarka{" +
