@@ -63,7 +63,7 @@ class AskMe implements SharedConstants {
 
 		Question q = new Question();
 		long wyniki[] = {0, 0, 0, 0, 0, 0};
-		long n = 1000 * 1000;
+		long n = 100 * 1000 * 1000;
 		for (long i = 0; i < n; i++) {
 			wyniki[q.ask()]++;
 		}

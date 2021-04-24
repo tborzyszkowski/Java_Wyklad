@@ -32,6 +32,7 @@ class B2 extends A2 {
 
 	B2(int i, int j, int k) {
 //		super();
+//		i = 1;
 		super(i, j);
 //		this.j = i + j;
 //		setJ(i + j);

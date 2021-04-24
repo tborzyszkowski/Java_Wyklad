@@ -82,11 +82,11 @@ class Dziedzictwo3 {
 
 		System.out.println(base);
 
-//		System.out.println("((Der2)base).k = " + ((Derived2) base).getJ());
+//		System.out.println("((Der2)base).j = " + ((Derived2) base).getJ());
 
 		System.out.println(base.getClass());
 		if (base instanceof Derived2)
-			System.out.println(" k = " + ((Derived2) base).getJ());
+			System.out.println(" j = " + ((Derived2) base).getJ());
 		else
 			System.out.println("Zly typ");
 	}

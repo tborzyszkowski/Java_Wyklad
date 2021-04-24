@@ -94,5 +94,8 @@ class BoxDemo4 {
 
 		Box4 box = myBox1;
 		System.out.println("myBox1: \n" + box);
+
+		box = new Box4();
+		System.out.println("myBox1: \n" + box);
 	}
 }

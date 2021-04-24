@@ -34,7 +34,7 @@ class Overriding1 {
 		AO1 obA = new AO1(4);
 
 		System.out.println(obB.show());
-		boolean b = (new Random()).nextBoolean();
+		boolean b = new Random().nextBoolean();
 		System.out.println("b = " + b);
 		if (b) {
 			obA = obB;

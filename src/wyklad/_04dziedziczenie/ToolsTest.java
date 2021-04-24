@@ -28,7 +28,7 @@ class Driller extends Tool{
 class Broom extends Tool{
 	boolean canCut()   { return false;}
 	boolean canDrill() { return false;}
-	boolean canSweep() { return true;}	
+	boolean canSweep() { return true;}
 }
 
 public class ToolsTest {

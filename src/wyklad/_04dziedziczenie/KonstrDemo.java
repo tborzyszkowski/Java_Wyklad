@@ -2,13 +2,11 @@ package wyklad._04dziedziczenie;
 
 class AK {
 	AK(int i) {
-		//super();
 		int x = i + 1;
 		//super();
 		System.out.println("Konstruktor z A: " + x);
 	}
 	AK() {
-		//super();
 		System.out.println("Konstruktor z A()");
 	}
 }
@@ -23,7 +21,7 @@ class BK extends AK {
 }
 class CK extends BK {
 	CK() {
-//		super();
+		super();
 //		super(2);
 		System.out.println("Konstruktor z C()");
 	}

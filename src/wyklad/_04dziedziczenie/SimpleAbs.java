@@ -25,7 +25,7 @@ class B_1 extends A_1 {
 }
 
 class SimpleAbs {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		B_1 b = new B_1();
 		A_1 a = b;
 //		A_1 aa = new A_1();
