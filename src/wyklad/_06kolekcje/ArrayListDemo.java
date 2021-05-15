@@ -2,7 +2,7 @@ package wyklad._06kolekcje;
 import java.util.*;
 
 class ArrayListDemo{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
 	ArrayList a1 = new ArrayList();
 

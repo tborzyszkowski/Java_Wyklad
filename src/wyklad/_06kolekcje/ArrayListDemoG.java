@@ -3,7 +3,7 @@ package wyklad._06kolekcje;
 import java.util.*;
 
 class ArrayListDemoG {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		ArrayList<Integer> a1 = new ArrayList<Integer>();
 
@@ -35,10 +35,14 @@ class ArrayListDemoG {
 		System.out.println("Zawartosc a1         : " + a1);
 		
 		a1.clear();
+		long time1 = System.currentTimeMillis(),
+				time2;
 		for (int i = 0; i < 1000 * 1000; i++) {
 			a1.add(i);
 		}
-		System.out.println("a1.size(): "+ a1.size());// + "\n" + a1);
+		time2 = System.currentTimeMillis();
+
+		System.out.println("a1.size(): "+ a1.size() + " czas: " + " ["+(time2-time1)+"]");
 		
 	}
 }
