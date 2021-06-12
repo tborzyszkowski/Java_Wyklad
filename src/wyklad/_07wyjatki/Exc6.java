@@ -2,7 +2,7 @@ package wyklad._07wyjatki;
 class Exc6 {
 	public static void main(String[] args) {
 		try {
-			int a = 3;
+			int a = 2;
 			int b = 42 / a;
 			System.out.println("a = " + a);
 			try {
@@ -15,7 +15,7 @@ class Exc6 {
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("Indeks tablicy poza zakresem: " + e);
 //				int x = 1 / 0;
-//				throw new ArrayIndexOutOfBoundsException();
+				throw new ArrayIndexOutOfBoundsException();
 			}
 			;
 			System.out.println("AQQ");

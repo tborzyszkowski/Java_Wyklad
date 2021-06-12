@@ -28,7 +28,7 @@ class ExcC {
 		System.out.println("Normalne zakończenie");
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		try {
 			oblicz(1);
 			oblicz(20);

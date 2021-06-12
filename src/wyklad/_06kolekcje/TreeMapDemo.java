@@ -4,7 +4,7 @@ import java.util.Set;
 import java.util.Iterator;
 
 class TreeMapDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		TreeMap<String, Double> tm = new TreeMap<String, Double>();
 
@@ -29,7 +29,7 @@ class TreeMapDemo {
 		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i
 				.hasNext();) {
 			Map.Entry<String, Double> m = i.next();
-
+			System.out.println(m.getKey() + " | " + m.getKey().hashCode() + " | " + m.getValue());
 		}
 		System.out.println();
 	}

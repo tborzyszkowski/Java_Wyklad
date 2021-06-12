@@ -1,5 +1,26 @@
 package wyklad._07wyjatki;
 
+class IntWrapper {
+	private int val;
+
+	public IntWrapper(int val) {
+		this.val = val;
+	}
+	public IntWrapper Inc() {val++; return this;}
+
+	public int getVal() {
+		return val;
+	}
+
+	public void setVal(int val) {
+		this.val = val;
+	}
+	@Override
+	public String toString() {
+		return "" + val;
+	}
+}
+
 class ExcA {
 //	static void procA() throws RuntimeException {
 //		int a = 1;
@@ -44,26 +65,7 @@ class ExcA {
 //		}
 //	}
 
-	static class IntWrapper {
-		private int val;
 
-		public IntWrapper(int val) {
-			this.val = val;
-		}
-		public IntWrapper Inc() {val++; return this;}
-
-		public int getVal() {
-			return val;
-		}
-
-		public void setVal(int val) {
-			this.val = val;
-		}
-		@Override
-		public String toString() {
-			return "" + val;
-		}
-	}
 
 	static IntWrapper procB() {
 		IntWrapper a = new IntWrapper(1);
@@ -93,7 +95,7 @@ class ExcA {
 //		catch (Exception e) {
 //			System.out.println("Main: wyjatek z procA obsłużony"+e);
 //		}
-//		System.out.println("B: " + procB());
-		procC();
+		System.out.println("B: " + procB());
+//		procC();
 	}
 }

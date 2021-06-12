@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.Iterator;
 
 class IteratorDemo_2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		ArrayList<String> al = new ArrayList<String>();
 

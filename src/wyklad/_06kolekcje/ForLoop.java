@@ -2,8 +2,8 @@ package wyklad._06kolekcje;
 import java.util.ArrayList;
 
 class ForLoop {
-	public static void main(String args[]) {
-		long a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	public static void main(String[] args) {
+		long[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 		long result = 0;
 
 		// normalna petla for

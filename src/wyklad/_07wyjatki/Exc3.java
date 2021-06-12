@@ -3,7 +3,7 @@ package wyklad._07wyjatki;
 import java.util.Random;
 
 class Exc3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int a = 0, b = 0, c = 0, j = 0;
 		Random r = new Random();
 		long time1 = System.currentTimeMillis(),

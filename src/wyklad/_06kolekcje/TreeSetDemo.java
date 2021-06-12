@@ -3,7 +3,7 @@ package wyklad._06kolekcje;
 import java.util.TreeSet;
 
 class TreeSetDemo{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
     	TreeSet<String> ts = new TreeSet<String>();
 
 		ts.add("B"); ts.add("H"); ts.add("O");

@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.ListIterator;
 
 class IteratorDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		ArrayList<String> al = new ArrayList<String>();
 

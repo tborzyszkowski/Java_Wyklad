@@ -4,21 +4,18 @@ import java.util.*;
 
 class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 	public int compare(E a, E b) {
-//		odwracamy porzadek
 //		return b.compareTo(a);
-//		return a.compareTo(b);
 //		return a.compareTo(b);
 		return (a.toString().length() < b.toString().length() ? -1 :
 					(a.toString().length() > b.toString().length() ? 1 :
 						a.compareTo(b) ));
-//	return 0;
+//		return -1;
 	}
 }
 
 
 class MyComp {
-	public static void main(String args[]) {
-		// tworzymy obiekt klasy TreeSet z nowym porzadkiem
+	public static void main(String[] args) {
 		TreeSet<String> ts = //new TreeSet<String>();
 			new TreeSet<String>(new MyComparator<String>());
 

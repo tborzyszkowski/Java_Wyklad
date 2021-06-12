@@ -2,7 +2,7 @@ package wyklad._06kolekcje;
 import java.util.*;
 
 class HashSetDemo{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
 		HashSet<String> hs = new HashSet<String>(13);
 

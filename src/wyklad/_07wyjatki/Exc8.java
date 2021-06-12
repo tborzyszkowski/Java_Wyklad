@@ -1,11 +1,12 @@
 package wyklad._07wyjatki;
 class Exc8 {
-	static void demoproc() throws NullPointerException {
+	static void demoproc() {
 		try {
-			NullPointerException a = new NullPointerException("To tylko test");
-			throw a;
-		} catch (NullPointerException e) {
-			System.out.println("Wyjątek wewnętrz metody: " + e);
+			throw new IllegalArgumentException("ArgEx: test");
+//			IllegalArgumentException a = new IllegalArgumentException("ArgEx: test");
+//			throw a;
+		} catch (IllegalArgumentException e) {
+			System.out.println("Wyjątek wewnątrz metody: " + e);
 			e.printStackTrace();
 			throw e; 
 			//throw new ArithmeticException();
@@ -18,7 +19,7 @@ class Exc8 {
 	public static void main(String[] args) {
 		try {
 			demoproc();
-		} catch (NullPointerException e) {
+		} catch (IllegalArgumentException e) {
 			System.out.println("Wyjątek w main: " + e.getMessage());
 			e.printStackTrace();
 		} catch (ArithmeticException e) {

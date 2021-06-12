@@ -5,7 +5,7 @@ import java.util.*;
 class ArrayListDemoG {
 	public static void main(String[] args) {
 
-		ArrayList<Integer> a1 = new ArrayList<Integer>();
+		ArrayList<Number> a1 = new ArrayList<Number>();
 
 		System.out.println("Poczatkowy rozmiar a1: " + a1.size());
 
@@ -17,7 +17,8 @@ class ArrayListDemoG {
 		a1.set(1, 4);
 //		a1.add(11, 4);
 
-//		a1.add(3, new Double(3));
+		a1.add(3, new Double(3));
+//		a1.add(4, "Ala ma kota");
 		System.out.println(a1.contains(new Integer(42)));
 
 		System.out.println("Rozmiar po dodaniu   : " + a1.size());
