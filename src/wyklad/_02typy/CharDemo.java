@@ -2,7 +2,7 @@ package wyklad._02typy;
 
 // demonstracja typu char
 class CharDemo {
-	public static void main(String args[]) {
+	public static void main(String [] args) {
 		char ch1 = 88;
 		char ch2 = 'Y';
 		System.out.print("ch1   i ch2  : ");

@@ -2,7 +2,6 @@ package wyklad._02typy;
 
 import java.math.BigDecimal;
 
-// program do obliczania najmniejszej liczby wiekszej od zera
 public class Epsilon {
 
 	public static void main(String[] args) {
@@ -24,7 +23,7 @@ public class Epsilon {
 		BigDecimal b = a;
 		i = 0;
 
-		while (a.compareTo(BigDecimal.valueOf(0.0)) != 0 && i < 6000){
+		while (a.compareTo(BigDecimal.valueOf(0.0)) != 0 && i < 8000){
 			b = a.multiply(jeden);
 			a = a.divide(dwa);
 			if ( (i++) % 100 == 0) System.out.print(".");

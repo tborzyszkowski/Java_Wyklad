@@ -3,7 +3,7 @@ package wyklad._07wyjatki;
 import java.util.Random;
 
 class Exc9a {
-	static void throwOne() //throws IllegalAccessException
+	static void throwOne() throws IllegalAccessException
 	{
 		System.out.println("Wewnątrz metody");
 		Random rand = new Random();
@@ -13,11 +13,11 @@ class Exc9a {
 			throw new ArithmeticException("To tylko test");
 		}
 		else
-//			throw new IllegalAccessException("To tylko test");
-			throw new ArithmeticException("To tylko test");
+			throw new IllegalAccessException("To tylko test");
+//			throw new ArithmeticException("To tylko test");
 	}
 
-	public static void main(String[] args) //throws IllegalAccessException
+	public static void main(String[] args) throws IllegalAccessException
 	{
 		throwOne();
 	}

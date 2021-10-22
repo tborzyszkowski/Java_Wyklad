@@ -1,19 +1,18 @@
 package wyklad._02typy;
 
-// demonstracja typu boolean
 class BoolDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		boolean b;
-
+		int x = 1, y = 2;
 		b = false;
-		b = 1 > 2;
+
+		b = x > y;
 		
 		System.out.println("b = " + b);
 		b = true;
 //		b = 1;
 		System.out.println("b = " + b);
 
-		// wyrazenia typu boolean kontroluja wykonanie komendy if
 		if (b)
 			System.out.println(" To zobaczymy ");
 
@@ -21,8 +20,6 @@ class BoolDemo {
 		if (b)
 			System.out.println(" ... a tego nie  zobaczymy ");
 
-		// wynikiem realacji jest wartosc logiczna
-		// b = 1;
 		System.out.println("(1 > 2) == " + (1 > 2));
 	}
 }

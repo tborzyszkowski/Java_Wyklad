@@ -45,7 +45,7 @@ class Producent1 implements Runnable {
 		while (true) {
 			b.put(i++);
 			try {
-				Thread.sleep(2000);
+				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				System.out.println("....");
 			}
@@ -65,7 +65,7 @@ class Konsument1 implements Runnable {
 		while (true) {
 			b.get();
 			try {
-				Thread.sleep(500);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				System.out.println("....");
 			}

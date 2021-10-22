@@ -32,7 +32,7 @@ class Caller2 implements Runnable {
 }
 
 class NoSynch {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		CallMe2 target = new CallMe2();
 		long time1 = System.currentTimeMillis();
 		Caller2 ob1 = new Caller2(target, "Witaj", "{", "}");

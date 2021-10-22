@@ -4,8 +4,8 @@ class Exc2 {
 	public static void main(String[] args) {
 		try {
 			int d = 0;
-			int a = 42 / d;
-//			double a = Math.sqrt(-1)+1;
+//			int a = 42 / d;
+			double a = Math.sqrt(-1)+1;
 			System.out.println("Tego nie zobaczymy "+ (a+1)
 					+ " " + Double.isNaN(a));
 			System.out.println("aqq:" + a + " "+ Double.isNaN(a));

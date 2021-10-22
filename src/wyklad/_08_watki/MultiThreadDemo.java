@@ -20,7 +20,7 @@ class NewThread11 implements Runnable {
 				time2;
 		double a = 1.0;
 		try {
-			for (int i = 100 * 1000 * 1000; i > 0; i--) {
+			for (int i = 10 * 1000 * 1000; i > 0; i--) {
 				//System.out.println(name + "      > " + i);
 				//Thread.sleep(10);
 				a+= Math.sin(Math.E * i) +1.5 ;//f(i);//1 ;//Math.sin(Math.E * i) +1 ;

@@ -4,7 +4,7 @@ class Array {
 	public static void main(String[] args) {
 		int[] monthDays;
 		monthDays = new int[14];
-		// nadajemy wartosci
+
 		monthDays[0] = 31; // styczen
 		monthDays[1] = 28; // luty
 		monthDays[2] = 31; // marzec
@@ -19,9 +19,9 @@ class Array {
 		//month_days[11] = 31; // grudzien
 		monthDays[13] = 31; // PREMIA
 		// korzystanie z tablicy
-		System.out.println("Kwiecien ma " + monthDays[11] + " dni");
+		System.out.println("Mc ma " + monthDays[11] + " dni");
 		
-		String s[];
+		String[] s;
 		s = new String[3];
 		s[0] = "sdrswserw";
 		System.out.println(s[0]);

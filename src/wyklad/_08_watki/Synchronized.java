@@ -34,7 +34,7 @@ class Caller implements Runnable {
 }
 
 public class Synchronized {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		CallMe target = new CallMe();
 		long time1 = System.currentTimeMillis();
 		Caller ob1 = new Caller(target, "Witaj", "{", "}");

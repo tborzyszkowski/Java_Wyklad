@@ -2,19 +2,15 @@ package wyklad._07wyjatki;
 
 class Switch {
 	boolean state = false;
-
 	boolean getState() {
 		return state;
 	}
-
 	void on() {
 		state = true;
 	}
-
 	void off() {
 		state = false;
 	}
-
 	public String toString() {
 		return state ? "true" : "false";
 	}

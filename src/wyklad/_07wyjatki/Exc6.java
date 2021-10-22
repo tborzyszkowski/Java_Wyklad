@@ -14,8 +14,8 @@ class Exc6 {
 				}
 			} catch (ArrayIndexOutOfBoundsException e) {
 				System.out.println("Indeks tablicy poza zakresem: " + e);
-//				int x = 1 / 0;
-				throw new ArrayIndexOutOfBoundsException();
+				int x = 1 / 0;
+//				throw new ArrayIndexOutOfBoundsException();
 			}
 			;
 			System.out.println("AQQ");

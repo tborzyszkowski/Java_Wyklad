@@ -9,5 +9,8 @@ public class Nan {
 			System.out.println("- INF");
 		if(Double.isNaN(0.0 / 0))
 			System.out.println("NaN: "  + ((0.0 / 0) + 1));
+		System.out.println((0.0/0));
+		System.out.println((0.0/0) + 1);
+		System.out.println(Math.sin(0.0/0));
 	}
 }

@@ -31,7 +31,7 @@ class JoinThreadDemo {
 		NewThread3 ob1 = new NewThread3("Pierwszy", 40);
 		NewThread3 ob2 = new NewThread3("Drugi   ", 30);
 		NewThread3 ob3 = new NewThread3("Trzeci  ", 20);
-		NewThread3 ob4 = new NewThread3("Czwarty ", 10);
+		NewThread3 ob4 = new NewThread3("Czwarty ", 50);
 
 		state(ob1, ob2, ob3, ob4);
 

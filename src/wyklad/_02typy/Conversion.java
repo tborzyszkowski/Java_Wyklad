@@ -1,8 +1,7 @@
 package wyklad._02typy;
 
-// Demonstracja rzutowan typow niezgodnych
 class Conversion {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		byte b;
 		int i = 257;
 		double d = 323.942;

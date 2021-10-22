@@ -30,7 +30,7 @@ class NewThread2 extends Thread {
 }
 
 class ExtendThreadDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		new NewThread2();
 		Thread t = Thread.currentThread();
 		long time1 = System.currentTimeMillis(), 

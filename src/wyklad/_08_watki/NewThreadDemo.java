@@ -32,7 +32,7 @@ class NewThread4 implements Runnable {
 }
 
 class NewThreadDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		new NewThread4();
 		Thread t = Thread.currentThread();
 		long time1 = System.currentTimeMillis(), 
