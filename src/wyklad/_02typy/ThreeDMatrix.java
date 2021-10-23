@@ -2,7 +2,7 @@ package wyklad._02typy;
 
 class ThreeDMatrix {
 	public static void main(String[] args) {
-		int threeD[][][] = new int[3][][];
+		int[][][] threeD = new int[3][][];
 
 		for (int i = 0; i < 3; i++) {
 			threeD[i] = new int[i + 1][];

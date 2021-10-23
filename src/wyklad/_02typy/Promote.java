@@ -1,6 +1,5 @@
 package wyklad._02typy;
 
-// Demonstracja promocji wyrazen
 class Promote {
 	public static void main(String args[]) {
 		byte b = 42;
