@@ -1,4 +1,4 @@
-package wyklad._03klasy.BoxSample;
+package wyklad._03klasy.BoxSample1;
 
 
 public class BoxDemo {

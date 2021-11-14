@@ -1,4 +1,4 @@
-package wyklad._03klasy.BoxSample;
+package wyklad._03klasy.BoxSample1;
 
 public class Box {
 	private double width = 0;
@@ -8,9 +8,12 @@ public class Box {
 	public Box(double width, double height, double depth) {
 		this.setDim(width, height, depth);
 	}
+	public Box(Box box){
+		this(box.getWidth(), box.getHeight(), box.getDepth());
+	}
 
 	public Box(){
-		this(0.0, 0.0, 0.0);
+		this(0, 0,0 );
 	}
 
 	public double getWidth() {
@@ -37,7 +40,7 @@ public class Box {
 		this.depth = depth;
 	}
 
-	private void setDim(double width, double height, double depth) {
+	public void setDim(double width, double height, double depth) {
 		this.width = width;
 		this.height = height;
 		this.depth = depth;
@@ -45,6 +48,15 @@ public class Box {
 
 	public double volume(){
 		return height * width * depth;
+	}
+
+	@Override
+	public String toString() {
+		return "Box{" +
+				"width=" + width +
+				", height=" + height +
+				", depth=" + depth +
+				'}';
 	}
 
 	@Override
@@ -69,10 +81,6 @@ public class Box {
 		result = 31 * result + (int) (temp ^ (temp >>> 32));
 		temp = Double.doubleToLongBits(depth);
 		result = 31 * result + (int) (temp ^ (temp >>> 32));
-		return result + super.hashCode();
+		return result;
 	}
-
-	//	public static int getValue(int argument){
-	//		return argument + 1;
-	//	}
 }

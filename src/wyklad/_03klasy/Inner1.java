@@ -31,7 +31,7 @@ class Outer1 {
 }
 
 class Inner1 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Outer1 outer = new Outer1();
 
 		outer.test();

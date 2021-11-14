@@ -10,14 +10,14 @@ class Stack21 {
 
 	public void push(int item) {
 		if (topOfStack == 9)
-			System.out.println("Stos pelen");
+			System.err.println("Stos pelen");
 		else
 			elements[++topOfStack] = item;
 	}
 
 	public int pop() {
 		if (topOfStack < 0) {
-			System.out.println("Stos pusty");
+			System.err.println("Stos pusty");
 			return 0;
 		} else
 			return elements[topOfStack--];
@@ -25,7 +25,7 @@ class Stack21 {
 }
 
 class Stack2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Stack21 myStack1 = new Stack21();
 		Stack21 myStack2 = new Stack21();
 

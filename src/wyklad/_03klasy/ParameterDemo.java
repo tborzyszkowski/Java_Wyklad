@@ -26,7 +26,7 @@ class PassOb {
 }
 
 class ParameterDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		PassOb ob1 = new PassOb(100, 22);
 		PassOb ob2 = new PassOb(ob1);
 		PassOb ob3 = new PassOb(-1, -1);

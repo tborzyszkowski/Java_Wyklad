@@ -15,6 +15,7 @@ class Stack {
 
 	public void push(int item) {
 		if (topOfStack == elements.length - 1)
+			// TODO: move to View
 			System.out.println("Stos pelen");
 		else
 			elements[++topOfStack] = item;
@@ -22,6 +23,7 @@ class Stack {
 
 	public int pop() {
 		if (topOfStack < 0) {
+			// TODO: move to View
 			System.out.println("Stos pusty");
 			return 0;
 		} else
@@ -30,7 +32,7 @@ class Stack {
 }
 
 class Stack3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Stack myStack1 = new Stack(5);
 		Stack myStack2 = new Stack(8);
 

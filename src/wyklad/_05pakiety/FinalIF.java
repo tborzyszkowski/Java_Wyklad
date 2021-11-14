@@ -62,8 +62,8 @@ class AskMe implements SharedConstants {
 	public static void main(String[] args) {
 
 		Question q = new Question();
-		long wyniki[] = {0, 0, 0, 0, 0, 0};
-		long n = 100 * 1000 * 1000;
+		long[] wyniki = {0, 0, 0, 0, 0, 0};
+		long n = 100; // * 1000;// * 1000;
 		for (long i = 0; i < n; i++) {
 			wyniki[q.ask()]++;
 		}
@@ -75,6 +75,6 @@ class AskMe implements SharedConstants {
 			System.out.print(((100.0 * wyniki[i]) / n) + "\t");
 		}
 		System.out.println();
-		System.out.println("30\t30\t10\t15\t13\t2");
+		System.out.println("30.0\t30.0\t10.0\t15.0\t13.0\t2.0");
 	}
 }

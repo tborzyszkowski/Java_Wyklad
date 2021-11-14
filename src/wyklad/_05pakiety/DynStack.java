@@ -1,13 +1,18 @@
 package wyklad._05pakiety;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 class DynStack implements IntStack {
 
 	private int[] element;
 	private int topOfStack;
+	private static final Logger LOGGER = Logger.getLogger( IntStack.class.getName() );
 
 	DynStack(int size) {
 		element = new int[size];
 		topOfStack = -1;
+		LOGGER.log(Level.INFO, "DynStack of size {0} created", size);
 	}
 
 	public void push(int item) {
@@ -16,14 +21,17 @@ class DynStack implements IntStack {
 			for (int i = 0; i < element.length; i++)
 				temp[i] = element[i];
 			element = temp;
-			System.out.println("Nowy rozmiar stosu: " + element.length);
+			LOGGER.log(Level.INFO, "New DynStack size {0}", element.length);
+//			System.out.println("Nowy rozmiar stosu: " + element.length);
 		}
 		element[++topOfStack] = item;
+		LOGGER.log(Level.INFO, "New element at DynStack");
 	}
 
 	public int pop() {
 		if (topOfStack < 0) {
-			System.out.println("Stos pusty");
+			LOGGER.log(Level.SEVERE, "DynStack is empty");
+//			System.out.println("Stos pusty");
 			return 0;
 		} else
 			return element[topOfStack--];

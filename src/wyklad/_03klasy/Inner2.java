@@ -11,6 +11,7 @@ class Outer {
 		System.out.println(inner.y);
 		Inner2.z++;
 //		Inner2.y++;
+		inner.display();
 	}
 
 	// dodatkowa metoda klasy zewnetrznej wyswietlajaca

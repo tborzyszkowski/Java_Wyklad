@@ -1,7 +1,7 @@
 package wyklad._03klasy;
 
 class StringDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		String str = new String("Ala ma kota");
 		//String str = "Ala ma kota";
 

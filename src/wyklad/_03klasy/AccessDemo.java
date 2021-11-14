@@ -1,6 +1,5 @@
 package wyklad._03klasy;
 
-
 class Access {
 	int a;
 	public int b;
@@ -10,13 +9,13 @@ class Access {
 		c = i * 2;
 	}
 
-	int getC() {
+	public int getC() {
 		return c * 2;
 	}
 }
 
 class AccessDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Access ob = new Access();
 
 		ob.a = 10;

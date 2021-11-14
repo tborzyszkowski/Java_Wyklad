@@ -3,9 +3,9 @@ package wyklad._03klasy;
 class CallBy {
 	int a, b;
 
-	CallBy(int i, int j) {
-		a = i;
-		b = j;
+	CallBy(int a, int b) {
+		this.a = a;
+		this.b = b;
 	}
 
 	void ByValue(int i, int j) {
@@ -46,7 +46,7 @@ class BoxedInt {
 }
 
 public class CallByDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		CallBy ob = new CallBy(15, 20);
 		int i = 5;
 		int j = 10;
@@ -71,6 +71,5 @@ public class CallByDemo {
 		Integer y = new Integer(yy);
 		ob.funInt(y);
 		yy = y;
-
 	}
 }

@@ -13,9 +13,9 @@ interface II2 extends II {
 }
 
 class AQQ implements II1, II2 {
-	public static void main(String a[]) {
-		II aa;
+	public static void main(String[] a) {
+		II2 aa = new AQQ();
 		System.out.println("i = " + II2.i);
-		//System.out.println("i = " + aa.i);
+		System.out.println("i = " + aa.i);
 	}
 }
