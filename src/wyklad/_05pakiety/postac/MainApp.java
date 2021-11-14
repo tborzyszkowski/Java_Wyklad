@@ -1,7 +1,7 @@
 package wyklad._05pakiety.postac;
 
 public class MainApp {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Postac postac = new Postac();
 
 		postac.strzelaj();
@@ -13,5 +13,10 @@ public class MainApp {
 		pilkarz.strzelaj();
 
 		((Pilkarz)postac).strzelaj();
+
+		// rozwiązanie Javowe
+		PostacExplicit postacExplicit = new PostacExplicit();
+		postacExplicit.asPilkarz().strzelaj();
+		postacExplicit.asZolnierz().strzelaj();
 	}
 }

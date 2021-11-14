@@ -1,12 +1,15 @@
 package wyklad._05pakiety.postac;
 
+import java.util.logging.Logger;
+
 public class Postac implements Zolnierz, Pilkarz{
+	private static final Logger LOGGER = Logger.getLogger( Postac.class.getName() );
 	@Override
 	public void strzelaj() {
 		if(this instanceof Pilkarz)
-			System.out.println("Pilkarz: " + Pilkarz.STALA);
+			LOGGER.info("Pilkarz: " + Pilkarz.STALA);
 		if (this instanceof Zolnierz)
-			System.out.println("Zolnierz: " + Zolnierz.STALA);
-		System.out.println("Postac");
+			LOGGER.info("Zolnierz: " + Zolnierz.STALA);
+		LOGGER.info("Postac");
 	}
 }
