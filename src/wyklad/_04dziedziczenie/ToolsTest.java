@@ -2,11 +2,9 @@ package wyklad._04dziedziczenie;
 
 abstract class Tool{
 	String myCapabilities(){
-		String abilities = 
-				"Can cut  : " + canCut() + "\n"+
+		return  "Can cut  : " + canCut() + "\n"+
 				"Can drill: " + canDrill() + "\n"+
 				"Can sweep: " + canSweep();
-		return abilities;
 	}
 	abstract boolean canCut();
 	abstract boolean canDrill();
@@ -32,7 +30,7 @@ class Broom extends Tool{
 }
 
 public class ToolsTest {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Tool tool;
 		tool = new Knife();
 		System.out.println("Knife:\n" + tool.myCapabilities() + "\n");

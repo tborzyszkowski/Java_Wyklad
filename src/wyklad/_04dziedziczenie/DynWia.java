@@ -5,7 +5,7 @@ class AA {
     int test() { return m();}
     int testThis() { return this.test();}
 }
-class BB extends AA { 
+class BB extends AA {
     int m(){ return 2; }//return super.m(); } //return 2;}
 //    int testSuper() { return super.test(); }
     int testSuper() { return this.test(); }
@@ -24,9 +24,8 @@ class DynWia{
     public static void main(String[] args) {
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis()); // 1 1
-	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // 1 1 1 // 1 1 1 // 2 1 1
-	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne());
-	// 3 1 3 2 // 2 1 2 1 // 3 1 2 1
+	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // F: 1 1 2 / T: 1 1 1 / N: 1 1 1
+	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne()); // T: 2 ? 2 1 / N: 2 1 2 1
   }
 }
 

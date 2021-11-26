@@ -21,7 +21,6 @@ class A2 {
 	int getJ() {
 		return 2 * j;
 	}
-
 	void setJ(int j) {
 		this.j = 3 * j;
 	}

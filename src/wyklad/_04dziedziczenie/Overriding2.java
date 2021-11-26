@@ -5,9 +5,6 @@ class AO2 {
 	AO2(int i) {
 		this.i = i;
 	}
-	void showOnConsole() {
-		System.out.println(this);
-	}
 	public String toString() {
 		return "A { i = " + i + " }";
 	}
@@ -19,11 +16,19 @@ class BO2 extends AO2 {
 		super(i);
 		this.k = k;
 	}
-	void showOnConsole() {
-		System.out.println(this);
-	}
 	public String toString() {
 		return "B { " + super.toString() + " k = " + k + " }";
+	}
+}
+
+class View {
+	private final AO2 businessLogic;
+
+	public View(AO2 businessLogic) {
+		this.businessLogic = businessLogic;
+	}
+	void showOnConsole() {
+		System.out.println(this.businessLogic);
 	}
 }
 
@@ -33,9 +38,14 @@ class Overriding2 {
 		AO2 obA = obB;
 //		AO2 obA = new AO2(3);
 //
-		obB.showOnConsole();
-		System.out.println(obB.getClass() + " " + obB);
-		obA.showOnConsole();
-		System.out.println(obA.getClass() + " " + obA);
+		View viewA = new View(new AO2(3));
+		viewA.showOnConsole();
+
+		View viewB = new View(obB);
+		viewB.showOnConsole();
+
+//		System.out.println(obB.getClass() + " " + obB);
+//		obA.showOnConsole();
+//		System.out.println(obA.getClass() + " " + obA);
 	}
 }

@@ -11,5 +11,6 @@ public class Postac implements Zolnierz, Pilkarz{
 		if (this instanceof Zolnierz)
 			LOGGER.info("Zolnierz: " + Zolnierz.STALA);
 		LOGGER.info("Postac");
+
 	}
 }

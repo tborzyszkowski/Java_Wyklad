@@ -13,6 +13,10 @@ public class MainApp {
 		pilkarz.strzelaj();
 
 		((Pilkarz)postac).strzelaj();
+		Pilkarz pilkarz1 = postac;
+		pilkarz1.strzelaj();
+		Zolnierz zolnierz1 = postac;
+		zolnierz1.strzelaj();
 
 		// rozwiązanie Javowe
 		PostacExplicit postacExplicit = new PostacExplicit();

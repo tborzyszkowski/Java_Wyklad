@@ -18,9 +18,9 @@ class B_1 extends A_1 {
 		System.out.println("B: callMeToo");
 		super.callMeToo();
 	}
-//    void callSuperMeToo() {
-//    	super.callMeToo();
-//    }
+    void callSuperMeToo() {
+    	super.callMeToo();
+    }
 
 }
 
@@ -33,11 +33,13 @@ class SimpleAbs {
 		b.callMe();
 		System.out.println("---------------");
 		b.callMeToo();
+		b.callSuperMeToo();
 		System.out.println("===============");
 
 		a.callMe();
 		System.out.println("---------------");
 		a.callMeToo();
+//		a.callSuperMeToo();
 		System.out.println("---------------");
 		((A_1) b).callMeToo();
 	}
