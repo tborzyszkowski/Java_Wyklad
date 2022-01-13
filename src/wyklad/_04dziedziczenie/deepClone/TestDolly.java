@@ -1,4 +1,4 @@
-package wyklad._04dziedziczenie;
+package wyklad._04dziedziczenie.deepClone;
 
 
 public class TestDolly {

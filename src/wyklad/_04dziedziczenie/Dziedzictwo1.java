@@ -2,13 +2,17 @@ package wyklad._04dziedziczenie;
 
 class A1 {
 	private int i;
-	void setA(int i) {
+
+	void initA(int i) {
 		this.i = i;
 	}
-	int getI() {
+	public int getI() {
 		return i;
 	}
-	int sumaA() {
+	public void setI(int i) {
+		this.i = i;
+	}
+	public int sumaA() {
 		return i;
 	}
 	public String toString() {
@@ -16,9 +20,15 @@ class A1 {
 	}
 }
 class B1 extends A1 {
-	int j;
-	void setB(int i, int j) {
-		setA(i);
+	private int j;
+	public void initB(int i, int j) {
+		initA(i);
+		this.j = j;
+	}
+	public int getJ() {
+		return j;
+	}
+	public void setJ(int j) {
 		this.j = j;
 	}
 	int sumaB() {
@@ -33,9 +43,9 @@ class Dziedzictwo1 {
 		A1 obA = new A1();
 		B1 obB = new B1();
 
-		obA.setA(10);
-		obB.setB(1, 2);
-		obB.setA(-1);
+		obA.initA(10);
+		obB.initB(1, 2);
+		obB.initA(-1);
 
 		System.out.println("Zawartosc A: " + obA);
 		System.out.println("Zawartosc B: " + obB);

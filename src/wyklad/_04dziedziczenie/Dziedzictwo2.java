@@ -6,7 +6,7 @@ class A2 {
 
 	A2(int i, int j) {
 		this.i = i;
-		this.j = j;
+		this.setJ(j);
 	}
 	A2(){}
 
@@ -18,11 +18,18 @@ class A2 {
 		return i + j;
 	}
 
-	int getJ() {
+	public int getJ() {
 		return 2 * j;
 	}
-	void setJ(int j) {
-		this.j = 3 * j;
+	public void setJ(int j) {
+		if (valid(j))
+			this.j = 3 * j;
+		else
+			this.j = -1;
+	}
+
+	private boolean valid(int j) {
+		return j < 10 ? true : false;
 	}
 }
 
@@ -31,8 +38,8 @@ class B2 extends A2 {
 
 	B2(int i, int j, int k) {
 //		super();
-//		i = 1;
-		super(i, j);
+		i = 1;
+//		super(i, j);
 //		this.j = i + j;
 //		setJ(i + j);
 		this.k = k;
@@ -41,7 +48,6 @@ class B2 extends A2 {
 	public String toString() {
 		return super.toString() + "\tk = " + k;
 	}
-
 	int suma() {
 		return super.suma() + k;
 	}
@@ -58,7 +64,6 @@ class C22 extends B2 {
 	public String toString() {
 		return super.toString() + "\tm = " + m;
 	}
-
 	int suma() {
 		return super.suma() + m;
 	}

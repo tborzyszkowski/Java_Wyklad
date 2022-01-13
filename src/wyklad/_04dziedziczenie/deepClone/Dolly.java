@@ -1,4 +1,4 @@
-package wyklad._04dziedziczenie;
+package wyklad._04dziedziczenie.deepClone;
 
 public class Dolly implements Cloneable {
 	Element e = new Element();
@@ -26,8 +26,8 @@ public class Dolly implements Cloneable {
 			Dolly cloned = (Dolly) super.clone();
 			cloned.e = (Element) e.clone(); // e;//
 			return cloned;
-		} catch (CloneNotSupportedException e) {
-			System.out.println(e);
+		} catch (CloneNotSupportedException exc) {
+			System.out.println(exc);
 			return null;
 		}
 	}

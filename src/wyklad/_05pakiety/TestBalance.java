@@ -1,10 +1,10 @@
 package wyklad._05pakiety;
 
-import wyklad._05pakiety.MyPack2.*;
-import wyklad._05pakiety.MyPack1.*;
+//import wyklad._05pakiety.MyPack2.*;
+//import wyklad._05pakiety.MyPack1.*;
 
 class TestBalance {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 
 		Balance current[] = new Balance[3];
 

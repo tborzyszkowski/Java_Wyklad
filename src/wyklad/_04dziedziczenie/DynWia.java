@@ -24,11 +24,9 @@ class DynWia{
     public static void main(String[] args) {
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis()); // 1 1
-	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // F: 1 1 2 / T: 1 1 1 / N: 1 1 1
-	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne()); // T: 2 ? 2 1 / N: 2 1 2 1
+	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // Sz: 2 2 2  // M: 2 2 2 // P: 2 2 2
+	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne()); // Sz: 2 3 2 1 // M: 2 2 2 2 // P: 2 2 2 1
   }
 }
 
-// b.testThis()  =  A.testThis(b)  =  b.test() = A.test(b) = {this.m()} = b.m() = B.m(b) = 2
-// c.superOne()  =  B.superOne(c)  =  A.m(c) = 1
-// c.testThis()  =  A.testThis(c)  =  c.test()  =  C.test(c)  =  B.m(c)  =  2
+// c.testThis() = A.testThis(c) = c.test() = C.test(c) = super.m(c) = B.b(c) = 2

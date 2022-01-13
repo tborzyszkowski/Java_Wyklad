@@ -5,6 +5,10 @@ import java.util.Random;
 class Base {
 	private int i;
 
+	public Base(int i) {
+		this.i = i;
+	}
+
 	public int getI() {
 		return i;
 	}
@@ -22,6 +26,11 @@ class Base {
 
 class Derived1 extends Base {
 	private int j;
+
+	public Derived1(int i, int j) {
+		super(i);
+		this.j = j;
+	}
 
 	public int getJ() {
 		return j;
@@ -42,6 +51,11 @@ class Derived1 extends Base {
 class Derived2 extends Base {
 	private int j;
 
+	public Derived2(int i, int j) {
+		super(i);
+		this.j = j;
+	}
+
 	public int getJ() {
 		return j;
 	}
@@ -60,16 +74,10 @@ class Derived2 extends Base {
 
 class Dziedzictwo3 {
 	public static void main(String[] args) {
-		Base base = new Base();
-		Derived1 der1 = new Derived1();
-		Derived2 der2 = new Derived2();
+		Base base = new Base(0);
+		Derived1 der1 = new Derived1(11, 111);
+		Derived2 der2 = new Derived2(22,222);
 		Random rnd = new Random();
-
-		base.setI(1);
-		der1.setI(11);
-		der1.setJ(111);
-		der2.setI(22);
-		der2.setJ(222);
 
 		System.out.println(base);
 		System.out.println(der1);
@@ -81,8 +89,6 @@ class Dziedzictwo3 {
 			base = der2;
 
 		System.out.println(base);
-
-//		System.out.println("((Der2)base).j = " + ((Derived2) base).getJ());
 
 		System.out.println(base.getClass());
 		if (base instanceof Derived2)

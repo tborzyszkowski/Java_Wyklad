@@ -1,4 +1,4 @@
-package wyklad._04dziedziczenie;
+package wyklad._04dziedziczenie.deepClone;
 
 
 import java.util.Objects;
@@ -22,7 +22,7 @@ public class Element implements Cloneable {
 	}
 
 	public String toString() {
-		return "Element i = " + i;
+		return "Element i = " + i + " hash = " + this.hashCode();
 	}
 
 	@Override
@@ -35,6 +35,6 @@ public class Element implements Cloneable {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(i);
+		return Objects.hash(i) + super.hashCode();
 	}
 }

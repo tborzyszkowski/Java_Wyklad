@@ -11,8 +11,8 @@ public class Sortuj {
 	/**
 	 * Zmienne prywatne klasy sortującej
 	 */
-	private Element elms[];
-	private int indeksy[];
+	private Element[] elms;
+	private int[] indeksy;
 
 	/**
 	 * Konstruktor klasy

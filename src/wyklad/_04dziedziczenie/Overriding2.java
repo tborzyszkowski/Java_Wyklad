@@ -33,19 +33,16 @@ class View {
 }
 
 class Overriding2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		BO2 obB = new BO2(1, 2);
 		AO2 obA = obB;
 //		AO2 obA = new AO2(3);
-//
+
 		View viewA = new View(new AO2(3));
 		viewA.showOnConsole();
 
 		View viewB = new View(obB);
 		viewB.showOnConsole();
 
-//		System.out.println(obB.getClass() + " " + obB);
-//		obA.showOnConsole();
-//		System.out.println(obA.getClass() + " " + obA);
 	}
 }

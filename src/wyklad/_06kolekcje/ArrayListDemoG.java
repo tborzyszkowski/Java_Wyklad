@@ -1,6 +1,6 @@
 package wyklad._06kolekcje;
 
-import java.util.*;
+import java.util.ArrayList;
 
 class ArrayListDemoG {
 	public static void main(String[] args) {
@@ -17,9 +17,9 @@ class ArrayListDemoG {
 		a1.set(1, 4);
 //		a1.add(11, 4);
 
-		a1.add(3, new Double(3));
+		a1.add(3, 3.14);
 //		a1.add(4, "Ala ma kota");
-		System.out.println(a1.contains(new Integer(42)));
+		System.out.println(a1.contains(42));
 
 		System.out.println("Rozmiar po dodaniu   : " + a1.size());
 		System.out.println("Zawartosc a1         : " + a1);
@@ -34,7 +34,7 @@ class ArrayListDemoG {
 
 		System.out.println("Po usunieciu         : " + a1.size());
 		System.out.println("Zawartosc a1         : " + a1);
-		
+
 		a1.clear();
 		long time1 = System.currentTimeMillis(),
 				time2;
@@ -42,8 +42,14 @@ class ArrayListDemoG {
 			a1.add(i);
 		}
 		time2 = System.currentTimeMillis();
+		boolean result;
+		for (int i = 0; i < 5000; i++)
+			result = a1.contains(i);
+		for (int i = -1; i > -5001; i--)
+			result = a1.contains(i);
+		long time3 = System.currentTimeMillis();
 
-		System.out.println("a1.size(): "+ a1.size() + " czas: " + " ["+(time2-time1)+"]");
-		
+		System.out.println("a1.size(): " + a1.size() + " czas tworzenia: " + " [" + (time2 - time1) + "]" + " czas szukania: " + " [" + (time3 - time2) + "]");
+
 	}
 }

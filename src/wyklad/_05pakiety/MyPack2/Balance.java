@@ -11,7 +11,7 @@ public class Balance {
 
 	public void show() {
 		if (bal < 0)
-			System.out.println("==>");
+			System.out.println("=2=>");
 		System.out.println(name + "\t: EUR " + bal);
 	}
 }
