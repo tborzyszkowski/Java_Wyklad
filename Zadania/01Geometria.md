@@ -18,7 +18,7 @@ Napisać klasę ``Punkt``, która:
 	- bezargumentowy
 	- z argumentami ``x`` i ``y`` będącymi współrzędnymi punktu
 	- z argumentem będącym punktem; zadaniem konstruktora jest stworzenie drugiego identycznego punktu
-- jest wyposażona w metody ``getX``, ``setX``, ``getY``, ``setY`
+- jest wyposażona w metody ``getX``, ``setX``, ``getY``, ``setY``
 - posiada metodę ``shift(x, y)`` pozwalającą przesunąć obiekt typu ``Punkt`` o wektor (x, y)
 - posiada metodę ``distance(p)`` obliczającą odległość bieżącego punktu od punktu ``p``
 
