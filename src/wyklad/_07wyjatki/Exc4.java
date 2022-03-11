@@ -10,10 +10,15 @@ class Exc4 {
 			try {
 				b = r.nextInt(); 
 				c = r.nextInt(); 
-				a = 12345 / (b / c); 
+				a = 12345 / (b / c);
+				System.out.flush();
+				System.err.flush();
+
 			} catch (ArithmeticException e) {
 				System.out.println("Wyjątek: " + e);
 				e.printStackTrace();
+				System.out.flush();
+				System.err.flush();
 				a = 0;
 				j++;
 			}

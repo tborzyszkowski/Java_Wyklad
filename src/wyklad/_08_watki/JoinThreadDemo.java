@@ -43,7 +43,7 @@ class JoinThreadDemo {
 			System.out.println("Drugi   : join()");
 			ob3.t.join();
 			System.out.println("Trzeci  : join()");
-//			ob4.t.join();
+			ob4.t.join();
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}

@@ -4,6 +4,7 @@ class Clicker implements Runnable {
 	long click = 0;
 	Thread t;
 	private volatile boolean running = true;
+
 	public Clicker(int p) {
 		t = new Thread(this);
 		t.setPriority(p);
@@ -24,7 +25,7 @@ class Clicker implements Runnable {
 class PriorityDemo {
 	public static void main(String[] args) {
 		Thread.currentThread().setPriority(Thread.MAX_PRIORITY);
-		int n = 4;
+		int n = 6;
 
 		Clicker[] hi = new Clicker[n];
 		for (int i = 0; i < n; i++)

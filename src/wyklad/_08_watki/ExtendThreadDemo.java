@@ -49,6 +49,6 @@ class ExtendThreadDemo {
 			System.out.println("Watek glowny przerwany");
 		}
 		time2 = System.currentTimeMillis();
-		System.out.println("Koniec watku glownego:"+"<"+(time2-time1)+">");
+		System.out.println("Koniec watku glownego:"+" <"+(time2-time1)+">");
 	}
 }

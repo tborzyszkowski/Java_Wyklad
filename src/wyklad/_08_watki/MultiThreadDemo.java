@@ -36,12 +36,12 @@ class NewThread11 implements Runnable {
 }
 
 class MultiThreadDemo {
-	public static void main(String args[]) {
-		new NewThread11("Pierwszy");
-		new NewThread11("Drugi   ");
-		new NewThread11("Trzeci  ");
-		new NewThread11("Czwarty ");
-		new NewThread11("Piaty   ");
+	public static void main(String[] args) {
+		new NewThread11("---1--- ");
+		new NewThread11("---2--- ");
+		new NewThread11("---3--- ");
+		new NewThread11("---4--- ");
+		new NewThread11("---5--- ");
 		new NewThread11("---6--- ");
 		new NewThread11("---7--- ");
 		new NewThread11("---8--- ");
@@ -51,7 +51,7 @@ class MultiThreadDemo {
 		new NewThread11("---12-- ");
 
 		try {
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}

@@ -4,7 +4,7 @@ class CallMe1 {
 	synchronized void call(String msg, String par1, String par2) {
 		System.out.print(par1 + msg);
 		try {
-			Thread.sleep(100);
+			Thread.sleep(10);
 		} catch (InterruptedException e) {
 			System.out.println("Przerwane");
 		}
@@ -32,7 +32,7 @@ class Caller1 implements Runnable {
 }
 
 class Synch {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		CallMe1 target = new CallMe1();
 		long time1 = System.currentTimeMillis();
 		Caller1 ob1 = new Caller1(target, "Witaj", "{", "}");

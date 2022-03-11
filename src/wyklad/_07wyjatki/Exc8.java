@@ -2,9 +2,9 @@ package wyklad._07wyjatki;
 class Exc8 {
 	static void demoproc() {
 		try {
-			throw new IllegalArgumentException("ArgEx: test");
-//			IllegalArgumentException a = new IllegalArgumentException("ArgEx: test");
-//			throw a;
+//			throw new IllegalArgumentException("ArgEx: test");
+			IllegalArgumentException a = new IllegalArgumentException("ArgEx: test");
+			throw a;
 		} catch (IllegalArgumentException e) {
 			System.out.println("Wyjątek wewnątrz metody: " + e);
 			e.printStackTrace();

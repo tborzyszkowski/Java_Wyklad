@@ -2,7 +2,7 @@ package wyklad._06kolekcje;
 import java.util.*;
 
 public class ArraysDemo{
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 	
 	// tworzenie i inicjalizacja tablicy
 	int array[] = new int[10];
@@ -37,6 +37,6 @@ public class ArraysDemo{
 
 	// szukamy -9: poszukiwanie binarne
 	System.out.println("-9 jest na pozycji tablica  ");
-	System.out.println(Arrays.binarySearch(array, -1));
+	System.out.println(Arrays.binarySearch(array, 100));
     }
 }

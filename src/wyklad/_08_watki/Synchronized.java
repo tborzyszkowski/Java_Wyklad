@@ -4,7 +4,7 @@ class CallMe {
 	void call(String msg, String par1, String par2) {
 		System.out.print(par1 + msg);
 		try {
-			Thread.sleep(100);
+			Thread.sleep(10);
 		} catch (InterruptedException e) {
 			System.out.println("Przerwane");
 		}

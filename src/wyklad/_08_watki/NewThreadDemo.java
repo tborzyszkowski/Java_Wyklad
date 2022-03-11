@@ -18,6 +18,7 @@ class NewThread4 implements Runnable {
 			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 //				Thread.sleep(1);
 //				a++;
+//				a = a + 1;
 				a = (int)Math.sin(a + 1) + 1;
 				//System.out.println("Nowy watek      > " + i);
 			}
@@ -43,7 +44,7 @@ class NewThreadDemo {
 			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
 //				a++;
-//				a = a + (a + 1) - a;
+//				a = a + 1;
 				a = (int)Math.sin(a + 1) + 1;
 				//Thread.sleep(0);
 			}
