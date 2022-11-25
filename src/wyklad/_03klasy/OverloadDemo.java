@@ -24,10 +24,10 @@ class Overload {
 		System.out.println("int a = " + a + " double b = " + b);
 		return 0;
 	}
-	int test(double a, int b) {
-		System.out.println("double a = " + a + " int b = " + b);
-		return 0;
-	}
+//	int test(double a, int b) {
+//		System.out.println("double a = " + a + " int b = " + b);
+//		return 0;
+//	}
 	int test(float a, float b) {
 		System.out.println("float a = " + a + " int b = " + b);
 		return 0;
@@ -50,7 +50,7 @@ class OverloadDemo {
 	public static void main(String[] args) {
 		Overload ob = new Overload();
 		ob.test();
-		ob.test(10);
+		ob.test(10L);
 		ob.test(10, 20.0);
 		ob.test(10.0, 20.0);
 		ob.test(10, 20);

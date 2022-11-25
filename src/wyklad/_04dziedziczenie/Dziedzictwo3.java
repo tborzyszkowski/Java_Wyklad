@@ -4,18 +4,15 @@ import java.util.Random;
 
 class Base {
 	private int i;
-
 	public Base(int i) {
 		this.i = i;
 	}
-
 	public int getI() {
 		return i;
 	}
 	public void setI(int i) {
 		this.i = i;
 	}
-
 	@Override
 	public String toString() {
 		return "Base{" +
@@ -26,19 +23,16 @@ class Base {
 
 class Derived1 extends Base {
 	private int j;
-
 	public Derived1(int i, int j) {
 		super(i);
 		this.j = j;
 	}
-
 	public int getJ() {
 		return j;
 	}
 	public void setJ(int j) {
 		this.j = j;
 	}
-
 	@Override
 	public String toString() {
 		return "Derived1 {" +
@@ -50,19 +44,16 @@ class Derived1 extends Base {
 
 class Derived2 extends Base {
 	private int j;
-
 	public Derived2(int i, int j) {
 		super(i);
 		this.j = j;
 	}
-
 	public int getJ() {
 		return j;
 	}
 	public void setJ(int j) {
 		this.j = j;
 	}
-
 	@Override
 	public String toString() {
 		return "Derived2 {" +
@@ -74,7 +65,7 @@ class Derived2 extends Base {
 
 class Dziedzictwo3 {
 	public static void main(String[] args) {
-		Base base = new Base(0);
+		Base base = new Base(-1);
 		Derived1 der1 = new Derived1(11, 111);
 		Derived2 der2 = new Derived2(22,222);
 		Random rnd = new Random();

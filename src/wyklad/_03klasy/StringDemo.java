@@ -2,8 +2,19 @@ package wyklad._03klasy;
 
 class StringDemo {
 	public static void main(String[] args) {
-		String str = new String("Ala ma kota");
-		//String str = "Ala ma kota";
+		String str = "Ala ma kota";//new String("Ala ma kota");
+		String str2 = "Ala ma kota";//new String("Ala ma kota"); //"Ala ma kota";
+
+		System.out.println(str == str2);
+		System.out.println(str.equals(str2));
+
+		str2 = str;
+		System.out.println(str == str2);
+		System.out.println(str.equals(str2));
+
+		str = str + "AQQ";
+		System.out.println(str == str2);
+		System.out.println(str.equals(str2));
 
 		System.out.println();
 		System.out.println("Pierwszy : " + str.length());

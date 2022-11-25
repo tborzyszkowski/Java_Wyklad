@@ -50,14 +50,14 @@ public class Box {
 		return height * width * depth;
 	}
 
-	@Override
-	public String toString() {
-		return "Box{" +
-				"width=" + width +
-				", height=" + height +
-				", depth=" + depth +
-				'}';
-	}
+//	@Override
+//	public String toString() {
+//		return "Box{" +
+//				"width=" + width +
+//				", height=" + height +
+//				", depth=" + depth +
+//				'}';
+//	}
 
 	@Override
 	public boolean equals(Object o) {

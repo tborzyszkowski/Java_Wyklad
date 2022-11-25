@@ -4,13 +4,11 @@ class Access {
 	int a;
 	public int b;
 	private int c;
-
 	void setC(int i) {
 		c = i * 2;
 	}
-
 	public int getC() {
-		return c * 2;
+			return c * 2;
 	}
 }
 

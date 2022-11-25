@@ -56,7 +56,7 @@ class Konsument implements Runnable {
 }
 
 class ProdKonsErr {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Bufor b = new Bufor();
 		new Producent(b);
 		new Konsument(b);

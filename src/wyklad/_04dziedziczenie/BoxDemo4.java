@@ -1,23 +1,35 @@
 package wyklad._04dziedziczenie;
 
-class Box4 {
+class Box {
 	private double width;
 	private double height;
 	private double depth;
 
-	Box4(double width, double height, double depth) {
+	public double getWidth() {
+		return width;
+	}
+
+	public double getHeight() {
+		return height;
+	}
+
+	public double getDepth() {
+		return depth;
+	}
+
+	Box(double width, double height, double depth) {
 		setValues(width, height, depth);
 	}
 
-	Box4(Box4 ob) {
+	Box(Box ob) {
 		this(ob.width, ob.height, ob.depth);
 	}
 
-	Box4() {
+	Box() {
 		this(-1, -1, -1);
 	}
 
-	Box4(int n) {
+	Box(int n) {
 		this(n, n, n);
 	}
 
@@ -40,8 +52,12 @@ class Box4 {
 	}
 }
 
-class BoxWeight extends Box4 {
+class BoxWeight extends Box {
 	private double weight;
+
+	public double getWeight() {
+		return weight;
+	}
 
 	BoxWeight(BoxWeight ob) {
 		super(ob);
@@ -92,10 +108,12 @@ class BoxDemo4 {
 		// raz jeszcze jego objetosc
 		System.out.println("myBox1: \n" + myBox1);
 
-		Box4 box = myBox1;
+		Box box = myBox1;
+		((BoxWeight) box).getWeight();
 		System.out.println("myBox1: \n" + box);
 
-		box = new Box4();
+		box = new Box();
 		System.out.println("myBox1: \n" + box);
+
 	}
 }

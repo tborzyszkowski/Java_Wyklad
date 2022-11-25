@@ -12,7 +12,7 @@ class Switch {
 		state = false;
 	}
 	public String toString() {
-		return state ? "true" : "false";
+		return state ? "on" : "off";
 	}
 }
 

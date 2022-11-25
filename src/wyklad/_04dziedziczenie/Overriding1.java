@@ -4,11 +4,9 @@ import java.util.Random;
 
 class AO1 {
 	int i;
-
 	AO1(int i) {
 		this.i = i;
 	}
-
 	String show() {
 		return "A: i = " + i;
 	}
@@ -16,12 +14,11 @@ class AO1 {
 
 class BO1 extends AO1 {
 	int i;
-
 	BO1(int ai, int i) {
 		super(ai);
 		this.i = i;
+		super.i = ai;
 	}
-
 	String show() {
 		return "B: i = " + this.i + super.show();
 	}

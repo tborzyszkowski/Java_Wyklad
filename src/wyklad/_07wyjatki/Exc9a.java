@@ -9,8 +9,8 @@ class Exc9a {
 		Random rand = new Random();
 
 		if (rand.nextBoolean()) {
-			throw new IllegalAccessException("To tylko test");
-//			throw new ArithmeticException("To tylko test");
+//			throw new IllegalAccessException("To tylko test");
+			throw new ArithmeticException("To tylko test");
 		}
 		else
 //			throw new IllegalAccessException("To tylko test");

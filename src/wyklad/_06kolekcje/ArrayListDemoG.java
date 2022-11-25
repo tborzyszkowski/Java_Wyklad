@@ -1,14 +1,18 @@
 package wyklad._06kolekcje;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.TreeSet;
 
 class ArrayListDemoG {
 	public static void main(String[] args) {
 
-		ArrayList<Number> a1 = new ArrayList<Number>();
+//		ArrayList<Number> a1 = new ArrayList<Number>();
+		TreeSet<Number> a1 = new TreeSet<Number>();
 
 //		System.out.println("Poczatkowy rozmiar a1: " + a1.size());
-
+//
 //		a1.add(1);
 //		a1.add(2);
 //		a1.add(3);

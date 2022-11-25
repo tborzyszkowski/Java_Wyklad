@@ -4,7 +4,7 @@ package wyklad._03klasy.BoxSample1;
 public class BoxDemo {
 	public static void main(String[] args) {
 		Box myBox0 = new Box();
-		Box myBox1 = new Box(2, 3, 4);
+		Box myBox1 = new Box(2.0, 3, 4);
 
 		System.out.println(myBox0 + " vol: " + myBox0.volume());
 		System.out.println(myBox1 + " vol: " + myBox1.volume());

@@ -26,7 +26,7 @@ public class FinalTest {
 		ConstField cf = new ConstField();
 
 		System.out.println("cf.pi = " + cf.PI);
-//		cf.pi = 111;
+//		cf.PI = 111;
 
 		Readonly ro1 = new Readonly(11.11);
 		Readonly ro2 = new Readonly(22.22);

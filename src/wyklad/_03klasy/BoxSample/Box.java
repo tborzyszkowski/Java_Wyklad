@@ -44,7 +44,7 @@ public class Box {
 	}
 
 	public double volume(){
-		return height * width * depth;
+		return this.height * width * depth;
 	}
 
 	@Override

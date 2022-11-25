@@ -1,7 +1,7 @@
 package wyklad._06kolekcje;
 import java.util.*;
-import java.util.Set;
-import java.util.Iterator;
+//import java.util.Set;
+//import java.util.Iterator;
 
 class TreeMapDemo {
 	public static void main(String[] args) {
@@ -26,8 +26,7 @@ class TreeMapDemo {
 		Double res = tm.put("Jan Kowalski", balance + 1000);
 		System.out.println("---> Jan Kowalski: " + res);
 
-		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i
-				.hasNext();) {
+		for (Iterator<Map.Entry<String, Double>> i = set.iterator(); i.hasNext();) {
 			Map.Entry<String, Double> m = i.next();
 			System.out.println(m.getKey() + " | " + m.getKey().hashCode() + " | " + m.getValue());
 		}

@@ -3,7 +3,7 @@ package wyklad._02typy;
 class LightTravel {
 	public static void main(String[] args) {
 		int lightSpeed = 299792; // km/s
-		long days = 100 * 1000 * 1000;        // badana liczba dni
+		long days = 1000 * 1000 * 1000;        // badana liczba dni
 		long seconds = days * 24 * 60 * 60;   // tyle to sekund
 		long distance = lightSpeed * seconds; // tyle przebedzie swiatlo
 		// teraz odpowiedz

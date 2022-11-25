@@ -27,7 +27,7 @@ class TreeMapDemo2 {
 				new TComp<String>());
 
 		tm.put("Jan Kowalski", 1111.11);
-		tm.put("Janusz Kowalski", 1111.11);
+		tm.put("Janusz Marcin Kowalski", 1111.11);
 		tm.put("Jan Nowak", 2222.22);
 		tm.put("Anna Kos", 3333.33);
 		tm.put("Hermenegilda Kociubinska", 4444.44);

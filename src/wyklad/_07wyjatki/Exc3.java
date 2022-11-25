@@ -5,10 +5,11 @@ import java.util.Random;
 class Exc3 {
 	public static void main(String[] args) {
 		int a = 0, b = 0, c = 0, j = 0;
+		int loop = 1000 * 1000 * 100;
 		Random r = new Random();
 		long time1 = System.currentTimeMillis(),
 				time2;
-		for (int i = 0; i < 1000 * 1000 * 100; i++) {
+		for (int i = 0; i < loop; i++) {
 			try {
 				b = r.nextInt(); // zwraca jedną z 2^32 wartości
 				//Thread.sleep(1);
@@ -16,7 +17,8 @@ class Exc3 {
 				// System.out.print(".");
 				c = r.nextInt(); // całkowitych z jednakowym
 				//Thread.sleep(1);
-				a = 12345 / (b / c); // prawdopodobieństwem
+				a = 1234 / 2;
+				//a = 12345 / (b / c); // prawdopodobieństwem
 			} catch (ArithmeticException e) {
 				//System.out.println("Dzielenie przez zero");
 				a = 0; // ustawiamy a i kontynuujemy pętlę
@@ -30,7 +32,8 @@ class Exc3 {
 		}
 		time2 = System.currentTimeMillis();
 		System.out.println("\nj = " + j);
-		System.out.println("Time: " + (time2 - time1));
+		System.out.println("Time:   " + (time2 - time1));
+		System.out.println("Time/j: " + (time2 - time1)*1.0/loop);
 	}
 }
 

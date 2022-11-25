@@ -9,7 +9,6 @@ class AO2 {
 		return "A { i = " + i + " }";
 	}
 }
-
 class BO2 extends AO2 {
 	int k;
 	BO2(int i, int k) {

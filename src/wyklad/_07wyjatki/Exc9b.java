@@ -3,7 +3,7 @@ class Exc9b {
 	static void throwOne() throws IllegalAccessException
 	 {
 		System.out.println("Wewnątrz metody");
-		//throw new IllegalAccessException("To tylko test");
+		throw new IllegalAccessException("To tylko test");
 	}
 
 	public static void main(String[] args) //throws IllegalAccessException

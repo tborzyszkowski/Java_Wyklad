@@ -3,17 +3,14 @@ package wyklad._04dziedziczenie;
 class A2 {
 	int i;
 	private int j;
-
+	A2(){}
 	A2(int i, int j) {
 		this.i = i;
 		this.setJ(j);
 	}
-	A2(){}
-
 	public String toString() {
 		return "\ti = " + i + "\tj = " + j;
 	}
-
 	int suma() {
 		return i + j;
 	}
@@ -29,7 +26,7 @@ class A2 {
 	}
 
 	private boolean valid(int j) {
-		return j < 10 ? true : false;
+		return j < 10 ;
 	}
 }
 
@@ -37,9 +34,9 @@ class B2 extends A2 {
 	int k;
 
 	B2(int i, int j, int k) {
-//		super();
+		//super();
+		super(i, j);
 		i = 1;
-//		super(i, j);
 //		this.j = i + j;
 //		setJ(i + j);
 		this.k = k;

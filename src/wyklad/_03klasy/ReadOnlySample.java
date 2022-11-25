@@ -1,9 +1,9 @@
 package wyklad._03klasy;
 
-class ReadOnly {
+class ReadOnly1 {
 	final public double value;
 
-	public ReadOnly(double initialValue) {
+	public ReadOnly1(double initialValue) {
 		value = initialValue;
 	}
 
@@ -17,10 +17,11 @@ class ReadOnly {
 
 public class ReadOnlySample {
 	public static void main(String[] args) {
-		ReadOnly readOnly1 = new ReadOnly(10);
-		ReadOnly readOnly2 = new ReadOnly(20);
+		ReadOnly1 readOnly1 = new ReadOnly1(10);
+		ReadOnly1 readOnly2 = new ReadOnly1(20);
 
 //		readOnly1.value = 15;
+		double qq = readOnly1.value;
 		System.out.println(readOnly1);
 		System.out.println(readOnly2);
 	}

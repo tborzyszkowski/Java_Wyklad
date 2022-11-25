@@ -80,13 +80,13 @@ class ExcA {
 		}
 	}
 
-	static void procC() {
-		try {
-			System.out.println("Wewnatrz procC");
-		} finally {
-			System.out.println("finally w procC");
-		}
-	}
+//	static void procC() {
+//		try {
+//			System.out.println("Wewnatrz procC");
+//		} finally {
+//			System.out.println("finally w procC");
+//		}
+//	}
 
 	public static void main(String[] args) {
 //		try {
@@ -96,6 +96,9 @@ class ExcA {
 //			System.out.println("Main: wyjatek z procA obsłużony"+e);
 //		}
 		System.out.println("B: " + procB());
+//		Integer x = new Integer(1);
+//		Integer y = x;
+//		System.out.println((x == y) + " " + (x.hashCode() == y.hashCode()));
 //		procC();
 	}
 }

@@ -1,5 +1,6 @@
 package wyklad._05pakiety.MyPack;
 
+//import wyklad._05pakiety.MyPack1.Balance;
 import wyklad._05pakiety.MyPack2.*;
 import wyklad._05pakiety.MyPack1.*;
 

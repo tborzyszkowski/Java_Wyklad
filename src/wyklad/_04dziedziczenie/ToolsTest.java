@@ -1,5 +1,7 @@
 package wyklad._04dziedziczenie;
 
+import java.util.Random;
+
 abstract class Tool{
 	String myCapabilities(){
 		return  "Can cut  : " + canCut() + "\n"+
@@ -40,5 +42,15 @@ public class ToolsTest {
 
 		tool = new Broom();
 		System.out.println("Broom:\n" + tool.myCapabilities() + "\n");
+
+		Random rnd = new Random();
+		boolean isBroom = rnd.nextBoolean();
+		if(isBroom){
+			tool = new Broom();
+		}
+		else{
+			tool = new Driller();
+		}
+		System.out.println("Tool:\n" + tool.myCapabilities() + "\n" + tool.getClass());
 	}
 }

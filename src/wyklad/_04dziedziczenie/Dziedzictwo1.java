@@ -2,17 +2,22 @@ package wyklad._04dziedziczenie;
 
 class A1 {
 	private int i;
-
-	void initA(int i) {
+	A1(){
+		this.i = 0;
+	}
+	A1(int i) {
 		this.i = i;
 	}
 	public int getI() {
-		return i;
+		return i+1;
 	}
 	public void setI(int i) {
-		this.i = i;
+		if (i > 0)
+			this.i = i;
+		else
+			this.i = -i;
 	}
-	public int sumaA() {
+	public int suma() {
 		return i;
 	}
 	public String toString() {
@@ -21,8 +26,10 @@ class A1 {
 }
 class B1 extends A1 {
 	private int j;
-	public void initB(int i, int j) {
-		initA(i);
+	B1(){}
+	B1(int i, int j) {
+		//super();
+		super(i);
 		this.j = j;
 	}
 	public int getJ() {
@@ -31,8 +38,8 @@ class B1 extends A1 {
 	public void setJ(int j) {
 		this.j = j;
 	}
-	int sumaB() {
-		return sumaA() + j;
+	public int suma() {
+		return super.suma() + j;
 	}
 	public String toString() {
 		return "B1 { " + super.toString() + " j = " + j + " }";
@@ -40,18 +47,15 @@ class B1 extends A1 {
 }
 class Dziedzictwo1 {
 	public static void main(String[] args) {
-		A1 obA = new A1();
-		B1 obB = new B1();
-
-		obA.initA(10);
-		obB.initB(1, 2);
-		obB.initA(-1);
+		A1 obA = new A1(1);
+		B1 obB = new B1(11, 22);
 
 		System.out.println("Zawartosc A: " + obA);
 		System.out.println("Zawartosc B: " + obB);
 
-		System.out.println("Suma A: " + obA.sumaA());
-		System.out.println("Suma B: " + obB.sumaB());
-		System.out.println("Suma B: " + obB.sumaA());
+		System.out.println("Suma A: " + obA.suma());
+		System.out.println("Suma B: " + obB.suma());
+		obA = obB;
+		System.out.println("Suma A: " + obA.suma());
 	}
 }

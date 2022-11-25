@@ -2,17 +2,14 @@ package wyklad._03klasy;
 
 class PassOb {
 	int a, b;
-
 	PassOb(int i, int j) {
 		a = i;
 		b = j;
 	}
-
 	PassOb(PassOb o) {
 		a = o.a;
 		b = o.b;
 	}
-
 	boolean equals(PassOb o) {
 		if (o.a == this.a && o.b == b)
 			return true;

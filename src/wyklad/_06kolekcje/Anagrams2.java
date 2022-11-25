@@ -7,7 +7,7 @@ import java.util.*;
 public class Anagrams2 {
 	public static void main(String[] args) {
 		long time1 = System.currentTimeMillis(),
-				time2;
+				time2, time3;
 		int minGroupSize = Integer.parseInt(args[1]);
 
 		Map<String, ArrayList<String>> m = new HashMap<String, ArrayList<String>>();
@@ -25,6 +25,7 @@ public class Anagrams2 {
 			System.err.println(e);
 			System.exit(1);
 		}
+		time2 = System.currentTimeMillis();
 
 		List<ArrayList<String>> winners = new ArrayList<ArrayList<String>>();
 		for (ArrayList<String> l : m.values()) {
@@ -38,14 +39,16 @@ public class Anagrams2 {
 			}
 		});
 
-		time2 = System.currentTimeMillis();
+		time3 = System.currentTimeMillis();
 
 		// Print permutation groups
 		for (ArrayList<String> l : winners) {
 			System.out.println(l.size() + ": " + l);
 		}
 		System.out.println(winners.size());
-		System.out.println("Time: " + (time2 - time1));
+		System.out.println("Total time: " + (time3 - time1));
+		System.out.println(" Read time: " + (time2 - time1));
+		System.out.println(" Sort time: " + (time3 - time2));
 	}
 
 	private static String alphabetize(String s) {

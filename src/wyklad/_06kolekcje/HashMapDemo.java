@@ -1,7 +1,7 @@
 package wyklad._06kolekcje;
 import java.util.*;
-import java.util.Set;
-import java.util.Iterator;
+//import java.util.Set;
+//import java.util.Iterator;
 
 class HashMapDemo {
 	public static void main(String[] args) {

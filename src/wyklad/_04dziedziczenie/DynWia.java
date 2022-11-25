@@ -6,12 +6,9 @@ class AA {
     int testThis() { return this.test();}
 }
 class BB extends AA {
-    int m(){ return 2; }//return super.m(); } //return 2;}
-//    int testSuper() { return super.test(); }
+    int m() { return 2; }
     int testSuper() { return this.test(); }
     int superOne() { return super.m(); }
-//    int test() { return this.m();}
-//    int test() { return m();}
 }
 class CC extends BB { 
     int m() { return 3; }
@@ -24,9 +21,11 @@ class DynWia{
     public static void main(String[] args) {
 	AA a = new AA() ;	BB b = new BB() ;	CC c = new CC() ;
 	System.out.println(a.test() + " " + a.testThis()); // 1 1
-	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // Sz: 2 2 2  // M: 2 2 2 // P: 2 2 2
-	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne()); // Sz: 2 3 2 1 // M: 2 2 2 2 // P: 2 2 2 1
+	System.out.println(b.test() + " " + b.testThis() + " " + b.testSuper()); // 2 2 2
+	System.out.println(c.test() + " " + c.testThis() + " " + c.testSuper() + " " + c.superOne()); // 3 2 2 1
   }
 }
 
+// b.test() = A.test(b) = b.m() = B.m(b) = 2
+// c.test() = B.m(c) = 2
 // c.testThis() = A.testThis(c) = c.test() = C.test(c) = super.m(c) = B.b(c) = 2

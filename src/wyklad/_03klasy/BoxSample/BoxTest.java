@@ -2,8 +2,7 @@ package wyklad._03klasy.BoxSample;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class BoxTest {
 //	@Test
@@ -38,7 +37,7 @@ public class BoxTest {
 	public void test_twoBoxes_areNotTheSame(){
 		Box box1 = new Box();
 		Box box2 = new Box();
-		assertTrue("Boxes are not the same", box1 != box2);
+		assertNotSame("Boxes are not the same", box1, box2);
 	}
 	@Test
 	public void test_twoBoxehashes_areNotEqual(){
