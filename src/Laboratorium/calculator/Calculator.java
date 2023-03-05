@@ -1,4 +1,4 @@
-package Laboratorium.claculator;
+package Laboratorium.calculator;
 
 public class Calculator {
 	private double result = 0.0;
