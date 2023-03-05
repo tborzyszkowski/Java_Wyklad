@@ -9,9 +9,10 @@ class Exc2 {
 			System.out.println("Tego nie zobaczymy "+ (a+1)
 					+ " " + Double.isNaN(a) + " "+ (Double.POSITIVE_INFINITY == a));
 			System.out.println("aqq:" + a + " "+ Double.isNaN(a));
+			System.out.println("0.0 == 0:" + (0.0 == 0) );
 		}
 		catch (ArithmeticException e) {
-			System.err.println("Dzielenie przez zero: " + e);
+			System.out.println("Dzielenie przez zero: " + e);
 		}
 		catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Dzielenie przez zero: " + e);

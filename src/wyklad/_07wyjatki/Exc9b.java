@@ -6,7 +6,7 @@ class Exc9b {
 		throw new IllegalAccessException("To tylko test");
 	}
 
-	public static void main(String[] args) //throws IllegalAccessException
+	public static void main(String[] args) throws IllegalAccessException
 	{
 		try {
 			throwOne();
@@ -16,7 +16,7 @@ class Exc9b {
 			System.out.println("Obsłużyłem: ");
 			e.printStackTrace();
 			System.out.println("Komunikat wyjątku  : " + e.getMessage());
-			//throw e;
+			throw e;
 		} 		
 		catch (ArithmeticException e) {}
 		catch (Exception e) {}

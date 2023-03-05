@@ -1,5 +1,6 @@
 package wyklad._06kolekcje;
 import java.util.ArrayList;
+import java.util.TreeSet;
 
 class ForLoop {
 	public static void main(String[] args) {
@@ -7,7 +8,7 @@ class ForLoop {
 		long result = 0;
 
 		// normalna petla for
-		for (int i = 0; i < a.length; i++)
+		for (int i = 0; i < a.length; ++i)
 			result += a[i];
 		System.out.println(result);
 
@@ -28,8 +29,22 @@ class ForLoop {
 		al.add(1, "A2");
 		
 		for (String v : al)
-			System.out.println(v);
-		
+			System.out.print(v+ " ");
+		System.out.println();
+
+		TreeSet<String> ts = new TreeSet<String>();
+
+		ts.add("C");
+		ts.add("A");
+		ts.add("E");
+		ts.add("B");
+		ts.add("D");
+		ts.add("F");
+//		ts.add(1, "A2");
+
+		for (String v : ts)
+			System.out.print(v+ " ");
+		System.out.println();
 		// while() ???
 	}
 	

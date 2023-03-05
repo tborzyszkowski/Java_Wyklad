@@ -17,8 +17,8 @@ class Exc3 {
 				// System.out.print(".");
 				c = r.nextInt(); // całkowitych z jednakowym
 				//Thread.sleep(1);
-				a = 1234 / 2;
-				//a = 12345 / (b / c); // prawdopodobieństwem
+//				a = 1234 / 2;
+				a = 12345 / (b / c); // prawdopodobieństwem
 			} catch (ArithmeticException e) {
 				//System.out.println("Dzielenie przez zero");
 				a = 0; // ustawiamy a i kontynuujemy pętlę

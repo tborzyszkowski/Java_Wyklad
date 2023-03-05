@@ -30,8 +30,8 @@ class JoinThreadDemo {
 	public static void main(String[] args) {
 		NewThread3 ob1 = new NewThread3("Pierwszy", 10);
 		NewThread3 ob2 = new NewThread3("Drugi   ", 20);
-		NewThread3 ob3 = new NewThread3("Trzeci  ", 30);
-		NewThread3 ob4 = new NewThread3("Czwarty ", 40);
+		NewThread3 ob3 = new NewThread3("Trzeci  ", 40);
+		NewThread3 ob4 = new NewThread3("Czwarty ", 30);
 
 		state(ob1, ob2, ob3, ob4);
 
@@ -41,10 +41,10 @@ class JoinThreadDemo {
 			System.out.println("Pierwszy: join()");
 			ob2.t.join();
 			System.out.println("Drugi   : join()");
-//			ob3.t.join();
-//			System.out.println("Trzeci  : join()");
-			ob4.t.join();
-			System.out.println("Czwarty  : join()");
+			ob3.t.join();
+			System.out.println("Trzeci  : join()");
+//			ob4.t.join();
+//			System.out.println("Czwarty  : join()");
 		} catch (InterruptedException e) {
 			System.out.println("Watek glowny przerwany");
 		}

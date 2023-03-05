@@ -17,9 +17,14 @@ public class Anagrams2 {
 			while (s.hasNext()) {
 				String alpha = alphabetize(word = s.next());
 				ArrayList<String> l = m.get(alpha);
-				if (l == null)
+				if (l == null) {
 					m.put(alpha, l = new ArrayList<String>());
-				l.add(word);
+					l.add(word);
+				}
+				else{
+					if(!l.contains(word))
+						l.add(word);
+				}
 			}
 		} catch (IOException e) {
 			System.err.println(e);

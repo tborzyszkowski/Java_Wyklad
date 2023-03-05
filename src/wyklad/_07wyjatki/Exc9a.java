@@ -13,8 +13,8 @@ class Exc9a {
 			throw new ArithmeticException("To tylko test");
 		}
 		else
-//			throw new IllegalAccessException("To tylko test");
-			throw new ArithmeticException("To tylko test");
+			throw new IllegalAccessException("To tylko test");
+//			throw new ArithmeticException("To tylko test");
 	}
 
 	public static void main(String[] args) throws IllegalAccessException

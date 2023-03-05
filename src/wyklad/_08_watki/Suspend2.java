@@ -46,7 +46,7 @@ class NewThread implements Runnable {
 }
 
 class SuspendResume2 {
-    public static void main(String args[]) {
+    public static void main(String []args) {
     	NewThread ob1 = new NewThread("Jeden");	
     	NewThread ob2 = new NewThread("Dwa  ");
 

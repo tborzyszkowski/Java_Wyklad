@@ -3,7 +3,7 @@ package wyklad._06kolekcje;
 import java.util.*;
 
 class MyComparator<E extends Comparable<E>> implements Comparator<E> {
-	int state = 0;
+//	int state = 0;
 	public int compare(E a, E b) {
 //		return b.compareTo(a);
 //		return a.compareTo(b);

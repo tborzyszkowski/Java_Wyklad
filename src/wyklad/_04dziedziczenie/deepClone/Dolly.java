@@ -24,7 +24,7 @@ public class Dolly implements Cloneable {
 	public Dolly clone() throws CloneNotSupportedException {
 		try {
 			Dolly cloned = (Dolly) super.clone();
-			cloned.e =  e;// (Element) e.clone(); //
+			cloned.e = (Element) e.clone(); //e;//
 			return cloned;
 		} catch (CloneNotSupportedException exc) {
 			System.out.println(exc);
