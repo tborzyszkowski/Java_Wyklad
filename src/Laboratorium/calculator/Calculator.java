@@ -10,6 +10,6 @@ public class Calculator {
 		result += value;
 	}
 	void mult(double value){
-
+		result *= value;
 	}
 }

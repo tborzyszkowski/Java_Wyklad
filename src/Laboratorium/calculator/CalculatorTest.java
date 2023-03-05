@@ -12,7 +12,7 @@ public class CalculatorTest {
 		calculator = new Calculator();
 	}
 	@Test
-	public void testCalculator_addOneToInitial_resultOne() {
+	public void testCalculator_add_1_toInitial_result_1() {
 		// Arrange
 		int argument = 1;
 		double expected = 1.0;
@@ -22,4 +22,15 @@ public class CalculatorTest {
 		// Assert
 		assertEquals("init(0).add(1) == 1", expected, result,0.0001);
 	}
+	@Test
+	public void testCalculator_add_2_nextMult_4_toInitial_result_8() {
+		int addArg = 2;
+		int multArg = 4;
+		double expected = 8.0;
+		calculator.add(addArg);
+		calculator.mult(multArg);
+		double result = calculator.getResult();
+		assertEquals("init(0).add(1) == 1", expected, result,0.0001);
+	}
+
 }
