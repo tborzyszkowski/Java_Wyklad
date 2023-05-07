@@ -7,6 +7,7 @@ class Base {
 	public Base(int i) {
 		this.i = i;
 	}
+	public Base(){}
 	public int getI() {
 		return i;
 	}
@@ -24,6 +25,7 @@ class Base {
 class Derived1 extends Base {
 	private int j;
 	public Derived1(int i, int j) {
+		//super();
 		super(i);
 		this.j = j;
 	}
@@ -70,9 +72,9 @@ class Dziedzictwo3 {
 		Derived2 der2 = new Derived2(22,222);
 		Random rnd = new Random();
 
-		System.out.println(base);
-		System.out.println(der1);
-		System.out.println(der2);
+//		System.out.println(base);
+//		System.out.println(der1);
+//		System.out.println(der2);
 
 		if (rnd.nextBoolean())
 			base = der1;
@@ -82,8 +84,8 @@ class Dziedzictwo3 {
 		System.out.println(base);
 
 		System.out.println(base.getClass());
-		if (base instanceof Derived2)
-			System.out.println(" j = " + ((Derived2) base).getJ());
+		if (base instanceof Derived1)
+			System.out.println(" j = " + ((Derived1) base).getJ());
 		else
 			System.out.println("Zly typ");
 	}

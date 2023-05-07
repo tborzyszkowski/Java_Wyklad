@@ -26,7 +26,7 @@ class A1 {
 }
 class B1 extends A1 {
 	private int j;
-	B1(){}
+	//B1(){}
 	B1(int i, int j) {
 		//super();
 		super(i);

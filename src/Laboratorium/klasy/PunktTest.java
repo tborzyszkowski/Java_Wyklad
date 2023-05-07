@@ -49,5 +49,11 @@ public class PunktTest {
         // Assert
         Assert.assertEquals(1.0, distance, 0.001);
     }
+    @Test
+    public void setXPositiveValue() {
+        Punkt punkt = new Punkt();
+        punkt.setX(-1);
+        Assert.assertEquals(0, punkt.getX(), 0.00001);
 
+    }
 }

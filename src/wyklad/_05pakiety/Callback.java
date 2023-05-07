@@ -33,15 +33,15 @@ class AnotherClient implements Callback {
 
 class TestIface2 {
 	public static void main(String[] args) {
-		Callback c = new Client();
-		AnotherClient ob = new AnotherClient();
+		Callback c;
 		Random rand = new Random();
 
-		c.callback(33);
 		boolean resBool = rand.nextBoolean();
 		System.out.println(resBool);
 		if (resBool)
-			c = ob;
+			c = new Client();
+		else
+			c = new AnotherClient();
 		c.callback(5);
 	}
 }

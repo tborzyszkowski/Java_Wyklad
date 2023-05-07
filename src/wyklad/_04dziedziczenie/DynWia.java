@@ -15,7 +15,6 @@ class CC extends BB {
     int superTwo() { return superOne(); }
     int testSuper() { return super.m(); }
     int test() { return super.test();}
-
 }
 class DynWia{
     public static void main(String[] args) {

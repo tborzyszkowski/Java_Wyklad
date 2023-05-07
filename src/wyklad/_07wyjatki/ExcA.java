@@ -2,16 +2,13 @@ package wyklad._07wyjatki;
 
 class IntWrapper {
 	private int val;
-
 	public IntWrapper(int val) {
 		this.val = val;
 	}
 	public IntWrapper Inc() {val++; return this;}
-
 	public int getVal() {
 		return val;
 	}
-
 	public void setVal(int val) {
 		this.val = val;
 	}

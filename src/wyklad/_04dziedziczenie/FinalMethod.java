@@ -6,7 +6,7 @@ class AF {
 	}
 }
 class BF extends AF {
-//	void finalMethod() {
+//	final void finalMethod() {
 //		System.out.println("To jest nielegalne");
 //	}
 }

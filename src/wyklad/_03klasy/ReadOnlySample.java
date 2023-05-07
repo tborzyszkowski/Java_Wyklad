@@ -2,9 +2,11 @@ package wyklad._03klasy;
 
 class ReadOnly1 {
 	final public double value;
+	final public double constValue = 10;
 
 	public ReadOnly1(double initialValue) {
 		value = initialValue;
+//		constValue = 20;
 	}
 
 	@Override

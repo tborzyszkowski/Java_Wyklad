@@ -22,7 +22,8 @@ public class Punkt {
     }
 
     public void setX(double x) {
-        this.x = x;
+        if (positiveValuation(x))
+            this.x = x;
     }
 
     public double getY() {
@@ -37,5 +38,8 @@ public class Punkt {
         double dx = Math.abs(this.getX() - punkt.getX());
         double dy = Math.abs(this.getY() - punkt.getY());
         return Math.sqrt( dx * dx + dy * dy);
+    }
+    private boolean positiveValuation(double value) {
+        return value >=0  ? true : false;
     }
 }

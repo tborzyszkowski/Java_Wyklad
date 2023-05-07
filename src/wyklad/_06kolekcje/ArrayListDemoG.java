@@ -49,10 +49,12 @@ class ArrayListDemoG {
 		time2 = System.currentTimeMillis();
 		System.out.println("a1.size(): " + a1.size() + " czas tworzenia: " + " [" + (time2 - time1) + "]");
 		boolean result;
-		for (int i = 1000 * 1000 - 5001; i < 1000 * 1000; i++)
+		System.out.println("Tak");
+		for (int i = 1000 * 1000 - 50001; i < 1000 * 1000; i++)
 //		for (int i = 0; i < 5000; i++)
 			result = a1.contains(i);
-		for (int i = -1; i > -5001; i--)
+		System.out.println("Nie");
+		for (int i = -1; i > -50001; i--)
 			result = a1.contains(i);
 		long time3 = System.currentTimeMillis();
 
