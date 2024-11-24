@@ -2,9 +2,10 @@ package wyklad._04dziedziczenie;
 
 class AK {
 	AK(int i) {
+		super();
 //		this();
 		int x = i + 1;
-		//super();
+//		super();
 		System.out.println("Konstruktor z A: " + x);
 	}
 	AK() {

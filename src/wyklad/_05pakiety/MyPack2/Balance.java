@@ -1,6 +1,8 @@
 package wyklad._05pakiety.MyPack2;
 
-public class Balance {
+import wyklad._05pakiety.MyPack.IBalance;
+
+public class Balance implements IBalance {
 	String name;
 	double bal;
 

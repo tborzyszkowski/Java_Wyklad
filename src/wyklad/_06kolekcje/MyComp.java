@@ -6,10 +6,10 @@ class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 //	int state = 0;
 	public int compare(E a, E b) {
 //		return b.compareTo(a);
-//		return a.compareTo(b);
-		return (a.toString().length() < b.toString().length() ? -1 :
-					(a.toString().length() > b.toString().length() ? 1 :
-						a.compareTo(b) ));
+		return a.compareTo(b);
+//		return (a.toString().length() < b.toString().length() ? 1 :
+//					(a.toString().length() > b.toString().length() ? -1 :
+//						a.compareTo(b) ));
 //		return -1;
 	}
 }

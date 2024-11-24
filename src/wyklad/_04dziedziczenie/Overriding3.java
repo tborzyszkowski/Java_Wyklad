@@ -30,7 +30,8 @@ class BO3 extends AO3 {
 class Overriding3 {
 	public static void main(String[] args) {
 		BO3 obB = new BO3(1, 2);
-		AO3 obA = obB;
+//		AO3 obA = obB;
+		AO3 obA = new AO3(10);
 
 		obB.showOnConsole();
 		obB.showOnConsole("To jest k: ");

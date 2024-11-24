@@ -1,32 +1,15 @@
 package wyklad._05pakiety.MyPack;
 
-//import wyklad._05pakiety.MyPack1.Balance;
-import wyklad._05pakiety.MyPack2.*;
 import wyklad._05pakiety.MyPack1.*;
-
-class Balance {
-	String name;
-	double bal;
-
-	Balance(String n, double b) {
-		name = n;
-		bal = b;
-	}
-
-	void show() {
-		if (bal < 0)
-			System.out.println("-->");
-		System.out.println(name + "\t: zl " + bal);
-	}
-}
+import wyklad._05pakiety.MyPack2.*;
 
 class AccountBalance {
 	public static void main(String[] args) {
-		Balance[] current = new Balance[3];
+		IBalance[] current = new wyklad._05pakiety.MyPack1.Balance[3];
 
-		current[0] = new Balance("J.F.K", 123.123);
-		current[1] = new Balance("W. Tell", -150.150);
-		current[2] = new Balance("T.B.", 111.222);
+		current[0] = new wyklad._05pakiety.MyPack1.Balance("J.F.K", 123.123);
+		current[1] = new wyklad._05pakiety.MyPack1.Balance("W. Tell", -150.150);
+		current[2] = new wyklad._05pakiety.MyPack2.Balance("T.B.", 111.222);
 
 		for (int i = 0; i < 3; i++)
 			current[i].show();

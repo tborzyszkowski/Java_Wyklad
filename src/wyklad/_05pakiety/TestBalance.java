@@ -1,7 +1,7 @@
 package wyklad._05pakiety;
 
-//import wyklad._05pakiety.MyPack2.*;
-//import wyklad._05pakiety.MyPack1.*;
+//import wyklad._05pakiety.MyPack.Balance;
+import wyklad._05pakiety.MyPack2.Balance;
 
 class TestBalance {
 	public static void main(String[] args) {

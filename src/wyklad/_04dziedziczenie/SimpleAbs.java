@@ -4,7 +4,7 @@ abstract class A_1 {
 	abstract void callMe();
 	void callMeToo() {
 		System.out.println("A: callMeToo");
-		callMe();
+		//callMe();
 	}
 }
 class B_1 extends A_1 {
@@ -14,7 +14,7 @@ class B_1 extends A_1 {
 
 	void callMeToo() {
 		System.out.println("B: callMeToo");
-		super.callMeToo();
+		//super.callMeToo();
 	}
 
 //	void callSuperMeToo() {

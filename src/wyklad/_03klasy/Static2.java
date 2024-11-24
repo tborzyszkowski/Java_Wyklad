@@ -8,7 +8,9 @@ class Static21 {
 		System.out.println("a = " + a);
 //		System.out.println("b = " + b);
 //		System.out.println("this = " + this.b);
+//		f();
 	}
+	void f() {}
 }
 
 class Static2 {

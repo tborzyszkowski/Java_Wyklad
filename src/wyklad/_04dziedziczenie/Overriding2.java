@@ -34,10 +34,10 @@ class View {
 class Overriding2 {
 	public static void main(String[] args) {
 		BO2 obB = new BO2(1, 2);
-		AO2 obA = obB;
-//		AO2 obA = new AO2(3);
+//		AO2 obA = obB;
+		AO2 obA = new AO2(3);
 
-		View viewA = new View(new AO2(3));
+		View viewA = new View(obA);
 		viewA.showOnConsole();
 
 		View viewB = new View(obB);

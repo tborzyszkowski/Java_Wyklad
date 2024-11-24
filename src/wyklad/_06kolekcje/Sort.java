@@ -1,6 +1,5 @@
 package wyklad._06kolekcje;
 import java.util.*;
-import java.util.List;
 
 public class Sort {
 	public static void main(String[] args) {

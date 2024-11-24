@@ -8,9 +8,11 @@ import java.util.TreeSet;
 class ArrayListDemoG {
 	public static void main(String[] args) {
 
-//		ArrayList<Number> a1 = new ArrayList<Number>();
+		final int NumberOfElements = 5 * 1000 * 1000;
+
+		ArrayList<Number> a1 = new ArrayList<Number>();
 //		TreeSet<Number> a1 = new TreeSet<Number>();
-		HashSet<Number> a1 = new HashSet<Number>();
+//		HashSet<Number> a1 = new HashSet<Number>(NumberOfElements);
 //
 //		System.out.println("Poczatkowy rozmiar a1: " + a1.size());
 //
@@ -43,19 +45,19 @@ class ArrayListDemoG {
 		a1.clear();
 		long time1 = System.currentTimeMillis(),
 				time2;
-		for (int i = 0; i < 1000 * 1000 * 10; i++) {
+		for (int i = 0; i < NumberOfElements; i++) {
 			a1.add(i);
 		}
 		time2 = System.currentTimeMillis();
 		System.out.println("a1.size(): " + a1.size() + " czas tworzenia: " + " [" + (time2 - time1) + "]");
 		boolean result;
-		System.out.println("Tak");
-		for (int i = 1000 * 1000 - 50001; i < 1000 * 1000; i++)
-//		for (int i = 0; i < 5000; i++)
+//		System.out.println("Search:");
+		for (int i = NumberOfElements / 2; i < NumberOfElements; i++)
+//			for (int i = 0; i < NumberOfElements / 2; i++)
 			result = a1.contains(i);
-		System.out.println("Nie");
-		for (int i = -1; i > -50001; i--)
-			result = a1.contains(i);
+//			System.out.println("Nie");
+//		for (int i = -1; i > -50001; i--)
+//			result = a1.contains(i);
 		long time3 = System.currentTimeMillis();
 
 		System.out.println(" czas szukania: " + " [" + (time3 - time2) + "]");

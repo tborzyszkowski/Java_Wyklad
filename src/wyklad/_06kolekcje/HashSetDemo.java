@@ -30,6 +30,7 @@ class HashSetDemo {
 		hs.add("G");
 		hs.add("N");
 		hs.add("U");
+		hs.add("7");
 
 		// w jakiej kolejnosci otrzymamy dane
 		System.out.println("Size: " + hs.size());

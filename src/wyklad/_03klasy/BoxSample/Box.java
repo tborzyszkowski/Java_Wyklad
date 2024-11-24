@@ -8,7 +8,6 @@ public class Box {
 	public Box(double width, double height, double depth) {
 		this.setDim(width, height, depth);
 	}
-
 	public Box(){
 		this(0.0, 0.0, 0.0);
 	}
@@ -18,7 +17,14 @@ public class Box {
 	}
 
 	public void setWidth(double width) {
-		this.width = width;
+		if (dimentionIsAccepted(width))
+			this.width = width;
+		else
+			this.width = 0.0;
+	}
+
+	private boolean dimentionIsAccepted(double width) {
+		return width >= 0.0;
 	}
 
 	public double getHeight() {
@@ -38,13 +44,13 @@ public class Box {
 	}
 
 	private void setDim(double width, double height, double depth) {
-		this.width = width;
-		this.height = height;
-		this.depth = depth;
+		this.setWidth(width);
+		this.setHeight(height);
+		this.setDepth(depth);
 	}
 
 	public double volume(){
-		return this.height * width * depth;
+		return this.height * this.width * this.depth;
 	}
 
 	@Override
@@ -54,22 +60,22 @@ public class Box {
 
 		Box box = (Box) o;
 
-		if (Double.compare(box.width, width) != 0) return false;
-		if (Double.compare(box.height, height) != 0) return false;
-		return Double.compare(box.depth, depth) == 0;
+		if (Double.compare(getWidth(), box.getWidth()) != 0) return false;
+		if (Double.compare(getHeight(), box.getHeight()) != 0) return false;
+		return Double.compare(getDepth(), box.getDepth()) == 0;
 	}
 
 	@Override
 	public int hashCode() {
 		int result;
 		long temp;
-		temp = Double.doubleToLongBits(width);
+		temp = Double.doubleToLongBits(getWidth());
 		result = (int) (temp ^ (temp >>> 32));
-		temp = Double.doubleToLongBits(height);
+		temp = Double.doubleToLongBits(getHeight());
 		result = 31 * result + (int) (temp ^ (temp >>> 32));
-		temp = Double.doubleToLongBits(depth);
+		temp = Double.doubleToLongBits(getDepth());
 		result = 31 * result + (int) (temp ^ (temp >>> 32));
-		return result + super.hashCode();
+		return result+super.hashCode();
 	}
 
 	//	public static int getValue(int argument){

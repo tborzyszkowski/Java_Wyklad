@@ -24,7 +24,7 @@ class ExcA {
 //		try {
 //			System.out.println("Wewnatrz procA: " + a);
 //			a++;
-//			if(1 == 1)
+//			if(a < a * a)
 //				throw new RuntimeException("To tylko test: " + a);
 //		} catch (RuntimeException e) {
 //			a++;
@@ -76,14 +76,26 @@ class ExcA {
 			System.out.println("finally w procB-2: " + a + ": " + a.hashCode());
 		}
 	}
+	static Integer procBB() {
+		Integer a = new Integer(1);
 
-//	static void procC() {
-//		try {
-//			System.out.println("Wewnatrz procC");
-//		} finally {
-//			System.out.println("finally w procC");
-//		}
-//	}
+		try {
+			System.out.println("Wewnatrz procBB-0:  " + a + ": " + a.hashCode());
+			return ++a;
+		} finally {
+			System.out.println("finally w procBB-1: " + a + ": " + a.hashCode());
+			++a;
+			System.out.println("finally w procBB-2: " + a + ": " + a.hashCode());
+		}
+	}
+
+	static void procC() {
+		try {
+			System.out.println("Wewnatrz procC");
+		} finally {
+			System.out.println("finally w procC");
+		}
+	}
 
 	public static void main(String[] args) {
 //		try {
@@ -92,10 +104,13 @@ class ExcA {
 //		catch (Exception e) {
 //			System.out.println("Main: wyjatek z procA obsłużony"+e);
 //		}
-		System.out.println("B: " + procB());
-//		Integer x = new Integer(1);
-//		Integer y = x;
-//		System.out.println((x == y) + " " + (x.hashCode() == y.hashCode()));
+		System.out.println("B:  " + procB());
+		System.out.println("BB: " + procBB());
+		Integer x = 1;
+		Integer y = 1;
+		System.out.println((x == y) + " " + (x.hashCode() == y.hashCode()));
+		Integer z = x+1;
+		System.out.println((x == z) + " " + (x.hashCode() == z.hashCode()));
 //		procC();
 	}
 }

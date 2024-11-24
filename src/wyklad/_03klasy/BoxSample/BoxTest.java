@@ -4,15 +4,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class BoxTest {
-//	@Test
-//	public void testBoxGetValue_forOne_givesTwo() {
-//		// Arrange
-//		int argument = 1;
-//		// Act
-//		int result = Box.getValue(argument);
-//		// Assert
-//		assertEquals("getValue(1) = 2", 2, result);
-//	}
+	@Test
+	public void testBoxGetWidth() {
+		// Arrange
+		Box sut = new Box(1, 2, 3);
+		// Act
+		double result = sut.getWidth();
+		// Assert
+		assertEquals( 1, result, 0.001);
+	}
 	@Test
 	public void test_volumeOfInitialBox_isZero(){
 		Box sut = new Box();
@@ -20,10 +20,25 @@ public class BoxTest {
 		assertEquals( 0.0, volume, 0.001);
 	}
 	@Test
+	public void test_setNegativeWidth_isZero(){
+		double width = -1.0;
+		Box sut = new Box(1,1,1);
+		sut.setWidth(width);
+		double result = sut.getWidth();
+		assertEquals( 0.0, result, 0.001);
+	}
+	@Test
 	public void test_volumeOfUnitQube_isOne(){
 		Box sut = new Box(1, 1, 1);
 		double volume = sut.volume();
 		assertEquals( 1.0, volume, 0.001);
+	}
+
+	@Test
+	public void test_volumeOfOtherQube_isOne(){
+		Box sut = new Box(1.5, 1.3, 1.2);
+		double volume = sut.volume();
+		assertEquals( 2.34, volume, 0.001);
 	}
 
 	@Test

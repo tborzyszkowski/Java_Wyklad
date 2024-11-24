@@ -19,7 +19,7 @@ class Array {
 		//month_days[11] = 31; // grudzien
 		monthDays[13] = 31; // PREMIA
 		// korzystanie z tablicy
-		System.out.println("Mc ma " + monthDays[14] + " dni");
+		System.out.println("Mc ma " + monthDays[13] + " dni");
 		
 //		String[] s;
 //		s = new String[3];

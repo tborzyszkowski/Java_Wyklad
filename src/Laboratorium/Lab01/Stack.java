@@ -8,3 +8,4 @@ public class Stack {
 		return 0;
 	}
 }
+

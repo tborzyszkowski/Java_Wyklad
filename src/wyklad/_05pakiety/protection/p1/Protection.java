@@ -8,9 +8,9 @@ public class Protection {
 
 	public Protection() {
 		System.out.println("konstruktor bazowy");
-		System.out.println("nPrivate   = " + nPrivate);
-		System.out.println("nPackage   = " + nPackage);
-		System.out.println("nProtected = " + nProtected);
-		System.out.println("nPublic    = " + nPublic);
+		System.out.println("nPrivate   = " + this.nPrivate);
+		System.out.println("nPackage   = " + this.nPackage);
+		System.out.println("nProtected = " + this.nProtected);
+		System.out.println("nPublic    = " + this.nPublic);
 	}
 }

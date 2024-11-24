@@ -12,7 +12,7 @@ class DynStack implements IntStack {
 	DynStack(int size) {
 		element = new int[size];
 		topOfStack = -1;
-		LOGGER.log(Level.INFO, "DynStack of size {0} created", size);
+		LOGGER.log(Level.INFO, "NEW: DynStack of size {0} created", size);
 	}
 
 	public void push(int item) {
@@ -21,17 +21,15 @@ class DynStack implements IntStack {
 			for (int i = 0; i < element.length; i++)
 				temp[i] = element[i];
 			element = temp;
-			LOGGER.log(Level.INFO, "New DynStack size {0}", element.length);
-//			System.out.println("Nowy rozmiar stosu: " + element.length);
+			LOGGER.log(Level.INFO, "RESIZE: New DynStack size {0}", element.length);
 		}
 		element[++topOfStack] = item;
-		LOGGER.log(Level.INFO, "New element at DynStack");
+		LOGGER.log(Level.INFO, "PUSH: New element on DynStack");
 	}
 
 	public int pop() {
 		if (topOfStack < 0) {
 			LOGGER.log(Level.SEVERE, "DynStack is empty");
-//			System.out.println("Stos pusty");
 			return 0;
 		} else
 			return element[topOfStack--];

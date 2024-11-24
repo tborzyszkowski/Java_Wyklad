@@ -13,6 +13,7 @@ class Readonly {
 
 	public Readonly(double rr) {
 		this.rr = rr;
+//		this.setRR(rr);
 	}
 
 //	void setRR(double val) {

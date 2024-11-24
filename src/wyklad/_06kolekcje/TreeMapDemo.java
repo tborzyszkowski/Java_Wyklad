@@ -6,7 +6,7 @@ import java.util.*;
 class TreeMapDemo {
 	public static void main(String[] args) {
 
-		TreeMap<String, Double> tm = new TreeMap<String, Double>();
+		Map<String, Double> tm = new TreeMap<String, Double>();
 
 		tm.put("Jan Kowalski", 1111.11);
 		tm.put("Jan Nowak", 2222.22);

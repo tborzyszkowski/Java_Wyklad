@@ -10,7 +10,7 @@ public class Anagrams2 {
 				time2, time3;
 		int minGroupSize = Integer.parseInt(args[1]);
 
-		Map<String, ArrayList<String>> m = new HashMap<String, ArrayList<String>>();
+		Map<String, ArrayList<String>> m = new TreeMap<String, ArrayList<String>>();
 		try {
 			Scanner s = new Scanner(new File(args[0]));
 			String word;

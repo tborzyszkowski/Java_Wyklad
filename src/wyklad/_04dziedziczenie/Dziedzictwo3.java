@@ -75,16 +75,17 @@ class Dziedzictwo3 {
 //		System.out.println(base);
 //		System.out.println(der1);
 //		System.out.println(der2);
-
-		if (rnd.nextBoolean())
+		boolean decision = rnd.nextBoolean();
+		if (decision)
 			base = der1;
 		else
 			base = der2;
 
+		System.out.println(decision);
 		System.out.println(base);
 
 		System.out.println(base.getClass());
-		if (base instanceof Derived1)
+		if (base instanceof Derived2)
 			System.out.println(" j = " + ((Derived1) base).getJ());
 		else
 			System.out.println("Zly typ");

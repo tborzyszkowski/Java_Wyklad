@@ -24,6 +24,9 @@ class Exc4 {
 			}
 			System.out.print("a = " + a + "\t b = " + b + "\t c = " + c);
 			System.out.println("\t b/c = " + b / c);
+			System.out.flush();
+			System.err.flush();
+
 		}
 		System.out.println("j = "+ j);
 	}

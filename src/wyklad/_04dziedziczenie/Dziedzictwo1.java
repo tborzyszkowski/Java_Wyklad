@@ -20,15 +20,15 @@ class A1 {
 	public int suma() {
 		return i;
 	}
-	public String toString() {
-		return "A1 { i = " + i + " }";
-	}
+//	public String toString() {
+//		return "A1 { i = " + i + " }";
+//	}
 }
 class B1 extends A1 {
 	private int j;
-	//B1(){}
+	B1(){}
 	B1(int i, int j) {
-		//super();
+//		super();
 		super(i);
 		this.j = j;
 	}
@@ -41,10 +41,13 @@ class B1 extends A1 {
 	public int suma() {
 		return super.suma() + j;
 	}
-	public String toString() {
-		return "B1 { " + super.toString() + " j = " + j + " }";
-	}
+//	public String toString() {
+//		return "B1 { " + super.toString() + " j = " + j + " }";
+//	}
 }
+class C1{}
+class D1 extends C1 {}
+
 class Dziedzictwo1 {
 	public static void main(String[] args) {
 		A1 obA = new A1(1);
@@ -53,9 +56,15 @@ class Dziedzictwo1 {
 		System.out.println("Zawartosc A: " + obA);
 		System.out.println("Zawartosc B: " + obB);
 
-		System.out.println("Suma A: " + obA.suma());
-		System.out.println("Suma B: " + obB.suma());
+//		System.out.println("Suma A: " + obA.suma());
+//		System.out.println("Suma B: " + obB.suma());
 		obA = obB;
+//		obB = obA;
 		System.out.println("Suma A: " + obA.suma());
+		C1 obC = new C1();
+		D1 obD = new D1();
+//		obD = obC;
+		System.out.println("Zawartosc C: " + obC);
+		System.out.println("Zawartosc D: " + obD);
 	}
 }
