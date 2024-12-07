@@ -3,6 +3,7 @@ package wyklad._06kolekcje;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 class User {
@@ -46,13 +47,16 @@ public class StreamTest {
 		Stream<User> stream = users.stream();
 
 		System.out.println("\nu.age > 50");
-		stream
-				.filter(u -> u.age > 50)
-				.forEach(u -> System.out.println(u));
+		Supplier<Stream<User>> supplier =
+				() -> stream
+				.filter(u -> u.age > 50);
+//				.forEach(u -> System.out.println(u));
+//		System.out.println("--------");
+		supplier.get().forEach(s -> System.out.println(s));
 
-		stream = users.stream();
+		Stream<User> stream2 = users.stream();
 		System.out.println("\nCount: " +
-				stream
+				stream2
 						.filter(u -> u.name.startsWith("S"))
 						.count()
 		);

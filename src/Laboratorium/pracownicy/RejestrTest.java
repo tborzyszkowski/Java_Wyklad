@@ -24,8 +24,9 @@ public class RejestrTest {
         Robotnik robotnik = new Robotnik("Jan", "Kowalski");
         Urzednik urzednik = new Urzednik("Jan", "Kowalski");
         // Act
-        sut.addPracownik(robotnik);
-        sut.addPracownik(urzednik);
+        sut
+                .addPracownik(robotnik)
+                .addPracownik(urzednik);
         int result = sut.rejestrSize();
         // Assert
         assertEquals(2, result);
@@ -37,8 +38,9 @@ public class RejestrTest {
         Robotnik robotnik = new Robotnik("Jan", "Kowalski");
         Urzednik urzednik = new Urzednik("Jan", "Kowalski");
         // Act
-        sut.addPracownik(robotnik);
-        sut.addPracownik(urzednik);
+        sut
+                .addPracownik(robotnik)
+                .addPracownik(urzednik);
         int result = sut.wartoscRejestru();
         // Assert
         assertEquals(0, result);

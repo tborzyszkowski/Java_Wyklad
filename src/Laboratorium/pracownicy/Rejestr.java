@@ -6,10 +6,11 @@ import java.util.List;
 public class Rejestr {
     private List<Pracownik> pracownicy = new ArrayList<Pracownik>();
 
-    public void addPracownik(Pracownik pracownik){
-        if(pracownicy.contains(pracownik)) {
+    public Rejestr addPracownik(Pracownik pracownik){
+        //if(pracownicy.contains(pracownik)) {
             this.pracownicy.add(pracownik);
-        }
+        //}
+        return this;
     }
 
     public int rejestrSize(){
@@ -17,10 +18,13 @@ public class Rejestr {
     }
 
     public int wartoscRejestru(){
-        int result = 0;
-        for(Pracownik p : pracownicy){
-            result += p.wartosc();
-        }
-        return result;
+        return pracownicy.stream()
+                .map(p -> p.wartosc())
+                .reduce(0, (acc, w) -> acc + w);
+//        int result = 0;
+//        for(Pracownik p : pracownicy){
+//            result += p.wartosc();
+//        }
+//        return result;
     }
 }
