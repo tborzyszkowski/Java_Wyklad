@@ -12,6 +12,7 @@ class ArrayListDemoG {
 
 		ArrayList<Number> a1 = new ArrayList<Number>();
 //		TreeSet<Number> a1 = new TreeSet<Number>();
+		// 10^12 log 2(10^3^4) = 4 * log 2(10^3) ~ 4 * log 2 (2^10) = 40
 //		HashSet<Number> a1 = new HashSet<Number>(NumberOfElements);
 //
 //		System.out.println("Poczatkowy rozmiar a1: " + a1.size());
