@@ -14,6 +14,23 @@ public class CalculatorTest {
 		// Assert
 		assertEquals("0+1 = 1", 1, sut.getState());
 	}
+	@Test
+	public void test_havigMaxIntAddOne(){
+		Calculator sut = new Calculator();
+		sut.setState(Integer.MAX_VALUE);
+		sut.add(1);
+		//long expected = (long)Integer.MAX_VALUE + 1L;
+		// Assert
+		assertEquals("errorState = true", true, sut.isErrorState());
+	}
+	@Test
+	public void test_havigMinIntMinusOne(){
+		Calculator sut = new Calculator();
+		sut.setState(Integer.MIN_VALUE);
+		sut.add(-1);
+
+		assertEquals("errorState = true", true, sut.isErrorState());
+	}
 
 	@Test
 	public void testMultOneByTwo(){

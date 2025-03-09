@@ -1,7 +1,5 @@
 package wyklad._06kolekcje;
 import java.util.*;
-//import java.util.Set;
-//import java.util.Iterator;
 
 class TreeMapDemo {
 	public static void main(String[] args) {

@@ -82,3 +82,6 @@ public class Box {
 	//		return argument + 1;
 	//	}
 }
+// Co to jest this?
+// b = new Box()
+// b.setWidth(2) -> Box.setWidth(b, 2) -> ....

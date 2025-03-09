@@ -8,8 +8,8 @@ public class Punkt {
 		this(0.0, 0.0);
 	}
 	public Punkt(double x, double y) {
-		this.x = x;
-		this.y = y;
+		this.setX(x);
+		this.setY(y);
 	}
 
 	public double getX() {
@@ -27,4 +27,10 @@ public class Punkt {
 	public void setY(double y) {
 		this.y = (y< 0 ? -y: y);
 	}
+
+	public double distance(Punkt p){
+		return 0;
+	}
 }
+// p = new Point(1,1);
+// p.setX(7); -> Point.setX(this, 7)

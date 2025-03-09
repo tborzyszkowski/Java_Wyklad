@@ -47,11 +47,14 @@ public class StreamTest {
 		Stream<User> stream = users.stream();
 
 		System.out.println("\nu.age > 50");
+//		stream.filter(u -> u.age > 50)
+//				.forEach(u -> System.out.println(u));
+//		stream.forEach(u -> System.out.println(u));
 		Supplier<Stream<User>> supplier =
 				() -> stream
 				.filter(u -> u.age > 50);
-//				.forEach(u -> System.out.println(u));
-//		System.out.println("--------");
+				//.forEach(u -> System.out.println(u));
+		System.out.println("--------");
 		supplier.get().forEach(s -> System.out.println(s));
 
 		Stream<User> stream2 = users.stream();

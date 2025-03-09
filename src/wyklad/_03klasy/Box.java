@@ -2,8 +2,8 @@ package wyklad._03klasy;
 
 
 public class Box {
-	private double width = 0;
-	private double height = 0;
+	private double width;
+	private double height = 7;
 	private double depth = 0;
 
 	public Box(double width, double height, double depth) {
@@ -14,21 +14,21 @@ public class Box {
 		this(0, 0, 0);
 	}
 
-	public Box(int n) {
-		this(n, n, n);
-	}
-
-	public Box(int width, int height, int depth) {
-		this(1.0 * width, height, depth);
-	}
-
-	public Box(int width, double height, double depth) {
-		this(4.0 * width, height, depth);
-	}
-
-	public Box(int width, int height, double depth) {
-		this(5.0 * width, height, depth);
-	}
+//	public Box(int n) {
+//		this(n, n, n);
+//	}
+//
+//	public Box(int width, int height, int depth) {
+//		this(1.0 * width, height, depth);
+//	}
+//
+//	public Box(int width, double height, double depth) {
+//		this(4.0 * width, height, depth);
+//	}
+//
+//	public Box(int width, int height, double depth) {
+//		this(5.0 * width, height, depth);
+//	}
 
 	public void setDim(double width, double height, double depth) {
 		this.width = width;

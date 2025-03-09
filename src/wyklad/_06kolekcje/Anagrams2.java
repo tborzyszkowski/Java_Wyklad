@@ -10,7 +10,7 @@ public class Anagrams2 {
 				time2, time3;
 		int minGroupSize = Integer.parseInt(args[1]);
 
-		Map<String, ArrayList<String>> m = new TreeMap<String, ArrayList<String>>();
+		Map<String, ArrayList<String>> m = new HashMap<String, ArrayList<String>>();
 		try {
 			Scanner s = new Scanner(new File(args[0]));
 			String word;
@@ -38,9 +38,12 @@ public class Anagrams2 {
 				winners.add(l);
 		}
 
-		Collections.sort(winners, new Comparator<ArrayList<String>>() {
-			public int compare(ArrayList<String> o1, ArrayList<String> o2) {
-				return o2.size() - o1.size();
+		Collections.sort(
+				winners,
+				new Comparator<ArrayList<String>>() {
+					public int compare(ArrayList<String> o1, ArrayList<String> o2) {
+
+						return o2.size() - o1.size();
 			}
 		});
 

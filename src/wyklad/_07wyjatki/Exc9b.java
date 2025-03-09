@@ -6,19 +6,21 @@ class Exc9b {
 		throw new IllegalAccessException("To tylko test");
 	}
 
-	public static void main(String[] args) //throws IllegalAccessException
+	public static void main(String[] args) throws IllegalAccessException
 	{
 		try {
 			throwOne();
 			int a = 1 /0;
 		} 
-		catch (IllegalAccessException e) {
-			System.out.println("Obsłużyłem: ");
-			e.printStackTrace();
-			System.out.println("Komunikat wyjątku  : " + e.getMessage());
-			// throw e;
-		} 		
-		catch (ArithmeticException e) {}
-		catch (Exception e) {}
+//		catch (IllegalAccessException e) {
+//			System.out.println("Obsłużyłem: ");
+//			e.printStackTrace();
+//			System.out.println("Komunikat wyjątku  : " + e.getMessage());
+//			// throw e;
+//		}
+		//catch (ArithmeticException e) {}
+//		catch (Exception e) {}
+		finally {
+		}
 	}
 }

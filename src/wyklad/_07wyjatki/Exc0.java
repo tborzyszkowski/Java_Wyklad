@@ -5,6 +5,7 @@ class Exc0 {
 		int d = 0;
 		int a = 42 / d;
 		System.out.print(a);
+		System.err.println("Hello ERROR");
 	}
 }
 

@@ -105,12 +105,12 @@ class ExcA {
 //			System.out.println("Main: wyjatek z procA obsłużony"+e);
 //		}
 		System.out.println("B:  " + procB());
-		System.out.println("BB: " + procBB());
-		Integer x = 1;
-		Integer y = 1;
-		System.out.println((x == y) + " " + (x.hashCode() == y.hashCode()));
-		Integer z = x+1;
-		System.out.println((x == z) + " " + (x.hashCode() == z.hashCode()));
+//		System.out.println("BB: " + procBB());
+//		Integer x = 1;
+//		Integer y = 1;
+//		System.out.println((x == y) + " " + (x.hashCode() == y.hashCode()));
+//		Integer z = x+1;
+//		System.out.println((x == z) + " " + (x.hashCode() == z.hashCode()));
 //		procC();
 	}
 }

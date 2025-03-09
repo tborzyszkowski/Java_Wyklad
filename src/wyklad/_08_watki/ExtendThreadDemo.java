@@ -15,8 +15,8 @@ class NewThread2 extends Thread {
 
 			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 				//Thread.sleep(1);
-				//a++;
-				a = (int)Math.sin(a + 1) + 1;
+				a++;
+//				a = (int)Math.sin(a + 1) + 1;
 				//System.out.println("Nowy watek      > " + i);
 			}
 		} catch (// InterruptedException e
@@ -41,8 +41,8 @@ class ExtendThreadDemo {
 		try {
 			for (int i = 100 * 1000 * 1000; i > 0; i--) {
 				//System.out.println("Watek glowny    : " + i);
-//				a++;
-				a = (int)Math.sin(a + 1) + 1;
+				a++;
+//				a = (int)Math.sin(a + 1) + 1;
 				//Thread.sleep(0);
 			}
 		} catch (Exception e) {

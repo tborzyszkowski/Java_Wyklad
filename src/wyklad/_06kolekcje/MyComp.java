@@ -6,11 +6,11 @@ class MyComparator<E extends Comparable<E>> implements Comparator<E> {
 //	int state = 0;
 	public int compare(E a, E b) {
 //		return b.compareTo(a);
-		return a.compareTo(b);
-//		return (a.toString().length() < b.toString().length() ? 1 :
-//					(a.toString().length() > b.toString().length() ? -1 :
+//		return a.compareTo(b);
+//		return (a.toString().length() < b.toString().length() ? -1 :
+//					(a.toString().length() > b.toString().length() ? 1 :
 //						a.compareTo(b) ));
-//		return -1;
+		return -1;
 	}
 }
 
@@ -37,6 +37,8 @@ class MyComp {
 		ts.add("S");
 		ts.add("F");
 		ts.add("M");
+		ts.add("Y");
+		ts.add("Z");
 		ts.add("T");
 		ts.add("G");
 		ts.add("N");
@@ -44,9 +46,6 @@ class MyComp {
 		ts.add("W");
 		ts.add("V");
 		ts.add("X");
-		ts.add("Y");
-		ts.add("Z");
-
 		// wypisujemy elementy
 		for (String s : ts)
 			System.out.print(s + " ");

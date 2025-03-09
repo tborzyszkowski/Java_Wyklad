@@ -5,18 +5,18 @@ class Exc6 {
 			int a = 3;
 			int b = 42 / a;
 			System.out.println("a = " + a);
-			try {
-				if (a == 1)
-					a = a / (a - a);
-				if (a == 2) {
-					int c[] = { 1 };
-					c[42] = 99;
+				try {
+					if (a == 1)
+						a = a / (a - a);
+					if (a == 2) {
+						int c[] = { 1 };
+						c[42] = 99;
+					}
+				} catch (ArrayIndexOutOfBoundsException e) {
+					System.out.println("Indeks tablicy poza zakresem: " + e);
+					//int x = 1 / 0;
+	//				throw new ArrayIndexOutOfBoundsException();
 				}
-			} catch (ArrayIndexOutOfBoundsException e) {
-				System.out.println("Indeks tablicy poza zakresem: " + e);
-				//int x = 1 / 0;
-//				throw new ArrayIndexOutOfBoundsException();
-			}
 			;
 			System.out.println("AQQ");
 		} catch (ArithmeticException e) {
