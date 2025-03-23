@@ -23,7 +23,7 @@ public class Epsilon {
 		BigDecimal b = a;
 		i = 0;
 
-		while (a.compareTo(BigDecimal.valueOf(0.0)) != 0 && i < 14000){
+		while (a.compareTo(BigDecimal.valueOf(0.0)) != 0 && i < 7000){
 			b = a.multiply(jeden);
 			a = a.divide(dwa);
 			if ( (i++) % 100 == 0) System.out.print(".");

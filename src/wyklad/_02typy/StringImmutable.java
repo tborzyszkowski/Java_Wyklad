@@ -44,6 +44,11 @@ class MyInt{
 
 public class StringImmutable {
 	public static void main(String[] args) {
+		int x = 1;
+		int y = 1;
+
+		System.out.println(x == y);
+
 		String s1 = "Ala";
 		String s2 = "Ala1";
 

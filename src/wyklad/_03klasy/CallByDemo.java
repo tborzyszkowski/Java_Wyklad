@@ -25,7 +25,9 @@ class CallBy {
 	}
 
 	void funInt(Integer x) {
-		x++;
+		System.out.println("przed: " + x);
+		x = x + 1;
+		System.out.println("po: " + x);
 	}
 }
 
@@ -71,5 +73,13 @@ public class CallByDemo {
 		Integer y = new Integer(yy);
 		ob.funInt(y);
 		yy = y;
+		System.out.println(yy);
+
+		System.out.println(new Integer(1) == new Integer(1));
+		Integer z1 = new Integer(1);
+		Integer z2 = z1;
+		System.out.println(z1 == z2);
+		z2++;
+		System.out.println(z1 == z2);
 	}
 }

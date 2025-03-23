@@ -43,5 +43,6 @@ class TestIface2 {
 		else
 			c = new AnotherClient();
 		c.callback(5);
+		System.out.println(c.getClass().getName());
 	}
 }
