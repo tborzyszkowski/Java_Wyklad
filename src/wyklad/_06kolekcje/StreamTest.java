@@ -46,48 +46,49 @@ public class StreamTest {
 
 		Stream<User> stream = users.stream();
 
-		System.out.println("\nu.age > 50");
-//		stream.filter(u -> u.age > 50)
+//		System.out.println("\nu.age > 50");
+//		stream
+//				.filter(u -> u.age > 50)
 //				.forEach(u -> System.out.println(u));
 //		stream.forEach(u -> System.out.println(u));
-		Supplier<Stream<User>> supplier =
-				() -> stream
-				.filter(u -> u.age > 50);
-				//.forEach(u -> System.out.println(u));
-		System.out.println("--------");
-		supplier.get().forEach(s -> System.out.println(s));
-
-		Stream<User> stream2 = users.stream();
-		System.out.println("\nCount: " +
-				stream2
-						.filter(u -> u.name.startsWith("S"))
-						.count()
-		);
-
-		System.out.println("\ntoUpperCase:");
-		users.stream()
-				.filter(u -> u.age > 40)
-				.map(u -> u.name.toUpperCase())
-				.forEach(u -> System.out.println(u));
-
-		System.out.println("\nmin:");
-		User uMin = users.stream()
-				.min(Comparator.comparing(u -> u.lastName.length()))
-				.get();
-		System.out.println(uMin);
-
-		System.out.println("\nreduced:");
-		String reduced = users.stream()
-				.map(u -> u.name)
-				.reduce("", (acc, n) -> acc + " " + n);
-		System.out.println(reduced);
-
-		System.out.println("\nreduced:");
-		int sumaWieku = users.stream()
-				.map(u -> u.age)
-				.reduce(0, (acc, n) -> acc + n);
-		System.out.println(sumaWieku);
-
+//		Supplier<Stream<User>> supplier =
+//				() -> stream
+//				.filter(u -> u.age > 50);
+//				//.forEach(u -> System.out.println(u));
+//		System.out.println("--------");
+//		supplier.get().forEach(s -> System.out.println(s));
+//
+//		Stream<User> stream2 = users.stream();
+//		System.out.println("\nCount: " +
+//				stream2
+//						.filter(u -> u.name.startsWith("S"))
+//						.count()
+//		);
+//
+//		System.out.println("\ntoUpperCase:");
+//		users.stream()
+//				.filter(u -> u.age > 40)
+//				.map(u -> u.name.toUpperCase())
+//				.forEach(u -> System.out.println(u));
+//
+//		System.out.println("\nmin:");
+//		User uMin = users.stream()
+//				.min(Comparator.comparing(u -> u.lastName.length()))
+//				.get();
+//		System.out.println(uMin);
+//
+//		System.out.println("\nreduced:");
+//		String reduced = users.stream()
+//				.map(u -> u.name)
+//				.reduce("", (acc, n) -> acc + " " + n);
+//		System.out.println(reduced);
+//
+//		System.out.println("\nreduced:");
+//		int sumaWieku = users.stream()
+//				.map(u -> u.age)
+//				.reduce(0, (acc, n) -> acc + n);
+//		System.out.println(sumaWieku);
+//
 		System.out.println("\naverage age:" +
 				users.stream()
 						.mapToInt(u -> u.age)

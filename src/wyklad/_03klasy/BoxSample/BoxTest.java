@@ -54,7 +54,7 @@ public class BoxTest {
 		assertNotSame("Boxes are not the same", box1, box2);
 	}
 	@Test
-	public void test_twoBoxehashes_areNotEqual(){
+	public void test_twoBoxeshashes_areNotEqual(){
 		Box box1 = new Box();
 		Box box2 = new Box();
 		assertTrue("Boxes are not the same", box1.hashCode() != box2.hashCode());

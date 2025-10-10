@@ -5,7 +5,7 @@ import java.util.Random;
 class Exc3 {
 	public static void main(String[] args) {
 		int a = 0, b = 0, c = 0, j = 0;
-		int loop = 1000 * 1000 * 100;
+		int loop = 100_000_000;
 		Random r = new Random();
 		long time1 = System.currentTimeMillis(),
 				time2;
@@ -17,8 +17,8 @@ class Exc3 {
 				// System.out.print(".");
 				c = r.nextInt(); // całkowitych z jednakowym
 				//Thread.sleep(1);
-//				a = 1234 / 2;
-				a = 12345 / (b / c); // prawdopodobieństwem
+				a = 1234 / 2;
+//				a = 12345 / (b / c); // prawdopodobieństwem
 			} catch (ArithmeticException e) {
 				//System.out.println("Dzielenie przez zero");
 				a = 0; // ustawiamy a i kontynuujemy pętlę

@@ -76,19 +76,19 @@ class ExcA {
 			System.out.println("finally w procB-2: " + a + ": " + a.hashCode());
 		}
 	}
-	static Integer procBB() {
-		Integer a = new Integer(1);
-
-		try {
-			System.out.println("Wewnatrz procBB-0:  " + a + ": " + a.hashCode());
-			return ++a;
-		} finally {
-			System.out.println("finally w procBB-1: " + a + ": " + a.hashCode());
-			++a;
-			System.out.println("finally w procBB-2: " + a + ": " + a.hashCode());
-		}
-	}
-
+//	static Integer procBB() {
+//		Integer a = new Integer(1);
+//
+//		try {
+//			System.out.println("Wewnatrz procBB-0:  " + a + ": " + a.hashCode());
+//			return ++a;
+//		} finally {
+//			System.out.println("finally w procBB-1: " + a + ": " + a.hashCode());
+//			++a;
+//			System.out.println("finally w procBB-2: " + a + ": " + a.hashCode());
+//		}
+//	}
+//
 	static void procC() {
 		try {
 			System.out.println("Wewnatrz procC");

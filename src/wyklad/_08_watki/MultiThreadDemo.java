@@ -53,6 +53,14 @@ class MultiThreadDemo {
 		new NewThread11("---14---");
 		new NewThread11("---15---");
 		new NewThread11("---16---");
+		new NewThread11("---17--- ");
+		new NewThread11("---18--- ");
+		new NewThread11("---19--- ");
+		new NewThread11("---20--- ");
+		new NewThread11("---21--- ");
+		new NewThread11("---22--- ");
+		new NewThread11("---23--- ");
+		new NewThread11("---24--- ");
 
 		try {
 			Thread.sleep(1000);

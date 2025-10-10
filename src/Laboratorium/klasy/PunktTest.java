@@ -54,6 +54,12 @@ public class PunktTest {
         Punkt punkt = new Punkt();
         punkt.setX(-1);
         Assert.assertEquals(0, punkt.getX(), 0.00001);
+    }
+    @Test
+    public void setYPositiveValue() {
+        Punkt punkt = new Punkt();
+        punkt.setY(-1);
+        Assert.assertEquals(0, punkt.getY(), 0.00001);
 
     }
 }

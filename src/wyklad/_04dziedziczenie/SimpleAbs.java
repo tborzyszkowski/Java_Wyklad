@@ -17,9 +17,9 @@ class B_1 extends A_1 {
 		//super.callMeToo();
 	}
 
-//	void callSuperMeToo() {
-//		super.callMeToo();
-//	}
+	void callSuperMeToo() {
+		super.callMeToo();
+	}
 
 }
 

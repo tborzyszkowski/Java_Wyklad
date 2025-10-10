@@ -31,7 +31,8 @@ public class Punkt {
     }
 
     public void setY(double y) {
-        this.y = y;
+        if (positiveValuation(y))
+            this.y = y;
     }
 
     public double distance(Punkt punkt){

@@ -72,9 +72,9 @@ class Dziedzictwo3 {
 		Derived2 der2 = new Derived2(22,222);
 		Random rnd = new Random();
 
-//		System.out.println(base);
-//		System.out.println(der1);
-//		System.out.println(der2);
+		System.out.println(base);
+		System.out.println(der1);
+		System.out.println(der2);
 		boolean decision = rnd.nextBoolean();
 		if (decision)
 			base = der1;
@@ -86,7 +86,7 @@ class Dziedzictwo3 {
 
 		System.out.println(base.getClass());
 		if (base instanceof Derived2)
-			System.out.println(" j = " + ((Derived1) base).getJ());
+			System.out.println(" j = " + ((Derived2) base).getJ());
 		else
 			System.out.println("Zly typ");
 	}

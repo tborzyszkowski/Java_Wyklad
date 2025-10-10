@@ -1,5 +1,5 @@
 package wyklad._05pakiety.MyPack;
-//
+
 //public class Balance implements IBalance {
 //	String name;
 //	double bal;

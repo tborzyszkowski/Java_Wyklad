@@ -24,7 +24,7 @@ class BK extends AK {
 }
 class CK extends BK {
 	CK() {
-//		super();
+		super();
 //		super(2);
 		System.out.println("Konstruktor z C()");
 	}

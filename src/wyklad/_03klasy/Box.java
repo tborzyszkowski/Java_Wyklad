@@ -14,21 +14,21 @@ public class Box {
 		this(0, 0, 0);
 	}
 
-//	public Box(int n) {
-//		this(n, n, n);
-//	}
-//
-//	public Box(int width, int height, int depth) {
-//		this(1.0 * width, height, depth);
-//	}
-//
-//	public Box(int width, double height, double depth) {
-//		this(4.0 * width, height, depth);
-//	}
-//
-//	public Box(int width, int height, double depth) {
-//		this(5.0 * width, height, depth);
-//	}
+	public Box(int n) {
+		this(n, n, n);
+	}
+
+	public Box(int width, int height, int depth) {
+		this(1.0 * width, height, depth);
+	}
+
+	public Box(int width, double height, double depth) {
+		this(4.0 * width, height, depth);
+	}
+
+	public Box(int width, int height, double depth) {
+		this(5.0 * width, height, depth);
+	}
 
 	public void setDim(double width, double height, double depth) {
 		this.width = width;
@@ -85,4 +85,14 @@ public class Box {
 		result = 31 * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Box{");
+        sb.append("width=").append(width);
+        sb.append(", height=").append(height);
+        sb.append(", depth=").append(depth);
+        sb.append('}');
+        return sb.toString();
+    }
 }

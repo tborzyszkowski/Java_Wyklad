@@ -1,5 +1,7 @@
 package wyklad._04dziedziczenie;
 
+import java.util.Objects;
+
 class Box {
 	private double width;
 	private double height;
@@ -50,6 +52,20 @@ class Box {
 	public String toString() {
 		return this.getClass().getSimpleName() + "{ Objetosc = " + this.volume() + " }";
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof Box)) return false;
+		Box box = (Box) o;
+		return Double.compare(width, box.width) == 0 &&
+				Double.compare(height, box.height) == 0 &&
+				Double.compare(depth, box.depth) == 0;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(width, height, depth);
+	}
 }
 
 class BoxWeight extends Box {
@@ -87,6 +103,18 @@ class BoxWeight extends Box {
 		return "BoxWeight{ " + super.toString() + " Waga = " + weight + "}";
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof BoxWeight)) return false;
+		if (!super.equals(o)) return false;
+		BoxWeight boxWeight = (BoxWeight) o;
+		return Double.compare(weight, boxWeight.weight) == 0;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(super.hashCode(), weight);
+	}
 }
 
 class BoxDemo4 {
@@ -96,6 +124,8 @@ class BoxDemo4 {
 		BoxWeight myBox2 = new BoxWeight(2, 3);
 		BoxWeight myBox3 = new BoxWeight(3, 4, 5, 0.1234);
 		BoxWeight myBox4 = new BoxWeight(myBox3);
+		System.out.println(myBox3 == myBox4);
+		System.out.println(myBox3.equals(myBox4));
 
 		// wypisujemy objetosci
 		System.out.println("myBox1: \n" + myBox1);

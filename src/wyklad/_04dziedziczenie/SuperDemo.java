@@ -2,7 +2,7 @@ package wyklad._04dziedziczenie;
 
 class A {
 	int i;
-	A() { i = 5; }
+	//A() { i = 5; }
 	A(int i) {
 		this.i = i;
 	}
@@ -16,7 +16,7 @@ class B extends A {
 	B(int a, int b) {
 		//super();
 		super(a);
-		super.i = a;
+		//super.i = a;
 		this.i = b;
 	}
 	public String toString() {
