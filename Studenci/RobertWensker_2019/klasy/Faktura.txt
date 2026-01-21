@@ -1,0 +1,29 @@
+Numer Faktury: 214337
+Dane Kupujacego:
+Imie i Nazwisko: Wojtek Kowalski
+Adres: Aleja Rodla 45b, Malbork 82-400
+Numer NIP: 987654321
+Numer konta: 123 123 123 123 123
+Produkt: Koszula
+Ilosc: 2
+Cena netto: 25.96
+Podatek VAT: 23%
+Wyliczona cena brutto: 31.93
+Produkt: Spodnie
+Ilosc: 1
+Cena netto: 123.99
+Podatek VAT: 23%
+Wyliczona cena brutto: 152.5
+Produkt: Czapka
+Ilosc: 4
+Cena netto: 43.2
+Podatek VAT: 23%
+Wyliczona cena brutto: 53.13
+Suma: 237.56
+Dane Sprzedajacego:
+Nazwa: MyShop.com
+Adres: My Adress 89-213
+Numer NIP: 1234567890
+Data wydania faktury: 2019-11-22
+Data sprzedazy: 2019-11-20
+Data zaplaty: 2019-11-20
